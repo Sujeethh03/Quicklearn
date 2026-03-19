@@ -1,0 +1,39 @@
+"use client";
+
+import Script from "next/script";
+import ClientHomeWrapper from "@/components/PageClientHomeWrapper";
+import SocialProof from "@/components/SocialProof";
+import GoogleReviewsShowcase from "@/components/GoogleReviewsShowcase";
+import Testimonials from "@/components/Testimonial";
+import Clients from "@/components/Clients";
+import Footer from "@/components/Footer";
+import LiveChat from "@/components/LiveChat";
+
+export default function HomePageClient({ testimonials, clients }) {
+  return (
+    <div className="flex flex-col w-full">
+      
+      {/* Hero / Top Section */}
+      <ClientHomeWrapper />
+
+      {/* Social Proof Section */}
+      <SocialProof />
+
+      {/* Google Reviews Showcase Section */}
+      <GoogleReviewsShowcase />
+
+      {/* Testimonials Section */}
+      <Testimonials testimonials={testimonials} />
+
+      {/* Clients Section */}
+      <Clients clients={clients} />
+
+      {/* Footer */}
+      <Footer />
+
+      
+
+      
+    </div>
+  );
+}

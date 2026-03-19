@@ -1,0 +1,119 @@
+import React from "react";
+import Headers from "@/components/Header";
+import Footer from "@/components/Footer";
+import ScrollFloat from "@/components/ui/ScroolReveal";
+import Link from "next/link";
+import LiveChat from "@/components/LiveChat";
+import CoursePageClient from "./CoursePageClient";
+import Script from "next/script";
+
+// Server-side metadata for SEO
+export const metadata = {
+  title: "PMP Certification Training in Hyderabad | QuickLearn Systems",
+  description: "Become a certified Project Management Professional (PMP) with expert-led PMP training in Hyderabad. QuickLearn Systems offers comprehensive PMP certification courses with exam prep, hands-on experience, and expert instructors. Enroll today!",
+  keywords: "PMP training Hyderabad, PMP certification Hyderabad, best PMP training institute Hyderabad, Project Management Professional course Hyderabad, PMP exam prep Hyderabad, PMP training India, PMP certification, Project Management Professional, PMI training, project management course, PMP exam prep, QuickLearn Systems, IT training Hyderabad, professional training Hyderabad",
+  openGraph: {
+    title: "PMP Certification Training in Hyderabad | QuickLearn Systems",
+    description: "Expert-led PMP certification training in Hyderabad by QuickLearn Systems",
+    images: ["/PMPC.jpg"],
+  },
+};
+
+// Server-side course data
+const courseData = {
+  title: "PMP Certification",
+  subtitle: "Become a certified Project Management Professional and advance your career",
+  backgroundImage: "/PMPC.jpg",
+  overview: "The Project Management Professional (PMP) certification is the most important industry-recognized certification for project managers. This comprehensive training program covers the five process groups and ten knowledge areas as defined in the PMBOK Guide. You'll learn best practices in project management and gain the skills needed to lead projects successfully in any industry.",
+  courseOutline: [
+    "Project Integration Management",
+    "Project Scope Management", 
+    "Project Schedule Management",
+    "Project Cost Management",
+    "Project Quality Management",
+    "Project Resource Management",
+    "Project Communications Management",
+    "Project Risk Management",
+    "Project Procurement Management",
+    "Project Stakeholder Management"
+  ],
+  learningObjectives: [
+    "Master the five process groups of project management",
+    "Understand the ten knowledge areas in detail",
+    "Apply project management tools and techniques",
+    "Develop leadership and team management skills",
+    "Learn risk management and mitigation strategies",
+    "Understand stakeholder engagement principles",
+    "Prepare for the PMP certification exam"
+  ],
+  targetGroup: [
+    "Project managers with 3+ years of experience",
+    "Team leaders looking to advance to project management roles",
+    "Senior professionals seeking PMP certification",
+    "Anyone managing projects in any industry",
+    "Professionals looking to enhance project management skills"
+  ],
+  examDetails: [
+    "Duration: 4 hours",
+    "180 multiple choice questions", 
+    "Computer-based testing",
+    "Passing score: Above Target proficiency",
+    "Available at Pearson VUE test centers worldwide",
+    "35 PDUs required for exam eligibility"
+  ],
+  duration: "4 Days",
+  level: "Professional",
+  category: "Project & Program Management"
+};
+
+export default function PMPPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "PMP Certification Training",
+    "description": "Become a certified Project Management Professional (PMP) with our comprehensive training program. Expert instructors, exam prep, and hands-on experience.",
+    "provider": {
+      "@type": "Organization",
+      "name": "QuickLearn Systems",
+      "url": "https://quicklearnsys.com"
+    },
+    "courseCode": "PMP-001",
+    "educationalLevel": "Professional",
+    "timeRequired": "P4D",
+    "inLanguage": "en",
+    "offers": {
+      "@type": "Offer",
+      "category": "Project & Program Management",
+      "availability": "https://schema.org/InStock"
+    },
+    "coursePrerequisites": "3+ years of project management experience",
+    "teaches": [
+      "Project Integration Management",
+      "Project Scope Management",
+      "Project Schedule Management",
+      "Project Cost Management",
+      "Project Quality Management",
+      "Project Resource Management",
+      "Project Communications Management",
+      "Project Risk Management",
+      "Project Procurement Management",
+      "Project Stakeholder Management"
+    ]
+  };
+
+  return (
+    <>
+      <Script
+        id="pmp-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+      <Headers />
+      <CoursePageClient courseData={courseData} />
+      <Footer />
+        
+    </>
+  );
+}
