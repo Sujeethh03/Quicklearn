@@ -176,7 +176,7 @@ export default function CSPO() {
                 whileHover={{ scale: 1.01, color: "#374151" }}
                 transition={{ duration: 0.2 }}
               >
-                The Certified Scrum Product Owner (CSPO) certification, offered by Scrum Alliance, is designed to equip you with the knowledge and skills to fulfil the Product Owner role effectively within a Scrum team. The course focuses on understanding the Product Owner's responsibilities, defining product vision, and maximising business value.
+                The Certified Scrum Product Owner (CSPO) certification, offered by Scrum Alliance, is designed to equip you with the knowledge and skills to fulfil the Product Owner role effectively within a Scrum team. The course focuses on understanding the Product Owner&apos;s responsibilities, defining product vision, and maximising business value.
               </motion.p>
               <motion.p
                 className="text-gray-700 leading-relaxed mb-6 text-justify"
