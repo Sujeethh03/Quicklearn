@@ -14,14 +14,14 @@ export const metadata = {
     title: "MSP Practitioner Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led MSP Practitioner certification training in Hyderabad by QuickLearn Systems",
-    images: ["/MSPPractitioner.jpg"],
+    images: ["/msp_practitioner.jpg"],
   },
 };
 
 const courseData = {
   title: "MSP Practitioner",
   subtitle: "Manage complex programs and deliver strategic outcomes effectively",
-  backgroundImage: "/MSPPractitioner.jpg",
+  backgroundImage: "/msp_practitioner.jpg",
   overview: [
     "The MSP Practitioner course builds on the MSP Foundation concepts and teaches you how to apply the framework to manage complex programs in real-world scenarios.",
     "Participants learn to coordinate multiple projects, manage risks and issues, align programs with organizational strategy, and ensure realization of benefits.",
@@ -66,7 +66,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "MSP Foundation",
-      image: "/MSPFoundation.jpg",
+      image: "/msp_practitioner.jpg",
       description:
         "Learn the fundamentals of Managing Successful Programmes (MSP) framework and principles.",
       href: "/MSPFoundation",
@@ -77,7 +77,7 @@ const courseData = {
     },
     {
       title: "PRINCE2 Practitioner",
-      image: "/PRINCE2Practitioner.jpg",
+      image: "/msp_practitioner.jpg",
       description:
         "Manage projects successfully with PRINCE2 principles and practices.",
       href: "/PRINCE2Practitioner",
@@ -88,7 +88,7 @@ const courseData = {
     },
     {
       title: "MoP Practitioner",
-      image: "/MoPPractitioner.jpg",
+      image: "/msp_practitioner.jpg",
       description:
         "Manage portfolios effectively using MoP principles and practices.",
       href: "/MoPPractitioner",

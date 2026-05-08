@@ -14,7 +14,7 @@ export const metadata = {
     title: "Business Relationship Management (BRM) Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led Business Relationship Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/brm.jpg"],
+    images: ["/itl4_foundation.png"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Business Relationship Management",
   subtitle:
     "Align IT and business strategy through strong stakeholder engagement and value creation",
-  backgroundImage: "/brm.jpg",
+  backgroundImage: "/itl4_foundation.png",
 
   overview: [
     "Business Relationship Management (BRM) focuses on building and maintaining strong relationships between IT and business stakeholders to ensure value-driven service delivery.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/itl4_foundation.png",
       description: "Master IT Service Management fundamentals",
       href: "/ITL4Management",
       duration: "3 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Sustainability in Digital IT",
-      image: "/digital-sustainability.jpg",
+      image: "/itl4_foundation.png",
       description: "Integrate sustainable practices into digital IT strategy",
       href: "/SustainabilityInDigitalIT",
       duration: "3 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "Service Desk",
-      image: "/serviceDesk.jpg",
+      image: "/service_desk.png",
       description: "Build strong IT support and service capabilities",
       href: "/ServiceDesk",
       duration: "3 Days",

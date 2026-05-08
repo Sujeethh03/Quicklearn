@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "SRE Foundation Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led SRE Foundation certification training in Hyderabad by QuickLearn Systems",
-    images: ["/Sre.jpg"],
+    images: ["/sre_foundation.jpg"],
   },
 };
 
 const courseData = {
   title: "SRE Foundation",
   subtitle: "Master Site Reliability Engineering principles for scalable and reliable systems",
-  backgroundImage: "/Sre.jpg",
+  backgroundImage: "/sre_foundation.jpg",
   overview: [
     "Site Reliability Engineering (SRE) Foundation provides comprehensive training in reliability engineering principles, practices, and tools used to build and maintain large-scale distributed systems.",
     "Learn to balance system reliability with feature velocity, implement effective monitoring and alerting, and respond to incidents with systematic approaches.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "DevOps Foundation",
-      image: "/Devops.jpg",
+      image: "/sre_foundation.jpg",
       description: "Learn DevOps culture and practices",
       href: "/DevopsFoundation",
       duration: "2 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "SRE Practitioner",
-      image: "/Business.jpg",
+      image: "/sre_foundation.jpg",
       description: "Advanced SRE practices and implementation",
       href: "/SREPractitioner",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Monitoring & Event Management",
-      image: "/blog2.jpg",
+      image: "/monitoring_event_management.png",
       description: "Master monitoring and event management",
       href: "/MonitoringEventManagement",
       duration: "3 Days",

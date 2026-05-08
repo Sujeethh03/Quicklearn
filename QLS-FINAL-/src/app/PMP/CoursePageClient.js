@@ -214,7 +214,7 @@ export default function CoursePageClient({ courseData }) {
               variants={imageVariants}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/itl4_foundation.png"
                 alt="Corporate Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -406,7 +406,7 @@ export default function CoursePageClient({ courseData }) {
               variants={imageVariants}
             >
               <motion.img
-                src="/team.jpg"
+                src="/itl4_foundation.png"
                 alt="Our Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}

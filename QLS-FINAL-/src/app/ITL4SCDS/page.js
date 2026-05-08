@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL 4 Create, Deliver and Support (CDS) Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL 4 CDS certification training in Hyderabad by QuickLearn Systems",
-    images: ["/itl4.jpg"],
+    images: ["/create_deliver_support.jpg"],
   },
 };
 
 const courseData = {
   title: "ITIL® 4 Specialist Create, Deliver and Support",
   subtitle: "Master service creation, delivery and support practices for operational excellence",
-  backgroundImage: "/itl4.jpg",
+  backgroundImage: "/create_deliver_support.jpg",
   overview: [
     "ITIL® 4 Specialist: Create, Deliver and Support focuses on integrating different value streams and activities to create, deliver and support IT-enabled products and services.",
     "This module covers service design principles, transition practices, and operational support techniques that ensure effective service delivery throughout the service lifecycle.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/create_deliver_support.jpg",
       description: "Master ITIL® 4 fundamentals and framework",
       href: "/ITL4Management",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist Drive Stakeholder Value",
-      image: "/itl4.jpg",
+      image: "/create_deliver_support.jpg",
       description: "Learn to drive stakeholder value creation",
       href: "/ITL4SDSV",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Service Design",
-      image: "/serviceDesk.jpg",
+      image: "/create_deliver_support.jpg",
       description: "Master service design principles and practices",
       href: "/ServiceDesk",
       duration: "3 Days",

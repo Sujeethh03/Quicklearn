@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Service Level Management Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Service Level Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/Servicelevelman.jpg"],
+    images: ["/service_level_management.jpg"],
   },
 };
 
 const courseData = {
   title: "Service Level Management",
   subtitle: "Define, monitor and manage service levels to ensure customer satisfaction",
-  backgroundImage: "/Servicelevelman.jpg",
+  backgroundImage: "/service_level_management.jpg",
   overview: [
     "Service Level Management is the practice responsible for setting clear business-based targets for service performance so that the delivery of a service can be properly assessed, monitored and managed against these targets.",
     "This comprehensive course covers service level agreement design, operational level agreement management, and service reporting techniques that ensure service quality and customer satisfaction.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Relationship Management",
-      image: "/SIAM.jpg",
+      image: "/service_level_management.jpg",
       description: "Master stakeholder relationship management",
       href: "/RelationshipManagement",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Service Request Management",
-      image: "/Servicereq.jpg",
+      image: "/service_request_management.png",
       description: "Learn to handle user requests efficiently",
       href: "/ServiceRequestManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Continual Improvement",
-      image: "/continualimprovement.jpg",
+      image: "/service_level_management.jpg",
       description: "Drive continuous service improvement",
       href: "/ContinuationImprovement",
       duration: "3 Days",

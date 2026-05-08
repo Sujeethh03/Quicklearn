@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "Lean Six Sigma Black Belt Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led Lean Six Sigma Black Belt certification training in Hyderabad by QuickLearn Systems",
-    images: ["/SigmaBB.jpg"],
+    images: ["/black_belt.png"],
   },
 };
 
 const courseData = {
   title: "Lean Six Sigma Black Belt",
   subtitle: "Lead organizational transformation through advanced process improvement expertise",
-  backgroundImage: "/SigmaBB.jpg",
+  backgroundImage: "/black_belt.png",
   overview: [
     "Lean Six Sigma Black Belt represents the highest level of process improvement expertise, combining advanced statistical analysis with leadership skills to drive organizational transformation.",
     "This comprehensive program prepares you to lead complex improvement projects, mentor Green Belts, and implement enterprise-wide process excellence initiatives.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Lean Six Sigma Green Belt",
-      image: "/SigmaBB.jpg",
+      image: "/black_belt.png",
       description: "Foundation process improvement skills",
       href: "/LeanSSGB",
       duration: "4 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Change Management",
-      image: "/blog3.jpg",
+      image: "/black_belt.png",
       description: "Master organizational change practices",
       href: "/ChangeEnablement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "DevOps Foundation",
-      image: "/Devops.jpg",
+      image: "/black_belt.png",
       description: "Learn DevOps culture and practices",
       href: "/DevopsFoundation",
       duration: "2 Days",

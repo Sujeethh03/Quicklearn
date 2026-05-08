@@ -181,7 +181,7 @@ export default function CoursePageEnhanced({ courseData }) {
             >
               <div className="relative">
                 <Image
-                  src="/corporate.jpg"
+                  src="/IT-Service-Management.png"
                   alt="Corporate Training"
                   width={400}
                   height={300}
@@ -282,7 +282,7 @@ export default function CoursePageEnhanced({ courseData }) {
             >
               <div className="relative">
                 <Image
-                  src="/team.jpg"
+                  src="/IT-Service-Management.png"
                   alt="Our Team"
                   width={400}
                   height={300}

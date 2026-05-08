@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Service Request Management Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Service Request Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/Servicereq.jpg"],
+    images: ["/service_request_management.png"],
   },
 };
 
 const courseData = {
   title: "Service Request Management",
   subtitle: "Streamline user requests and enhance service delivery efficiency",
-  backgroundImage: "/Servicereq.jpg",
+  backgroundImage: "/service_request_management.png",
   overview: [
     "Service Request Management is the practice responsible for supporting the agreed quality of a service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner.",
     "This course covers the complete lifecycle of service requests, from initial submission through fulfillment and closure, ensuring efficient service delivery and user satisfaction.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Service Desk",
-      image: "/serviceDesk.jpg",
+      image: "/service_desk.png",
       description: "Master service desk operations and customer service",
       href: "/ServiceDesk",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Service Level Management",
-      image: "/Servicelevelman.jpg",
+      image: "/itl4_foundation.png",
       description: "Learn to manage service levels and agreements",
       href: "/ServiceLevelManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Service Configuration Management",
-      image: "/Devops.jpg",
+      image: "/itl4_foundation.png",
       description: "Master configuration management practices",
       href: "/ServiceConfiguration",
       duration: "3 Days",

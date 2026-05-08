@@ -14,7 +14,7 @@ export const metadata = {
     title: "Professional Scrum Master II (PSM II) Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led PSM II certification training in Hyderabad by QuickLearn Systems",
-    images: ["/scrum.jpg"],
+    images: ["/professional_scrum_master_2.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Professional Scrum Master™ II (PSM II)",
   subtitle:
     "Strengthen advanced Scrum Master skills for complex Agile environments",
-  backgroundImage: "/scrum.jpg",
+  backgroundImage: "/professional_scrum_master_2.jpg",
 
   overview: [
     "Professional Scrum Master™ II (PSM II) is an advanced Scrum Master certification designed for experienced Scrum practitioners who want to deepen their understanding of Scrum principles and servant leadership.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Professional Scrum Master™ I (PSM I)",
-      image: "/scrum.jpg",
+      image: "/professional_scrum_master_2.jpg",
       description: "Foundational Scrum Master certification",
       href: "/professional-scrum-master-1",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Professional Scrum Product Owner™ (PSPO)",
-      image: "/scrum.jpg",
+      image: "/professional_scrum_master_2.jpg",
       description: "Master product ownership and value delivery",
       href: "/professional-scrum-product-owner",
       duration: "2 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "SAFe® Advanced Scrum Master",
-      image: "/safe.jpg",
+      image: "/professional_scrum_master_2.jpg",
       description: "Scale Scrum practices in enterprise environments",
       href: "/safe-advanced-scrum-master",
       duration: "2 Days",

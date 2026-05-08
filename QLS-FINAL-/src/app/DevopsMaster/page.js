@@ -14,7 +14,7 @@ export const metadata = {
     title: "DevOps Master Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led DevOps Master certification training in Hyderabad by QuickLearn Systems",
-    images: ["/devops.jpg"],
+    images: ["/devops_master.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "DevOps Master",
   subtitle:
     "Lead enterprise DevOps transformation with advanced automation and cloud-native practices",
-  backgroundImage: "/devops.jpg",
+  backgroundImage: "/devops_master.jpg",
 
   overview: [
     "DevOps Master is an advanced-level course designed for professionals who want to lead DevOps transformation initiatives at an enterprise scale.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "DevOps Foundation",
-      image: "/devops.jpg",
+      image: "/devops_master.jpg",
       description: "Understand DevOps culture and foundational practices",
       href: "/devops-foundation",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Site Reliability Engineering (SRE) Practitioner",
-      image: "/sre.jpg",
+      image: "/devops_master.jpg",
       description: "Build scalable and reliable systems using SRE practices",
       href: "/sre-practitioner",
       duration: "2 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "SAFe® DevOps",
-      image: "/safe.jpg",
+      image: "/devops_master.jpg",
       description: "Implement DevOps practices within scaled Agile environments",
       href: "/safe-devops",
       duration: "2 Days",

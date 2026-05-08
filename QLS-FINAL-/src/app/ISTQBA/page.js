@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ISTQB Advanced Level Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ISTQB Advanced Level certification training in Hyderabad by QuickLearn Systems",
-    images: ["/TestAuto.jpg"],
+    images: ["/istqb_advanced.jpg"],
   },
 };
 
 const courseData = {
   title: "ISTQB Advanced Level",
   subtitle: "Master advanced testing techniques and lead quality assurance initiatives",
-  backgroundImage: "/TestAuto.jpg",
+  backgroundImage: "/istqb_advanced.jpg",
   overview: [
     "ISTQB Advanced Level builds on Foundation knowledge to provide comprehensive training in advanced testing techniques, test automation, and testing leadership.",
     "Learn sophisticated testing approaches, automation frameworks, and management skills needed to lead testing teams and drive quality initiatives in complex environments.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ISTQB Foundation Level",
-      image: "/ISTQB.jpg",
+      image: "/istqb_advanced.jpg",
       description: "Master software testing fundamentals",
       href: "/ISTQBF",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "DevOps Foundation",
-      image: "/Devops.jpg",
+      image: "/istqb_advanced.jpg",
       description: "Learn DevOps culture and practices",
       href: "/DevopsFoundation",
       duration: "2 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Agile Testing",
-      image: "/Business.jpg",
+      image: "/istqb_advanced.jpg",
       description: "Testing in Agile environments",
       href: "/AgileBA",
       duration: "3 Days",

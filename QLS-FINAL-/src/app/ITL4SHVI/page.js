@@ -14,7 +14,7 @@ export const metadata = {
     title: "ITIL 4 High Velocity IT (HVIT) Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led ITIL 4 HVIT certification training in Hyderabad by QuickLearn Systems",
-    images: ["/ITIL4.jpg"],
+    images: ["/high_velocity_it.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "ITIL® 4 Specialist: High Velocity IT (HVIT)",
   subtitle:
     "Empower your IT organization with speed, agility, and digital transformation excellence",
-  backgroundImage: "/ITIL4HVIT.jpg",
+  backgroundImage: "/high_velocity_it.jpg",
   overview: [
     "The ITIL® 4 Specialist: High Velocity IT module is designed for IT professionals who work in or aspire to work in digitally advanced environments.",
     "It explores the use of Agile, Lean, and DevOps practices, focusing on rapid delivery of IT-enabled products and services to achieve maximum value.",
@@ -65,7 +65,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/ITIL4.jpg",
+      image: "/high_velocity_it.jpg",
       description: "Understand the fundamentals of ITIL® 4 and modern service management practices.",
       href: "/ITILFoundation",
       duration: "2 Days",
@@ -75,7 +75,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS)",
-      image: "/ITIL4CDS.jpg",
+      image: "/high_velocity_it.jpg",
       description: "Learn how to design, build, and deliver IT-enabled services efficiently.",
       href: "/ITIL4CDS",
       duration: "3 Days",
@@ -85,7 +85,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI)",
-      image: "/ITIL4DPI.jpg",
+      image: "/high_velocity_it.jpg",
       description: "Develop strategic and tactical skills to lead continual improvement initiatives.",
       href: "/ITIL4DPI",
       duration: "3 Days",

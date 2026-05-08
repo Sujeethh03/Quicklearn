@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Monitoring & Event Management Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Monitoring & Event Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/blog2.jpg"],
+    images: ["/monitoring_event_management.png"],
   },
 };
 
 const courseData = {
   title: "Monitoring & Event Management",
   subtitle: "Proactively monitor services and manage events to ensure optimal performance",
-  backgroundImage: "/blog2.jpg",
+  backgroundImage: "/monitoring_event_management.png",
   overview: [
     "Monitoring & Event Management is the practice responsible for systematically observing services and service components, and recording and reporting selected changes of state identified as events.",
     "This course covers comprehensive monitoring strategies, event detection techniques, and automated response mechanisms that ensure service availability and performance optimization.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Incident Management",
-      image: "/incidentmanage.jpg",
+      image: "/incident_management.png",
       description: "Learn to manage and resolve IT incidents effectively",
       href: "/IncidentManagement",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Problem Management",
-      image: "/problemmanage.jpg",
+      image: "/problem_management.png",
       description: "Master root cause analysis and problem resolution",
       href: "/ProblemManagement",
       duration: "5 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Service Level Management",
-      image: "/Servicelevelman.jpg",
+      image: "/itl4_foundation.png",
       description: "Learn to manage service levels and agreements",
       href: "/ServiceLevelManagement",
       duration: "3 Days",

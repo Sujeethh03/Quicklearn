@@ -213,7 +213,7 @@ export default function CoursePageClient({ courseData }) {
               variants={imageVariants}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/itl4_foundation.png"
                 alt="Corporate Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -405,7 +405,7 @@ export default function CoursePageClient({ courseData }) {
               variants={imageVariants}
             >
               <motion.img
-                src="/team.jpg"
+                src="/itl4_foundation.png"
                 alt="Our Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -449,7 +449,7 @@ export default function CoursePageClient({ courseData }) {
             {[
               {
                 title: "Professional Scrum Master I",
-                image: "/SCRUM1.jpg",
+                image: "/itl4_foundation.png",
                 description: "Master Scrum framework and become an effective Scrum Master",
                 href: "/PScrumM1",
                 duration: "2 Days",
@@ -457,7 +457,7 @@ export default function CoursePageClient({ courseData }) {
               },
               {
                 title: "Certified Scrum Master",
-                image: "/SCRUMM.jpg", 
+                image: "/itl4_foundation.png", 
                 description: "Scrum Alliance certified Scrum Master training and certification",
                 href: "/CSM",
                 duration: "2 Days",
@@ -465,7 +465,7 @@ export default function CoursePageClient({ courseData }) {
               },
               {
                 title: "SAFe Scrum Master",
-                image: "/SCRUMM.jpg",
+                image: "/itl4_foundation.png",
                 description: "Learn to facilitate Agile teams in a SAFe environment",
                 href: "/SAFeScrumMaster", 
                 duration: "2 Days",

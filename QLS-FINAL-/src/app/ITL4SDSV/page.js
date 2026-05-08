@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL 4 Drive Stakeholder Value (DSV) Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL 4 DSV certification training in Hyderabad by QuickLearn Systems",
-    images: ["/itl4.jpg"],
+    images: ["/drive_stakeholder_value.jpg"],
   },
 };
 
 const courseData = {
   title: "ITIL® 4 Specialist Drive Stakeholder Value",
   subtitle: "Create and deliver value through effective stakeholder engagement and collaboration",
-  backgroundImage: "/itl4.jpg",
+  backgroundImage: "/drive_stakeholder_value.jpg",
   overview: [
     "ITIL® 4 Specialist: Drive Stakeholder Value focuses on customer journey, customer experience, and stakeholder relationships to drive value creation and delivery.",
     "This module covers stakeholder engagement strategies, customer experience design, and value co-creation techniques that ensure services meet stakeholder needs and expectations.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/drive_stakeholder_value.jpg",
       description: "Master ITIL® 4 fundamentals and framework",
       href: "/ITL4Management",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Relationship Management",
-      image: "/SIAM.jpg",
+      image: "/drive_stakeholder_value.jpg",
       description: "Master stakeholder relationship management",
       href: "/RelationshipManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Service Level Management",
-      image: "/Servicelevelman.jpg",
+      image: "/drive_stakeholder_value.jpg",
       description: "Learn to manage service levels and agreements",
       href: "/ServiceLevelManagement",
       duration: "3 Days",

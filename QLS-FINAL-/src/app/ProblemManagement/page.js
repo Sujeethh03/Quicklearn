@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Problem Management Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Problem Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/problemmanage.jpg"],
+    images: ["/problem_management.png"],
   },
 };
 
 const courseData = {
   title: "Problem Management",
   subtitle: "Master the art of identifying and resolving root causes to prevent recurring incidents",
-  backgroundImage: "/problemmanage.jpg",
+  backgroundImage: "/problem_management.png",
   overview: [
     "ITIL Problem Management is a critical practice that focuses on identifying, analyzing, and resolving the underlying causes of recurring incidents or problems to prevent them from happening again in the future.",
     "This comprehensive course covers the Problem Management process within IT Service Management, teaching you how to minimize the impact of problems on IT services and business operations.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/itl4_foundation.png",
       description: "Master the fundamentals of IT Service Management",
       href: "/ITL4Management",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Incident Management",
-      image: "/incidentmanage.jpg",
+      image: "/incident_management.png",
       description: "Learn to manage and resolve IT incidents effectively",
       href: "/IncidentManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Service Desk",
-      image: "/serviceDesk.jpg",
+      image: "/service_desk.png",
       description: "Master service desk operations and customer service",
       href: "/ServiceDesk",
       duration: "3 Days",

@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "DevOps Foundation Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led DevOps Foundation certification training in Hyderabad by QuickLearn Systems",
-    images: ["/Devops.jpg"],
+    images: ["/devops_foundation.jpg"],
   },
 };
 
 const courseData = {
   title: "DevOps Foundation",
   subtitle: "Master DevOps culture, practices, and tools for continuous delivery excellence",
-  backgroundImage: "/dev_ops.png",
+  backgroundImage: "/devops_foundation.jpg",
   overview: [
     "DevOps Foundation provides a comprehensive introduction to DevOps principles, practices, and tools. This course covers the cultural and technical aspects of DevOps, focusing on collaboration, automation, and continuous improvement.",
     "Learn how DevOps bridges the gap between development and operations teams, enabling faster delivery, improved quality, and enhanced customer satisfaction through automation and collaborative practices.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "SRE Foundation",
-      image: "/Sre.jpg",
+      image: "/devops_foundation.jpg",
       description: "Site Reliability Engineering principles and practices",
       href: "/SREFoundation",
       duration: "2 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "DevOps Master",
-      image: "/Business.jpg",
+      image: "/devops_foundation.jpg",
       description: "Advanced DevOps practices and leadership",
       href: "/DevopsMaster",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Agile Business Analysis",
-      image: "/Business.jpg",
+      image: "/devops_foundation.jpg",
       description: "Business analysis in Agile environments",
       href: "/AgileBA",
       duration: "3 Days",

@@ -45,7 +45,7 @@ export default function AboutPageHybrid() {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/AboutUs1.jpg')" }}
+              style={{ backgroundImage: "url('/hero_it_service_management.jpg')" }}
             />
             <div className="absolute inset-0 bg-black/60" />
           </motion.div>
@@ -132,7 +132,7 @@ export default function AboutPageHybrid() {
                 className="sticky top-24"
               >
                 <Image
-                  src="/corporate.jpg"
+                  src="/hero_project_program_management.jpg"
                   alt="Corporate Training"
                   width={400}
                   height={300}
@@ -205,7 +205,7 @@ export default function AboutPageHybrid() {
                 className="sticky top-24"
               >
                 <Image
-                  src="/team.jpg"
+                  src="/hero_agile_scrum_kanban.jpg"
                   alt="Our Team"
                   width={400}
                   height={300}

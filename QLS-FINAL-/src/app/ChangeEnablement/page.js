@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Change Enablement Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Change Enablement certification training in Hyderabad by QuickLearn Systems",
-    images: ["/blog3.jpg"],
+    images: ["/change_enablement.jpg"],
   },
 };
 
 const courseData = {
   title: "Change Enablement",
   subtitle: "Enable safe and efficient changes while minimizing risk to services",
-  backgroundImage: "/blog3.jpg",
+  backgroundImage: "/change_enablement.jpg",
   overview: [
     "Change Enablement is the practice responsible for maximizing the number of successful service and product changes by ensuring that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule.",
     "This comprehensive course covers change management processes, risk assessment techniques, and change implementation strategies that ensure business continuity while enabling innovation.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Release Management",
-      image: "/corporate.jpg",
+      image: "/change_enablement.jpg",
       description: "Learn to manage software releases effectively",
       href: "/ReleaseManagement",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Deployment Management",
-      image: "/PRINCE2.jpg",
+      image: "/itl4_foundation.png",
       description: "Master deployment processes and procedures",
       href: "/DeploymentManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Service Configuration Management",
-      image: "/Devops.jpg",
+      image: "/itl4_foundation.png",
       description: "Master configuration management practices",
       href: "/ServiceConfiguration",
       duration: "3 Days",

@@ -14,14 +14,14 @@ export const metadata = {
     title: "Corporate Training ",
     description:
       "Customized corporate training programs in Hyderabad by QuickLearn Systems. Role-based, hands-on, and outcome-driven training for IT, Agile, DevOps, ITIL, PMP and more.",
-    images: ["/corporate.jpg"],
+    images: ["/IT-Service-Management.png"],
   },
 };
 
 const courseData = {
   title: "Corporate Training ",
   subtitle: "Customized, Role-Based & Outcome-Driven Training Programs for Your Workforce",
-  backgroundImage: "/corporate.jpg",
+  backgroundImage: "/hero_it_service_management.jpg",
   overview: [
     "At QuickLearn Systems, we work closely with companies that want to upskill their workforce with practical, role-based, and business-focused training.",
     "As a trusted corporate training institute in Hyderabad, we design customized training programs in IT, software, data, cloud, cybersecurity, and emerging technologies — tailored to your organization's goals.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Corporate TRAINING Programs",
-      image: "/ITIL4.jpg",
+      image: "/IT-Service-Management.png",
       description: "Learn the fundamentals of ITIL® 4 and modern service management practices.",
       href: "/ITILFoundation",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS)",
-      image: "/ITIL4CDS.jpg",
+      image: "/IT-Service-Management.png",
       description: "Enhance your ability to design, deliver, and support IT-enabled services effectively.",
       href: "/ITIL4CDS",
       duration: "3 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist: High Velocity IT (HVIT)",
-      image: "/ITIL4HVIT.jpg",
+      image: "/IT-Service-Management.png",
       description: "Accelerate digital transformation by adopting Agile, Lean, and DevOps practices.",
       href: "/ITIL4HVIT",
       duration: "3 Days",

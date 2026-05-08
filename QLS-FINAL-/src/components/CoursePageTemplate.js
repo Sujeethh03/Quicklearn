@@ -114,7 +114,7 @@ export default function CoursePageTemplate({ courseData }) {
           <div className="lg:col-span-4">
             <motion.div variants={imageVariants} initial="hidden" whileInView="visible" className="sticky top-24">
               <motion.img
-                src="/corporate.jpg"
+                src="/IT-Service-Management.png"
                 className="rounded-xl shadow-lg"
                 whileHover={{ scale: 1.03 }}
               />
@@ -237,7 +237,7 @@ export default function CoursePageTemplate({ courseData }) {
 
           <div className="lg:col-span-4">
             <motion.div variants={imageVariants} initial="hidden" whileInView="visible" className="sticky top-24">
-              <Image src="/team.jpg" alt="Our Team" width={400} height={300} className="rounded-xl shadow-lg" />
+              <Image src="/IT-Service-Management.png" alt="Our Team" width={400} height={300} className="rounded-xl shadow-lg" />
             </motion.div>
           </div>
         </div>

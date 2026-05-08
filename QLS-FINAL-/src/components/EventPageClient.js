@@ -62,7 +62,7 @@ export default function EventPageClient({ onlineEvents }) {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/AboutUs1.jpg')` }}
+              style={{ backgroundImage: `url('/hero_project_program_management.jpg')` }}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"

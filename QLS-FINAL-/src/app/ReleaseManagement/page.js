@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Release Management Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Release Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/corporate.jpg"],
+    images: ["/release_management.jpg"],
   },
 };
 
 const courseData = {
   title: "Release Management",
   subtitle: "Plan, schedule and control the movement of releases to live environments",
-  backgroundImage: "/corporate.jpg",
+  backgroundImage: "/release_management.jpg",
   overview: [
     "Release Management is the practice responsible for planning, scheduling and controlling the movement of releases to test and live environments. The primary goal is to ensure that the integrity of the live environment is protected and that the correct components are released.",
     "This course provides comprehensive training on release planning, coordination, and deployment activities that ensure successful software releases with minimal risk to production environments.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Change Enablement",
-      image: "/blog3.jpg",
+      image: "/release_management.jpg",
       description: "Learn to manage changes effectively and safely",
       href: "/ChangeEnablement",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Deployment Management",
-      image: "/PRINCE2.jpg",
+      image: "/itl4_foundation.png",
       description: "Master deployment processes and procedures",
       href: "/DeploymentManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "DevOps Foundation",
-      image: "/Devops.jpg",
+      image: "/itl4_foundation.png",
       description: "Learn DevOps culture and practices",
       href: "/DevopsFoundation",
       duration: "2 Days",

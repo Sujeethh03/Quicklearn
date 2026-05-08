@@ -14,7 +14,7 @@ export const metadata = {
     title: "SIAM Professional Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led SIAM Professional certification training in Hyderabad by QuickLearn Systems",
-    images: ["/SIAMProfessional.jpg"],
+    images: ["/siam_professional.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "SIAM Professional",
   subtitle:
     "Master advanced Service Integration and Management practices for multi-supplier environments",
-  backgroundImage: "/SIAMProfessional.jpg",
+  backgroundImage: "/siam_professional.jpg",
   overview: [
     "The SIAM Professional course equips participants with the advanced knowledge and skills required to design, implement, and manage a SIAM ecosystem in complex, multi-vendor environments.",
     "It expands on the foundational SIAM concepts, focusing on governance structures, cross-supplier collaboration, performance management, and continual improvement.",
@@ -65,7 +65,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "SIAM Foundation",
-      image: "/SIAMFoundation.jpg",
+      image: "/siam_professional.jpg",
       description: "Gain fundamental knowledge of Service Integration and Management concepts.",
       href: "/SIAMFoundation",
       duration: "2 Days",
@@ -75,7 +75,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Foundation",
-      image: "/ITIL4.jpg",
+      image: "/siam_professional.jpg",
       description: "Learn ITIL® 4 principles and practices to align IT services with business goals.",
       href: "/ITILFoundation",
       duration: "2 Days",
@@ -85,7 +85,7 @@ const courseData = {
     },
     {
       title: "Service Level Management",
-      image: "/Servicelevelman.jpg",
+      image: "/siam_professional.jpg",
       description: "Develop the ability to manage service quality through defined SLAs.",
       href: "/ServiceLevelManagement",
       duration: "3 Days",

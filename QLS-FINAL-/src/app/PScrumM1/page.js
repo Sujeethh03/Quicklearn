@@ -23,7 +23,7 @@ export default function PScrumM1() {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/sm1.jpg')` }}
+              style={{ backgroundImage: `url('/professional_scrum_master_1.jpg')` }}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"
@@ -150,7 +150,7 @@ export default function PScrumM1() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/professional_scrum_master_1.jpg"
                 alt="Scrum Master Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -331,7 +331,7 @@ export default function PScrumM1() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/team.jpg"
+                src="/professional_scrum_master_1.jpg"
                 alt="Scrum Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}

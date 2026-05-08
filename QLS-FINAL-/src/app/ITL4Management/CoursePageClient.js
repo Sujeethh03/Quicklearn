@@ -108,7 +108,7 @@ export default function CoursePageClient({ courseData }) {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/ITIL-Foundation.png')` }}
+              style={{ backgroundImage: `url('/itl4_foundation.png')` }}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"
@@ -213,7 +213,7 @@ export default function CoursePageClient({ courseData }) {
               variants={imageVariants}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/itl4_foundation.png"
                 alt="Corporate Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -405,7 +405,7 @@ export default function CoursePageClient({ courseData }) {
               variants={imageVariants}
             >
               <motion.img
-                src="/team.jpg"
+                src="/itl4_foundation.png"
                 alt="Our Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}

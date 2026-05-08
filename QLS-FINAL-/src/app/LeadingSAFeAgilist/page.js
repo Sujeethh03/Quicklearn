@@ -23,7 +23,7 @@ export default function LeadingSAFeAgilist() {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/SAFe.jpg')` }}
+              style={{ backgroundImage: `url('/leading_safe_agilist.jpg')` }}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"
@@ -150,7 +150,7 @@ export default function LeadingSAFeAgilist() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/leading_safe_agilist.jpg"
                 alt="Leading SAFe Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -333,7 +333,7 @@ export default function LeadingSAFeAgilist() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/team.jpg"
+                src="/leading_safe_agilist.jpg"
                 alt="SAFe Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}

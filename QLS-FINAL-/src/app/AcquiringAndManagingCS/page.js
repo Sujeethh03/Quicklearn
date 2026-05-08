@@ -14,14 +14,14 @@ export const metadata = {
     title: "ITIL 4 Acquiring and Managing Cloud Services (AMCS) Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led ITIL 4 AMCS certification training in Hyderabad by QuickLearn Systems",
-    images: ["/ITIL4AMCS.jpg"],
+    images: ["/acquiring_managing_cloud_services.jpg"],
   },
 };
 
 const courseData = {
   title: "ITIL® 4 Specialist: Acquiring and Managing Cloud Services (AMCS)",
   subtitle: "Bridge the gap between IT service management and modern cloud ecosystems",
-  backgroundImage: "/ITIL4AMCS.jpg",
+  backgroundImage: "/acquiring_managing_cloud_services.jpg",
   overview: [
     "The ITIL® 4 Specialist: Acquiring and Managing Cloud Services (AMCS) module focuses on helping organizations make informed decisions about cloud service acquisition and management.",
     "It provides guidance on assessing cloud readiness, selecting suitable cloud solutions, managing vendors, and ensuring governance and compliance across hybrid IT environments.",
@@ -64,7 +64,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/ITIL4.jpg",
+      image: "/acquiring_managing_cloud_services.jpg",
       description: "Understand the core principles of ITIL® 4 and modern service management practices.",
       href: "/ITILFoundation",
       duration: "2 Days",
@@ -74,7 +74,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist: Drive Stakeholder Value (DSV)",
-      image: "/ITIL4DSV.jpg",
+      image: "/acquiring_managing_cloud_services.jpg",
       description: "Enhance your ability to build, manage, and sustain stakeholder relationships in IT service environments.",
       href: "/ITIL4DSV",
       duration: "3 Days",
@@ -84,7 +84,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI)",
-      image: "/ITIL4DPI.jpg",
+      image: "/acquiring_managing_cloud_services.jpg",
       description: "Lead digital transformation and continual improvement with strategic governance and planning.",
       href: "/ITIL4DPI",
       duration: "3 Days",

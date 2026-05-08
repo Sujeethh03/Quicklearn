@@ -14,14 +14,14 @@ export const metadata = {
     title: "PRINCE2 Agile Foundation Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led PRINCE2 Agile Foundation certification training in Hyderabad by QuickLearn Systems",
-    images: ["/PRINCE2Agile.jpg"],
+    images: ["/prince2_agile_foundation.jpg"],
   },
 };
 
 const courseData = {
   title: "PRINCE2 Agile Foundation",
   subtitle: "Deliver projects successfully using PRINCE2 governance and agile flexibility",
-  backgroundImage: "/prince2-agile.png",
+  backgroundImage: "/prince2_agile_foundation.jpg",
   overview: [
     "PRINCE2 Agile Foundation introduces the principles, themes, and processes of PRINCE2 and how they can be blended with agile delivery approaches.",
     "Participants will learn how to manage project governance, roles, and responsibilities while incorporating agile techniques to deliver value iteratively and adaptively.",
@@ -65,7 +65,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "PRINCE2 Foundation",
-      image: "/PRINCE2Foundation.jpg",
+      image: "/prince2_agile_foundation.jpg",
       description:
         "Understand the fundamentals of PRINCE2 project management framework and principles.",
       href: "/PRINCE2Foundation",
@@ -76,7 +76,7 @@ const courseData = {
     },
     {
       title: "Agile Project Management",
-      image: "/AgilePM.jpg",
+      image: "/prince2_agile_foundation.jpg",
       description:
         "Learn agile methods and techniques for iterative and adaptive project delivery.",
       href: "/AgileProjectManagement",
@@ -87,7 +87,7 @@ const courseData = {
     },
     {
       title: "Scrum Master Certification",
-      image: "/ScrumMaster.jpg",
+      image: "/prince2_agile_foundation.jpg",
       description:
         "Gain practical knowledge to lead Scrum teams and implement Agile practices successfully.",
       href: "/ScrumMaster",

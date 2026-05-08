@@ -10,66 +10,85 @@ import { Search, Users, Clock, ArrowRight, ChevronLeft, ChevronRight } from "luc
 export default function CoursesWeOffer() {
   const [activeFilter, setActiveFilter] = useState("Popular Courses");
   const [searchTerm, setSearchTerm] = useState("");
-  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const scrollRef = useRef(null);
+  const autoScrollRef = useRef(true);
+  const pausedRef = useRef(false);
+  const resumeTimerRef = useRef(null);
 
-  // Manual scroll functions - these disable auto-scroll
+  const stopAndScheduleResume = () => {
+    autoScrollRef.current = false;
+    if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
+    resumeTimerRef.current = setTimeout(() => {
+      autoScrollRef.current = true;
+    }, 3000);
+  };
+
   const scrollLeft = () => {
-    setIsAutoScrolling(false); // Stop auto-scroll when user manually navigates
-    const container = scrollRef.current;
-    if (container) {
-      container.scrollBy({ left: -350, behavior: 'smooth' });
-    }
+    stopAndScheduleResume();
+    scrollRef.current?.scrollBy({ left: -350, behavior: 'smooth' });
   };
 
   const scrollRight = () => {
-    setIsAutoScrolling(false); // Stop auto-scroll when user manually navigates
-    const container = scrollRef.current;
-    if (container) {
-      container.scrollBy({ left: 350, behavior: 'smooth' });
-    }
+    stopAndScheduleResume();
+    scrollRef.current?.scrollBy({ left: 350, behavior: 'smooth' });
   };
 
-  // Auto-scroll logic - only runs when isAutoScrolling is true
   useEffect(() => {
     const container = scrollRef.current;
-    if (!container || !isAutoScrolling) return;
+    if (!container) return;
 
-    const scrollSpeed = 0.5; // Slower, smoother scroll
-    let animationFrame;
-    let isPaused = false;
+    const SPEED = 40; // px per second — consistent across all frame rates
+    let animId;
+    let lastTime = null;
 
-    const scroll = () => {
-      if (!isPaused && isAutoScrolling) {
-        if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-          container.scrollLeft = 0; // Reset to start for seamless loop
-        } else {
-          container.scrollLeft += scrollSpeed;
+    const animate = (now) => {
+      if (autoScrollRef.current && !pausedRef.current) {
+        if (lastTime !== null) {
+          const dx = (SPEED * (now - lastTime)) / 1000;
+          const isDuped = !searchTerm && activeFilter === "Popular Courses";
+          // Seamless reset: halfway through duplicated list, not at the very end
+          const limit = isDuped
+            ? container.scrollWidth / 2
+            : container.scrollWidth - container.clientWidth;
+          container.scrollLeft =
+            container.scrollLeft >= limit ? 0 : container.scrollLeft + dx;
         }
+        lastTime = now;
+      } else {
+        lastTime = null; // Reset so resume doesn't cause a position jump
       }
-      animationFrame = requestAnimationFrame(scroll);
+      animId = requestAnimationFrame(animate);
     };
 
-    // Pause on hover
-    const handleMouseEnter = () => {
-      isPaused = true;
+    const onEnter = () => { pausedRef.current = true; };
+    const onLeave = () => { pausedRef.current = false; };
+
+    let touchStartX = 0;
+    const onTouchStart = (e) => {
+      touchStartX = e.touches[0].clientX;
+      stopAndScheduleResume();
+    };
+    const onTouchEnd = (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      container.scrollBy({ left: diff * 1.5, behavior: 'smooth' });
     };
 
-    const handleMouseLeave = () => {
-      isPaused = false;
-    };
+    container.addEventListener('mouseenter', onEnter);
+    container.addEventListener('mouseleave', onLeave);
+    container.addEventListener('touchstart', onTouchStart, { passive: true });
+    container.addEventListener('touchend', onTouchEnd, { passive: true });
 
-    container.addEventListener("mouseenter", handleMouseEnter);
-    container.addEventListener("mouseleave", handleMouseLeave);
-
-    animationFrame = requestAnimationFrame(scroll);
+    animId = requestAnimationFrame(animate);
 
     return () => {
-      cancelAnimationFrame(animationFrame);
-      container.removeEventListener("mouseenter", handleMouseEnter);
-      container.removeEventListener("mouseleave", handleMouseLeave);
+      cancelAnimationFrame(animId);
+      clearTimeout(resumeTimerRef.current);
+      container.removeEventListener('mouseenter', onEnter);
+      container.removeEventListener('mouseleave', onLeave);
+      container.removeEventListener('touchstart', onTouchStart);
+      container.removeEventListener('touchend', onTouchEnd);
     };
-  }, [isAutoScrolling, activeFilter, searchTerm]); // Re-run when auto-scroll state or filters change
+  }, [activeFilter, searchTerm]);
 
   // Course categories
   const categories = [
@@ -92,7 +111,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ITL4Management",
-      imageSrc: "/ITIL-Foundation.png",
+      imageSrc: "/itl4_foundation.png",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -107,7 +126,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ProblemManagement",
-      imageSrc: "/pmp.png",
+      imageSrc: "/problem_management.png",
       description: "Advanced ITIL® practices for service management professionals.",
       duration: "5 Days",
       level: "Advanced",
@@ -121,7 +140,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "SIAM",
       href: "/SIAMFoundation",
-      imageSrc: "/SIAM_Foundation.png",
+      imageSrc: "/siam_foundation.jpg",
       description: "Service Integration and Management fundamentals for multi-vendor environments.",
       duration: "2 Days",
       level: "Foundation",
@@ -135,7 +154,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ServiceDesk",
-      imageSrc: "/Service_Desk.jpg",
+      imageSrc: "/service_desk.png",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -149,7 +168,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/IncidentManagement",
-      imageSrc: "/Incident_Management.png",
+      imageSrc: "/incident_management.png",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -163,7 +182,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ServiceRequestManagement",
-      imageSrc: "/Service_Request_Management.jpg",
+      imageSrc: "/service_request_management.png",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -177,7 +196,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/MonitoringEventManagement",
-      imageSrc: "/blog2.jpg",
+      imageSrc: "/monitoring_event_management.png",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -191,7 +210,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ChangeEnablement",
-      imageSrc: "/blog3.jpg",
+      imageSrc: "/change_enablement.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -205,7 +224,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ReleaseManagement",
-      imageSrc: "/corporate.jpg",
+      imageSrc: "/release_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -219,7 +238,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ServiceConfiguration",
-      imageSrc: "/Service_Configuration_Management.jpg",
+      imageSrc: "/service_configuration_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -233,7 +252,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/DeploymentManagement",
-      imageSrc: "/Deployment_Management.png",
+      imageSrc: "/deployment_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -247,7 +266,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ItAssetManagement",
-      imageSrc: "/ItAssetManagement.png",
+      imageSrc: "/it_asset_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -261,7 +280,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ContinuationImprovement",
-      imageSrc: "/continualimprovement.jpg",
+      imageSrc: "/continual_improvement.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -275,7 +294,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/RelationshipManagement",
-      imageSrc: "/Relationship_Management.png",
+      imageSrc: "/relationship_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -289,7 +308,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ServiceLevelManagement",
-      imageSrc: "/Servicelevelman.jpg",
+      imageSrc: "/service_level_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -303,7 +322,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/InformationSecurityMan",
-      imageSrc: "/InformationSecMan.png",
+      imageSrc: "/information_security_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -317,7 +336,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/SupplierManagement",
-      imageSrc: "/suplier_managment_process.jpg",
+      imageSrc: "/supplier_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -331,7 +350,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ITL4SCDS",
-      imageSrc: "/CreateDeliverSupport.jpg",
+      imageSrc: "/create_deliver_support.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -345,7 +364,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ITL4SDSV",
-      imageSrc: "/StakeholderValue.jpg",
+      imageSrc: "/drive_stakeholder_value.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -359,7 +378,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ITL4SHVI",
-      imageSrc: "/SpecialistHighVelocityIT.png",
+      imageSrc: "/high_velocity_it.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -373,7 +392,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ITL4SDPI",
-      imageSrc: "/DirectPlanImprove.jpg",
+      imageSrc: "/direct_plan_improve.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -387,7 +406,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/CreateDeliverSupport",
-      imageSrc: "/CreateDeliverSupport.jpg",
+      imageSrc: "/create_deliver_support.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -401,7 +420,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/DriveStakeholderValue",
-      imageSrc: "/DriveStakeholderValue.jpg",
+      imageSrc: "/drive_stakeholder_value.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -417,7 +436,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/AcquiringAndManagingCS",
-      imageSrc: "/ACMCS.jpg",
+      imageSrc: "/acquiring_managing_cloud_services.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -431,7 +450,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/SustainabilityInDigitalAI",
-      imageSrc: "/Sustainability.jpg",
+      imageSrc: "/sustainability_digital_it.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -445,7 +464,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/BusinessRelationshipManage",
-      imageSrc: "/Business.jpg",
+      imageSrc: "/business_relationship_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -459,7 +478,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/ItAssetManage",
-      imageSrc: "/ItAssetManagement.png",
+      imageSrc: "/it_asset_management.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -473,7 +492,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/MonitorSupportFulfil",
-      imageSrc: "/MonitoryFund.jpg",
+      imageSrc: "/monitor_support_fulfil.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -487,7 +506,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/DigitalItService",
-      imageSrc: "/DigitalItService.jpg",
+      imageSrc: "/digital_it_services.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -501,7 +520,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/SIAMFoundation",
-      imageSrc: "/siam_foundation_suerte.png",
+      imageSrc: "/siam_foundation.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -515,7 +534,7 @@ export default function CoursesWeOffer() {
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/SIAMProfessional",
-      imageSrc: "/SIAM_Professional.png",
+      imageSrc: "/siam_professional.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -531,7 +550,7 @@ export default function CoursesWeOffer() {
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/PMP",
-      imageSrc: "/PMPC.jpg",
+      imageSrc: "/pmp_certification.jpg",
       description: "Project Management Professional certification for experienced project managers.",
       duration: "4 Days",
       level: "Professional",
@@ -546,7 +565,7 @@ export default function CoursesWeOffer() {
       category: "Project & Program Management",
       subcategory: "PRINCE2",
       href: "/Prince2Foundation",
-      imageSrc: "/P2F.png",
+      imageSrc: "/prince2_foundation.jpg",
       description: "Structured project management methodology with PRINCE2 Foundation.",
       duration: "3 Days",
       level: "Foundation",
@@ -560,7 +579,7 @@ export default function CoursesWeOffer() {
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/courses/acp",
-      imageSrc: "/Agile.jpg",
+      imageSrc: "/acp_certification.jpg",
       description: "Agile project management practices and methodologies certification.",
       duration: "3 Days",
       level: "Professional",
@@ -574,7 +593,7 @@ export default function CoursesWeOffer() {
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/Prince2Practitioner",
-      imageSrc: "/P2P.png",
+      imageSrc: "/prince2_practitioner.jpg",
       description: "Agile project management practices and methodologies certification.",
       duration: "3 Days",
       level: "Professional",
@@ -588,7 +607,7 @@ export default function CoursesWeOffer() {
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/Prince2AgileFoundation",
-      imageSrc: "/prince2-agile.png",
+      imageSrc: "/prince2_agile_foundation.jpg",
       description: "Agile project management practices and methodologies certification.",
       duration: "3 Days",
       level: "Professional",
@@ -602,7 +621,7 @@ export default function CoursesWeOffer() {
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/Prince2AgilePractitioner",
-      imageSrc: "/P2AP.jpeg",
+      imageSrc: "/prince2_agile_practitioner.jpg",
       description: "Agile project management practices and methodologies certification.",
       duration: "3 Days",
       level: "Professional",
@@ -616,7 +635,7 @@ export default function CoursesWeOffer() {
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/MSPFoundation",
-      imageSrc: "/msf.jpg",
+      imageSrc: "/msp_foundation.jpg",
       description: "Agile project management practices and methodologies certification.",
       duration: "3 Days",
       level: "Professional",
@@ -630,7 +649,7 @@ export default function CoursesWeOffer() {
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/MSPPractitioner",
-      imageSrc: "/msp.png",
+      imageSrc: "/msp_practitioner.jpg",
       description: "Agile project management practices and methodologies certification.",
       duration: "3 Days",
       level: "Professional",
@@ -646,7 +665,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "SAFe",
       href: "/LeadingSAFeAgilist",
-      imageSrc: "/SAFe.jpg",
+      imageSrc: "/leading_safe_agilist.jpg",
       description: "Scale Agile practices across enterprise with SAFe framework.",
       duration: "2 Days",
       level: "Professional",
@@ -661,7 +680,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum.org",
       href: "/PScrumM1",
-      imageSrc: "/sm1.jpg",
+      imageSrc: "/professional_scrum_master_1.jpg",
       description: "Master Scrum framework and become an effective Scrum Master.",
       duration: "2 Days",
       level: "Professional",
@@ -676,7 +695,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/CSM",
-      imageSrc: "/SCRUMM.jpg",
+      imageSrc: "/certified_scrum_master.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -690,7 +709,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/SAFePO-PM",
-      imageSrc: "/S-POPM.png",
+      imageSrc: "/safe_product_owner_manager.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -704,7 +723,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/SAFeforTeams",
-      imageSrc: "/sp.png",
+      imageSrc: "/safe_for_teams.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -718,7 +737,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/SAFeScrumMaster",
-      imageSrc: "/ssm.jpeg",
+      imageSrc: "/safe_scrum_master.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -732,7 +751,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/SAFeAdvancedScrumMaster",
-      imageSrc: "/sasm.jpeg",
+      imageSrc: "/safe_advanced_scrum_master.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -746,7 +765,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/PScrumM2",
-      imageSrc: "/psm2.png",
+      imageSrc: "/professional_scrum_master_2.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -760,7 +779,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/PSPO1",
-      imageSrc: "/pspo1.png",
+      imageSrc: "/professional_scrum_product_owner_1.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -774,7 +793,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/PSPO2",
-      imageSrc: "/SCRUMM.jpg",
+      imageSrc: "/professional_scrum_product_owner_2.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -788,7 +807,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/PSK1",
-      imageSrc: "/SCRUMM.jpg",
+      imageSrc: "/professional_scrum_with_kanban.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -802,7 +821,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/CASM",
-      imageSrc: "/acm.png",
+      imageSrc: "/certified_advanced_scrummaster.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -816,7 +835,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/CSPO",
-      imageSrc: "/cspo.png",
+      imageSrc: "/certified_scrum_master.jpg",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -830,7 +849,7 @@ export default function CoursesWeOffer() {
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/ICP-ACC",
-      imageSrc: "/SCRUMM.jpg",
+      imageSrc: "/itl4_foundation.png",
       description: "Scrum Alliance certified Scrum Master training and certification.",
       duration: "2 Days",
       level: "Professional",
@@ -877,7 +896,7 @@ export default function CoursesWeOffer() {
       category: "DevOps & Business Analysis",
       subcategory: "DevOps",
       href: "/DevopsFoundation",
-      imageSrc: "/devf,jpeg",
+      imageSrc: "/devops_foundation.jpg",
       description: "DevOps culture, practices, and tools for continuous delivery.",
       duration: "2 Days",
       level: "Foundation",
@@ -891,7 +910,7 @@ export default function CoursesWeOffer() {
       category: "DevOps & Business Analysis",
       subcategory: "SRE",
       href: "/SREFoundation",
-      imageSrc: "/Sre.jpg",
+      imageSrc: "/sre_foundation.jpg",
       description: "Site Reliability Engineering principles and practices.",
       duration: "2 Days",
       level: "Foundation",
@@ -905,7 +924,7 @@ export default function CoursesWeOffer() {
       category: "DevOps & Business Analysis",
       subcategory: "Business Analysis",
       href: "/BusinessAnalysisF",
-      imageSrc: "/Business.jpg",
+      imageSrc: "/business_analysis_foundation.jpg",
       description: "Business analysis techniques and stakeholder management.",
       duration: "3 Days",
       level: "Foundation",
@@ -919,7 +938,7 @@ export default function CoursesWeOffer() {
       category: "DevOps & Business Analysis",
       subcategory: "Business Analysis",
       href: "/BusinessAnalysisPractice",
-      imageSrc: "/Business.jpg",
+      imageSrc: "/business_analysis_practice.jpg",
       description: "Business analysis techniques and stakeholder management.",
       duration: "3 Days",
       level: "Foundation",
@@ -933,7 +952,7 @@ export default function CoursesWeOffer() {
       category: "DevOps & Business Analysis",
       subcategory: "Business Analysis",
       href: "/SREPractitioner",
-      imageSrc: "/Business.jpg",
+      imageSrc: "/sre_practitioner.jpg",
       description: "Business analysis techniques and stakeholder management.",
       duration: "3 Days",
       level: "Foundation",
@@ -947,7 +966,7 @@ export default function CoursesWeOffer() {
       category: "DevOps & Business Analysis",
       subcategory: "Business Analysis",
       href: "/AgileBA",
-      imageSrc: "/Business.jpg",
+      imageSrc: "/agile_business_analysis.jpg",
       description: "Business analysis techniques and stakeholder management.",
       duration: "3 Days",
       level: "Foundation",
@@ -961,7 +980,7 @@ export default function CoursesWeOffer() {
       category: "DevOps & Business Analysis",
       subcategory: "Business Analysis",
       href: "/DevopsMaster",
-      imageSrc: "/Business.jpg",
+      imageSrc: "/devops_master.jpg",
       description: "Business analysis techniques and stakeholder management.",
       duration: "3 Days",
       level: "Foundation",
@@ -977,7 +996,7 @@ export default function CoursesWeOffer() {
       category: "Software Testing & Technical",
       subcategory: "ISTQB",
       href: "/ISTQBF",
-      imageSrc: "/ISTQB.jpg",
+      imageSrc: "/istqb_foundation.jpg",
       description: "Software testing fundamentals and ISTQB certification.",
       duration: "3 Days",
       level: "Foundation",
@@ -992,7 +1011,7 @@ export default function CoursesWeOffer() {
       category: "Software Testing & Technical",
       subcategory: "Automation",
       href: "/ISTQBA",
-      imageSrc: "/TestAuto.jpg",
+      imageSrc: "/istqb_advanced.jpg",
       description: "Automated testing tools and frameworks for efficient testing.",
       duration: "4 Days",
       level: "Professional",
@@ -1141,16 +1160,9 @@ export default function CoursesWeOffer() {
             {/* Scrolling container */}
             <div
               ref={scrollRef}
-              className="flex gap-4 overflow-x-auto py-4 scroll-smooth"
+              className="flex gap-4 overflow-x-auto py-4 [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
-              {/* Hide scrollbar */}
-              <style jsx>{`
-                div::-webkit-scrollbar {
-                  display: none;
-                }
-              `}</style>
-
               {/* Duplicate courses for seamless loop only when not searching/filtering */}
               {(searchTerm || activeFilter !== "Popular Courses" ? filteredCourses : [...filteredCourses, ...filteredCourses]).map((course, index) => (
                 <motion.div

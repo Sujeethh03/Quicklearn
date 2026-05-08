@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Supplier Management Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Supplier Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/itl4.jpg"],
+    images: ["/supplier_management.jpg"],
   },
 };
 
 const courseData = {
   title: "Supplier Management",
   subtitle: "Manage supplier relationships and performance to ensure value delivery",
-  backgroundImage: "/itl4.jpg",
+  backgroundImage: "/supplier_management.jpg",
   overview: [
     "Supplier Management is the practice responsible for ensuring that an organization's suppliers and their performance levels are managed appropriately to support the provision of seamless quality products and services.",
     "This course covers supplier selection, contract negotiation, performance monitoring, and relationship management techniques that maximize value from supplier partnerships.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "SIAM Foundation",
-      image: "/SIAM.jpg",
+      image: "/supplier_management.jpg",
       description: "Learn service integration and management",
       href: "/SIAMFoundation",
       duration: "2 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Relationship Management",
-      image: "/SIAM.jpg",
+      image: "/supplier_management.jpg",
       description: "Master stakeholder relationship management",
       href: "/RelationshipManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Service Level Management",
-      image: "/Servicelevelman.jpg",
+      image: "/supplier_management.jpg",
       description: "Learn to manage service levels and agreements",
       href: "/ServiceLevelManagement",
       duration: "3 Days",

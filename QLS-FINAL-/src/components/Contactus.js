@@ -134,7 +134,7 @@ export default function Contactus() {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/AboutUs1.jpg')` }}
+              style={{ backgroundImage: `url('/hero_it_service_management.jpg')` }}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"
@@ -587,7 +587,7 @@ export default function Contactus() {
                   />
 
                   <motion.img
-                    src="/team.jpg"
+                    src="/hero_project_program_management.jpg"
                     alt="Professional Training Team"
                     className="relative z-10 w-full h-80 object-cover rounded-2xl border-4 border-white/60 backdrop-blur-sm group-hover:scale-105 transition-transform duration-500"
                     whileHover={{

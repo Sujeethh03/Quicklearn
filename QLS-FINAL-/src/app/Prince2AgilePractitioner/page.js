@@ -14,14 +14,14 @@ export const metadata = {
     title: "PRINCE2 Agile Practitioner Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led PRINCE2 Agile Practitioner certification training in Hyderabad by QuickLearn Systems",
-    images: ["/PRINCE2AgilePractitioner.jpg"],
+    images: ["/prince2_agile_practitioner.jpg"],
   },
 };
 
 const courseData = {
   title: "PRINCE2 Agile Practitioner",
   subtitle: "Apply PRINCE2 Agile principles and tailor governance for complex projects",
-  backgroundImage: "/PRINCE2AgilePractitioner.jpg",
+  backgroundImage: "/prince2_agile_practitioner.jpg",
   overview: [
     "The PRINCE2 Agile Practitioner course focuses on applying PRINCE2 principles, themes, and processes in real-world, complex, and agile project environments.",
     "Participants will learn to tailor PRINCE2 governance frameworks to agile delivery methods, balancing control, flexibility, and iterative delivery.",
@@ -66,7 +66,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "PRINCE2 Agile Foundation",
-      image: "/PRINCE2Agile.jpg",
+      image: "/prince2_agile_practitioner.jpg",
       description:
         "Understand the fundamentals of PRINCE2 Agile methodology and hybrid project management.",
       href: "/PRINCE2AgileFoundation",
@@ -77,7 +77,7 @@ const courseData = {
     },
     {
       title: "Agile Project Management",
-      image: "/AgilePM.jpg",
+      image: "/prince2_agile_practitioner.jpg",
       description:
         "Learn agile methods and techniques for iterative and adaptive project delivery.",
       href: "/AgileProjectManagement",
@@ -88,7 +88,7 @@ const courseData = {
     },
     {
       title: "Scrum Master Certification",
-      image: "/ScrumMaster.jpg",
+      image: "/prince2_agile_practitioner.jpg",
       description:
         "Gain practical knowledge to lead Scrum teams and implement Agile practices successfully.",
       href: "/ScrumMaster",

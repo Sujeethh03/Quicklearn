@@ -117,7 +117,7 @@ export default  function IT4Management(){
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/itl4.jpg')` }}
+              style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"
@@ -244,7 +244,7 @@ export default  function IT4Management(){
               variants={imageVariants}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/create_deliver_support.jpg"
                 alt="Corporate Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -497,7 +497,7 @@ export default  function IT4Management(){
               variants={imageVariants}
             >
               <motion.img
-                src="/team.jpg"
+                src="/create_deliver_support.jpg"
                 alt="Our Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -592,7 +592,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -636,7 +636,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4PM.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -724,7 +724,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -768,7 +768,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4PM.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -811,7 +811,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4PM.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -854,7 +854,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4PM.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -897,7 +897,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4PM.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -940,7 +940,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4PM.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -983,7 +983,7 @@ export default  function IT4Management(){
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4PM.jpg')` }}
+                      style={{ backgroundImage: `url('/create_deliver_support.jpg')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">

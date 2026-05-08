@@ -14,7 +14,7 @@ export const metadata = {
     title: "IT Asset Management (ITAM) Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led IT Asset Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/asset.jpg"],
+    images: ["/it_asset_management.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "IT Asset Management",
   subtitle:
     "Control, optimize and govern IT assets throughout their lifecycle",
-  backgroundImage: "/asset.jpg",
+  backgroundImage: "/it_asset_management.jpg",
 
   overview: [
     "IT Asset Management (ITAM) focuses on tracking and managing IT assets throughout their lifecycle to maximize value, reduce costs, and minimize risk.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/it_asset_management.jpg",
       description: "Master IT Service Management fundamentals",
       href: "/ITL4Management",
       duration: "3 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Incident Management",
-      image: "/itl4.jpg",
+      image: "/incident_management.png",
       description: "Restore services quickly and reduce downtime",
       href: "/IncidentManagement",
       duration: "3 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "Service Desk",
-      image: "/serviceDesk.jpg",
+      image: "/service_desk.png",
       description: "Develop professional IT support capabilities",
       href: "/ServiceDesk",
       duration: "3 Days",

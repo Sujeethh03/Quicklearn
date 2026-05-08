@@ -14,7 +14,7 @@ export const metadata = {
     title: "Business Analysis Practitioner Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led Business Analysis Practitioner certification training in Hyderabad by QuickLearn Systems",
-    images: ["/business-analysis.jpg"],
+    images: ["/business_analysis_practice.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Business Analysis Practice",
   subtitle:
     "Develop practical skills to analyze business needs and deliver effective solutions",
-  backgroundImage: "/business-analysis.jpg",
+  backgroundImage: "/business_analysis_practice.jpg",
 
   overview: [
     "Business Analysis Practice equips professionals with practical techniques to identify business needs, define requirements, and recommend effective solutions.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Business Analysis Foundation",
-      image: "/business-analysis.jpg",
+      image: "/business_analysis_practice.jpg",
       description: "Learn core business analysis fundamentals",
       href: "/business-analysis-foundation",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Agile Business Analysis",
-      image: "/scrum.jpg",
+      image: "/business_analysis_practice.jpg",
       description: "Apply business analysis in Agile environments",
       href: "/agile-business-analysis",
       duration: "2 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "Change Management",
-      image: "/change.jpg",
+      image: "/business_analysis_practice.jpg",
       description: "Manage organizational change effectively",
       href: "/change-management",
       duration: "2 Days",

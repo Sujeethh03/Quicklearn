@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "MSP Foundation Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led MSP Foundation certification training in Hyderabad by QuickLearn Systems",
-    images: ["/Agile.jpg"],
+    images: ["/msp_foundation.jpg"],
   },
 };
 
 const courseData = {
   title: "MSP Foundation",
   subtitle: "Master programme management principles for successful transformational change",
-  backgroundImage: "/Agile.jpg",
+  backgroundImage: "/msp_foundation.jpg",
   overview: [
     "Managing Successful Programmes (MSP) provides a framework for delivering transformational change through programme management. MSP Foundation introduces the core principles and processes for managing complex programmes.",
     "Learn to coordinate multiple related projects, manage stakeholder expectations, and deliver transformational benefits that align with organizational strategy and objectives.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "MSP Practitioner",
-      image: "/Agile.jpg",
+      image: "/msp_foundation.jpg",
       description: "Advanced MSP application and programme leadership",
       href: "/MSPPractitioner",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "PRINCE2 Foundation",
-      image: "/PRINCE2.jpg",
+      image: "/msp_foundation.jpg",
       description: "Master PRINCE2 project management methodology",
       href: "/Prince2Foundation",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "PMP Certification",
-      image: "/PMPC.jpg",
+      image: "/msp_foundation.jpg",
       description: "Project Management Professional certification",
       href: "/PMP",
       duration: "4 Days",

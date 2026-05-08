@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: "PMP Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led PMP certification training in Hyderabad by QuickLearn Systems",
-    images: ["/PMPC.jpg"],
+    images: ["/pmp_certification.jpg"],
   },
 };
 
@@ -23,7 +23,7 @@ export const metadata = {
 const courseData = {
   title: "PMP Certification",
   subtitle: "Become a certified Project Management Professional and advance your career",
-  backgroundImage: "/PMPC.jpg",
+  backgroundImage: "/pmp_certification.jpg",
   overview: "The Project Management Professional (PMP) certification is the most important industry-recognized certification for project managers. This comprehensive training program covers the five process groups and ten knowledge areas as defined in the PMBOK Guide. You'll learn best practices in project management and gain the skills needed to lead projects successfully in any industry.",
   courseOutline: [
     "Project Integration Management",

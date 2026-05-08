@@ -14,14 +14,14 @@ export const metadata = {
     title: "ITIL 4 Digital and IT Services (DITS) Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led ITIL 4 DITS certification training in Hyderabad by QuickLearn Systems",
-    images: ["/ITIL4DITS.jpg"],
+    images: ["/digital_it_services.jpg"],
   },
 };
 
 const courseData = {
   title: "ITIL® 4 Specialist: Digital and IT Services (DITS)",
   subtitle: "Lead digital transformation and align IT strategies with business goals",
-  backgroundImage: "/ITIL4DITS.jpg",
+  backgroundImage: "/digital_it_services.jpg",
   overview: [
     "The ITIL® 4 Specialist: Digital and IT Services (DITS) course empowers leaders to drive digital transformation and innovation by aligning business and IT strategies.",
     "This module focuses on helping organizations thrive in the digital era by adopting a holistic approach that balances technology, leadership, governance, and agility.",
@@ -64,7 +64,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/ITIL4.jpg",
+      image: "/digital_it_services.jpg",
       description:
         "Understand ITIL® 4 fundamentals and key concepts for managing IT-enabled services.",
       href: "/ITILFoundation",
@@ -75,7 +75,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI)",
-      image: "/ITIL4DPI.jpg",
+      image: "/digital_it_services.jpg",
       description:
         "Master strategy, governance, and continual improvement for digital organizations.",
       href: "/ITIL4DPI",
@@ -86,7 +86,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist: Drive Stakeholder Value (DSV)",
-      image: "/ITIL4DSV.jpg",
+      image: "/digital_it_services.jpg",
       description:
         "Enhance stakeholder engagement, experience, and value co-creation across IT services.",
       href: "/ITIL4DSV",

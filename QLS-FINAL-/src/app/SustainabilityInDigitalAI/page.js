@@ -14,7 +14,7 @@ export const metadata = {
     title: "Sustainability in Digital & AI Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led Sustainability in Digital & AI training in Hyderabad by QuickLearn Systems",
-    images: ["/digital-sustainability.jpg"],
+    images: ["/sustainability_digital_it.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Sustainability in Digital IT",
   subtitle:
     "Drive responsible digital transformation through sustainable IT practices",
-  backgroundImage: "/digital-sustainability.jpg",
+  backgroundImage: "/sustainability_digital_it.jpg",
 
   overview: [
     "Sustainability in Digital IT focuses on integrating environmentally responsible practices into IT strategy, operations, and digital transformation initiatives.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "IT Asset Management",
-      image: "/asset.jpg",
+      image: "/sustainability_digital_it.jpg",
       description: "Optimize and govern IT assets responsibly",
       href: "/ITAssetManagement",
       duration: "3 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/sustainability_digital_it.jpg",
       description: "Master IT Service Management fundamentals",
       href: "/ITL4Management",
       duration: "3 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "Monitor Support Fulfil",
-      image: "/itl4.jpg",
+      image: "/sustainability_digital_it.jpg",
       description: "Strengthen operational excellence in IT services",
       href: "/MonitorSupportFulfil",
       duration: "3 Days",

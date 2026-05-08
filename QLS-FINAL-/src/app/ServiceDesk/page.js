@@ -14,7 +14,7 @@ export const metadata = {
     title: "Service Desk Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led Service Desk certification training in Hyderabad by QuickLearn Systems",
-    images: ["/serviceDesk.jpg"],
+    images: ["/service_desk.png"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Service Desk",
   subtitle:
     "Build strong IT support capabilities and deliver exceptional user experience",
-  backgroundImage: "/Service_Desk.jpg",
+  backgroundImage: "/service_desk.png",
 
   overview: [
     "The Service Desk course focuses on developing professional IT support capabilities that ensure consistent, reliable and user-focused service delivery.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/itl4_foundation.png",
       description: "Learn the fundamentals of IT Service Management",
       href: "/ITL4Management",
       duration: "3 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Monitor Support Fulfil",
-      image: "/itl4.jpg",
+      image: "/itl4_foundation.png",
       description: "Strengthen operational excellence in IT services",
       href: "/MonitorSupportFulfil",
       duration: "3 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "SIAM Foundation",
-      image: "/SIAM.jpg",
+      image: "/itl4_foundation.png",
       description: "Service Integration and Management fundamentals",
       href: "/SIAMFoundation",
       duration: "2 Days",

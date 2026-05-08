@@ -14,14 +14,14 @@ export const metadata = {
     title: "ITIL 4 Direct, Plan and Improve (DPI) Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led ITIL 4 DPI certification training in Hyderabad by QuickLearn Systems",
-    images: ["/ITIL4DPI.jpg"],
+    images: ["/direct_plan_improve.jpg"],
   },
 };
 
 const courseData = {
   title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI)",
   subtitle: "Align strategy, governance, and continual improvement to drive digital success",
-  backgroundImage: "/ITIL4DPI.jpg",
+  backgroundImage: "/direct_plan_improve.jpg",
   overview: [
     "The ITIL® 4 Strategist: Direct, Plan and Improve (DPI) course equips professionals with the practical skills needed to create a learning and improving IT organization with a strong strategic direction.",
     "It focuses on how to align planning, governance, and continuous improvement across all levels of the organization, combining agile, lean, and DevOps principles for enhanced adaptability and efficiency.",
@@ -64,7 +64,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/ITIL4.jpg",
+      image: "/direct_plan_improve.jpg",
       description: "Learn the fundamentals of ITIL® 4 and modern service management practices.",
       href: "/ITILFoundation",
       duration: "2 Days",
@@ -74,7 +74,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS)",
-      image: "/ITIL4CDS.jpg",
+      image: "/direct_plan_improve.jpg",
       description: "Enhance your ability to design, deliver, and support IT-enabled services effectively.",
       href: "/ITIL4CDS",
       duration: "3 Days",
@@ -84,7 +84,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist: High Velocity IT (HVIT)",
-      image: "/ITIL4HVIT.jpg",
+      image: "/direct_plan_improve.jpg",
       description: "Accelerate digital transformation by adopting Agile, Lean, and DevOps practices.",
       href: "/ITIL4HVIT",
       duration: "3 Days",

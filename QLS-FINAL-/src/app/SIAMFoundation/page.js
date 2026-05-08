@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "SIAM Foundation Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led SIAM Foundation certification training in Hyderabad by QuickLearn Systems",
-    images: ["/SIAM.jpg"],
+    images: ["/siam_foundation.jpg"],
   },
 };
 
 const courseData = {
   title: "SIAM Foundation",
   subtitle: "Master Service Integration and Management in multi-vendor environments",
-  backgroundImage: "/SIAM.jpg",
+  backgroundImage: "/siam_foundation.jpg",
   overview: [
     "Service Integration and Management (SIAM) is a methodology for managing services where multiple service providers contribute to the delivery of services. SIAM Foundation provides comprehensive training in managing complex multi-vendor environments.",
     "Learn to implement SIAM governance structures, manage service provider relationships, and ensure seamless service delivery across multiple vendors while maintaining service quality and customer satisfaction.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "SIAM Professional",
-      image: "/itl4.jpg",
+      image: "/siam_foundation.jpg",
       description: "Advanced SIAM practices and implementation",
       href: "/SIAMProfessional",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Supplier Management",
-      image: "/itl4.jpg",
+      image: "/siam_foundation.jpg",
       description: "Master supplier relationship management",
       href: "/SupplierManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Relationship Management",
-      image: "/SIAM.jpg",
+      image: "/siam_foundation.jpg",
       description: "Master stakeholder relationship management",
       href: "/RelationshipManagement",
       duration: "3 Days",

@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "ITIL 4 Foundation Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL 4 Foundation certification training in Hyderabad by QuickLearn Systems",
-    images: ["/itl4.jpg"],
+    images: ["/itl4_foundation.png"],
   },
 };
 
@@ -22,7 +22,7 @@ export const metadata = {
 const courseData = {
   title: "ITIL® 4 Foundation",
   subtitle: "Master the fundamentals of IT Service Management with industry-leading certification",
-  backgroundImage: "/itl4.jpg",
+  backgroundImage: "/itl4_foundation.png",
   overview: "ITIL 4 Foundation introduces an end-to-end operating model for the creation, delivery and continual improvement of technology-enabled products and services. The course covers key concepts of service management and introduces the ITIL 4 service value system (SVS), including the four dimensions of service management, the ITIL service value chain, and the ITIL practices.",
   courseOutline: [
     "Key concepts of service management",

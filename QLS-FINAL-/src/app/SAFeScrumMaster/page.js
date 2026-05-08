@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "SAFe Scrum Master Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led SAFe Scrum Master certification training in Hyderabad by QuickLearn Systems",
-    images: ["/SCRUMM.jpg"],
+    images: ["/safe_scrum_master.jpg"],
   },
 };
 
 const courseData = {
   title: "SAFe Scrum Master",
   subtitle: "Facilitate Agile teams and drive continuous improvement in scaled environments",
-  backgroundImage: "/SCRUMM.jpg",
+  backgroundImage: "/safe_scrum_master.jpg",
   overview: [
     "SAFe Scrum Master prepares current Scrum Masters for a SAFe environment, focusing on facilitation, team coaching, and supporting Program Increment (PI) execution.",
     "Learn to facilitate Agile teams within the Scaled Agile Framework, support PI planning events, and drive relentless improvement across the Agile Release Train.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Leading SAFe Agilist",
-      image: "/SAFe.jpg",
+      image: "/safe_scrum_master.jpg",
       description: "Lead enterprise Agile transformations with SAFe",
       href: "/LeadingSAFeAgilist",
       duration: "2 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Professional Scrum Master I",
-      image: "/SCRUM1.jpg",
+      image: "/safe_scrum_master.jpg",
       description: "Master Scrum framework fundamentals",
       href: "/PScrumM1",
       duration: "2 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "SAFe Advanced Scrum Master",
-      image: "/SCRUMM.jpg",
+      image: "/safe_scrum_master.jpg",
       description: "Advanced Scrum Master skills in SAFe",
       href: "/SAFeAdvancedScrumMaster",
       duration: "2 Days",

@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Relationship Management Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Relationship Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/SIAM.jpg"],
+    images: ["/relationship_management.jpg"],
   },
 };
 
 const courseData = {
   title: "Relationship Management",
   subtitle: "Build and maintain strong relationships with stakeholders and customers",
-  backgroundImage: "/SIAM.jpg",
+  backgroundImage: "/relationship_management.jpg",
   overview: [
     "Relationship Management is the practice responsible for establishing and nurturing links between an organization and its stakeholders at strategic and tactical levels.",
     "This course covers stakeholder engagement strategies, communication techniques, and relationship building practices that ensure alignment between IT services and business objectives.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Service Level Management",
-      image: "/Servicelevelman.jpg",
+      image: "/relationship_management.jpg",
       description: "Learn to manage service levels and agreements",
       href: "/ServiceLevelManagement",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Business Relationship Management",
-      image: "/itl4.jpg",
+      image: "/relationship_management.jpg",
       description: "Master business relationship strategies",
       href: "/BusinessRelationshipManage",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "SIAM Foundation",
-      image: "/SIAM.jpg",
+      image: "/relationship_management.jpg",
       description: "Learn service integration and management",
       href: "/SIAMFoundation",
       duration: "2 Days",

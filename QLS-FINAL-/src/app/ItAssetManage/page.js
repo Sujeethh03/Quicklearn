@@ -247,7 +247,7 @@ Problem Management is a process within IT Service Management that focuses on ide
               variants={imageVariants}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/itl4_foundation.png"
                 alt="Corporate Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -500,7 +500,7 @@ Problem Management is a process within IT Service Management that focuses on ide
               variants={imageVariants}
             >
               <motion.img
-                src="/team.jpg"
+                src="/itl4_foundation.png"
                 alt="Our Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -595,7 +595,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -639,7 +639,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/problemmanage.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1158,7 +1158,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1201,7 +1201,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1244,7 +1244,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1287,7 +1287,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1330,7 +1330,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1373,7 +1373,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1416,7 +1416,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1459,7 +1459,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1502,7 +1502,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1546,7 +1546,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1590,7 +1590,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1633,7 +1633,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1677,7 +1677,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1720,7 +1720,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1763,7 +1763,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1806,7 +1806,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1849,7 +1849,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1893,7 +1893,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">
@@ -1936,7 +1936,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                   <div className="relative h-48 overflow-hidden">
                     <div 
                       className="absolute inset-0 bg-cover bg-center transform hover:scale-110 transition-transform duration-700"
-                      style={{ backgroundImage: `url('/itl4.jpg')` }}
+                      style={{ backgroundImage: `url('/itl4_foundation.png')` }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-4">

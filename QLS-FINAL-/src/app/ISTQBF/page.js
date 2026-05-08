@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ISTQB Foundation Level Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ISTQB Foundation Level certification training in Hyderabad by QuickLearn Systems",
-    images: ["/ISTQB.jpg"],
+    images: ["/istqb_foundation.jpg"],
   },
 };
 
 const courseData = {
   title: "ISTQB Foundation Level",
   subtitle: "Master software testing fundamentals and quality assurance principles",
-  backgroundImage: "/ISTQB.jpg",
+  backgroundImage: "/istqb_foundation.jpg",
   overview: [
     "ISTQB Foundation Level provides comprehensive training in software testing fundamentals, covering testing principles, processes, and techniques. This globally recognized certification establishes a solid foundation in software quality assurance.",
     "Learn essential testing concepts including test planning, design, execution, and management. The course covers both manual and automated testing approaches, risk-based testing, and quality management principles.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ISTQB Advanced",
-      image: "/TestAuto.jpg",
+      image: "/istqb_foundation.jpg",
       description: "Advanced testing techniques and automation",
       href: "/ISTQBA",
       duration: "4 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "DevOps Foundation",
-      image: "/Devops.jpg",
+      image: "/istqb_foundation.jpg",
       description: "Learn DevOps culture and practices",
       href: "/DevopsFoundation",
       duration: "2 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Agile Business Analysis",
-      image: "/Business.jpg",
+      image: "/istqb_foundation.jpg",
       description: "Business analysis in Agile environments",
       href: "/AgileBA",
       duration: "3 Days",

@@ -14,7 +14,7 @@ export const metadata = {
     title: "Agile Business Analysis Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led Agile Business Analysis certification training in Hyderabad by QuickLearn Systems",
-    images: ["/agile-ba.jpg"],
+    images: ["/agile_business_analysis.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Agile Business Analysis",
   subtitle:
     "Deliver value through adaptive analysis in Agile and Scrum environments",
-  backgroundImage: "/agile-ba.jpg",
+  backgroundImage: "/agile_business_analysis.jpg",
 
   overview: [
     "Agile Business Analysis focuses on applying business analysis practices within Agile frameworks such as Scrum and Kanban.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Business Analysis Practice",
-      image: "/business-analysis.jpg",
+      image: "/agile_business_analysis.jpg",
       description: "Develop structured business analysis skills",
       href: "/business-analysis-practice",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Professional Scrum Product Owner™ I",
-      image: "/scrum.jpg",
+      image: "/agile_business_analysis.jpg",
       description: "Master product ownership in Agile teams",
       href: "/professional-scrum-product-owner",
       duration: "2 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "SAFe® for Teams",
-      image: "/safe.jpg",
+      image: "/agile_business_analysis.jpg",
       description: "Apply Agile at scale in enterprise environments",
       href: "/safe-for-teams",
       duration: "2 Days",

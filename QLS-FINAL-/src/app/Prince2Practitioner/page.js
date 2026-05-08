@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "PRINCE2 Practitioner Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led PRINCE2 Practitioner certification training in Hyderabad by QuickLearn Systems",
-    images: ["/Agile.jpg"],
+    images: ["/prince2_practitioner.jpg"],
   },
 };
 
 const courseData = {
   title: "PRINCE2 Practitioner",
   subtitle: "Apply and tailor PRINCE2 methodology for complex project environments",
-  backgroundImage: "/Agile.jpg",
+  backgroundImage: "/prince2_practitioner.jpg",
   overview: [
     "PRINCE2 Practitioner builds on Foundation knowledge to develop advanced project management skills. This certification demonstrates your ability to apply and tailor PRINCE2 methodology in real-world project scenarios.",
     "Learn to adapt PRINCE2 principles, themes, and processes to different project contexts, manage complex stakeholder relationships, and lead successful project delivery.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "PRINCE2 Foundation",
-      image: "/PRINCE2.jpg",
+      image: "/prince2_practitioner.jpg",
       description: "Master PRINCE2 fundamentals and methodology",
       href: "/Prince2Foundation",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "PMP Certification",
-      image: "/PMPC.jpg",
+      image: "/prince2_practitioner.jpg",
       description: "Project Management Professional certification",
       href: "/PMP",
       duration: "4 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "MSP Foundation",
-      image: "/Agile.jpg",
+      image: "/prince2_practitioner.jpg",
       description: "Managing Successful Programmes methodology",
       href: "/MSPFoundation",
       duration: "3 Days",

@@ -23,7 +23,7 @@ export default function SAFePOPM() {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/SAFe.jpg')` }}
+              style={{ backgroundImage: `url('/safe_product_owner_manager.jpg')` }}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"
@@ -150,7 +150,7 @@ export default function SAFePOPM() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/safe_product_owner_manager.jpg"
                 alt="SAFe PO/PM Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -334,7 +334,7 @@ export default function SAFePOPM() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/team.jpg"
+                src="/safe_product_owner_manager.jpg"
                 alt="Product Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}

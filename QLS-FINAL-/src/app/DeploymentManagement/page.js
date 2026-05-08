@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Deployment Management Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Deployment Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/PRINCE2.jpg"],
+    images: ["/deployment_management.jpg"],
   },
 };
 
 const courseData = {
   title: "Deployment Management",
   subtitle: "Execute safe and efficient deployments with minimal service disruption",
-  backgroundImage: "/PRINCE2.jpg",
+  backgroundImage: "/deployment_management.jpg",
   overview: [
     "Deployment Management is the practice responsible for moving new or changed hardware, software, documentation, processes, or any other component to live environments.",
     "This comprehensive course covers deployment planning, execution strategies, and risk mitigation techniques that ensure successful service transitions with minimal business impact.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Release Management",
-      image: "/corporate.jpg",
+      image: "/itl4_foundation.png",
       description: "Learn to manage software releases effectively",
       href: "/ReleaseManagement",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Change Enablement",
-      image: "/blog3.jpg",
+      image: "/itl4_foundation.png",
       description: "Master change management processes",
       href: "/ChangeEnablement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "DevOps Foundation",
-      image: "/Devops.jpg",
+      image: "/itl4_foundation.png",
       description: "Learn DevOps culture and practices",
       href: "/DevopsFoundation",
       duration: "2 Days",

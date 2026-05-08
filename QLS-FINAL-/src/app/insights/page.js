@@ -22,7 +22,7 @@ export default function Insights() {
       category: "ITIL",
       readTime: "5 min read",
       date: "February 1, 2026",
-      image: "/blog2.jpg",
+      image: "/itl4_foundation.png",
       slug: "itil-4-vs-itil-v3-migration-guide"
     },
     {
@@ -32,7 +32,7 @@ export default function Insights() {
       category: "Project Management",
       readTime: "7 min read",
       date: "January 28, 2026",
-      image: "/PMPC.jpg",
+      image: "/itl4_foundation.png",
       slug: "pmp-certification-path-to-excellence"
     },
     {
@@ -42,7 +42,7 @@ export default function Insights() {
       category: "Agile",
       readTime: "6 min read",
       date: "January 25, 2026",
-      image: "/SAFe.jpg",
+      image: "/itl4_foundation.png",
       slug: "safe-agile-framework-enterprise-success"
     },
     {
@@ -52,7 +52,7 @@ export default function Insights() {
       category: "DevOps",
       readTime: "8 min read",
       date: "January 22, 2026",
-      image: "/dev_ops.png",
+      image: "/itl4_foundation.png",
       slug: "devops-best-practices-development-operations"
     },
     {
@@ -62,7 +62,7 @@ export default function Insights() {
       category: "Quality Management",
       readTime: "5 min read",
       date: "January 20, 2026",
-      image: "/green_belt.png",
+      image: "/itl4_foundation.png",
       slug: "six-sigma-green-belt-quality-fundamentals"
     },
     {
@@ -72,7 +72,7 @@ export default function Insights() {
       category: "Software Testing",
       readTime: "4 min read",
       date: "January 18, 2026",
-      image: "/ISTQB.jpg",
+      image: "/itl4_foundation.png",
       slug: "istqb-foundation-software-testing-career"
     }
   ];

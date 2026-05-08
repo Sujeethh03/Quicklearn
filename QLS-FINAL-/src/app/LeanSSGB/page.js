@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "Lean Six Sigma Green Belt Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led Lean Six Sigma Green Belt certification training in Hyderabad by QuickLearn Systems",
-    images: ["/SigmaBB.jpg"],
+    images: ["/green_belt.png"],
   },
 };
 
 const courseData = {
   title: "Lean Six Sigma Green Belt",
   subtitle: "Master process improvement and quality management methodologies",
-  backgroundImage: "/SigmaBB.jpg",
+  backgroundImage: "/green_belt.png",
   overview: [
     "Lean Six Sigma Green Belt certification combines Lean manufacturing principles with Six Sigma quality improvement methodologies to eliminate waste and reduce variation in business processes. This comprehensive program prepares you to lead improvement projects and drive organizational excellence.",
     "Learn the DMAIC (Define, Measure, Analyze, Improve, Control) methodology, statistical analysis techniques, and project management skills needed to identify problems, analyze root causes, and implement sustainable solutions.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Lean Six Sigma Black Belt",
-      image: "/SigmaBB.jpg",
+      image: "/green_belt.png",
       description: "Advanced Six Sigma leadership and project management",
       href: "/LeanSSBB",
       duration: "5 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "DevOps Foundation",
-      image: "/Devops.jpg",
+      image: "/green_belt.png",
       description: "Learn DevOps culture and practices",
       href: "/DevopsFoundation",
       duration: "2 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Business Analysis Foundation",
-      image: "/Business.jpg",
+      image: "/green_belt.png",
       description: "Master business analysis techniques",
       href: "/BusinessAnalysisF",
       duration: "3 Days",

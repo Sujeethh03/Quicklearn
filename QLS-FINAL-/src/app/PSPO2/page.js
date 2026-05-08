@@ -14,7 +14,7 @@ export const metadata = {
     title: "Professional Scrum Product Owner II (PSPO II) Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led PSPO II certification training in Hyderabad by QuickLearn Systems",
-    images: ["/scrum.jpg"],
+    images: ["/professional_scrum_product_owner_2.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Professional Scrum Product Owner™ II (PSPO II)",
   subtitle:
     "Master advanced Product Ownership and value-driven product strategy",
-  backgroundImage: "/scrum.jpg",
+  backgroundImage: "/professional_scrum_product_owner_2.jpg",
 
   overview: [
     "Professional Scrum Product Owner™ II (PSPO II) is an advanced course designed for experienced Product Owners who want to deepen their understanding of product strategy, stakeholder collaboration, and value maximization.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Professional Scrum Product Owner™ I (PSPO I)",
-      image: "/scrum.jpg",
+      image: "/professional_scrum_product_owner_2.jpg",
       description: "Foundational Product Owner certification",
       href: "/professional-scrum-product-owner",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Professional Scrum Master™ II (PSM II)",
-      image: "/scrum.jpg",
+      image: "/professional_scrum_product_owner_2.jpg",
       description: "Advanced Scrum Master leadership skills",
       href: "/professional-scrum-master-2",
       duration: "2 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "SAFe® Product Owner / Product Manager",
-      image: "/safe.jpg",
+      image: "/professional_scrum_product_owner_2.jpg",
       description: "Product Ownership within scaled Agile environments",
       href: "/safe-product-owner-product-manager",
       duration: "2 Days",

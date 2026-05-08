@@ -23,7 +23,7 @@ export default function PSPO1() {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/SCRUMM.jpg')` }}
+              style={{ backgroundImage: `url('/professional_scrum_product_owner_1.jpg')` }}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"
@@ -150,7 +150,7 @@ export default function PSPO1() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/professional_scrum_product_owner_1.jpg"
                 alt="Product Owner Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -332,7 +332,7 @@ export default function PSPO1() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/team.jpg"
+                src="/professional_scrum_product_owner_1.jpg"
                 alt="Product Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}

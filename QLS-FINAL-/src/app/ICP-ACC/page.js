@@ -150,7 +150,7 @@ export default function ICPACC() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/corporate.jpg"
+                src="/itl4_foundation.png"
                 alt="Agile Coaching Training"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}
@@ -331,7 +331,7 @@ export default function ICPACC() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <motion.img
-                src="/team.jpg"
+                src="/itl4_foundation.png"
                 alt="Agile Coaching Team"
                 className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 whileHover={{ scale: 1.02 }}

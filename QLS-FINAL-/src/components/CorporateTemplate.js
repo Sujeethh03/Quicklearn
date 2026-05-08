@@ -114,7 +114,7 @@ export default function CorporateTemplate({ courseData }) {
           <div className="lg:col-span-4">
             <motion.div variants={imageVariants} initial="hidden" whileInView="visible" className="sticky top-24">
               <motion.img
-                src="/corporate.jpg"
+                src="/hero_it_service_management.jpg"
                 className="rounded-xl shadow-lg"
                 whileHover={{ scale: 1.03 }}
               />
@@ -164,7 +164,7 @@ export default function CorporateTemplate({ courseData }) {
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/ITIL-Foundation.png"
+                  src="/itl4_foundation.png"
                   alt="ITIL 4 Foundation"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -213,7 +213,7 @@ export default function CorporateTemplate({ courseData }) {
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/PMPC.jpg"
+                  src="/pmp_certification.jpg"
                   alt="PMP Certification"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -262,7 +262,7 @@ export default function CorporateTemplate({ courseData }) {
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/SAFe.jpg"
+                  src="/leading_safe_agilist.jpg"
                   alt="Leading SAFe Agilist"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -311,7 +311,7 @@ export default function CorporateTemplate({ courseData }) {
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/sm1.jpg"
+                  src="/professional_scrum_master_1.jpg"
                   alt="Professional Scrum Master"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -409,7 +409,7 @@ export default function CorporateTemplate({ courseData }) {
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/ISTQB.jpg"
+                  src="/istqb_foundation.jpg"
                   alt="ISTQB Foundation Level"
                   fill
                   className="object-cover transition-transform duration-300 hover:scale-105"
@@ -503,7 +503,7 @@ export default function CorporateTemplate({ courseData }) {
 
           <div className="lg:col-span-4">
             <motion.div variants={imageVariants} initial="hidden" whileInView="visible" className="sticky top-24">
-              <Image src="/team.jpg" alt="Our Team" width={400} height={300} className="rounded-xl shadow-lg" />
+              <Image src="/hero_devops_business_analysis.jpg" alt="Our Team" width={400} height={300} className="rounded-xl shadow-lg" />
             </motion.div>
           </div>
         </div>

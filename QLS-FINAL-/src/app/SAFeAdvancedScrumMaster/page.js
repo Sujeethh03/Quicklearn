@@ -14,7 +14,7 @@ export const metadata = {
     title: "SAFe Advanced Scrum Master (SASM) Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led SAFe Advanced Scrum Master (SASM) certification training in Hyderabad by QuickLearn Systems",
-    images: ["/safe.jpg"],
+    images: ["/safe_advanced_scrum_master.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "SAFe® Advanced Scrum Master",
   subtitle:
     "Enhance facilitation, coaching, and leadership skills within Agile Release Trains",
-  backgroundImage: "/safe.jpg",
+  backgroundImage: "/safe_advanced_scrum_master.jpg",
 
   overview: [
     "SAFe® Advanced Scrum Master (SASM) is designed for experienced Scrum Masters who want to deepen their expertise in Agile team facilitation and enterprise-level collaboration.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "SAFe® for Teams",
-      image: "/safe.jpg",
+      image: "/safe_advanced_scrum_master.jpg",
       description: "Learn Agile team collaboration within SAFe®",
       href: "/safe-for-teams",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Leading SAFe®",
-      image: "/safe.jpg",
+      image: "/safe_advanced_scrum_master.jpg",
       description: "Lead enterprise Agile transformation",
       href: "/LeadingSAFe",
       duration: "2 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "SAFe® Scrum Master",
-      image: "/safe.jpg",
+      image: "/safe_advanced_scrum_master.jpg",
       description: "Master Scrum practices within SAFe®",
       href: "/SAFeScrumMaster",
       duration: "2 Days",

@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "Business Analysis Foundation Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led Business Analysis Foundation certification training in Hyderabad by QuickLearn Systems",
-    images: ["/Business.jpg"],
+    images: ["/business_analysis_foundation.jpg"],
   },
 };
 
 const courseData = {
   title: "Business Analysis Foundation",
   subtitle: "Master business analysis fundamentals for effective requirements and stakeholder management",
-  backgroundImage: "/Business.jpg",
+  backgroundImage: "/business_analysis_foundation.jpg",
   overview: [
     "Business Analysis Foundation provides comprehensive training in business analysis principles, techniques, and best practices for identifying business needs and determining solutions.",
     "Learn to analyze business processes, gather and manage requirements, and facilitate stakeholder communication to drive successful project outcomes.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Business Analysis Practice",
-      image: "/Business.jpg",
+      image: "/business_analysis_foundation.jpg",
       description: "Advanced business analysis techniques",
       href: "/BusinessAnalysisP",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Agile Business Analysis",
-      image: "/Business.jpg",
+      image: "/business_analysis_foundation.jpg",
       description: "Business analysis in Agile environments",
       href: "/AgileBA",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Process Improvement",
-      image: "/continualimprovement.jpg",
+      image: "/business_analysis_foundation.jpg",
       description: "Master process improvement techniques",
       href: "/ContinuationImprovement",
       duration: "3 Days",

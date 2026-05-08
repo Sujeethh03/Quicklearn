@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "Information Security Management Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led Information Security Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/infosecman.jpg"],
+    images: ["/information_security_management.jpg"],
   },
 };
 
 const courseData = {
   title: "Information Security Management",
   subtitle: "Protect organizational information assets through comprehensive security management",
-  backgroundImage: "/infosecman.jpg",
+  backgroundImage: "/information_security_management.jpg",
   overview: [
     "Information Security Management is the practice responsible for ensuring that an organization's information, and the information systems and technology used to process it, remain appropriately secure.",
     "This course covers security policy development, risk assessment, incident response, and compliance management to protect organizational information assets effectively.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "IT Asset Management",
-      image: "/SCRUM1.jpg",
+      image: "/itl4_foundation.png",
       description: "Learn effective IT asset lifecycle management",
       href: "/ItAssetManagement",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Incident Management",
-      image: "/incidentmanage.jpg",
+      image: "/incident_management.png",
       description: "Master incident response and management",
       href: "/IncidentManagement",
       duration: "3 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Supplier Management",
-      image: "/itl4.jpg",
+      image: "/information_security_management.jpg",
       description: "Learn supplier security and risk management",
       href: "/SupplierManagement",
       duration: "3 Days",

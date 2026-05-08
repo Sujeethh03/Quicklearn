@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "PRINCE2 Foundation Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led PRINCE2 Foundation certification training in Hyderabad by QuickLearn Systems",
-    images: ["/PMPC.jpg"],
+    images: ["/prince2_foundation.jpg"],
   },
 };
 
 const courseData = {
   title: "PRINCE2 Foundation",
   subtitle: "Master the world's most practiced project management methodology",
-  backgroundImage: "/PMPC.jpg",
+  backgroundImage: "/prince2_foundation.jpg",
   overview: [
     "PRINCE2 (PRojects IN Controlled Environments) is a structured project management methodology that provides a framework for managing projects of any size or type. The Foundation level introduces the basic principles, terminology and structure of the method.",
     "This comprehensive course covers the seven principles, seven themes, and seven processes that form the backbone of PRINCE2 methodology, providing you with a solid foundation in structured project management.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "PRINCE2 Practitioner",
-      image: "/Agile.jpg",
+      image: "/prince2_foundation.jpg",
       description: "Advanced PRINCE2 application and tailoring skills",
       href: "/Prince2Practitioner",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "PMP Certification",
-      image: "/PMPC.jpg",
+      image: "/prince2_foundation.jpg",
       description: "Project Management Professional certification",
       href: "/PMP",
       duration: "4 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "MSP Foundation",
-      image: "/Agile.jpg",
+      image: "/prince2_foundation.jpg",
       description: "Managing Successful Programmes methodology",
       href: "/MSPFoundation",
       duration: "3 Days",

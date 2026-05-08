@@ -14,7 +14,7 @@ export const metadata = {
     title: "ITIL 4 Acquiring & Managing Cloud Services Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led ITIL 4 ACP certification training in Hyderabad by QuickLearn Systems",
-    images: ["/AcquiringManagingCloud.jpg"],
+    images: ["/itl4_foundation.png"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "ITIL 4 Specialist: Acquiring & Managing Cloud Services (ACP)",
   subtitle:
     "Acquire, govern, and manage cloud services to optimize value and align with business strategy.",
-  backgroundImage: "/AcquiringManagingCloud.jpg",
+  backgroundImage: "/itl4_foundation.png",
   overview: [
     "The ITIL 4 Specialist: Acquiring & Managing Cloud Services (ACP) course equips professionals with the knowledge to effectively acquire and manage cloud-based services in alignment with organizational strategies and ITIL 4 principles.",
     "This course emphasizes governance, procurement, and financial management of cloud environments, ensuring that organizations maximize business value from their cloud investments.",
@@ -65,7 +65,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL 4 Specialist: Create, Deliver & Support",
-      image: "/CreateDeliverSupport.jpg",
+      image: "/itl4_foundation.png",
       description:
         "Master how to create, deliver, and support IT-enabled services for improved customer value.",
       href: "/CreateDeliverSupport",
@@ -76,7 +76,7 @@ const courseData = {
     },
     {
       title: "ITIL 4 Strategist: Direct, Plan & Improve",
-      image: "/DirectPlanImprove.jpg",
+      image: "/itl4_foundation.png",
       description:
         "Learn to align strategy and operations using ITIL 4’s Direct, Plan & Improve framework.",
       href: "/DirectPlanImprove",
@@ -87,7 +87,7 @@ const courseData = {
     },
     {
       title: "Cloud Governance & Security",
-      image: "/CloudGovernance.jpg",
+      image: "/itl4_foundation.png",
       description:
         "Gain expertise in managing cloud risks, compliance, and security in hybrid environments.",
       href: "/CloudGovernanceSecurity",

@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: "ITIL Continual Improvement Certification Training in Hyderabad | QuickLearn Systems",
     description: "Expert-led ITIL Continual Improvement certification training in Hyderabad by QuickLearn Systems",
-    images: ["/continualimprovement.jpg"],
+    images: ["/continual_improvement.jpg"],
   },
 };
 
 const courseData = {
   title: "Continual Improvement",
   subtitle: "Drive ongoing service enhancement through systematic improvement practices",
-  backgroundImage: "/continualimprovement.jpg",
+  backgroundImage: "/continual_improvement.jpg",
   overview: [
     "Continual Improvement is the practice responsible for aligning an organization's practices and services with changing business needs through the ongoing identification and improvement of all elements involved in the effective management of products and services.",
     "This course covers improvement methodologies, measurement frameworks, and change management techniques that enable organizations to continuously enhance their service delivery capabilities.",
@@ -62,7 +62,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Service Level Management",
-      image: "/Servicelevelman.jpg",
+      image: "/continual_improvement.jpg",
       description: "Learn to manage service levels and agreements",
       href: "/ServiceLevelManagement",
       duration: "3 Days",
@@ -72,7 +72,7 @@ const courseData = {
     },
     {
       title: "Lean Six Sigma Green Belt",
-      image: "/SigmaBB.jpg",
+      image: "/itl4_foundation.png",
       description: "Master process improvement methodologies",
       href: "/LeanSSGB",
       duration: "4 Days",
@@ -82,7 +82,7 @@ const courseData = {
     },
     {
       title: "Change Enablement",
-      image: "/blog3.jpg",
+      image: "/continual_improvement.jpg",
       description: "Master change management processes",
       href: "/ChangeEnablement",
       duration: "3 Days",

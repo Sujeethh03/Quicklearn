@@ -14,7 +14,7 @@ export const metadata = {
     title: "Monitor Support Fulfil Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led Monitor Support Fulfil certification training in Hyderabad by QuickLearn Systems",
-    images: ["/itl4.jpg"],
+    images: ["/monitor_support_fulfil.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Monitor Support Fulfil",
   subtitle:
     "Strengthen IT service operations through monitoring, support and fulfilment excellence",
-  backgroundImage: "/msf.jpg",
+  backgroundImage: "/monitor_support_fulfil.jpg",
 
   overview: [
     "Monitor Support Fulfil focuses on the operational core of IT Service Management, enabling organizations to deliver stable, reliable and value-driven IT services.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/monitor_support_fulfil.jpg",
       description: "Learn the fundamentals of IT Service Management",
       href: "/ITL4Management",
       duration: "3 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist Create, Deliver and Support",
-      image: "/itl4.jpg",
+      image: "/monitor_support_fulfil.jpg",
       description: "Master service creation, delivery and support practices",
       href: "/ITL4SCDS",
       duration: "3 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "SIAM Foundation",
-      image: "/SIAM.jpg",
+      image: "/monitor_support_fulfil.jpg",
       description: "Service Integration and Management fundamentals",
       href: "/SIAMFoundation",
       duration: "2 Days",

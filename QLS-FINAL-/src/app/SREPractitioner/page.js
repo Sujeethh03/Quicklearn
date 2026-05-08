@@ -14,7 +14,7 @@ export const metadata = {
     title: "SRE Practitioner Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led SRE Practitioner certification training in Hyderabad by QuickLearn Systems",
-    images: ["/sre.jpg"],
+    images: ["/sre_practitioner.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Site Reliability Engineering (SRE) Practitioner",
   subtitle:
     "Build scalable, resilient, and reliable digital services using SRE practices",
-  backgroundImage: "/sre.jpg",
+  backgroundImage: "/sre_practitioner.jpg",
 
   overview: [
     "Site Reliability Engineering (SRE) combines software engineering and IT operations to build highly reliable, scalable, and resilient systems.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "DevOps Foundation",
-      image: "/devops.jpg",
+      image: "/sre_practitioner.jpg",
       description: "Understand DevOps culture and practices",
       href: "/devops-foundation",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Specialist: Create, Deliver & Support",
-      image: "/itl4.jpg",
+      image: "/sre_practitioner.jpg",
       description: "Improve operational service delivery practices",
       href: "/ITL4SCDS",
       duration: "3 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "Site Reliability Engineering Foundation",
-      image: "/sre.jpg",
+      image: "/sre_practitioner.jpg",
       description: "Learn foundational SRE principles",
       href: "/sre-foundation",
       duration: "2 Days",

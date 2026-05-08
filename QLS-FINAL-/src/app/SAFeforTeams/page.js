@@ -14,7 +14,7 @@ export const metadata = {
     title: "SAFe for Teams Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led SAFe for Teams certification training in Hyderabad by QuickLearn Systems",
-    images: ["/safe.jpg"],
+    images: ["/safe_for_teams.jpg"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "SAFe® for Teams",
   subtitle:
     "Collaborate effectively within Agile Release Trains and deliver value at scale",
-  backgroundImage: "/safe.jpg",
+  backgroundImage: "/safe_for_teams.jpg",
 
   overview: [
     "SAFe® for Teams provides a comprehensive understanding of how Agile teams operate within the Scaled Agile Framework (SAFe®). It equips participants with the skills needed to collaborate effectively in Agile Release Trains (ARTs).",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Leading SAFe®",
-      image: "/safe.jpg",
+      image: "/safe_for_teams.jpg",
       description: "Lead enterprise Agile transformation with SAFe®",
       href: "/LeadingSAFe",
       duration: "2 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "SAFe® Scrum Master",
-      image: "/safe.jpg",
+      image: "/safe_for_teams.jpg",
       description: "Master Scrum within the SAFe® environment",
       href: "/SAFeScrumMaster",
       duration: "2 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "PMP Certification",
-      image: "/PMPC.jpg",
+      image: "/safe_for_teams.jpg",
       description: "Project Management Professional certification",
       href: "/PMP",
       duration: "4 Days",

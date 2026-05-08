@@ -14,7 +14,7 @@ export const metadata = {
     title: "Incident Management Certification Training in Hyderabad | QuickLearn Systems",
     description:
       "Expert-led Incident Management certification training in Hyderabad by QuickLearn Systems",
-    images: ["/itl4.jpg"],
+    images: ["/incident_management.png"],
   },
 };
 
@@ -22,7 +22,7 @@ const courseData = {
   title: "Incident Management",
   subtitle:
     "Restore services quickly and minimize business impact through structured incident handling",
-  backgroundImage: "/hero2.jpg",
+  backgroundImage: "/incident_management.png",
 
   overview: [
     "Incident Management focuses on restoring normal service operation as quickly as possible while minimizing impact on business operations.",
@@ -73,7 +73,7 @@ const courseData = {
   relatedCourses: [
     {
       title: "Service Desk",
-      image: "/serviceDesk.jpg",
+      image: "/service_desk.png",
       description: "Build strong IT support and customer handling skills",
       href: "/ServiceDesk",
       duration: "3 Days",
@@ -83,7 +83,7 @@ const courseData = {
     },
     {
       title: "Monitor Support Fulfil",
-      image: "/itl4.jpg",
+      image: "/itl4_foundation.png",
       description: "Strengthen monitoring and support operations",
       href: "/MonitorSupportFulfil",
       duration: "3 Days",
@@ -93,7 +93,7 @@ const courseData = {
     },
     {
       title: "ITIL® 4 Foundation",
-      image: "/itl4.jpg",
+      image: "/itl4_foundation.png",
       description: "Master IT Service Management fundamentals",
       href: "/ITL4Management",
       duration: "3 Days",
