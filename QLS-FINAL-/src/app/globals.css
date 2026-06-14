@@ -47,9 +47,9 @@
 }
 
 :root {
-  --brand-primary: #3B82F6;
-  --brand-dark: #2563EB;
-  --brand-darkest: #1D4ED8;
+  --brand-primary: #2BA6D9;
+  --brand-dark: #1E7BA3;
+  --brand-darkest: #155A76;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.13 0.028 261.692);
@@ -124,6 +124,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
 }
 
@@ -164,9 +165,8 @@
     }
     
     /* Improve tap targets */
-    button, a {
+    button {
       min-height: 44px;
-      min-width: 44px;
     }
     
     /* Better text readability on mobile */

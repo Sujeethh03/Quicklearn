@@ -50,6 +50,14 @@ const courseData = {
     "Service Desk personnel",
     "IT Service Management professionals"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of IT infrastructure, systems, and network monitoring",
+    "Familiarity with IT operations and service support environments",
+    "Experience with monitoring tools or event detection systems is beneficial"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -68,7 +76,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Problem Management",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "5 Days",
       level: "Advanced",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Service Level Management",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

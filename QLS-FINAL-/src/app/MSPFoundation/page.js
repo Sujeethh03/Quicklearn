@@ -50,6 +50,14 @@ const courseData = {
     "Business transformation professionals",
     "Portfolio managers"
   ],
+
+  prerequisite: [
+    "No formal prerequisites are required for the MSP Foundation course",
+    "Basic awareness of project management concepts is recommended",
+    "Some experience working on or within programmes or large-scale change initiatives is beneficial",
+    "Familiarity with organizational strategy and governance structures is helpful"
+  ],
+
   examDetails: [
     "Duration: 75 minutes",
     "75 multiple choice questions",

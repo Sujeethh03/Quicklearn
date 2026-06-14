@@ -59,6 +59,13 @@ const courseData = {
     "ESG and compliance professionals"
   ],
 
+  prerequisite: [
+    "No formal prerequisites are required for this course",
+    "Basic IT awareness and understanding of digital technology concepts is recommended",
+    "Familiarity with organizational strategy, governance, or corporate responsibility is beneficial",
+    "Interest in sustainability, environmental responsibility, or ESG practices is helpful"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "Multiple choice examination",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Monitor Support Fulfil",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "3 Days",
       level: "Professional",
       badge: "ITSM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

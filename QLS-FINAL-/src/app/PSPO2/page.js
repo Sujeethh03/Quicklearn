@@ -59,6 +59,13 @@ const courseData = {
     "Professionals who have passed PSPO I"
   ],
 
+  prerequisite: [
+    "Professional Scrum Product Owner™ I (PSPO I) certification is required",
+    "At least one year of practical experience as a Product Owner or in a similar role",
+    "Strong understanding of Scrum framework and backlog management practices",
+    "Experience with stakeholder management and product strategy is recommended"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "30 multiple choice questions",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "Scrum",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Professional Scrum Master™ II (PSM II)",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "2 Days",
       level: "Advanced",
       badge: "Scrum",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "SAFe® Product Owner / Product Manager",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

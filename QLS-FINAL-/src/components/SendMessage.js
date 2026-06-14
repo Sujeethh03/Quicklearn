@@ -60,7 +60,7 @@ export default function SendMessageForm() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#1e40af] py-20 px-6">
+    <section className="w-full bg-gradient-to-br from-[#162229] via-[#1E2D3A] to-[#1e40af] py-20 px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
@@ -77,7 +77,7 @@ export default function SendMessageForm() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
             Request Corporate Training
           </h2>
-          <p className="text-blue-100 text-base max-w-xl mx-auto">
+          <p className="text-[#c5d0d9] text-base max-w-xl mx-auto">
             Tell us about your training needs and we&apos;ll get back to you within 24 hours with a customised proposal.
           </p>
         </motion.div>
@@ -93,13 +93,13 @@ export default function SendMessageForm() {
           <div className="grid grid-cols-1 lg:grid-cols-5">
 
             {/* Left panel */}
-            <div className="lg:col-span-2 bg-gradient-to-br from-[#1D4ED8] to-[#1e40af] p-8 flex flex-col justify-between">
+            <div className="lg:col-span-2 bg-gradient-to-br from-[#162229] to-[#1e40af] p-8 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">QuickLearn Systems</h3>
-                <p className="text-blue-200 text-sm mb-8 leading-relaxed">
+                <p className="text-[#b3bfc8] text-sm mb-8 leading-relaxed">
                   Corporate Training Institute in Hyderabad. We deliver practical, role-based training programs tailored to your organisation&apos;s goals.
                 </p>
-                <ul className="space-y-4 text-sm text-blue-100">
+                <ul className="space-y-4 text-sm text-[#c5d0d9]">
                   {[
                     "Customised programs for your team",
                     "Trainers with real industry experience",
@@ -114,7 +114,7 @@ export default function SendMessageForm() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-10 pt-6 border-t border-white/20 text-blue-200 text-xs space-y-1">
+              <div className="mt-10 pt-6 border-t border-white/20 text-[#b3bfc8] text-xs space-y-1">
                 <p>{process.env.NEXT_PUBLIC_PHONE_PRIMARY}</p>
                 <p>{process.env.NEXT_PUBLIC_CONTACT_EMAIL}</p>
                 <p>quicklearnsys.com</p>
@@ -136,7 +136,7 @@ export default function SendMessageForm() {
                         value={formData[name]}
                         onChange={handleChange}
                         placeholder={placeholder}
-                        className="w-full pl-9 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent transition"
+                        className="w-full pl-9 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2BA6D9] focus:border-transparent transition"
                       />
                     </div>
                   </div>
@@ -153,7 +153,7 @@ export default function SendMessageForm() {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Tell us about your training requirements, team size, preferred timeline..."
-                      className="w-full pl-9 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-transparent transition resize-none"
+                      className="w-full pl-9 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2BA6D9] focus:border-transparent transition resize-none"
                     />
                   </div>
                 </div>
@@ -173,7 +173,7 @@ export default function SendMessageForm() {
                     disabled={status === "loading"}
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
-                    className="flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-7 py-3 rounded-xl font-semibold text-sm shadow-lg shadow-blue-200 transition-colors disabled:opacity-60"
+                    className="flex items-center gap-2 bg-[#1E2D3A] hover:bg-[#162229] text-white px-7 py-3 rounded-xl font-semibold text-sm shadow-lg shadow-[#b3bfc8] transition-colors disabled:opacity-60"
                   >
                     <Send className="w-4 h-4" />
                     {status === "loading" ? "Sending..." : "Send Message"}

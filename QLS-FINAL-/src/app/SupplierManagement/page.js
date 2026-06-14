@@ -50,6 +50,14 @@ const courseData = {
     "IT Service Management professionals",
     "Relationship managers"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of procurement, contract management, or vendor relationship practices",
+    "Familiarity with service agreements and performance monitoring concepts",
+    "Experience in a supplier management or procurement role is beneficial"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Service Level Management",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

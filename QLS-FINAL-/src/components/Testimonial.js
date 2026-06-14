@@ -117,7 +117,7 @@ export default function Testimonial({ testimonials }) {
           <h2 className="text-4xl font-bold text-gray-900 mb-2">
             What Enterprises Are Saying
           </h2>
-          <div className="w-16 h-1 bg-[#3B82F6] mx-auto" />
+          <div className="w-16 h-1 bg-[#2BA6D9] mx-auto" />
         </motion.div>
 
         {/* Auto-scrolling Testimonials Container with Navigation */}
@@ -131,7 +131,7 @@ export default function Testimonial({ testimonials }) {
           {/* Left Arrow */}
           <motion.button
             onClick={scrollLeft}
-            className="absolute left-0 sm:left-2 top-1/2 transform -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-gray-700 hover:text-[#3B82F6] transition-all duration-300 border border-gray-200"
+            className="absolute left-0 sm:left-2 top-1/2 transform -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-gray-700 hover:text-[#2BA6D9] transition-all duration-300 border border-gray-200"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -141,7 +141,7 @@ export default function Testimonial({ testimonials }) {
           {/* Right Arrow */}
           <motion.button
             onClick={scrollRight}
-            className="absolute right-0 sm:right-2 top-1/2 transform -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-gray-700 hover:text-[#3B82F6] transition-all duration-300 border border-gray-200"
+            className="absolute right-0 sm:right-2 top-1/2 transform -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-gray-700 hover:text-[#2BA6D9] transition-all duration-300 border border-gray-200"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -191,7 +191,7 @@ export default function Testimonial({ testimonials }) {
                         {testimonial.message.length > 120 && (
                           <button
                             onClick={() => toggleExpanded(index)}
-                            className="text-blue-600 hover:text-blue-800 text-sm font-medium mt-2 transition-colors"
+                            className="text-blue-600 hover:text-[#155A76] text-sm font-medium mt-2 transition-colors"
                           >
                             {isExpanded ? "Read Less" : "Read More"}
                           </button>

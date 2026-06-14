@@ -59,6 +59,13 @@ const courseData = {
     "Professionals transitioning into business analysis roles"
   ],
 
+  prerequisite: [
+    "Business Analysis Foundation certification or equivalent BA knowledge is recommended",
+    "Basic understanding of business analysis techniques and requirements management",
+    "Experience working on projects involving requirements gathering or stakeholder engagement",
+    "Familiarity with process modeling or business case development is beneficial"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "Multiple choice examination",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "BA",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Agile Business Analysis",

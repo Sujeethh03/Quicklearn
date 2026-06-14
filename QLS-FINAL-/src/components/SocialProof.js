@@ -1,8 +1,9 @@
 "use client";
 
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
 import { motion } from "framer-motion";
-import { Users, Calendar, Trophy, Award, Target, Globe, Star } from "lucide-react";
+import { Users, Calendar, Trophy, Award, Target, Globe, Star, GraduationCap } from "lucide-react";
+
 
 export default function SocialProof() {
   const topStats = [
@@ -62,39 +63,17 @@ export default function SocialProof() {
       number: "24/7",
       label: "Global Support",
       description: "Round-the-clock assistance from our expert team"
+    },
+    {
+      icon: GraduationCap,
+      number: "15+",
+      label: "Years Expert Trainers",
+      description: "Accredited trainers with 15+ years of industry experience"
     }
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.08,
-        delayChildren: 0.15
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 40,
-      scale: 0.95
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.7,
-        ease: [0.25, 0.46, 0.45, 0.94]
-      }
-    }
-  };
-
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-rose-50 via-white to-rose-100">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-sky-50 via-white to-sky-100">
       {/* Refined Background Pattern */}
       
 
@@ -122,7 +101,7 @@ export default function SocialProof() {
                   {/* Icon */}
                   <div className="mb-4">
                     {stat.icon === "users" && (
-                      <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
+                      <div className="w-16 h-16 bg-gradient-to-br from-[#2BA6D9] to-[#5B6F81] rounded-2xl flex items-center justify-center">
                         <Users className="w-8 h-8 text-white" />
                       </div>
                     )}
@@ -189,80 +168,89 @@ export default function SocialProof() {
           className="text-center mb-16 lg:mb-20"
         >
           <div className="max-w-4xl mx-auto">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#2BA6D9] mb-3">
+              Why QuickLearn Systems?
+            </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">
               Trusted by Professionals
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-gray-700 to-slate-800  ">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-gray-700 to-slate-800">
                 Worldwide
               </span>
             </h2>
             <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Join thousands of professionals and leading organizations who trust QuickLearn&apos;s accredited, expert-led programs to nurture skills and guarantee exam success
+              Join thousands of IT professionals and leading organizations who rely on QuickLearn Systems for expert-led training, globally recognized certifications, and impactful learning experiences that drive career and business success.
             </p>
           </div>
         </motion.div>
 
-        {/* Stats Grid - Enhanced spacing and layout */}
+        {/* Stats — Horizontal Milestone Strip */}
         <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-20 lg:mb-24"
+          transition={{ duration: 0.7 }}
+          className="mb-16"
         >
-          <Grid container spacing={{ xs: 3, sm: 4, lg: 5 }} className="justify-center">
-            {stats.map((stat, index) => {
-              const IconComponent = stat.icon;
-              return (
-                <Grid item xs={12} sm={6} lg={4} key={index} className="flex">
+          <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+
+            {/* Row 1 — 4 stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 divide-x divide-gray-100">
+              {stats.slice(0, 4).map((stat, i) => {
+                const Icon = stat.icon;
+                return (
                   <motion.div
-                    variants={itemVariants}
-                    whileHover={{ 
-                      y: -12,
-                      transition: { duration: 0.4, ease: "easeOut" }
-                    }}
-                    className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100/50 group relative overflow-hidden w-full h-full flex flex-col"
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.08, duration: 0.5 }}
+                    className="flex flex-col items-center justify-center gap-2 py-10 px-6 text-center group hover:bg-sky-50/60 transition-colors duration-300 cursor-default"
                   >
-                    {/* Enhanced Hover Background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 to-indigo-50/80 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    
-                    <div className="relative z-10 flex flex-col h-full">
-                      {/* Icon - Better positioning */}
-                      <motion.div
-                        className="w-18 h-18 lg:w-20 lg:h-20 bg-gradient-to-br from-[#3B82F6] to-blue-600 rounded-2xl lg:rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg"
-                        whileHover={{ rotate: 8 }}
-                      >
-                        <IconComponent className="w-9 h-9 lg:w-10 lg:h-10 text-white" />
-                      </motion.div>
-
-                      {/* Number - Enhanced typography */}
-                      <motion.div
-                        className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 group-hover:text-[#3B82F6] transition-colors duration-500 leading-none"
-                        initial={{ scale: 0 }}
-                        whileInView={{ scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.4 + index * 0.1, duration: 0.6, type: "spring", bounce: 0.4 }}
-                      >
-                        {stat.number}
-                      </motion.div>
-
-                      {/* Label - Better spacing */}
-                      <h3 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4 leading-tight">
-                        {stat.label}
-                      </h3>
-
-                      {/* Description - Improved readability */}
-                      <p className="text-gray-600 text-sm lg:text-base leading-relaxed flex-grow">
-                        {stat.description}
-                      </p>
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2BA6D9]/10 to-[#5B6F81]/10 flex items-center justify-center mb-1 group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-5 h-5 text-[#2BA6D9]" />
                     </div>
-
-                    {/* Refined Decorative Element */}
-                    <div className="absolute -top-4 -right-4 w-24 h-24 lg:w-28 lg:h-28 bg-gradient-to-br from-blue-100/60 to-indigo-100/60 rounded-full opacity-40 group-hover:opacity-60 transition-all duration-500 group-hover:scale-110"></div>
+                    <div className="text-4xl md:text-5xl font-bold text-gray-900 group-hover:text-[#2BA6D9] transition-colors duration-300 leading-none">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-gray-500 font-medium leading-tight max-w-[120px]">
+                      {stat.label}
+                    </div>
                   </motion.div>
-                </Grid>
-              );
-            })}
-          </Grid>
+                );
+              })}
+            </div>
+
+            {/* Divider */}
+            <div className="border-t border-gray-100" />
+
+            {/* Row 2 — 3 stats, centred */}
+            <div className="grid grid-cols-3 divide-x divide-gray-100">
+              {stats.slice(4).map((stat, i) => {
+                const Icon = stat.icon;
+                return (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.32 + i * 0.08, duration: 0.5 }}
+                    className="flex flex-col items-center justify-center gap-2 py-10 px-6 text-center group hover:bg-sky-50/60 transition-colors duration-300 cursor-default"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2BA6D9]/10 to-[#5B6F81]/10 flex items-center justify-center mb-1 group-hover:scale-110 transition-transform duration-300">
+                      <Icon className="w-5 h-5 text-[#2BA6D9]" />
+                    </div>
+                    <div className="text-4xl md:text-5xl font-bold text-gray-900 group-hover:text-[#2BA6D9] transition-colors duration-300 leading-none">
+                      {stat.number}
+                    </div>
+                    <div className="text-sm text-gray-500 font-medium leading-tight max-w-[120px]">
+                      {stat.label}
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+
+          </div>
         </motion.div>
 
         {/* Bottom CTA - Enhanced design and spacing */}

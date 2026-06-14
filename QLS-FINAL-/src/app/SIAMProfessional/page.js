@@ -53,6 +53,14 @@ const courseData = {
     "Vendor and Contract Managers",
     "ITSM Process Owners and Architects"
   ],
+
+  prerequisite: [
+    "SIAM Foundation certification is required before attending the Professional course",
+    "Practical experience in IT service management or multi-supplier environments is strongly recommended",
+    "Familiarity with ITSM frameworks such as ITIL® is beneficial",
+    "Understanding of vendor management, governance, and service integration concepts"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "40 scenario-based multiple-choice questions",
@@ -81,7 +89,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Service Level Management",
@@ -91,7 +99,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

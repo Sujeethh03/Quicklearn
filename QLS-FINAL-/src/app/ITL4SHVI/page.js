@@ -53,6 +53,14 @@ const courseData = {
     "Digital Transformation Specialists",
     "ITIL® 4 Foundation Certified Professionals"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification is required",
+    "Familiarity with Agile, Lean, or DevOps principles and practices",
+    "Experience in an IT service management or digital transformation role is beneficial",
+    "Understanding of modern software delivery and continuous improvement approaches"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "40 scenario-based multiple-choice questions",
@@ -71,7 +79,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS)",
@@ -81,7 +89,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI)",
@@ -91,7 +99,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

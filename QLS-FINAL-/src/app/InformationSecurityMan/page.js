@@ -50,6 +50,14 @@ const courseData = {
     "Compliance officers",
     "IT Service Management professionals"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of information security principles and IT risk concepts",
+    "Familiarity with regulatory compliance and data protection requirements is helpful",
+    "Experience in an IT security, risk, or compliance role is beneficial"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -68,7 +76,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Incident Management",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Supplier Management",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

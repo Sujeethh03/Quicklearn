@@ -1,6 +1,7 @@
 "use client";
 import Headers from "@/components/Header";
 import Footer from "@/components/Footer";
+import { COURSE_GROUPS } from "@/data/courseRegistry";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Send, Upload, User, MessageSquare, Building, Calendar, Loader2 } from "lucide-react";
 import ScrollFloat from "@/components/ui/ScroolReveal";
@@ -364,68 +365,13 @@ export default function Contactus() {
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all duration-300 bg-white"
                     >
                       <option value="">Course Interested In</option>
-                      <optgroup label="IT Service Management">
-                        <option value="ITIL® 4 Foundation">ITIL® 4 Foundation</option>
-                        <option value="ITIL® 4 Practice Manager">ITIL® 4 Practice Manager</option>
-                        <option value="MSF - Monitor, Support and Fulfil">MSF - Monitor, Support and Fulfil</option>
-                        <option value="PIC - Plan, Implement and Control">PIC - Plan, Implement and Control</option>
-                        <option value="CAI - Collaborate, Assure and Improve">CAI - Collaborate, Assure and Improve</option>
-                        <option value="ITIL® 4 Specialist Create, Deliver and Support">ITIL® 4 Specialist Create, Deliver and Support</option>
-                        <option value="ITIL® 4 Specialist Drive Stakeholder Value">ITIL® 4 Specialist Drive Stakeholder Value</option>
-                        <option value="ITIL® 4 Specialist High Velocity IT">ITIL® 4 Specialist High Velocity IT</option>
-                        <option value="ITIL® 4 Strategist Direct Plan & Improve">ITIL® 4 Strategist Direct Plan &amp; Improve</option>
-                        <option value="ITIL® 4 Specialist - Acquiring And Managing Cloud Service">ITIL® 4 Specialist - Acquiring And Managing Cloud Service</option>
-                        <option value="ITIL® 4 Specialist - Sustainability In Digital and IT">ITIL® 4 Specialist - Sustainability In Digital and IT</option>
-                        <option value="ITIL® 4 Specialist - Business Relationship Management">ITIL® 4 Specialist - Business Relationship Management</option>
-                        <option value="ITIL® 4 Specialist - IT Asset Management">ITIL® 4 Specialist - IT Asset Management</option>
-                        <option value="ITIL® 4 Specialist - Monitor, Support and Fulfil">ITIL® 4 Specialist - Monitor, Support and Fulfil</option>
-                        <option value="ITIL® 4 Strategist Digital IT & Services">ITIL® 4 Strategist Digital IT &amp; Services</option>
-                        <option value="SIAM Foundation">SIAM Foundation</option>
-                        <option value="SIAM Professional">SIAM Professional</option>
-                      </optgroup>
-                      <optgroup label="Project & Program Management">
-                        <option value="PMP">PMP</option>
-                        <option value="ACP">ACP</option>
-                        <option value="Prince2 Foundation">Prince2 Foundation</option>
-                        <option value="Prince2 Practitioner">Prince2 Practitioner</option>
-                        <option value="Prince2 Agile Foundation">Prince2 Agile Foundation</option>
-                        <option value="Prince2 Agile Practitioner">Prince2 Agile Practitioner</option>
-                        <option value="MSP Foundation">MSP Foundation</option>
-                        <option value="MSP Practitioner">MSP Practitioner</option>
-                      </optgroup>
-                      <optgroup label="Agile, Scrum & Kanban">
-                        <option value="Leading SAFe Agilist">Leading SAFe Agilist</option>
-                        <option value="SAFe PO/PM">SAFe PO/PM</option>
-                        <option value="SAFe for Teams">SAFe for Teams</option>
-                        <option value="SAFe Scrum Master">SAFe Scrum Master</option>
-                        <option value="SAFe Advanced Scrum Master">SAFe Advanced Scrum Master</option>
-                        <option value="Professional Scrum Master I (PSM I)">Professional Scrum Master I (PSM I)</option>
-                        <option value="Professional Scrum Master II (PSM II)">Professional Scrum Master II (PSM II)</option>
-                        <option value="Professional Scrum Product Owner I (PSPO I)">Professional Scrum Product Owner I (PSPO I)</option>
-                        <option value="Professional Scrum Product Owner II (PSPO II)">Professional Scrum Product Owner II (PSPO II)</option>
-                        <option value="Professional Scrum with Kanban (PSK I)">Professional Scrum with Kanban (PSK I)</option>
-                        <option value="Certified Scrum Master">Certified Scrum Master</option>
-                        <option value="Certified Advanced Scrum Master">Certified Advanced Scrum Master</option>
-                        <option value="Certified Scrum Product Owner">Certified Scrum Product Owner</option>
-                        <option value="ICP-ACC">ICP-ACC</option>
-                      </optgroup>
-                      <optgroup label="Quality Management">
-                        <option value="Lean Six Sigma Green Belt">Lean Six Sigma Green Belt</option>
-                        <option value="Lean Six Sigma Black Belt">Lean Six Sigma Black Belt</option>
-                      </optgroup>
-                      <optgroup label="DevOps and Business Analysis">
-                        <option value="SRE Foundation">SRE Foundation</option>
-                        <option value="SRE Practitioner">SRE Practitioner</option>
-                        <option value="DevOps Foundation">DevOps Foundation</option>
-                        <option value="DevOps Master">DevOps Master</option>
-                        <option value="Business Analysis Foundation">Business Analysis Foundation</option>
-                        <option value="Business Analysis Practice">Business Analysis Practice</option>
-                        <option value="Agile Business Analysis">Agile Business Analysis</option>
-                      </optgroup>
-                      <optgroup label="Software Testing, Technical & Other Courses">
-                        <option value="ISTQB Foundation">ISTQB Foundation</option>
-                        <option value="ISTQB Advanced">ISTQB Advanced</option>
-                      </optgroup>
+                      {COURSE_GROUPS.map((g) => (
+                        <optgroup key={g.group} label={g.group}>
+                          {g.options.map((o) => (
+                            <option key={o} value={o}>{o}</option>
+                          ))}
+                        </optgroup>
+                      ))}
                       <option value="Other">Other</option>
                     </select>
 

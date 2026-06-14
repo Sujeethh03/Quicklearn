@@ -13,13 +13,13 @@ export const metadata = {
 };
 export default async function Events() {
   const onlineRes = await fetch("https://quicklearnsys.com/data/online_events.json", {
-    cache: "no-store" // ensures fresh data every request
+    cache: "no-store"
   });
   const onlineEvents = await onlineRes.json();
 
- return(
-  <>
-  <EventPageClient onlineEvents={onlineEvents}/>
-  </>
- )
+  return(
+    <>
+      <EventPageClient onlineEvents={onlineEvents}/>
+    </>
+  )
 }

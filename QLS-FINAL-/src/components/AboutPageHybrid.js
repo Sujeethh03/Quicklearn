@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Headers from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhyTrainWithUs from "@/components/WhyTrainWithUs";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollFloat from "@/components/ui/ScroolReveal";
 
@@ -77,21 +78,8 @@ export default function AboutPageHybrid() {
         </div>
       </section>
 
-      {/* TITLE FLOAT */}
-      <section className="bg-gradient-to-br from-gray-50 to-stone-50 py-16">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <ScrollFloat
-            animationDuration={1.5}
-            containerClassName="text-center"
-            textClassName="text-[clamp(2.5rem,5vw,4.5rem)] font-bold bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent"
-          >
-            About QuickLearn Systems
-          </ScrollFloat>
-        </div>
-      </section>
-
-      {/* ABOUT CONTENT */}
-      <section className="bg-white py-16">
+{/* ABOUT CONTENT */}
+      <section className="bg-white pb-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
 
@@ -217,6 +205,8 @@ export default function AboutPageHybrid() {
           </div>
         </div>
       </section>
+
+      <WhyTrainWithUs />
 
       <Footer />
     </div>

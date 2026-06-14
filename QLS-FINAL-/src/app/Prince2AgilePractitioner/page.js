@@ -54,6 +54,14 @@ const courseData = {
     "Business Analysts and IT Project Professionals",
     "Professionals seeking PRINCE2 Agile Practitioner certification"
   ],
+
+  prerequisite: [
+    "PRINCE2 Agile Foundation certification is required to sit the Practitioner exam",
+    "Alternatively, a current PRINCE2 Foundation or PRINCE2 Practitioner certification is accepted",
+    "Working knowledge of Agile delivery frameworks such as Scrum or Kanban is beneficial",
+    "Experience managing or participating in projects is strongly recommended"
+  ],
+
   examDetails: [
     "Duration: 150 minutes",
     "50 multiple-choice objective testing questions (scenario-based)",
@@ -73,7 +81,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "PRINCE2",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Agile Project Management",

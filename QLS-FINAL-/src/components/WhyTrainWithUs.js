@@ -36,7 +36,7 @@ const reasons = [
 
 export default function WhyTrainWithUs() {
   return (
-    <section className="bg-gradient-to-br from-rose-50 via-white to-rose-50 py-14 border-t border-gray-100">
+    <section className="bg-gradient-to-br from-sky-50 via-white to-sky-50 py-14 border-t border-gray-100">
       <div className="container mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -49,7 +49,7 @@ export default function WhyTrainWithUs() {
             className="text-3xl font-bold text-gray-900 mb-3"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Why Train With <span className="text-[#3B82F6]">QuickLearn?</span>
+            Why Train With <span className="text-[#2BA6D9]">QuickLearn?</span>
           </h2>
           <p
             className="text-gray-600 max-w-2xl mx-auto"
@@ -67,11 +67,11 @@ export default function WhyTrainWithUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-[#3B82F6]/20 transition-all duration-300 group"
+              className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-[#2BA6D9]/20 transition-all duration-300 group"
             >
               <div className="text-3xl mb-3">{item.icon}</div>
               <h3
-                className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#3B82F6] transition-colors"
+                className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#2BA6D9] transition-colors"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 {item.title}

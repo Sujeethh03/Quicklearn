@@ -198,6 +198,50 @@ export default function ICPACC() {
                 whileHover={{ scale: 1.02, color: "#374151" }}
                 transition={{ duration: 0.3 }}
               >
+                <span className="relative z-10">Course Outline</span>
+                <motion.div
+                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "35%" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: 0.7 }}
+                />
+              </motion.h2>
+              <motion.ul className="list-none pl-0 text-gray-700 space-y-3">
+                {[
+                  "The Agile Coaching competency framework",
+                  "Distinguishing mentoring, facilitating, professional coaching, and teaching",
+                  "Professional coaching skills: active listening, powerful questioning, and presence",
+                  "Facilitating team and individual growth",
+                  "Conflict resolution, negotiation, and consensus building",
+                  "Systems thinking and organisational dynamics",
+                  "Assessing team and organisational agile maturity",
+                  "Coaching at multiple levels: individual, team, and organisation"
+                ].map((item, index) => (
+                  <motion.li
+                    key={index}
+                    className="flex items-start gap-3 group"
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <motion.div
+                      className="w-2 h-2 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full mt-2 flex-shrink-0"
+                      whileHover={{ scale: 1.5 }}
+                      transition={{ duration: 0.2 }}
+                    />
+                    <span className="group-hover:text-stone-700 transition-colors duration-200">
+                      {item}
+                    </span>
+                  </motion.li>
+                ))}
+              </motion.ul>
+
+              <motion.h2
+                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 relative mt-8"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+                whileHover={{ scale: 1.02, color: "#374151" }}
+                transition={{ duration: 0.3 }}
+              >
                 <span className="relative z-10">Learning Objectives</span>
                 <motion.div
                   className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
@@ -242,7 +286,7 @@ export default function ICPACC() {
                 whileHover={{ scale: 1.02, color: "#374151" }}
                 transition={{ duration: 0.3 }}
               >
-                <span className="relative z-10">Target Audience</span>
+                <span className="relative z-10">Target Group</span>
                 <motion.div
                   className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
                   initial={{ width: 0 }}
@@ -285,7 +329,47 @@ export default function ICPACC() {
                 whileHover={{ scale: 1.02, color: "#374151" }}
                 transition={{ duration: 0.3 }}
               >
-                <span className="relative z-10">Certification Details</span>
+                <span className="relative z-10">Prerequisite</span>
+                <motion.div
+                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "35%" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: 0.7 }}
+                />
+              </motion.h2>
+              <motion.ul className="list-none pl-0 text-gray-700 space-y-3">
+                {[
+                  "ICP (ICAgile Certified Professional) or equivalent agile experience is required",
+                  "Candidates should have practical experience working in or with agile teams",
+                  "Familiarity with Scrum, Kanban, or other agile frameworks is expected",
+                  "A genuine interest in developing coaching and facilitation skills is essential"
+                ].map((item, index) => (
+                  <motion.li
+                    key={index}
+                    className="flex items-start gap-3 group"
+                    whileHover={{ x: 5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <motion.div
+                      className="w-2 h-2 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full mt-2 flex-shrink-0"
+                      whileHover={{ scale: 1.5 }}
+                      transition={{ duration: 0.2 }}
+                    />
+                    <span className="group-hover:text-stone-700 transition-colors duration-200">
+                      {item}
+                    </span>
+                  </motion.li>
+                ))}
+              </motion.ul>
+
+              <motion.h2
+                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 relative mt-8"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+                whileHover={{ scale: 1.02, color: "#374151" }}
+                transition={{ duration: 0.3 }}
+              >
+                <span className="relative z-10">Exam Pattern</span>
                 <motion.div
                   className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
                   initial={{ width: 0 }}
@@ -301,7 +385,6 @@ export default function ICPACC() {
                   "Format: Interactive workshops and practical exercises",
                   "Certification: ICAgile Certified Professional - Agile Coaching (ICP-ACC)",
                   "Certification period: Lifetime (no renewal required)",
-                  "Prerequisites: ICP (ICAgile Certified Professional) or equivalent experience",
                   "Language: English",
                   "Includes: Digital badge and certificate"
                 ].map((item, index) => (

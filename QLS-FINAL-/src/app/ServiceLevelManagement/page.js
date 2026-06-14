@@ -50,6 +50,14 @@ const courseData = {
     "Business Relationship Managers",
     "Service Delivery Managers"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of IT service delivery and customer relationship practices",
+    "Familiarity with service agreements, performance metrics, and reporting",
+    "Experience in an IT support or service management role is beneficial"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -68,7 +76,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Service Request Management",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Continual Improvement",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

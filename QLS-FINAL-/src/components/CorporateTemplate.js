@@ -120,7 +120,7 @@ export default function CorporateTemplate({ courseData }) {
               />
               <Link href="/Events">
                 <motion.button
-                  className="mt-6 w-full bg-blue-500 text-white py-3 rounded-xl font-semibold"
+                  className="mt-6 w-full bg-[#2BA6D9] text-white py-3 rounded-xl font-semibold"
                   whileHover={{ scale: 1.05 }}
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
@@ -171,7 +171,7 @@ export default function CorporateTemplate({ courseData }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#3B82F6] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-[#2BA6D9] text-white text-xs font-semibold px-3 py-1 rounded-full">
                     Foundation
                   </span>
                 </div>
@@ -191,7 +191,7 @@ export default function CorporateTemplate({ courseData }) {
                 </div>
                 <Link href="/ITL4Management">
                   <motion.button
-                    className="w-full bg-[#3B82F6] text-white py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+                    className="w-full bg-[#2BA6D9] text-white py-2 rounded-lg font-semibold hover:bg-[#1E7BA3] transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     style={{ fontFamily: "'Inter', sans-serif" }}
@@ -220,7 +220,7 @@ export default function CorporateTemplate({ courseData }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#3B82F6] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-[#2BA6D9] text-white text-xs font-semibold px-3 py-1 rounded-full">
                     Professional
                   </span>
                 </div>
@@ -240,7 +240,7 @@ export default function CorporateTemplate({ courseData }) {
                 </div>
                 <Link href="/PMP">
                   <motion.button
-                    className="w-full bg-[#3B82F6] text-white py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+                    className="w-full bg-[#2BA6D9] text-white py-2 rounded-lg font-semibold hover:bg-[#1E7BA3] transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     style={{ fontFamily: "'Inter', sans-serif" }}
@@ -269,7 +269,7 @@ export default function CorporateTemplate({ courseData }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#3B82F6] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-[#2BA6D9] text-white text-xs font-semibold px-3 py-1 rounded-full">
                     Professional
                   </span>
                 </div>
@@ -289,7 +289,7 @@ export default function CorporateTemplate({ courseData }) {
                 </div>
                 <Link href="/LeadingSAFeAgilist">
                   <motion.button
-                    className="w-full bg-[#3B82F6] text-white py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+                    className="w-full bg-[#2BA6D9] text-white py-2 rounded-lg font-semibold hover:bg-[#1E7BA3] transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     style={{ fontFamily: "'Inter', sans-serif" }}
@@ -318,7 +318,7 @@ export default function CorporateTemplate({ courseData }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#3B82F6] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-[#2BA6D9] text-white text-xs font-semibold px-3 py-1 rounded-full">
                     Professional
                   </span>
                 </div>
@@ -338,7 +338,7 @@ export default function CorporateTemplate({ courseData }) {
                 </div>
                 <Link href="/PScrumM1">
                   <motion.button
-                    className="w-full bg-[#3B82F6] text-white py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+                    className="w-full bg-[#2BA6D9] text-white py-2 rounded-lg font-semibold hover:bg-[#1E7BA3] transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     style={{ fontFamily: "'Inter', sans-serif" }}
@@ -367,7 +367,7 @@ export default function CorporateTemplate({ courseData }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#3B82F6] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-[#2BA6D9] text-white text-xs font-semibold px-3 py-1 rounded-full">
                     Professional
                   </span>
                 </div>
@@ -387,7 +387,7 @@ export default function CorporateTemplate({ courseData }) {
                 </div>
                 <Link href="/LeanSSGB">
                   <motion.button
-                    className="w-full bg-[#3B82F6] text-white py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+                    className="w-full bg-[#2BA6D9] text-white py-2 rounded-lg font-semibold hover:bg-[#1E7BA3] transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     style={{ fontFamily: "'Inter', sans-serif" }}
@@ -416,7 +416,7 @@ export default function CorporateTemplate({ courseData }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#3B82F6] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-[#2BA6D9] text-white text-xs font-semibold px-3 py-1 rounded-full">
                     Foundation
                   </span>
                 </div>
@@ -436,7 +436,7 @@ export default function CorporateTemplate({ courseData }) {
                 </div>
                 <Link href="/ISTQBF">
                   <motion.button
-                    className="w-full bg-[#3B82F6] text-white py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+                    className="w-full bg-[#2BA6D9] text-white py-2 rounded-lg font-semibold hover:bg-[#1E7BA3] transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     style={{ fontFamily: "'Inter', sans-serif" }}
@@ -472,7 +472,7 @@ export default function CorporateTemplate({ courseData }) {
               <ul className="space-y-3 mb-10">
                 {courseData.WhyQls.map((item, i) => (
                   <motion.li key={i} variants={wordSlideVariants} className="flex gap-3 text-gray-700">
-                    <span className="w-2 h-2 bg-[#2563EB] rounded-full mt-2 flex-shrink-0" />
+                    <span className="w-2 h-2 bg-[#1E2D3A] rounded-full mt-2 flex-shrink-0" />
                     {item}
                   </motion.li>
                 ))}
@@ -492,7 +492,7 @@ export default function CorporateTemplate({ courseData }) {
                 <ul className="space-y-3 mb-10">
                   {list.map((item, i) => (
                     <motion.li key={i} variants={wordSlideVariants} className="flex gap-3 text-gray-700">
-                      <span className="w-2 h-2 bg-[#2563EB] rounded-full mt-2 flex-shrink-0" />
+                      <span className="w-2 h-2 bg-[#1E2D3A] rounded-full mt-2 flex-shrink-0" />
                       {item}
                     </motion.li>
                   ))}

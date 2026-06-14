@@ -50,6 +50,14 @@ const courseData = {
     "Technical architects and engineers",
     "Business analysts and project managers"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of IT infrastructure, deployments, and service operations",
+    "Familiarity with risk assessment and change control processes is beneficial",
+    "Experience in an IT operations, release, or project management role is helpful"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -68,7 +76,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Deployment Management",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Service Configuration Management",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

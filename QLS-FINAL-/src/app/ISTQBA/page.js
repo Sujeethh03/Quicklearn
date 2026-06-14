@@ -50,6 +50,14 @@ const courseData = {
     "Quality assurance managers",
     "ISTQB Foundation certified professionals"
   ],
+
+  prerequisite: [
+    "ISTQB Foundation Level (CTFL) certification is required",
+    "Minimum of three years of practical software testing experience is recommended",
+    "Familiarity with testing tools, test automation concepts, and test management practices",
+    "Experience in a QA lead, test manager, or senior tester role is beneficial"
+  ],
+
   examDetails: [
     "Duration: 3 hours",
     "65 multiple choice questions",
@@ -68,7 +76,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ISTQB",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "DevOps Foundation",

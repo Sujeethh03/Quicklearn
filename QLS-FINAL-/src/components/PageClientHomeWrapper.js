@@ -17,7 +17,7 @@ export default function ClientHomeWrapper() {
     <div className="flex flex-col w-full">
       
       {/* Header */}
-      <Header onGetStartedClick={scrollToCourses} />
+      <Header />
 
       {/* Hero Section */}
       <Hero

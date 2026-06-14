@@ -54,6 +54,14 @@ const courseData = {
     "Senior Managers responsible for program delivery",
     "Professionals seeking MSP Practitioner certification"
   ],
+
+  prerequisite: [
+    "MSP Foundation certification is required to sit the Practitioner exam",
+    "Experience managing or working within programmes or multiple concurrent projects is recommended",
+    "Familiarity with benefits management, governance, and organizational change concepts",
+    "Project management experience or a PRINCE2/PMP certification is beneficial"
+  ],
+
   examDetails: [
     "Duration: 150 minutes",
     "Objective testing or scenario-based questions",
@@ -73,7 +81,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "MSP",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "PRINCE2 Practitioner",
@@ -84,7 +92,7 @@ const courseData = {
       duration: "3 Days",
       level: "Advanced",
       badge: "PRINCE2",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "MoP Practitioner",

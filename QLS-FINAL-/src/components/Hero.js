@@ -9,7 +9,7 @@ const slides = [
     title: "IT Service Management",
     subtitle: "Master ITIL® 4 frameworks and best practices to manage IT services efficiently. Guide professionals in aligning IT services with business needs, handling incidents, problems, and continual improvement.",
     image: "/hero_it_service_management.jpg",
-    accent: "from-blue-500 to-cyan-500",
+    accent: "from-[#2BA6D9] to-cyan-500",
   },
   {
     title: "Project & Program Management",
@@ -27,7 +27,7 @@ const slides = [
     title: "Quality Management",
     subtitle: "Master process improvement and efficiency using Lean Six Sigma methodologies. Gain Green Belt and Black Belt certifications to reduce waste and optimize quality.",
     image: "/hero_quality_management.jpg",
-    accent: "from-blue-500 to-blue-700",
+    accent: "from-[#2BA6D9] to-[#1E7BA3]",
   },
   {
     title: "DevOps & Business Analysis",
@@ -244,7 +244,7 @@ export default function Hero({ onCategorySelect }) {
                   whileTap={{ scale: 0.98 }}
                   onClick={() => onCategorySelect(slides[currentSlide].title)}
                 >
-                  <motion.div className="absolute inset-0 bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <motion.div className="absolute inset-0 bg-gradient-to-r from-[#1E2D3A] to-[#162229] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <span className="relative z-10 group-hover:text-white transition-colors duration-300 flex items-center gap-2">
                     Get Started
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

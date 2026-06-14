@@ -58,7 +58,7 @@ export default function Footer() {
   return (
     <>
       <CourseListings />
-      <footer className="bg-[#1D4ED8] text-white">
+      <footer className="bg-[#162229] text-white">
       <div className="w-full px-6 sm:px-10 lg:px-30 py-12 sm:py-16 ">
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
@@ -158,7 +158,7 @@ export default function Footer() {
               <p className="text-gray-300 text-sm mb-4">Cash, Cheque, Online Transfer & Credit Cards</p>
               <div className="flex gap-2 flex-wrap">
                 <div className="w-12 h-8 bg-white rounded flex items-center justify-center shadow-sm">
-                  <SiVisa className="w-8 h-5 text-[#3B82F6]" />
+                  <SiVisa className="w-8 h-5 text-[#2BA6D9]" />
                 </div>
                 <div className="w-12 h-8 bg-white rounded flex items-center justify-center shadow-sm">
                   <SiMastercard className="w-8 h-5 text-red-500" />
@@ -167,7 +167,7 @@ export default function Footer() {
                   <FaUniversity className="w-5 h-4 text-gray-700" />
                 </div>
                 <div className="w-12 h-8 bg-white rounded flex items-center justify-center shadow-sm">
-                  <FaPaypal className="w-6 h-4 text-[#3B82F6]" />
+                  <FaPaypal className="w-6 h-4 text-[#2BA6D9]" />
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function Footer() {
                 href="https://www.facebook.com/quicklearnsystems"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 hover:bg-[#3B82F6] rounded-lg flex items-center justify-center transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#2BA6D9] rounded-lg flex items-center justify-center transition-all duration-300"
                 aria-label="Facebook"
               >
                 <FaFacebookF className="w-4 h-4 text-white" />
@@ -197,7 +197,7 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-blue-500 rounded-lg flex items-center justify-center transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#2BA6D9] rounded-lg flex items-center justify-center transition-all duration-300"
                 aria-label="Google Plus"
               >
                 <FaGooglePlusG className="w-4 h-4 text-white" />
@@ -206,7 +206,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/quicklearn-systems-1494ba12a"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 hover:bg-blue-500 rounded-lg flex items-center justify-center transition-all duration-300"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#2BA6D9] rounded-lg flex items-center justify-center transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <FaLinkedinIn className="w-4 h-4 text-white" />
@@ -231,8 +231,12 @@ export default function Footer() {
                 </li>
                 <li>
                   <span className="block font-semibold text-white mb-1">Address:</span>
-                  <span className="block">{process.env.NEXT_PUBLIC_COMPANY_NAME}</span>
-                  <span className="block">Training Center</span>
+                  <span className="block">QuickLearn Systems, Lorven Smart Space,</span>
+                  <span className="block">2nd Floor, Vaishnavi Cynosure,</span>
+                  <span className="block">Near Gachibowli Flyover, Telecom Nagar,</span>
+                  <span className="block">Above Reliance Digital,</span>
+                  <span className="block">Beside - Omega Hospital,</span>
+                  <span className="block">Hyderabad, Telangana 500032</span>
                 </li>
               </ul>
             </div>

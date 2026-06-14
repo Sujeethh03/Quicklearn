@@ -50,6 +50,14 @@ const courseData = {
     "Agile transformation professionals",
     "Anyone supporting Agile teams in SAFe"
   ],
+
+  prerequisite: [
+    "Attendance at a SAFe® for Teams or Leading SAFe® course is recommended",
+    "Prior experience as a Scrum Master or Agile team facilitator is beneficial",
+    "Familiarity with the Scrum framework and basic Agile principles",
+    "Understanding of team dynamics and Agile ceremonies such as sprint planning and retrospectives"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "45 multiple choice questions",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "Scrum.org",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "SAFe Advanced Scrum Master",

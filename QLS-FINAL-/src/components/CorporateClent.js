@@ -79,7 +79,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS)",
@@ -89,7 +89,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Specialist: High Velocity IT (HVIT)",
@@ -99,7 +99,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

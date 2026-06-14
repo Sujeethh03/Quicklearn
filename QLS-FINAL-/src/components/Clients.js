@@ -8,7 +8,7 @@ import LogoLoop from "./LogoLoop";
 
 export default function Clients({ clients = [] }) {
   return (
-    <section className="py-20 bg-gradient-to-br from-rose-50 via-white to-rose-100 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-sky-50 via-white to-sky-100 relative overflow-hidden">
 
       {/* Background Radial Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.05),transparent_50%)]" />
@@ -34,7 +34,7 @@ export default function Clients({ clients = [] }) {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="inline-block mb-4"
               >
-                <span className="bg-gradient-to-r from-[#3B82F6] to-indigo-600 bg-clip-text text-transparent text-sm font-semibold tracking-wide uppercase">
+                <span className="bg-gradient-to-r from-[#2BA6D9] to-indigo-600 bg-clip-text text-transparent text-sm font-semibold tracking-wide uppercase">
                   Trusted Worldwide
                 </span>
               </motion.div>
@@ -61,8 +61,7 @@ export default function Clients({ clients = [] }) {
                 className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
-                Join the world&apos;s leading organizations who trust QuickLearn Learning to
-                advance their teams&apos; professional development and drive business success.
+                Trusted by leading organizations to deliver impactful training solutions that empower teams, enhance capabilities, and drive business success.
               </motion.p>
             </motion.div>
           </Grid>

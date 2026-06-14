@@ -82,11 +82,11 @@ export default function Insights() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#3B82F6] to-blue-700 text-white py-16">
+      <div className="bg-gradient-to-r from-[#2BA6D9] to-[#1E7BA3] text-white py-16">
         <Container maxWidth="lg">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Insights & Blog</h1>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+            <p className="text-xl text-[#c5d0d9] max-w-2xl mx-auto">
               Stay ahead with expert insights on IT Service Management, Project Management, 
               Agile methodologies, and professional development trends.
             </p>
@@ -103,7 +103,7 @@ export default function Insights() {
               {categories.map((category) => (
                 <button
                   key={category}
-                  className="px-4 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#3B82F6] hover:text-white hover:border-[#3B82F6] transition-colors duration-300"
+                  className="px-4 py-2 rounded-full border border-gray-300 text-gray-700 hover:bg-[#2BA6D9] hover:text-white hover:border-[#2BA6D9] transition-colors duration-300"
                 >
                   {category}
                 </button>
@@ -123,7 +123,7 @@ export default function Insights() {
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-[#3B82F6] text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-[#2BA6D9] text-white px-3 py-1 rounded-full text-sm font-medium">
                       {post.category}
                     </span>
                   </div>
@@ -146,7 +146,7 @@ export default function Insights() {
                   
                   <Link
                     href={`/insights/${post.slug}`}
-                    className="inline-flex items-center text-[#3B82F6] hover:text-blue-700 font-medium transition-colors duration-300"
+                    className="inline-flex items-center text-[#2BA6D9] hover:text-[#1E7BA3] font-medium transition-colors duration-300"
                   >
                     Read More
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -168,7 +168,7 @@ export default function Insights() {
           </p>
           <Link
             href="/Contact"
-            className="inline-block bg-[#3B82F6] text-white px-6 py-3 rounded-lg hover:bg-blue-500 transition-colors duration-300"
+            className="inline-block bg-[#2BA6D9] text-white px-6 py-3 rounded-lg hover:bg-[#1E7BA3] transition-colors duration-300"
           >
             Subscribe to Newsletter
           </Link>

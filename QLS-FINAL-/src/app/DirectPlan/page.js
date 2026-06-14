@@ -52,6 +52,14 @@ const courseData = {
     "Project and Program Managers",
     "IT Governance and Strategy Specialists"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification is required",
+    "Experience in IT service management, operations, or governance roles",
+    "Familiarity with continual improvement concepts and organizational change",
+    "Understanding of Agile, Lean, or DevOps principles is advantageous"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "40 multiple-choice questions",
@@ -70,7 +78,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS)",
@@ -80,7 +88,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Specialist: High Velocity IT (HVIT)",
@@ -90,7 +98,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

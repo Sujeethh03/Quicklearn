@@ -50,6 +50,14 @@ const courseData = {
     "Contract and procurement managers",
     "Service delivery managers"
   ],
+
+  prerequisite: [
+    "No formal prerequisites are required for the SIAM Foundation course",
+    "Basic awareness of IT service management concepts is recommended",
+    "Familiarity with multi-supplier or outsourced IT environments is beneficial",
+    "Understanding of general IT operations and service delivery is helpful"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Relationship Management",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

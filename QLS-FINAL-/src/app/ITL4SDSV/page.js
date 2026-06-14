@@ -50,6 +50,14 @@ const courseData = {
     "Marketing and communication professionals",
     "IT Service Management professionals"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification is required",
+    "Experience in stakeholder management, customer experience, or IT service delivery roles",
+    "Familiarity with service relationship management and customer journey concepts",
+    "Understanding of co-creation of value and stakeholder engagement strategies is beneficial"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "40 multiple choice questions",
@@ -68,7 +76,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Relationship Management",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Service Level Management",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

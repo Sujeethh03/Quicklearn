@@ -50,6 +50,14 @@ const courseData = {
     "Lean Six Sigma Green Belts seeking advancement",
     "Change management professionals"
   ],
+
+  prerequisite: [
+    "Lean Six Sigma Green Belt certification is required",
+    "Minimum of three years of work experience in a business environment",
+    "Demonstrated experience leading or participating in process improvement projects",
+    "Proficiency in statistical analysis and data-driven decision making"
+  ],
+
   examDetails: [
     "Duration: 4 hours",
     "150 multiple choice questions",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "DevOps Foundation",

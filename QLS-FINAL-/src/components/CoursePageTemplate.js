@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollFloat from "@/components/ui/ScroolReveal";
 import Link from "next/link";
@@ -44,11 +43,6 @@ export default function CoursePageTemplate({ courseData }) {
     visible: { opacity: 1, y: 0, filter: "blur(0px)", transition: { duration: 0.8 } }
   };
 
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.8, rotateY: -15 },
-    visible: { opacity: 1, scale: 1, rotateY: 0, transition: { duration: 1.2 } }
-  };
-
   return (
     <>
       {/* HERO */}
@@ -87,53 +81,108 @@ export default function CoursePageTemplate({ courseData }) {
 
       
 
-      {/* MAIN CONTENT */}
+      {/* MAIN CONTENT — full width overview */}
       <section className="bg-white py-14">
-        <div className="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-10 px-6">
-          
-          {/* LEFT */}
-          <div className="lg:col-span-8">
-            <motion.div variants={staggerTextVariants} initial="hidden" whileInView="visible">
-              <motion.h2 variants={headingVariants} className="text-3xl font-bold mb-6"
-               style={{ fontFamily: "'Playfair Display', serif" }}
-              >
-                Course Overview
-              </motion.h2>
-
-              {courseData.overview.map((p, i) => (
-                <motion.p key={i} variants={paragraphVariants} className="mb-5 text-gray-700"
+        <div className="container mx-auto max-w-7xl px-6">
+          <motion.div variants={staggerTextVariants} initial="hidden" whileInView="visible">
+            <motion.h2 variants={headingVariants} className="text-3xl font-bold mb-6"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              Course Overview
+            </motion.h2>
+            {courseData.overview.map((p, i) => (
+              <motion.p key={i} variants={paragraphVariants} className="mb-5 text-gray-700 max-w-4xl"
                 style={{ fontFamily: "'Inter', sans-serif" }}
-                >
-                  {p}
-                </motion.p>
-              ))}
-            </motion.div>
-          </div>
+              >
+                {p}
+              </motion.p>
+            ))}
+          </motion.div>
+        </div>
+      </section>
 
-          {/* RIGHT */}
-          <div className="lg:col-span-4">
-            <motion.div variants={imageVariants} initial="hidden" whileInView="visible" className="sticky top-24">
-              <motion.img
-                src="/IT-Service-Management.png"
-                className="rounded-xl shadow-lg"
-                whileHover={{ scale: 1.03 }}
-              />
-              <Link href="/Events">
-                <motion.button
-                  className="mt-6 w-full bg-blue-500 text-white py-3 rounded-xl font-semibold"
-                  whileHover={{ scale: 1.05 }}
+      {/* DETAILS — with sidebar */}
+      <section className="bg-slate-50 py-16">
+        <div className="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-10 px-6">
+
+          {/* LEFT — course sections */}
+          <div className="lg:col-span-8">
+            {[
+              ["Course Outline", courseData.courseOutline],
+              ["Learning Objectives", courseData.learningObjectives],
+              ["Target Group", courseData.targetGroup],
+              ...(courseData.prerequisite ? [["Prerequisite", courseData.prerequisite]] : []),
+              ["Exam Pattern", courseData.examDetails]
+            ].map(([title, list], idx) => (
+              <motion.div key={idx} variants={staggerTextVariants} initial="hidden" whileInView="visible">
+                <motion.h2 variants={headingVariants} className="text-3xl font-bold mb-4"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
-                  Check Schedule
-                </motion.button>
-              </Link>
-            </motion.div>
+                  {title}
+                </motion.h2>
+                <ul className="space-y-3 mb-10">
+                  {list.map((item, i) => (
+                    <motion.li key={i} variants={wordSlideVariants} className="flex gap-3"
+                      style={{ fontFamily: "'Inter', sans-serif" }}
+                    >
+                      <span className="w-2 h-2 bg-slate-700 rounded-full mt-2 flex-shrink-0" />
+                      {item}
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
           </div>
+
+          {/* RIGHT — image + info card */}
+          <div className="lg:col-span-4">
+            <div className="sticky top-24 flex flex-col gap-4">
+              <motion.img
+                src={courseData.backgroundImage}
+                className="rounded-xl shadow-lg w-full"
+                whileHover={{ scale: 1.03 }}
+              />
+              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                <div className="bg-gradient-to-r from-[#2BA6D9] to-[#1E7BA3] px-5 py-3">
+                  <p className="text-white font-semibold text-sm leading-tight">{courseData.title}</p>
+                  {courseData.category && (
+                    <p className="text-white/70 text-xs mt-0.5">{courseData.category}</p>
+                  )}
+                </div>
+                <div className="px-5 py-4 space-y-3">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
+                    Online & Classroom batches available
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
+                    Flexible scheduling to suit your needs
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
+                    Expert-led, accredited training
+                  </div>
+                </div>
+                <div className="px-5 pb-5">
+                  <Link href="/Events">
+                    <motion.button
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      className="w-full bg-[#2BA6D9] hover:bg-[#1E7BA3] text-white py-3 rounded-xl font-semibold text-sm transition-colors duration-200"
+                    >
+                      Check Schedule
+                    </motion.button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
       {/* WHY TRAIN WITH QUICKLEARN */}
-      <section className="bg-gradient-to-br from-rose-50 via-white to-rose-50 py-14 border-t border-gray-100">
+      <section className="bg-gradient-to-br from-sky-50 via-white to-sky-50 py-14 border-t border-gray-100">
         <div className="container mx-auto max-w-7xl px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -143,7 +192,7 @@ export default function CoursePageTemplate({ courseData }) {
             className="text-center mb-10"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Why Train With <span className="text-[#3B82F6]">QuickLearn?</span>
+              Why Train With <span className="text-[#2BA6D9]">QuickLearn?</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif" }}>
               Your success is our guarantee — backed by expert trainers, accredited content, and a commitment to your exam results.
@@ -189,10 +238,10 @@ export default function CoursePageTemplate({ courseData }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08, duration: 0.5 }}
-                className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-[#3B82F6]/20 transition-all duration-300 group"
+                className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-[#2BA6D9]/20 transition-all duration-300 group"
               >
                 <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#3B82F6] transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#2BA6D9] transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -200,45 +249,6 @@ export default function CoursePageTemplate({ courseData }) {
                 </p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* DETAILS */}
-      <section className="bg-slate-50 py-16">
-        <div className="container mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-10 px-6">
-          
-          <div className="lg:col-span-8">
-            {[
-              ["Course Outline", courseData.courseOutline],
-              ["Learning Objectives", courseData.learningObjectives],
-              ["Target Group", courseData.targetGroup],
-              ["Exam Details", courseData.examDetails]
-            ].map(([title, list], idx) => (
-              <motion.div key={idx} variants={staggerTextVariants} initial="hidden" whileInView="visible">
-                <motion.h2 variants={headingVariants} className="text-3xl font-bold mb-4"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-                >
-                  {title}
-                </motion.h2>
-                <ul className="space-y-3 mb-10">
-                  {list.map((item, i) => (
-                    <motion.li key={i} variants={wordSlideVariants} className="flex gap-3"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
-                    >
-                      <span className="w-2 h-2 bg-slate-700 rounded-full mt-2" />
-                      {item}
-                    </motion.li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="lg:col-span-4">
-            <motion.div variants={imageVariants} initial="hidden" whileInView="visible" className="sticky top-24">
-              <Image src="/IT-Service-Management.png" alt="Our Team" width={400} height={300} className="rounded-xl shadow-lg" />
-            </motion.div>
           </div>
         </div>
       </section>

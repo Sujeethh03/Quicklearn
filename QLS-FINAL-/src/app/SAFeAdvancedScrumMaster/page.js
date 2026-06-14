@@ -59,6 +59,13 @@ const courseData = {
     "SAFe® practitioners seeking advanced certification"
   ],
 
+  prerequisite: [
+    "SAFe® Scrum Master (SSM) certification or equivalent SAFe® practitioner experience is recommended",
+    "At least one year of experience as a Scrum Master or Agile team facilitator",
+    "Familiarity with the Scaled Agile Framework and Agile Release Train ceremonies",
+    "Understanding of Kanban, DevOps practices, and systems thinking is beneficial"
+  ],
+
   examDetails: [
     "Duration: 120 minutes",
     "60 multiple choice questions",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Leading SAFe®",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "2 Days",
       level: "Advanced",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "SAFe® Scrum Master",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

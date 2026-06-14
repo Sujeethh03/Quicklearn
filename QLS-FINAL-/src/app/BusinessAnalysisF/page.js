@@ -50,6 +50,14 @@ const courseData = {
     "Process improvement professionals",
     "Anyone involved in requirements management"
   ],
+
+  prerequisite: [
+    "No formal prerequisites are required for Business Analysis Foundation",
+    "Basic IT awareness and understanding of business operations is recommended",
+    "No prior business analysis certification is necessary",
+    "Candidates with a background in project management or IT will find the course accessible"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

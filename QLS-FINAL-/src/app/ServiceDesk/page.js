@@ -59,6 +59,13 @@ const courseData = {
     "Entry-level IT service management professionals"
   ],
 
+  prerequisite: [
+    "No formal prerequisites are required for this course",
+    "Basic IT awareness and understanding of general computer usage is recommended",
+    "Familiarity with customer service or support environments is beneficial",
+    "No prior certification is needed; this course is suitable for entry-level professionals"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "Multiple choice examination",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Monitor Support Fulfil",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Professional",
       badge: "ITSM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "SIAM Foundation",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "SIAM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

@@ -59,6 +59,13 @@ const courseData = {
     "IT Service Management professionals"
   ],
 
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of IT service operations and support processes",
+    "Familiarity with service desk or helpdesk functions is beneficial",
+    "Some experience working in an IT support or operations environment is recommended"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "Multiple choice examination",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITSM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Monitor Support Fulfil",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Professional",
       badge: "ITSM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Foundation",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

@@ -53,6 +53,14 @@ const courseData = {
     "Business Analysts and IT Project Professionals",
     "Anyone looking to understand PRINCE2 Agile methodology"
   ],
+
+  prerequisite: [
+    "No formal prerequisites are required for PRINCE2 Agile Foundation",
+    "Basic awareness of project management concepts is recommended",
+    "Familiarity with either PRINCE2 or an Agile framework such as Scrum is beneficial",
+    "Some experience working on or within project teams is helpful"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "50 multiple-choice questions",
@@ -72,7 +80,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "PRINCE2",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Agile Project Management",

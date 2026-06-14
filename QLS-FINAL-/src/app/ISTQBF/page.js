@@ -50,6 +50,14 @@ const courseData = {
     "Project managers and team leaders",
     "Anyone new to software testing field"
   ],
+
+  prerequisite: [
+    "No formal prerequisites are required for ISTQB Foundation Level",
+    "Basic IT awareness and understanding of the software development lifecycle is recommended",
+    "Familiarity with general programming or development concepts is beneficial but not mandatory",
+    "No prior testing certification or experience is required for this entry-level course"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -68,7 +76,7 @@ const courseData = {
       duration: "4 Days",
       level: "Professional",
       badge: "ISTQB",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "DevOps Foundation",

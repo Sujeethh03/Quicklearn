@@ -59,6 +59,13 @@ const courseData = {
     "System Administrators and Architects"
   ],
 
+  prerequisite: [
+    "SRE Foundation certification or equivalent site reliability engineering knowledge is recommended",
+    "Hands-on experience in IT operations, DevOps, or systems engineering",
+    "Familiarity with monitoring, automation, and incident response practices",
+    "Understanding of cloud platforms and distributed systems architectures is beneficial"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "Multiple choice examination",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Advanced",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Site Reliability Engineering Foundation",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "SRE",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

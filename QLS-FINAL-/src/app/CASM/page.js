@@ -348,7 +348,37 @@ export default function CASM() {
                 whileHover={{ scale: 1.02, color: "#374151" }}
                 transition={{ duration: 0.3 }}
               >
-                <span className="relative z-10">Exam Details</span>
+                <span className="relative z-10">Prerequisite</span>
+                <motion.div
+                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "35%" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: 0.7 }}
+                />
+              </motion.h2>
+              <motion.ul className="list-none pl-0 text-gray-700 space-y-3 mb-8" variants={staggerTextVariants}>
+                {[
+                  "Active Certified ScrumMaster (CSM) certification is required",
+                  "Minimum 12 months of real-world experience working as a ScrumMaster",
+                  "Practical experience facilitating Scrum events and coaching teams",
+                  "Demonstrated commitment to developing mastery in the Scrum Master role"
+                ].map((desc, index) => (
+                  <motion.li key={index} variants={wordSlideVariants} className="flex items-start gap-3 group" whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+                    <motion.div className="w-2 h-2 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full mt-2 flex-shrink-0" whileHover={{ scale: 1.5 }} transition={{ duration: 0.2 }} />
+                    <span className="text-gray-700">{desc}</span>
+                  </motion.li>
+                ))}
+              </motion.ul>
+
+              <motion.h2
+                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 relative"
+                variants={headingVariants}
+                style={{ fontFamily: "'Playfair Display', serif" }}
+                whileHover={{ scale: 1.02, color: "#374151" }}
+                transition={{ duration: 0.3 }}
+              >
+                <span className="relative z-10">Exam Pattern</span>
                 <motion.div
                   className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
                   initial={{ width: 0 }}
@@ -361,7 +391,6 @@ export default function CASM() {
                 {[
                   "Exam Type – No written exam; certification granted upon completing the workshop",
                   "Duration – 2 Days (16 hours of instructor-led training)",
-                  "Prerequisites – Active CSM certification + minimum 12 months experience as a ScrumMaster",
                   "Supervised – Yes (attendance and participation required)",
                   "Delivery – Classroom or Virtual Instructor-Led Training (VILT)",
                   "Certification Body – Scrum Alliance",

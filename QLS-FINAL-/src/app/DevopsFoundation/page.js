@@ -50,6 +50,14 @@ const courseData = {
     "IT managers and team leaders",
     "Anyone involved in software delivery processes"
   ],
+
+  prerequisite: [
+    "No formal prerequisites are required for DevOps Foundation",
+    "Basic IT awareness and familiarity with software development or operations is recommended",
+    "Understanding of general IT infrastructure and application delivery concepts is beneficial",
+    "No prior DevOps certification or experience is needed for this foundation-level course"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -68,7 +76,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "SRE",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "DevOps Master",

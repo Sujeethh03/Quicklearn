@@ -50,6 +50,14 @@ const courseData = {
     "Project managers and team leaders",
     "Anyone involved in process improvement initiatives"
   ],
+
+  prerequisite: [
+    "Lean Six Sigma Yellow Belt or White Belt certification is recommended but not mandatory",
+    "Basic understanding of business processes and quality management concepts",
+    "High school level mathematics and basic statistical awareness is required",
+    "Some experience working in operations, quality, or process improvement roles is beneficial"
+  ],
+
   examDetails: [
     "Duration: 4 hours",
     "100 multiple choice questions",

@@ -59,6 +59,13 @@ const courseData = {
     "Technology Managers and Consultants"
   ],
 
+  prerequisite: [
+    "DevOps Foundation certification or equivalent practical DevOps experience",
+    "Hands-on experience with CI/CD pipelines, automation tools, and cloud platforms",
+    "Familiarity with containerization technologies such as Docker or Kubernetes",
+    "Understanding of Agile methodologies and software delivery practices"
+  ],
+
   examDetails: [
     "Duration: 120 minutes",
     "Multiple choice examination",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "SRE",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "SAFe® DevOps",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

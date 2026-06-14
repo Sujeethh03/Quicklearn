@@ -52,6 +52,14 @@ const courseData = {
     "Program and Portfolio Managers",
     "Anyone seeking to lead digital initiatives using ITIL® 4 principles"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification is required",
+    "Experience in IT leadership, strategy, or service management roles",
+    "Familiarity with digital transformation concepts and emerging technologies",
+    "Understanding of IT governance, risk, and compliance frameworks is beneficial"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "40 multiple-choice questions",
@@ -71,7 +79,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI)",
@@ -82,7 +90,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Specialist: Drive Stakeholder Value (DSV)",
@@ -93,7 +101,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

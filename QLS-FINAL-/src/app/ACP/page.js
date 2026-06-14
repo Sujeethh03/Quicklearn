@@ -53,6 +53,14 @@ const courseData = {
     "Cloud Architects and Consultants",
     "IT Governance and Compliance Officers"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification is required",
+    "Basic understanding of cloud computing service models and deployment types",
+    "Familiarity with IT governance, risk management, or procurement processes",
+    "Experience working in cloud or IT service management environments is recommended"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "40 multiple-choice questions",
@@ -72,7 +80,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL 4 Strategist: Direct, Plan & Improve",

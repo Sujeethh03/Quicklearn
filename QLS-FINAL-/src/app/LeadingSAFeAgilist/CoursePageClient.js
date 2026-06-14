@@ -3,6 +3,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollFloat from "@/components/ui/ScroolReveal";
 import Link from "next/link";
+import WhyTrainWithUs from "@/components/WhyTrainWithUs";
 
 export default function CoursePageClient({ courseData }) {
   const slideTransition = { type: "spring", stiffness: 120, damping: 25, mass: 1 };
@@ -170,78 +171,37 @@ export default function CoursePageClient({ courseData }) {
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="w-full bg-white px-4 md:px-8">
+      {/* Main Content — full width overview */}
+      <section className="w-full bg-white px-4 md:px-8 py-14">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <motion.div
-              className="lg:col-span-8"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={staggerTextVariants}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerTextVariants}
+          >
+            <motion.h2
+              className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 relative"
+              variants={headingVariants}
+              style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              <motion.h2
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 relative"
-                variants={headingVariants}
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
-                <span className="relative z-10">Course Overview</span>
-                <motion.div
-                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "60%" }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                />
-              </motion.h2>
-              
-              <motion.p
-                className="text-gray-700 leading-relaxed mb-6 text-justify"
-                variants={paragraphVariants}
-                style={{ fontFamily: "'Inter', sans-serif" }}
-              >
-                {courseData.overview}
-              </motion.p>
-            </motion.div>
-
-            <motion.div
-              className="lg:col-span-4 sticky top-24"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={imageVariants}
-            >
-              <motion.img
-                src="/itl4_foundation.png"
-                alt="Corporate Training"
-                className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              />
-              
+              <span className="relative z-10">Course Overview</span>
               <motion.div
-                className="absolute -top-4 -left-4 bg-white rounded-lg shadow-2xl p-2 border border-slate-200"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-slate-800">Training Calendar</div>
-                </div>
-              </motion.div>
-              
-              <Link href="/Events">
-                <motion.button 
-                  className="absolute -bottom-4 -right-4 bg-gradient-to-r from-red-500 to-pink-600 text-white font-semibold px-5 py-2 rounded-xl shadow-xl hover:from-red-600 hover:to-pink-700 active:scale-95 transition-all duration-300 cursor-pointer" 
-                  whileHover={{ scale: 1.08 }} 
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Check Schedule 
-                </motion.button>
-              </Link>
-            </motion.div>
-          </div>
+                className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full"
+                initial={{ width: 0 }}
+                whileInView={{ width: "60%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: 0.5 }}
+              />
+            </motion.h2>
+            <motion.p
+              className="text-gray-700 leading-relaxed mb-6 text-justify max-w-4xl"
+              variants={paragraphVariants}
+              style={{ fontFamily: "'Inter', sans-serif" }}
+            >
+              {courseData.overview}
+            </motion.p>
+          </motion.div>
         </div>
       </section>
 
@@ -397,36 +357,51 @@ export default function CoursePageClient({ courseData }) {
               </motion.ul>
             </motion.div>
 
-            <motion.div
-              className="lg:col-span-4 sticky top-24"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={imageVariants}
-            >
-              <motion.img
-                src="/itl4_foundation.png"
-                alt="Our Team"
-                className="w-full rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              />
-
-              <motion.div
-                className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-xl p-4 border border-slate-200"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                <div className="text-center">
-                  <div className="text-2xl font-bold font-serif text-slate-800">{courseData.title}</div>
-                  <div className="text-xs text-slate-600 font-medium">Scale. Transform. Lead.</div>
+            <div className="lg:col-span-4">
+              <div className="sticky top-24 flex flex-col gap-4">
+                <motion.img
+                  src={courseData.backgroundImage}
+                  className="rounded-xl shadow-lg w-full"
+                  whileHover={{ scale: 1.03 }}
+                />
+                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                  <div className="bg-gradient-to-r from-[#2BA6D9] to-[#1E7BA3] px-5 py-3">
+                    <p className="text-white font-semibold text-sm leading-tight">Leading SAFe Agilist</p>
+                    <p className="text-white/70 text-xs mt-0.5">Agile, Scrum & Kanban</p>
+                  </div>
+                  <div className="px-5 py-4 space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
+                      Online & Classroom batches available
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
+                      Flexible scheduling to suit your needs
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
+                      <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
+                      Expert-led, accredited training
+                    </div>
+                  </div>
+                  <div className="px-5 pb-5">
+                    <Link href="/Events">
+                      <motion.button
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.97 }}
+                        className="w-full bg-[#2BA6D9] hover:bg-[#1E7BA3] text-white py-3 rounded-xl font-semibold text-sm transition-colors duration-200"
+                      >
+                        Check Schedule
+                      </motion.button>
+                    </Link>
+                  </div>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <WhyTrainWithUs />
 
       {/* Related Courses Section */}
       <section className="py-16 bg-gradient-to-b from-slate-50 to-white">
@@ -504,7 +479,7 @@ export default function CoursePageClient({ courseData }) {
                         <span className="font-medium text-sm">{course.level}</span>
                       </div>
                     </div>
-                    <Link href={course.href} className="text-[#3B82F6] hover:text-blue-800 font-medium text-sm flex items-center">
+                    <Link href={course.href} className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
                       Details
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

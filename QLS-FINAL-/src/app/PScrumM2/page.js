@@ -59,6 +59,13 @@ const courseData = {
     "Professionals who have passed PSM I"
   ],
 
+  prerequisite: [
+    "Professional Scrum Master™ I (PSM I) certification is strongly recommended",
+    "At least one year of practical experience in a Scrum Master or Agile facilitator role",
+    "Solid understanding of the Scrum Guide and empirical process theory",
+    "Experience coaching or mentoring Agile teams is beneficial"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "30 multiple choice questions",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "Scrum",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Professional Scrum Product Owner™ (PSPO)",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "Scrum",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "SAFe® Advanced Scrum Master",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "2 Days",
       level: "Advanced",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

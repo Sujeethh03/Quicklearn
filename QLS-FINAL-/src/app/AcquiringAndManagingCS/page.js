@@ -52,6 +52,14 @@ const courseData = {
     "IT Governance and Compliance Officers",
     "ITIL® 4 Foundation Certified Professionals"
   ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification is required",
+    "Basic understanding of cloud computing concepts and models (IaaS, PaaS, SaaS)",
+    "Familiarity with IT governance, procurement, or vendor management practices",
+    "Experience in IT service management or cloud environments is beneficial"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "40 scenario-based multiple-choice questions",
@@ -70,7 +78,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Specialist: Drive Stakeholder Value (DSV)",
@@ -80,7 +88,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI)",
@@ -90,7 +98,7 @@ const courseData = {
       duration: "3 Days",
       level: "Intermediate",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

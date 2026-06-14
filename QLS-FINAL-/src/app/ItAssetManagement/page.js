@@ -59,6 +59,13 @@ const courseData = {
     "IT Service Management practitioners"
   ],
 
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management awareness",
+    "Basic understanding of IT infrastructure, hardware, and software environments",
+    "Familiarity with asset lifecycle concepts or procurement processes is beneficial",
+    "Experience in an IT operations, procurement, or compliance role is helpful"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "Multiple choice examination",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Incident Management",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Professional",
       badge: "ITSM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Service Desk",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITSM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

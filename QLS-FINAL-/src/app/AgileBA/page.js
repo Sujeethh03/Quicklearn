@@ -59,6 +59,13 @@ const courseData = {
     "Professionals transitioning to Agile environments"
   ],
 
+  prerequisite: [
+    "Business Analysis Foundation certification or equivalent BA knowledge is recommended",
+    "Basic understanding of Agile principles, Scrum, or Kanban frameworks",
+    "Familiarity with requirements management and stakeholder engagement techniques",
+    "Some experience working in a project or product delivery team is beneficial"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "Multiple choice examination",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "BA",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Professional Scrum Product Owner™ I",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

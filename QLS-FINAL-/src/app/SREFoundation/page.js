@@ -50,6 +50,14 @@ const courseData = {
     "Software engineers interested in reliability",
     "IT operations professionals"
   ],
+
+  prerequisite: [
+    "No formal prerequisites are required for SRE Foundation",
+    "Basic IT awareness and familiarity with software development or operations is recommended",
+    "Understanding of fundamental networking, systems, or cloud concepts is beneficial",
+    "Some experience in IT operations, development, or system administration is helpful"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "40 multiple choice questions",
@@ -78,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "SRE",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Monitoring & Event Management",
@@ -88,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

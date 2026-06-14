@@ -59,6 +59,13 @@ const courseData = {
     "Senior IT and business leaders"
   ],
 
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management awareness",
+    "Basic understanding of IT service delivery and business operations",
+    "Some experience in a customer-facing, account management, or IT liaison role is beneficial",
+    "Familiarity with stakeholder engagement and communication practices is helpful"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "Multiple choice examination",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "Sustainability in Digital IT",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITSM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

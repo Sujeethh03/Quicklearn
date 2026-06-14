@@ -50,6 +50,14 @@ const courseData = {
     "Team members working on PRINCE2 projects",
     "Anyone seeking structured project management knowledge"
   ],
+
+  prerequisite: [
+    "No formal prerequisites are required for PRINCE2 Foundation",
+    "Basic IT awareness or familiarity with project environments is recommended",
+    "No prior project management certification is necessary",
+    "Candidates should have a good command of written English to read the exam questions"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "75 multiple choice questions",

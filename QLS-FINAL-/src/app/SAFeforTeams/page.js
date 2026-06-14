@@ -59,6 +59,13 @@ const courseData = {
     "Project and program team members"
   ],
 
+  prerequisite: [
+    "No formal prerequisites are required for SAFe® for Teams",
+    "Basic awareness of Agile principles and the Scrum framework is recommended",
+    "Familiarity with iterative delivery and team collaboration practices is beneficial",
+    "Attendance at a SAFe® overview or Leading SAFe® course is advantageous"
+  ],
+
   examDetails: [
     "Duration: 90 minutes",
     "45 multiple choice questions",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "2 Days",
       level: "Advanced",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "SAFe® Scrum Master",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "2 Days",
       level: "Professional",
       badge: "SAFe®",
-      badgeColor: "bg-blue-500"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "PMP Certification",

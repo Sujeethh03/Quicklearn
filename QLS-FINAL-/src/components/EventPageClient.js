@@ -127,10 +127,10 @@ export default function EventPageClient({ onlineEvents }) {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerTextVariants}
-            className="bg-white rounded-xl shadow-lg border border-blue-200 overflow-hidden mb-12"
+            className="bg-white rounded-xl shadow-lg border border-[#b3bfc8] overflow-hidden mb-12"
           >
             {/* Table Header */}
-            <div className="bg-gradient-to-r from-[#3B82F6] to-blue-600 text-white p-6">
+            <div className="bg-gradient-to-r from-[#2BA6D9] to-[#5B6F81] text-white p-6">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -139,7 +139,7 @@ export default function EventPageClient({ onlineEvents }) {
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold">Online Training Events</h2>
-                  <p className="text-blue-100">Join from anywhere in the world</p>
+                  <p className="text-[#c5d0d9]">Join from anywhere in the world</p>
                 </div>
               </div>
             </div>
@@ -147,29 +147,29 @@ export default function EventPageClient({ onlineEvents }) {
             {/* Table Content */}
             <div className="overflow-x-auto">
               <table className="w-full">
-                <thead className="bg-blue-50 border-b border-blue-200">
+                <thead className="bg-[#f0f3f5] border-b border-[#b3bfc8]">
                   <tr>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900 uppercase tracking-wide">
                       <div className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4 text-[#3B82F6]" />
+                        <Calendar className="w-4 h-4 text-[#2BA6D9]" />
                         Training Name
                       </div>
                     </th>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900 uppercase tracking-wide">
                       <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4 text-[#3B82F6]" />
+                        <Clock className="w-4 h-4 text-[#2BA6D9]" />
                         Schedule Date
                       </div>
                     </th>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-slate-900 uppercase tracking-wide">
                       <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-[#3B82F6]" />
+                        <MapPin className="w-4 h-4 text-[#2BA6D9]" />
                         Platform
                       </div>
                     </th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-slate-900 uppercase tracking-wide">
                       <div className="flex items-center justify-center gap-2">
-                        <Users className="w-4 h-4 text-[#3B82F6]" />
+                        <Users className="w-4 h-4 text-[#2BA6D9]" />
                         Action
                       </div>
                     </th>
@@ -181,7 +181,7 @@ export default function EventPageClient({ onlineEvents }) {
                       <motion.tr
                         key={index}
                         variants={tableRowVariants}
-                        className="hover:bg-blue-50 transition-colors duration-200"
+                        className="hover:bg-[#f0f3f5] transition-colors duration-200"
                       >
                         <td className="px-6 py-4">
                           <div className="flex flex-col">
@@ -190,7 +190,7 @@ export default function EventPageClient({ onlineEvents }) {
                               <span
                                 className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${
                                   training.category === "ITIL"
-                                    ? "bg-blue-100 text-blue-700"
+                                    ? "bg-[#dce3e8] text-[#1E2D3A]"
                                     : training.category === "PMP"
                                     ? "bg-green-100 text-green-700"
                                     : training.category === "PRINCE2"
@@ -206,7 +206,7 @@ export default function EventPageClient({ onlineEvents }) {
                                     : training.category === "SRE"
                                     ? "bg-indigo-100 text-indigo-700"
                                     : training.category === "BA"
-                                    ? "bg-pink-100 text-pink-700"
+                                    ? "bg-sky-100 text-sky-700"
                                     : training.category === "Testing"
                                     ? "bg-teal-100 text-teal-700"
                                     : "bg-gray-100 text-gray-700"
@@ -222,8 +222,8 @@ export default function EventPageClient({ onlineEvents }) {
                         </td>
                         <td className="px-6 py-4">
                           <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                              <svg className="w-4 h-4 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="w-8 h-8 bg-[#dce3e8] rounded-lg flex items-center justify-center">
+                              <svg className="w-4 h-4 text-[#2BA6D9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                               </svg>
                             </div>
@@ -235,7 +235,7 @@ export default function EventPageClient({ onlineEvents }) {
                             <motion.button
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
-                              className="bg-gradient-to-r from-[#3B82F6] to-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-md hover:shadow-lg"
+                              className="bg-gradient-to-r from-[#2BA6D9] to-[#5B6F81] text-white px-6 py-2 rounded-lg font-medium hover:from-[#1E7BA3] hover:to-[#155A76] transition-all duration-300 shadow-md hover:shadow-lg"
                             >
                               Register
                             </motion.button>
@@ -255,16 +255,16 @@ export default function EventPageClient({ onlineEvents }) {
             </div>
 
             {/* Table Footer */}
-            <div className="bg-blue-50 px-6 py-4 border-t border-blue-200">
+            <div className="bg-[#f0f3f5] px-6 py-4 border-t border-[#b3bfc8]">
               <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
                 <p className="text-sm text-slate-600">
-                  <span className="font-semibold text-[#3B82F6]">Online Training:</span> If the following schedule does not match with your availability, please contact us..
+                  <span className="font-semibold text-[#2BA6D9]">Online Training:</span> If the following schedule does not match with your availability, please contact us..
                 </p>
                 <div className="flex gap-2">
                   <Link href="/Contact">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
-                      className="bg-gradient-to-r from-[#3B82F6] to-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
+                      className="bg-gradient-to-r from-[#2BA6D9] to-[#5B6F81] text-white px-4 py-2 rounded-lg font-medium hover:from-[#1E7BA3] hover:to-[#155A76] transition-all duration-300"
                     >
                       Contact Us
                     </motion.button>

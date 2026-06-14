@@ -59,6 +59,13 @@ const courseData = {
     "IT Service Management professionals"
   ],
 
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of IT service operations and support functions",
+    "Familiarity with incident management, service requests, and monitoring concepts",
+    "Experience in an IT support or operations role is beneficial"
+  ],
+
   examDetails: [
     "Duration: 60 minutes",
     "Multiple choice examination",
@@ -79,7 +86,7 @@ const courseData = {
       duration: "3 Days",
       level: "Foundation",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "ITIL® 4 Specialist Create, Deliver and Support",
@@ -89,7 +96,7 @@ const courseData = {
       duration: "3 Days",
       level: "Professional",
       badge: "ITIL®",
-      badgeColor: "bg-[#3B82F6]"
+      badgeColor: "bg-[#2BA6D9]"
     },
     {
       title: "SIAM Foundation",
@@ -99,7 +106,7 @@ const courseData = {
       duration: "2 Days",
       level: "Foundation",
       badge: "SIAM",
-      badgeColor: "bg-blue-600"
+      badgeColor: "bg-[#2BA6D9]"
     }
   ]
 };

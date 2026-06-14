@@ -50,6 +50,14 @@ const courseData = {
     "Programme managers",
     "Project management consultants"
   ],
+
+  prerequisite: [
+    "PRINCE2 Foundation certification is required to sit the Practitioner exam",
+    "Practical experience managing or working within projects is strongly recommended",
+    "Familiarity with project governance, risk management, and change control concepts",
+    "Equivalent qualifications such as PMP, IPMA, or Project Management Professional are also accepted"
+  ],
+
   examDetails: [
     "Duration: 2.5 hours",
     "68 objective testing questions",
