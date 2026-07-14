@@ -19,96 +19,150 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "Business Analysis Practice",
-  subtitle:
-    "Develop practical skills to analyze business needs and deliver effective solutions",
-  backgroundImage: "/business_analysis_practice.jpg",
-
-  overview: [
-    "Business Analysis Practice equips professionals with practical techniques to identify business needs, define requirements, and recommend effective solutions.",
-    "This course focuses on stakeholder analysis, requirements elicitation, modeling techniques, business case development, and solution evaluation.",
-    "Participants will gain hands-on knowledge to bridge the gap between business objectives and technology solutions while ensuring value-driven outcomes."
+  "title": "EXIN BCS Practitioner Certificate in Business Analysis Practice",
+  "subtitle": "Apply Business Analysis Techniques to Drive Strategic Change and Deliver Effective Solutions",
+  "backgroundImage": "/business_analysis_practice.jpg",
+  "overview": [
+    "The EXIN BCS Practitioner Certificate in Business Analysis Practice is an advanced-level certification designed for professionals who want to apply business analysis techniques in real-world organizational contexts.",
+    "This course focuses on developing a holistic approach to analysing business situations, identifying improvement opportunities, and delivering effective, feasible business solutions aligned with strategic objectives.",
+    "Participants learn how to apply structured business analysis methods across the entire lifecycle—from understanding the current situation to defining solutions and building business cases."
   ],
-
-  courseOutline: [
-    "Role and responsibilities of a Business Analyst",
-    "Stakeholder identification and analysis",
-    "Requirements elicitation techniques",
-    "Requirements documentation and modeling",
-    "Business process modeling",
-    "Gap analysis and solution assessment",
-    "Business case development",
-    "Benefits realization and solution evaluation"
+  "whyHead": "Why Choose This Certification?",
+  "why": [
+    "Apply advanced business analysis techniques in real projects",
+    "Improve strategic thinking and problem-solving ability",
+    "Enhance decision-making in complex business environments",
+    "Strengthen stakeholder engagement and analysis skills",
+    "Build capability to deliver business transformation outcomes",
+    "Advance your career in business analysis and consulting"
   ],
-
-  learningObjectives: [
-    "Understand core business analysis principles",
-    "Identify and manage stakeholders effectively",
-    "Elicit and document clear business requirements",
-    "Apply modeling techniques to analyze processes",
-    "Develop strong business cases",
-    "Evaluate and validate proposed solutions",
-    "Ensure alignment between business goals and solutions"
+  "prerequisites": [
+    "There are no strict prerequisites for attending the course.",
+    "However, it is recommended that participants have:",
+    "Basic understanding of business analysis concepts",
+    "Experience in project or business environments"
   ],
-
-  targetGroup: [
+  "whoShouldAttend": [
     "Business Analysts",
+    "Senior Business Analysts",
+    "Business Managers",
     "Project Managers",
-    "Product Owners",
     "Change Managers",
-    "Professionals transitioning into business analysis roles"
+    "Product Owners",
+    "Consultants",
+    "PMO Professionals",
+    "Professionals involved in business transformation initiatives"
   ],
-
-  prerequisite: [
-    "Business Analysis Foundation certification or equivalent BA knowledge is recommended",
-    "Basic understanding of business analysis techniques and requirements management",
-    "Experience working on projects involving requirements gathering or stakeholder engagement",
-    "Familiarity with process modeling or business case development is beneficial"
-  ],
-
-  examDetails: [
-    "Duration: 60 minutes",
-    "Multiple choice examination",
-    "Passing score: 65%",
-    "Closed book examination",
-    "Certificate of completion provided"
-  ],
-
-  category: "Business Analysis & Change Management",
-  tagline: "Analyze. Define. Deliver Value.",
-
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "Business Analysis Foundation",
-      image: "/business_analysis_practice.jpg",
-      description: "Learn core business analysis fundamentals",
-      href: "/business-analysis-foundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "BA",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 1: Rationale for Business Analysis",
+      "topics": [
+        "Purpose of business analysis",
+        "Business improvement lifecycle",
+        "Value-driven analysis approach"
+      ]
     },
     {
-      title: "Agile Business Analysis",
-      image: "/business_analysis_practice.jpg",
-      description: "Apply business analysis in Agile environments",
-      href: "/agile-business-analysis",
-      duration: "2 Days",
-      level: "Professional",
-      badge: "Agile",
-      badgeColor: "bg-green-600"
+      "title": "Module 2: Understanding the Strategic Context",
+      "topics": [
+        "Business environment analysis",
+        "Internal and external factors",
+        "Strategy alignment",
+        "PESTLE and SWOT techniques"
+      ]
     },
     {
-      title: "Change Management",
-      image: "/business_analysis_practice.jpg",
-      description: "Manage organizational change effectively",
-      href: "/change-management",
-      duration: "2 Days",
-      level: "Professional",
-      badge: "Change",
-      badgeColor: "bg-purple-600"
+      "title": "Module 3: Understanding the Current Situation",
+      "topics": [
+        "As-is analysis",
+        "Business process evaluation",
+        "Performance assessment",
+        "Identifying gaps and inefficiencies"
+      ]
+    },
+    {
+      "title": "Module 4: Stakeholder Analysis & Management",
+      "topics": [
+        "Stakeholder identification and mapping",
+        "Stakeholder perspectives",
+        "Managing conflicts and expectations"
+      ]
+    },
+    {
+      "title": "Module 5: Analysing Business Activities",
+      "topics": [
+        "Business process modelling",
+        "Value chain analysis",
+        "Functional decomposition",
+        "Workflow analysis"
+      ]
+    },
+    {
+      "title": "Module 6: Identifying Potential Solutions",
+      "topics": [
+        "Solution evaluation techniques",
+        "Option assessment",
+        "Risk and impact analysis"
+      ]
+    },
+    {
+      "title": "Module 7: Building the Business Case",
+      "topics": [
+        "Cost-benefit analysis",
+        "Feasibility and viability",
+        "Risk assessment",
+        "Recommendation development"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Apply structured business analysis techniques in real scenarios",
+    "Analyse business problems and define improvement opportunities",
+    "Evaluate strategic and operational business contexts",
+    "Identify and assess potential solutions",
+    "Develop strong business cases for decision-making",
+    "Support business transformation initiatives effectively"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "EXIN BCS Practitioner Certificate in Business Analysis Practice"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Multiple Choice"
+    },
+    {
+      "label": "Number of Questions",
+      "value": "40"
+    },
+    {
+      "label": "Duration",
+      "value": "60 Minutes"
+    },
+    {
+      "label": "Passing Score",
+      "value": "65%"
+    },
+    {
+      "label": "Open Book",
+      "value": "No"
+    },
+    {
+      "label": "Level",
+      "value": "Practitioner"
+    }
+  ],
+  "courseHighlights": [
+    "Advanced EXIN BCS Practitioner syllabus coverage",
+    "Scenario-based learning approach",
+    "Real-world business case studies",
+    "Hands-on analytical exercises",
+    "Exam-focused preparation",
+    "Practice questions and mock tests"
+  ],
+  "disclaimer": "EXIN®, BCS®, Business Analysis Practice®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with or endorsed by EXIN or BCS."
 };
 
 export default function BusinessAnalysisPracticePage() {

@@ -16,89 +16,211 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "ISTQB Foundation Level",
-  subtitle: "Master software testing fundamentals and quality assurance principles",
-  backgroundImage: "/istqb_foundation.jpg",
-  overview: [
-    "ISTQB Foundation Level provides comprehensive training in software testing fundamentals, covering testing principles, processes, and techniques. This globally recognized certification establishes a solid foundation in software quality assurance.",
-    "Learn essential testing concepts including test planning, design, execution, and management. The course covers both manual and automated testing approaches, risk-based testing, and quality management principles.",
-    "Develop skills in test case design, defect management, and testing tools to become an effective software testing professional capable of ensuring software quality and reliability."
+  "title": "Certified Tester Foundation Level (CTFL) v4.0 Certification Training",
+  "subtitle": "Build a Strong Foundation in Software Testing and Quality Assurance for Modern Software Development",
+  "backgroundImage": "/istqb_foundation.jpg",
+  "overview": [
+    "The ISTQB® Certified Tester Foundation Level (CTFL) v4.0 certification is the world's leading entry-level software testing certification, providing professionals with a comprehensive understanding of software testing principles, techniques, processes, and best practices.",
+    "Developed by the International Software Testing Qualifications Board (ISTQB®), the CTFL certification equips learners with the knowledge required to effectively plan, design, execute, and manage software testing activities throughout the Software Development Life Cycle (SDLC).",
+    "The latest CTFL v4.0 syllabus reflects today's software delivery practices, incorporating Agile methodologies, risk-based testing, test automation awareness, and quality engineering concepts. Participants learn how testing contributes to delivering reliable, secure, and high-quality software products while reducing business risks and improving customer satisfaction.",
+    "Whether you are beginning your testing career or looking to formalize your software quality knowledge, the CTFL certification provides a globally recognized credential that serves as the foundation for advanced ISTQB certifications and career growth in Quality Assurance (QA), Test Automation, Agile Testing, and Quality Engineering."
   ],
-  courseOutline: [
-    "Fundamentals of testing and quality assurance",
-    "Testing throughout the software development lifecycle",
-    "Static testing techniques and reviews",
-    "Test design techniques and approaches",
-    "Test management and planning",
-    "Testing tools and automation introduction",
-    "Defect management and reporting",
-    "Testing in different development models"
+  "whyHead": "Why Choose ISTQB® CTFL v4.0?",
+  "why": [
+    "The Certified Tester Foundation Level certification is recognized worldwide by employers as the benchmark qualification for software testing professionals.",
+    "Benefits of earning the CTFL certification include:",
+    "Gain internationally recognized software testing credentials.",
+    "Build a strong understanding of software testing fundamentals.",
+    "Learn structured testing techniques and industry best practices.",
+    "Improve software quality through systematic testing approaches.",
+    "Understand the role of testing within Agile and DevOps environments.",
+    "Develop practical skills for designing and executing effective test cases.",
+    "Enhance career opportunities in software quality assurance and testing.",
+    "Establish the prerequisite knowledge for advanced ISTQB certifications."
   ],
-  learningObjectives: [
-    "Understand software testing fundamentals and principles",
-    "Master test design techniques and methodologies",
-    "Learn test planning and management processes",
-    "Implement static testing and review techniques",
-    "Develop effective defect management practices",
-    "Understand testing tools and automation basics",
-    "Apply testing in various development lifecycles"
+  "prerequisites": [
+    "There are no formal prerequisites for attending the ISTQB® Certified Tester Foundation Level course or taking the certification examination.",
+    "This certification is suitable for both beginners and experienced professionals who wish to build or validate their software testing knowledge.",
+    "A basic understanding of software development concepts, software lifecycle models, or Agile methodologies is helpful but not mandatory."
   ],
-  targetGroup: [
-    "Software testers and QA professionals",
-    "Test analysts and test engineers",
-    "Software developers interested in testing",
-    "Project managers and team leaders",
-    "Anyone new to software testing field"
+  "whoShouldAttend": [
+    "Software Testers",
+    "QA Engineers",
+    "Manual Test Engineers",
+    "Automation Test Engineers",
+    "Test Analysts",
+    "Test Consultants",
+    "Software Developers",
+    "Business Analysts",
+    "Scrum Masters",
+    "Product Owners",
+    "Project Managers",
+    "Release Managers",
+    "DevOps Engineers",
+    "Agile Team Members",
+    "Fresh graduates aspiring to build a career in Software Testing",
+    "anyone interested in software quality assurance"
   ],
-
-  prerequisite: [
-    "No formal prerequisites are required for ISTQB Foundation Level",
-    "Basic IT awareness and understanding of the software development lifecycle is recommended",
-    "Familiarity with general programming or development concepts is beneficial but not mandatory",
-    "No prior testing certification or experience is required for this entry-level course"
-  ],
-
-  examDetails: [
-    "Duration: 60 minutes",
-    "40 multiple choice questions",
-    "Passing score: 26/40 (65%)",
-    "Closed book examination",
-    "Available at Pearson VUE centers worldwide"
-  ],
-  category: "Software Testing & Technical",
-  tagline: "Test. Verify. Assure.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "ISTQB Advanced",
-      image: "/istqb_foundation.jpg",
-      description: "Advanced testing techniques and automation",
-      href: "/ISTQBA",
-      duration: "4 Days",
-      level: "Professional",
-      badge: "ISTQB",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Course Content",
+      "topics": [
+        "The CTFL v4.0 syllabus is structured to provide a complete understanding of software testing fundamentals, including principles, lifecycle integration, static and dynamic testing techniques, test management basics, and tool support."
+      ]
     },
     {
-      title: "DevOps Foundation",
-      image: "/istqb_foundation.jpg",
-      description: "Learn DevOps culture and practices",
-      href: "/DevopsFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "DevOps",
-      badgeColor: "bg-green-600"
+      "title": "Module 1: Fundamentals of Testing",
+      "topics": [
+        "What is software testing?",
+        "Objectives of testing",
+        "Testing and quality assurance",
+        "Errors, defects, and failures",
+        "Seven testing principles",
+        "Testing and debugging",
+        "Test process and basic test activities"
+      ]
     },
     {
-      title: "Agile Business Analysis",
-      image: "/istqb_foundation.jpg",
-      description: "Business analysis in Agile environments",
-      href: "/AgileBA",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "BA",
-      badgeColor: "bg-purple-600"
+      "title": "Module 2: Testing Throughout the Software Development Lifecycle (SDLC)",
+      "topics": [
+        "Software development models (Waterfall, V-Model, Iterative, Agile)",
+        "Test levels:",
+        "Component testing",
+        "Integration testing",
+        "System testing",
+        "Acceptance testing",
+        "Test types:",
+        "Functional testing",
+        "Non-functional testing",
+        "Regression testing",
+        "Maintenance testing"
+      ]
+    },
+    {
+      "title": "Module 3: Static Testing",
+      "topics": [
+        "Static testing basics",
+        "Reviews and review process",
+        "Roles and responsibilities in reviews",
+        "Types of reviews:",
+        "Informal review",
+        "Walkthrough",
+        "Technical review",
+        "Inspection",
+        "Static analysis tools"
+      ]
+    },
+    {
+      "title": "Module 4: Test Techniques",
+      "topics": [
+        "Black-box test techniques:",
+        "Equivalence partitioning",
+        "Boundary value analysis",
+        "Decision table testing",
+        "State transition testing",
+        "White-box test techniques:",
+        "Statement testing",
+        "Branch testing",
+        "Experience-based techniques:",
+        "Error guessing",
+        "Exploratory testing"
+      ]
+    },
+    {
+      "title": "Module 5: Test Management",
+      "topics": [
+        "Test planning and estimation",
+        "Test strategy and test approach",
+        "Risk-based testing",
+        "Test monitoring and control",
+        "Configuration management",
+        "Defect management process",
+        "Test reporting"
+      ]
+    },
+    {
+      "title": "Module 6: Tool Support for Testing",
+      "topics": [
+        "Types of test tools:",
+        "Test management tools",
+        "Test design tools",
+        "Test execution tools",
+        "Benefits of automation tools",
+        "Tool selection and implementation",
+        "Risks and considerations of test tools"
+      ]
+    },
+    {
+      "title": "Skills You'll Gain",
+      "topics": [
+        "After completing this course, participants will be able to:",
+        "Understand core principles of software testing",
+        "Design effective manual test cases",
+        "Apply black-box and white-box testing techniques",
+        "Perform static testing and reviews",
+        "Understand Agile and traditional testing approaches",
+        "Manage basic test activities and reporting",
+        "Identify and document software defects effectively",
+        "Work effectively in Agile and DevOps teams",
+        "Prepare confidently for the ISTQB CTFL v4.0 certification exam"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Explain fundamental testing concepts and terminology",
+    "Apply structured testing techniques in real projects",
+    "Understand testing across all SDLC stages",
+    "Participate effectively in review processes",
+    "Contribute to test planning and execution activities",
+    "Use tools to support testing activities",
+    "Improve software quality through systematic testing approaches"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "ISTQB® Certified Tester Foundation Level (CTFL) v4.0"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Multiple Choice Questions"
+    },
+    {
+      "label": "Number of Questions",
+      "value": "40"
+    },
+    {
+      "label": "Duration",
+      "value": "60 Minutes"
+    },
+    {
+      "label": "Passing Score",
+      "value": "65% (approx. 26 correct answers)"
+    },
+    {
+      "label": "Open Book",
+      "value": "No"
+    },
+    {
+      "label": "Language",
+      "value": "English (varies by region)"
+    },
+    {
+      "label": "Certification Body",
+      "value": "ISTQB® International Software Testing Qualifications Board"
+    }
+  ],
+  "courseHighlights": [
+    "Latest ISTQB® CTFL v4.0 syllabus",
+    "Instructor-led live online or classroom training",
+    "Practical examples and real-world testing scenarios",
+    "Interactive exercises and discussions",
+    "Comprehensive course material",
+    "Practice questions and mock examinations",
+    "Exam preparation guidance",
+    "Post-training support from certified instructors"
+  ],
+  "disclaimer": ""
 };
 
 export default function ISTQBFPage() {

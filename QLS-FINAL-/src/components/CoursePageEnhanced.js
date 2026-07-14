@@ -317,7 +317,7 @@ export default function CoursePageEnhanced({ courseData }) {
             className="text-center mb-10"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Why Train With <span className="text-[#2BA6D9]">QuickLearn?</span>
+              Why Train With <span className="text-[#2BA6D9]">QuickLearn Systems?</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif" }}>
               Your success is our guarantee — backed by expert trainers, accredited content, and a commitment to your exam results.

@@ -19,92 +19,205 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "ITIL 4 Specialist: Acquiring & Managing Cloud Services (ACP)",
-  subtitle:
-    "Acquire, govern, and manage cloud services to optimize value and align with business strategy.",
-  backgroundImage: "/itl4_foundation.png",
-  overview: [
-    "The ITIL 4 Specialist: Acquiring & Managing Cloud Services (ACP) course equips professionals with the knowledge to effectively acquire and manage cloud-based services in alignment with organizational strategies and ITIL 4 principles.",
-    "This course emphasizes governance, procurement, and financial management of cloud environments, ensuring that organizations maximize business value from their cloud investments.",
-    "Through practical examples and best practices, learners gain the expertise to balance innovation, risk, and compliance in multi-cloud ecosystems."
+  "title": "PMI Agile Certified Practitioner (PMI-ACP®) Certification Training",
+  "subtitle": "Master Agile Practices. Lead High-Performing Teams. Deliver Business Value.",
+  "backgroundImage": "/acp_certification.jpg",
+  "overview": [
+    "The PMI Agile Certified Practitioner (PMI-ACP®) certification from the Project Management Institute (PMI®) is one of the world's most respected Agile certifications. It validates your ability to apply Agile principles, practices, and techniques across multiple Agile approaches, including Scrum, Kanban, Lean, XP, and other adaptive methodologies.",
+    "Our PMI-ACP® Certification Training is aligned with the latest PMI-ACP® Examination Content Outline (March 2026) and prepares professionals to lead Agile teams, optimize value delivery, foster Enterprise Agility, and successfully pass the PMI-ACP certification examination.",
+    "This instructor-led course combines practical Agile concepts, real-world case studies, hands-on exercises, and exam-focused preparation to help professionals confidently implement Agile practices across projects and organizations."
   ],
-  courseOutline: [
-    "Introduction to cloud service management and ITIL 4 context",
-    "Cloud strategy and governance models",
-    "Cloud service procurement and supplier management",
-    "Cloud financial management and cost optimization",
-    "Risk, compliance, and data security in cloud environments",
-    "Cloud service performance measurement and improvement",
-    "Integration of cloud services with ITIL 4 practices",
-    "Sustainability and continual improvement in cloud operations"
+  "whyHead": "Why Choose PMI-ACP® Certification?",
+  "why": [
+    "The PMI-ACP® certification demonstrates your ability to:",
+    "Apply Agile values, principles, and practices across multiple frameworks",
+    "Lead Agile teams in dynamic business environments",
+    "Deliver customer value through iterative and incremental delivery",
+    "Foster collaboration, transparency, and continuous improvement",
+    "Improve organizational agility and business outcomes",
+    "Support Agile transformations across teams and enterprises",
+    "Advance your career as an Agile practitioner and leader"
   ],
-  learningObjectives: [
-    "Understand the principles of acquiring and managing cloud services",
-    "Develop governance and procurement strategies for cloud adoption",
-    "Apply ITIL 4 practices to manage multi-cloud environments effectively",
-    "Implement financial management and cost optimization frameworks",
-    "Ensure compliance, risk management, and data protection in the cloud",
-    "Drive continual improvement and innovation in cloud service delivery"
+  "prerequisites": [
+    "Training Prerequisites - There are no mandatory prerequisites to attend this training. However, a basic understanding of Agile concepts or experience working in Agile environments is beneficial.",
+    "PMI-ACP® Certification Eligibility",
+    "To be eligible for the PMI-ACP® certification, candidates must meet the requirements established by PMI:",
+    "Secondary diploma (high school, associate degree, or global equivalent) or higher",
+    "28 hours of formal training in Agile practices, frameworks, or methodologies",
+    "Meet one of the following experience requirements:",
+    "Two years of Agile experience within the past five years, or",
+    "One year of Agile experience plus a degree from a PMI Global Accreditation Center (GAC) program, or",
+    "One year of Agile experience plus an active qualifying third-party Agile certification, or",
+    "Hold an active PMP® certification."
   ],
-  targetGroup: [
-    "Cloud Service Managers and Strategists",
-    "IT Service Management professionals",
-    "Procurement and Vendor Management specialists",
-    "Cloud Architects and Consultants",
-    "IT Governance and Compliance Officers"
+  "whoShouldAttend": [
+    "Scrum Masters Agile Coaches",
+    "Product Owners",
+    "Product Managers",
+    "Project Managers",
+    "Delivery Managers",
+    "Business Analysts",
+    "Team Leads",
+    "Software Developers",
+    "QA Professionals",
+    "PMO Professionals",
+    "Professionals involved in Agile transformations"
   ],
-
-  prerequisite: [
-    "ITIL® 4 Foundation certification is required",
-    "Basic understanding of cloud computing service models and deployment types",
-    "Familiarity with IT governance, risk management, or procurement processes",
-    "Experience working in cloud or IT service management environments is recommended"
-  ],
-
-  examDetails: [
-    "Duration: 90 minutes",
-    "40 multiple-choice questions",
-    "Passing score: 70% (28/40)",
-    "Closed book examination",
-    "Available online and through accredited partners"
-  ],
-  category: "IT Service Management",
-  tagline: "Acquire. Govern. Optimize.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "ITIL 4 Specialist: Create, Deliver & Support",
-      image: "/itl4_foundation.png",
-      description:
-        "Master how to create, deliver, and support IT-enabled services for improved customer value.",
-      href: "/CreateDeliverSupport",
-      duration: "3 Days",
-      level: "Intermediate",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 1: Agile Mindset",
+      "topics": [
+        "Agile values and principles",
+        "Enterprise Agility",
+        "Customer-centric thinking",
+        "Systems thinking",
+        "Continuous learning and improvement",
+        "Lean thinking and experimentation"
+      ]
     },
     {
-      title: "ITIL 4 Strategist: Direct, Plan & Improve",
-      image: "/itl4_foundation.png",
-      description:
-        "Learn to align strategy and operations using ITIL 4’s Direct, Plan & Improve framework.",
-      href: "/DirectPlanImprove",
-      duration: "3 Days",
-      level: "Advanced",
-      badge: "ITIL®",
-      badgeColor: "bg-purple-600"
+      "title": "Module 2: Agile Leadership",
+      "topics": [
+        "Servant leadership",
+        "Coaching Agile teams",
+        "Building high-performing teams",
+        "Psychological safety",
+        "Conflict management",
+        "Facilitating collaboration",
+        "Stakeholder engagement"
+      ]
     },
     {
-      title: "Cloud Governance & Security",
-      image: "/itl4_foundation.png",
-      description:
-        "Gain expertise in managing cloud risks, compliance, and security in hybrid environments.",
-      href: "/CloudGovernanceSecurity",
-      duration: "2 Days",
-      level: "Professional",
-      badge: "Cloud",
-      badgeColor: "bg-green-600"
+      "title": "Module 3: Agile Product Management",
+      "topics": [
+        "Product vision and strategy",
+        "Product backlog management",
+        "Value prioritization",
+        "Customer feedback loops",
+        "Incremental value delivery",
+        "Product metrics and outcomes"
+      ]
+    },
+    {
+      "title": "Module 4: Agile Delivery",
+      "topics": [
+        "Scrum Framework",
+        "Kanban practices",
+        "Lean principles",
+        "Extreme Programming (XP)",
+        "Flow optimization",
+        "Adaptive planning",
+        "Agile estimation techniques",
+        "Continuous delivery and improvement"
+      ]
+    },
+    {
+      "title": "Module 5: Agile Metrics & Value Delivery",
+      "topics": [
+        "Measuring business outcomes",
+        "Agile performance metrics",
+        "Forecasting and predictability",
+        "Managing risks and dependencies",
+        "Evidence-based decision making"
+      ]
+    },
+    {
+      "title": "Module 6: Enterprise Agility",
+      "topics": [
+        "Scaling Agile concepts",
+        "Organizational agility",
+        "Cross-functional collaboration",
+        "Governance in Agile environments",
+        "Change enablement",
+        "Business value realization"
+      ]
+    },
+    {
+      "title": "Module 7: PMI-ACP® Exam Preparation",
+      "topics": [
+        "Latest PMI-ACP® exam structure",
+        "Scenario-based practice questions",
+        "Mock examinations",
+        "Exam strategies and techniques",
+        "Application guidance"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Apply Agile principles across multiple frameworks",
+    "Build and lead high-performing Agile teams",
+    "Foster Enterprise Agility within organizations",
+    "Prioritize work based on customer and business value",
+    "Improve collaboration among stakeholders and teams",
+    "Optimize Agile delivery through continuous improvement",
+    "Apply Agile leadership techniques in complex environments",
+    "Prepare confidently for the latest PMI-ACP® certification examination",
+    "PMI-ACP® Exam Information"
+  ],
+  "certificationHeading": "Certification & Exam Details",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "PMI Agile Certified Practitioner (PMI-ACP®)"
+    },
+    {
+      "label": "Exam Provider",
+      "value": "Project Management Institute (PMI®)"
+    },
+    {
+      "label": "Exam Duration",
+      "value": "3 Hours"
+    },
+    {
+      "label": "Questions",
+      "value": "120 (100 scored + 20 pretest questions)"
+    },
+    {
+      "label": "Question Types",
+      "value": "Multiple Choice, Multiple Response, Drag-and-Drop, Matching, and Scenario-Based"
+    },
+    {
+      "label": "Break",
+      "value": "One optional 10-minute break"
+    },
+    {
+      "label": "Delivery",
+      "value": "Pearson VUE Test Centre or Online Proctored"
+    },
+    {
+      "label": "Exam Domains",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": "Mindset – 28%"
+    },
+    {
+      "label": "",
+      "value": "Leadership – 25%"
+    },
+    {
+      "label": "",
+      "value": "Product – 19%"
+    },
+    {
+      "label": "",
+      "value": "Delivery – 28%"
+    }
+  ],
+  "courseHighlights": [
+    "Aligned with the Latest PMI-ACP® Exam Content Outline (March 2026)",
+    "Covers Scrum, Kanban, Lean, XP, and Enterprise Agility concepts",
+    "28 Contact Hours Certificate",
+    "Instructor-led Live Training",
+    "Real-world Agile Case Studies",
+    "Practice Questions & Mock Exams",
+    "Agile Mindset and Leadership Development",
+    "PMI-ACP® Application Guidance",
+    "Comprehensive Course Material",
+    "Post-training Mentor Support"
+  ],
+  "disclaimer": "PMI®, PMI-ACP®, Agile Certified Practitioner®, PMP®, PMBOK®, and all related trademarks are the property of the Project Management Institute, Inc. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PMI®. All trademarks are the property of their respective owner"
 };
 
 export default function AcquiringManagingCloudPage() {

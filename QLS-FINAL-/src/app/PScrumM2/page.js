@@ -19,96 +19,141 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "Professional Scrum Master™ II (PSM II)",
-  subtitle:
-    "Strengthen advanced Scrum Master skills for complex Agile environments",
-  backgroundImage: "/professional_scrum_master_2.jpg",
-
-  overview: [
-    "Professional Scrum Master™ II (PSM II) is an advanced Scrum Master certification designed for experienced Scrum practitioners who want to deepen their understanding of Scrum principles and servant leadership.",
-    "This course focuses on advanced facilitation, coaching techniques, stakeholder management, and guiding teams through organizational challenges.",
-    "Participants will enhance their ability to support Product Owners, improve team effectiveness, and drive continuous improvement across Agile teams."
+  "title": "Professional Scrum Master™ II (PSM II) Certification Training",
+  "subtitle": "Elevate Your Scrum Leadership with Advanced Facilitation, Coaching, and Agile Practices",
+  "backgroundImage": "/professional_scrum_master_2.jpg",
+  "overview": [
+    "Professional Scrum Master™ II (PSM II) is an advanced Scrum Master course designed for experienced Scrum practitioners who want to deepen their understanding of servant leadership, coaching, facilitation, and organizational agility.",
+    "The course focuses on helping Scrum Masters maximize value delivery by improving team effectiveness and enabling organizational change."
   ],
-
-  courseOutline: [
-    "Advanced Scrum theory and principles",
-    "The Scrum Master as a servant leader",
-    "Coaching and mentoring Agile teams",
-    "Facilitation and conflict management",
-    "Scaling Scrum and working in complex environments",
-    "Stakeholder collaboration and engagement",
-    "Supporting Product Owners effectively",
-    "Continuous improvement and metrics"
+  "whyHead": "Why Choose This Course?",
+  "why": [
+    "Deepen your expertise as an advanced Scrum Master",
+    "Strengthen your servant leadership, coaching, and facilitation skills",
+    "Learn how to support high-performing Scrum Teams",
+    "Improve your ability to enable organizational agility and change",
+    "Gain practical insights into value delivery and continuous improvement",
+    "Prepare for the globally recognized PSM II certification exam"
   ],
-
-  learningObjectives: [
-    "Deepen understanding of Scrum principles",
-    "Strengthen servant leadership capabilities",
-    "Apply advanced coaching techniques",
-    "Facilitate challenging team discussions",
-    "Handle stakeholder dynamics effectively",
-    "Support scaling Scrum initiatives",
-    "Improve team performance and agility"
+  "prerequisites": [
+    "This course is intended for experienced Scrum professionals. Participants should have:",
+    "A strong understanding of Scrum principles and practices",
+    "Practical experience working as a Scrum Master or in a Scrum environment",
+    "PSM I certification recommended",
+    "Experience supporting teams, stakeholders, or agile transformation initiatives"
   ],
-
-  targetGroup: [
+  "whoShouldAttend": [
     "Experienced Scrum Masters",
     "Agile Coaches",
-    "Team Facilitators",
-    "Project Managers transitioning to Agile",
-    "Professionals who have passed PSM I"
+    "Team Coaches",
+    "Delivery Managers",
+    "Agile Leaders",
+    "Transformation Leaders"
   ],
-
-  prerequisite: [
-    "Professional Scrum Master™ I (PSM I) certification is strongly recommended",
-    "At least one year of practical experience in a Scrum Master or Agile facilitator role",
-    "Solid understanding of the Scrum Guide and empirical process theory",
-    "Experience coaching or mentoring Agile teams is beneficial"
-  ],
-
-  examDetails: [
-    "Duration: 90 minutes",
-    "30 multiple choice questions",
-    "Passing score: 85%",
-    "Online, open book examination",
-    "Certification issued by Scrum.org"
-  ],
-
-  category: "Agile & Scrum",
-  tagline: "Lead. Coach. Elevate.",
-
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "Professional Scrum Master™ I (PSM I)",
-      image: "/professional_scrum_master_2.jpg",
-      description: "Foundational Scrum Master certification",
-      href: "/professional-scrum-master-1",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "Scrum",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "The Scrum Master as a Leader",
+      "topics": [
+        "Servant Leadership",
+        "Leadership Styles",
+        "Coaching Stances",
+        "Facilitating Change"
+      ]
     },
     {
-      title: "Professional Scrum Product Owner™ (PSPO)",
-      image: "/professional_scrum_master_2.jpg",
-      description: "Master product ownership and value delivery",
-      href: "/professional-scrum-product-owner",
-      duration: "2 Days",
-      level: "Professional",
-      badge: "Scrum",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Supporting Scrum Teams",
+      "topics": [
+        "Team Dynamics",
+        "Conflict Resolution",
+        "Psychological Safety",
+        "Self-Management"
+      ]
     },
     {
-      title: "SAFe® Advanced Scrum Master",
-      image: "/professional_scrum_master_2.jpg",
-      description: "Scale Scrum practices in enterprise environments",
-      href: "/safe-advanced-scrum-master",
-      duration: "2 Days",
-      level: "Advanced",
-      badge: "SAFe®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Organizational Agility",
+      "topics": [
+        "Organizational Design",
+        "Agile Culture",
+        "Change Management",
+        "Scaling Agile"
+      ]
+    },
+    {
+      "title": "Product Delivery",
+      "topics": [
+        "Maximizing Value",
+        "Product Goals",
+        "Stakeholder Engagement",
+        "Continuous Improvement"
+      ]
+    },
+    {
+      "title": "Advanced Facilitation & Coaching",
+      "topics": [
+        "Facilitation Techniques",
+        "Coaching Conversations",
+        "Mentoring Approaches",
+        "Professional Development"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Act as an effective servant leader",
+    "Coach teams and stakeholders",
+    "Improve team effectiveness",
+    "Facilitate organizational change",
+    "Support agile transformation initiatives",
+    "Enhance value delivery"
+  ],
+  "certificationHeading": "Certification & Exam Details",
+  "certification": [
+    {
+      "label": "",
+      "value": "Certification Exam"
+    },
+    {
+      "label": "Certification",
+      "value": "Professional Scrum Master™ II (PSM II)"
+    },
+    {
+      "label": "Questions",
+      "value": "30"
+    },
+    {
+      "label": "Duration",
+      "value": "90 Minutes"
+    },
+    {
+      "label": "Passing Score",
+      "value": "85%"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online"
+    },
+    {
+      "label": "Format",
+      "value": "Scenario-Based Assessment"
+    },
+    {
+      "label": "",
+      "value": "Lifetime certification - no annual renewal fee required"
+    },
+    {
+      "label": "",
+      "value": "Free Credly digital credential included"
+    }
+  ],
+  "courseHighlights": [
+    "Advanced Scrum Master training for experienced professionals",
+    "Focus on servant leadership, coaching, and facilitation",
+    "Practical guidance on supporting Scrum Teams and stakeholders",
+    "Coverage of organizational agility and change management",
+    "Scenario-based learning and real-world examples",
+    "Exam-focused preparation for PSM II certification",
+    "Delivered by experienced Agile and Scrum trainers"
+  ],
+  "disclaimer": "Professional Scrum™, PSM™, PSPO™, Scrum.org™, and related marks are trademarks of Scrum.org. All other trademarks, service marks, registered trademarks, product names, and company names mentioned are the property of their respective owners. training@quicklearnsys.com for review and correction."
 };
 
 export default function ProfessionalScrumMaster2Page() {

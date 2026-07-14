@@ -19,92 +19,166 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "PRINCE2 Agile Foundation",
-  subtitle: "Deliver projects successfully using PRINCE2 governance and agile flexibility",
-  backgroundImage: "/prince2_agile_foundation.jpg",
-  overview: [
-    "PRINCE2 Agile Foundation introduces the principles, themes, and processes of PRINCE2 and how they can be blended with agile delivery approaches.",
-    "Participants will learn how to manage project governance, roles, and responsibilities while incorporating agile techniques to deliver value iteratively and adaptively.",
-    "The course provides practical insights into balancing control and flexibility, managing risk, and aligning projects with organizational objectives."
+  "title": "PRINCE2 Agile® Foundation Certification Training (Version 2)",
+  "subtitle": "Combine the Flexibility of Agile with the Governance of PRINCE2®",
+  "backgroundImage": "/prince2_agile_foundation.jpg",
+  "overview": [
+    "PRINCE2 Agile® Foundation provides professionals with a practical understanding of how Agile delivery approaches can be successfully integrated with the structured governance of the PRINCE2® project management methodology.",
+    "The latest PRINCE2 Agile® Version 2 has been updated to reflect modern Agile ways of working, enabling organizations to combine effective project governance with iterative delivery, customer collaboration, continuous improvement, and rapid value realization.",
+    "This course introduces Agile concepts, frameworks, and techniques—including Scrum, Kanban, Lean Startup, and DevOps—and explains how they work within the PRINCE2 governance framework. Participants learn how to tailor PRINCE2® for Agile projects while maintaining control, transparency, and business justification.",
+    "Upon successful completion, participants will be prepared to take the PRINCE2 Agile® Foundation certification examination."
   ],
-  courseOutline: [
-    "Introduction to PRINCE2 and Agile principles",
-    "PRINCE2 methodology: principles, themes, and processes",
-    "Agile concepts, frameworks, and delivery techniques",
-    "Blending PRINCE2 with Agile for hybrid project management",
-    "Roles and responsibilities in PRINCE2 Agile projects",
-    "Managing risks, issues, and change in agile projects",
-    "Planning, monitoring, and controlling agile projects",
-    "Best practices for governance, reporting, and stakeholder engagement"
+  "whyHead": "Why Choose PRINCE2 Agile®?",
+  "why": [
+    "Combine Agile flexibility with PRINCE2 governance",
+    "Deliver projects faster while maintaining control",
+    "Improve collaboration between business and delivery teams",
+    "Apply Agile practices within enterprise project environments",
+    "Learn globally recognized Agile project management practices",
+    "Build a strong foundation for PRINCE2 Agile® Practitioner certification"
   ],
-  learningObjectives: [
-    "Understand PRINCE2 methodology and agile delivery approaches",
-    "Apply PRINCE2 principles and themes in project governance",
-    "Integrate agile techniques into structured project management",
-    "Define roles and responsibilities for agile project teams",
-    "Manage risks, issues, and changes effectively",
-    "Plan, monitor, and control projects to deliver value iteratively",
-    "Balance governance and flexibility for successful project outcomes"
+  "prerequisites": [
+    "There are no mandatory prerequisites for attending the PRINCE2 Agile® Foundation course.",
+    "Basic knowledge of project management or Agile practices is beneficial but not required."
   ],
-  targetGroup: [
-    "Project Managers and Team Leaders",
-    "Project Coordinators and Project Support Staff",
-    "Agile Coaches and Scrum Masters",
-    "Business Analysts and IT Project Professionals",
-    "Anyone looking to understand PRINCE2 Agile methodology"
+  "whoShouldAttend": [
+    "Project Managers",
+    "Agile Project Managers",
+    "Scrum Masters",
+    "Product Owners",
+    "Agile Coaches",
+    "Delivery Managers",
+    "Business Analysts",
+    "PMO Professionals",
+    "Team Leads",
+    "Developers",
+    "Professionals working in Agile or hybrid project environments"
   ],
-
-  prerequisite: [
-    "No formal prerequisites are required for PRINCE2 Agile Foundation",
-    "Basic awareness of project management concepts is recommended",
-    "Familiarity with either PRINCE2 or an Agile framework such as Scrum is beneficial",
-    "Some experience working on or within project teams is helpful"
-  ],
-
-  examDetails: [
-    "Duration: 60 minutes",
-    "50 multiple-choice questions",
-    "Passing score: 50% (25/50)",
-    "Closed book examination",
-    "Available online and at accredited centers"
-  ],
-  category: "Project Management",
-  tagline: "Govern Projects. Deliver Agile. Achieve Success.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "PRINCE2 Foundation",
-      image: "/prince2_agile_foundation.jpg",
-      description:
-        "Understand the fundamentals of PRINCE2 project management framework and principles.",
-      href: "/PRINCE2Foundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "PRINCE2",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 1: Introduction to PRINCE2 Agile®",
+      "topics": [
+        "Overview of PRINCE2 Agile®",
+        "Agile fundamentals",
+        "Benefits of combining Agile and PRINCE2",
+        "Project governance in Agile environments"
+      ]
     },
     {
-      title: "Agile Project Management",
-      image: "/prince2_agile_foundation.jpg",
-      description:
-        "Learn agile methods and techniques for iterative and adaptive project delivery.",
-      href: "/AgileProjectManagement",
-      duration: "3 Days",
-      level: "Intermediate",
-      badge: "Agile",
-      badgeColor: "bg-green-500"
+      "title": "Module 2: Agile Concepts and Mindset",
+      "topics": [
+        "Agile values and principles",
+        "Agile culture",
+        "Customer collaboration",
+        "Incremental delivery",
+        "Continuous improvement"
+      ]
     },
     {
-      title: "Scrum Master Certification",
-      image: "/prince2_agile_foundation.jpg",
-      description:
-        "Gain practical knowledge to lead Scrum teams and implement Agile practices successfully.",
-      href: "/ScrumMaster",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "Scrum",
-      badgeColor: "bg-purple-600"
+      "title": "Module 3: PRINCE2 Governance",
+      "topics": [
+        "PRINCE2 principles",
+        "Practices",
+        "Processes",
+        "Roles and responsibilities",
+        "Business Case"
+      ]
+    },
+    {
+      "title": "Module 4: Agile Frameworks and Techniques",
+      "topics": [
+        "Scrum",
+        "Kanban",
+        "Lean Startup",
+        "DevOps",
+        "Cynefin Framework",
+        "Rich Communication",
+        "Workshops"
+      ]
+    },
+    {
+      "title": "Module 5: Tailoring PRINCE2 for Agile",
+      "topics": [
+        "Agile delivery lifecycle",
+        "Managing product delivery",
+        "Agile planning",
+        "Risk management",
+        "Quality management",
+        "Progress monitoring"
+      ]
+    },
+    {
+      "title": "Module 6: Focus Areas",
+      "topics": [
+        "Flexibility vs Governance",
+        "Prioritization using MoSCoW",
+        "Timeboxing",
+        "Servant Leadership",
+        "Stakeholder Engagement",
+        "Frequent Releases"
+      ]
+    },
+    {
+      "title": "Module 7: PRINCE2 Agile® Foundation Exam Preparation",
+      "topics": [
+        "Exam structure",
+        "Practice questions",
+        "Revision sessions",
+        "Exam strategies"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Understand Agile principles and practices",
+    "Explain how PRINCE2® and Agile complement each other",
+    "Apply Agile concepts within PRINCE2 projects",
+    "Tailor PRINCE2® governance for Agile delivery",
+    "Understand Scrum, Kanban, Lean Startup, and DevOps concepts",
+    "Manage Agile projects while maintaining governance and control",
+    "Prepare confidently for the PRINCE2 Agile® Foundation examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "PRINCE2 Agile® Foundation (Version 2)"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Multiple Choice"
+    },
+    {
+      "label": "Number of Questions",
+      "value": "60"
+    },
+    {
+      "label": "Passing Score",
+      "value": "60% (36 out of 60)"
+    },
+    {
+      "label": "Exam Duration",
+      "value": "60 Minutes"
+    },
+    {
+      "label": "Open Book",
+      "value": "No"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored"
+    }
+  ],
+  "courseHighlights": [
+    "Aligned with PRINCE2 Agile® Version 2",
+    "Instructor-led Live Training",
+    "Interactive Workshops",
+    "Agile Simulations",
+    "Practical Case Studies",
+    "Practice Exams",
+    "Comprehensive Course Material",
+    "Post-training Support"
+  ],
+  "disclaimer": "PRINCE2®, PRINCE2 Agile®, MSP®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function PRINCE2AgileFoundation() {

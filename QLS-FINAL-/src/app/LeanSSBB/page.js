@@ -16,89 +16,148 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "Lean Six Sigma Black Belt",
-  subtitle: "Lead organizational transformation through advanced process improvement expertise",
-  backgroundImage: "/black_belt.png",
-  overview: [
-    "Lean Six Sigma Black Belt represents the highest level of process improvement expertise, combining advanced statistical analysis with leadership skills to drive organizational transformation.",
-    "This comprehensive program prepares you to lead complex improvement projects, mentor Green Belts, and implement enterprise-wide process excellence initiatives.",
-    "Develop mastery in advanced statistical methods, change management, and project leadership that enables you to deliver significant business impact and ROI."
+  "title": "Lean Six Sigma Black Belt Certification Training",
+  "subtitle": "Lead Enterprise-Wide Process Improvement and Operational Excellence",
+  "backgroundImage": "/black_belt.png",
+  "overview": [
+    "Lean Six Sigma Black Belt is an advanced certification designed for professionals responsible for leading complex process improvement initiatives, mentoring Green Belts, and driving operational excellence across the organization.",
+    "This advanced course expands upon Green Belt concepts by introducing advanced statistical analysis, leadership techniques, change management, Design of Experiments (DOE), process optimization, and enterprise-level improvement strategies.",
+    "Participants learn how to manage large-scale improvement projects, analyze complex business problems, coach improvement teams, and deliver sustainable organizational transformation."
   ],
-  courseOutline: [
-    "Advanced Lean Six Sigma methodology",
-    "Statistical analysis and hypothesis testing",
-    "Design of Experiments (DOE)",
-    "Advanced process mapping and analysis",
-    "Change management and leadership",
-    "Project management and team leadership",
-    "Financial analysis and business case development",
-    "Organizational transformation strategies"
+  "whyHead": "Why Choose Lean Six Sigma Black Belt?",
+  "why": [
+    "Lead enterprise-wide improvement initiatives",
+    "Master advanced DMAIC techniques",
+    "Develop strong analytical and leadership capabilities",
+    "Coach Green Belt practitioners",
+    "Drive measurable business transformation",
+    "Improve operational excellence across the organization"
   ],
-  learningObjectives: [
-    "Master advanced Lean Six Sigma methodologies",
-    "Apply sophisticated statistical analysis techniques",
-    "Design and execute complex experiments",
-    "Lead organizational change initiatives",
-    "Manage large-scale improvement projects",
-    "Mentor and develop Green Belt practitioners",
-    "Drive enterprise-wide process excellence"
+  "prerequisites": [
+    "There are no mandatory prerequisites for attending the training.",
+    "However, completion of Lean Six Sigma Green Belt certification or equivalent process improvement experience is highly recommended to maximize learning."
   ],
-  targetGroup: [
-    "Senior quality and improvement professionals",
-    "Operations managers and directors",
-    "Process improvement leaders",
-    "Lean Six Sigma Green Belts seeking advancement",
-    "Change management professionals"
+  "whoShouldAttend": [
+    "Lean Six Sigma Green Belts",
+    "Continuous Improvement Managers",
+    "Operations Managers",
+    "Quality Managers",
+    "Manufacturing Leaders",
+    "Project Managers",
+    "Process Excellence Consultants",
+    "Business Transformation Leaders",
+    "Engineering Managers",
+    "Senior Business Analysts"
   ],
-
-  prerequisite: [
-    "Lean Six Sigma Green Belt certification is required",
-    "Minimum of three years of work experience in a business environment",
-    "Demonstrated experience leading or participating in process improvement projects",
-    "Proficiency in statistical analysis and data-driven decision making"
-  ],
-
-  examDetails: [
-    "Duration: 4 hours",
-    "150 multiple choice questions",
-    "Passing score: 105/150 (70%)",
-    "Open book examination",
-    "Project submission required for certification"
-  ],
-  category: "Quality Management",
-  tagline: "Lead. Transform. Excel.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "Lean Six Sigma Green Belt",
-      image: "/black_belt.png",
-      description: "Foundation process improvement skills",
-      href: "/LeanSSGB",
-      duration: "4 Days",
-      level: "Professional",
-      badge: "Six Sigma",
-      badgeColor: "bg-green-600"
+      "title": "Module 1: Advanced Lean Six Sigma Concepts",
+      "topics": [
+        "Enterprise Lean Six Sigma",
+        "Organizational Process Excellence",
+        "Strategic Improvement Planning",
+        "Lean Leadership"
+      ]
     },
     {
-      title: "Change Management",
-      image: "/black_belt.png",
-      description: "Master organizational change practices",
-      href: "/ChangeEnablement",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 2: Advanced Define & Measure",
+      "topics": [
+        "Enterprise Project Selection",
+        "Financial Analysis",
+        "Advanced Measurement Systems",
+        "Project Portfolio Management"
+      ]
     },
     {
-      title: "DevOps Foundation",
-      image: "/black_belt.png",
-      description: "Learn DevOps culture and practices",
-      href: "/DevopsFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "DevOps",
-      badgeColor: "bg-green-600"
+      "title": "Module 3: Advanced Analyze",
+      "topics": [
+        "Advanced Statistical Analysis",
+        "Regression Analysis",
+        "Correlation",
+        "Design of Experiments (DOE)",
+        "Risk Analysis",
+        "Process Capability Analysis"
+      ]
+    },
+    {
+      "title": "Module 4: Advanced Improve",
+      "topics": [
+        "Optimization Techniques",
+        "Lean Transformation",
+        "Simulation",
+        "Advanced Kaizen",
+        "Innovation Methods",
+        "Solution Validation"
+      ]
+    },
+    {
+      "title": "Module 5: Advanced Control",
+      "topics": [
+        "Enterprise Control Systems",
+        "Statistical Process Control",
+        "Process Governance",
+        "Performance Dashboards",
+        "Sustainability Planning"
+      ]
+    },
+    {
+      "title": "Module 6: Leadership & Change Management",
+      "topics": [
+        "Coaching Green Belts",
+        "Stakeholder Engagement",
+        "Organizational Change Management",
+        "Team Leadership",
+        "Executive Communication"
+      ]
+    },
+    {
+      "title": "Module 7: Enterprise Continuous Improvement",
+      "topics": [
+        "Operational Excellence",
+        "Business Process Transformation",
+        "Lean Enterprise",
+        "Strategic Performance Measurement",
+        "Continuous Improvement Culture"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Lead complex Lean Six Sigma initiatives",
+    "Apply advanced statistical tools for decision-making",
+    "Coach and mentor Green Belt practitioners",
+    "Drive enterprise-wide operational excellence",
+    "Lead organizational change and transformation",
+    "Improve business performance using data-driven methodologies"
+  ],
+  "certificationHeading": "Certification Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "Lean Six Sigma Black Belt"
+    },
+    {
+      "label": "Course Duration",
+      "value": "Typically, 4 Days (2 Weekends)"
+    },
+    {
+      "label": "Assessment",
+      "value": "Certification exam (format varies by certification body)"
+    },
+    {
+      "label": "",
+      "value": "Certificate awarded upon successfully meeting the certification requirements of the chosen certification provider."
+    }
+  ],
+  "courseHighlights": [
+    "Advanced Instructor-led Live Training",
+    "Enterprise-Level Case Studies",
+    "Advanced Statistical Concepts",
+    "Leadership & Change Management",
+    "Project Coaching Techniques",
+    "Certification Preparation",
+    "Practical Business Applications"
+  ],
+  "disclaimer": ""
 };
 
 export default function LeanSSBBPage() {

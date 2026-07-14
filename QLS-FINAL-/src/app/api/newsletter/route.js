@@ -33,7 +33,7 @@ export async function POST(request) {
 
     // Notify admin about new subscriber
     await transporter.sendMail({
-      from: `"QuickLearn Website" <${process.env.SMTP_USER}>`,
+      from: `"QuickLearn Systems Website" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_EMAIL || "training@quicklearnsys.com",
       subject: "New Newsletter Subscription",
       html: `
@@ -48,7 +48,7 @@ export async function POST(request) {
     await transporter.sendMail({
       from: `"QuickLearn Systems" <${process.env.SMTP_USER}>`,
       to: email,
-      subject: "Welcome to QuickLearn Newsletter!",
+      subject: "Welcome to QuickLearn Systems Newsletter!",
       html: `
         <div style="max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif;">
           <div style="background: #2BA6D9; padding: 30px; text-align: center;">
@@ -61,7 +61,7 @@ export async function POST(request) {
               You&apos;ll now receive updates about our latest courses, certifications, and training events.
             </p>
             <p style="color: #4b5563; line-height: 1.6;">
-              Stay ahead in your career with QuickLearn&apos;s expert-led training programs.
+              Stay ahead in your career with QuickLearn Systems&apos; expert-led training programs.
             </p>
           </div>
           <div style="background: #f3f4f6; padding: 20px; text-align: center;">

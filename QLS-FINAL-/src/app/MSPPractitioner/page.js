@@ -19,93 +19,161 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "MSP Practitioner",
-  subtitle: "Manage complex programs and deliver strategic outcomes effectively",
-  backgroundImage: "/msp_practitioner.jpg",
-  overview: [
-    "The MSP Practitioner course builds on the MSP Foundation concepts and teaches you how to apply the framework to manage complex programs in real-world scenarios.",
-    "Participants learn to coordinate multiple projects, manage risks and issues, align programs with organizational strategy, and ensure realization of benefits.",
-    "The course emphasizes governance, stakeholder engagement, and flexible program management approaches to deliver successful outcomes across the organization."
+  "title": "Managing Successful Programmes (MSP®) Practitioner Certification Training (5th Edition)",
+  "subtitle": "Apply MSP® to Successfully Deliver Strategic Programmes and Organizational Change",
+  "backgroundImage": "/msp_practitioner.jpg",
+  "overview": [
+    "The MSP® Practitioner (5th Edition) certification is designed for professionals responsible for managing programmes, leading organizational transformation, and delivering strategic business outcomes.",
+    "Building upon the Foundation level, this course focuses on applying and tailoring the MSP framework in real-world programme environments. Participants learn how to establish programme governance, manage benefits realization, engage stakeholders, oversee multiple projects, and successfully deliver transformational change.",
+    "Using scenario-based learning and practical case studies, participants develop the skills required to apply MSP principles, governance themes, and transformational flow in complex organizational settings.",
+    "This course prepares participants to successfully pass the MSP® Practitioner certification examination and confidently lead strategic programmes."
   ],
-  courseOutline: [
-    "Overview of MSP framework and program concepts",
-    "Program governance and organizational structures",
-    "Managing program risks, issues, and dependencies",
-    "Benefits management and realization",
-    "Stakeholder engagement and communication",
-    "Program planning, monitoring, and control",
-    "Tailoring MSP for different program environments",
-    "Delivering strategic outcomes and continual improvement"
+  "whyHead": "Why Choose MSP® Practitioner?",
+  "why": [
+    "Apply MSP® in real-world programme environments",
+    "Lead large-scale business transformation initiatives",
+    "Strengthen programme governance and strategic alignment",
+    "Improve stakeholder engagement and benefits realization",
+    "Enhance leadership in complex organizational change",
+    "Earn a globally recognized programme management certification"
   ],
-  learningObjectives: [
-    "Apply MSP principles, themes, and processes to real programs",
-    "Coordinate multiple projects to achieve program objectives",
-    "Manage risks, issues, and dependencies effectively",
-    "Plan, monitor, and control program delivery",
-    "Engage and communicate with stakeholders strategically",
-    "Ensure benefits realization and alignment with business strategy",
-    "Tailor MSP framework to organizational needs and contexts",
-    "Support continual improvement in program management practices"
+  "prerequisites": [
+    "To take the MSP® Practitioner examination, candidates must hold a valid MSP® Foundation certification."
   ],
-  targetGroup: [
-    "Program Managers and Coordinators",
-    "Project Managers managing multiple projects",
-    "Business Change Managers",
-    "Senior Managers responsible for program delivery",
-    "Professionals seeking MSP Practitioner certification"
+  "whoShouldAttend": [
+    "Programme Managers",
+    "Senior Project Managers",
+    "Portfolio Managers",
+    "PMO Directors",
+    "Business Transformation Managers",
+    "Change Managers",
+    "Enterprise Architects",
+    "Senior Consultants",
+    "Executives responsible for strategic initiatives",
+    "Professionals managing multiple related projects"
   ],
-
-  prerequisite: [
-    "MSP Foundation certification is required to sit the Practitioner exam",
-    "Experience managing or working within programmes or multiple concurrent projects is recommended",
-    "Familiarity with benefits management, governance, and organizational change concepts",
-    "Project management experience or a PRINCE2/PMP certification is beneficial"
-  ],
-
-  examDetails: [
-    "Duration: 150 minutes",
-    "Objective testing or scenario-based questions",
-    "Passing score: 55%",
-    "Open book examination (MSP manual allowed)",
-    "Available online and at accredited centers"
-  ],
-  category: "Program Management",
-  tagline: "Govern Programs. Deliver Benefits. Achieve Strategy.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "MSP Foundation",
-      image: "/msp_practitioner.jpg",
-      description:
-        "Learn the fundamentals of Managing Successful Programmes (MSP) framework and principles.",
-      href: "/MSPFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "MSP",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 1: Applying MSP® Principles",
+      "topics": [
+        "Applying programme principles",
+        "Strategic alignment",
+        "Organizational governance",
+        "Leading transformational change"
+      ]
     },
     {
-      title: "PRINCE2 Practitioner",
-      image: "/msp_practitioner.jpg",
-      description:
-        "Manage projects successfully with PRINCE2 principles and practices.",
-      href: "/PRINCE2Practitioner",
-      duration: "3 Days",
-      level: "Advanced",
-      badge: "PRINCE2",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 2: Applying Governance Themes",
+      "topics": [
+        "Organization",
+        "Design",
+        "Justification",
+        "Structure",
+        "Knowledge",
+        "Assurance",
+        "Decisions"
+      ]
     },
     {
-      title: "MoP Practitioner",
-      image: "/msp_practitioner.jpg",
-      description:
-        "Manage portfolios effectively using MoP principles and practices.",
-      href: "/MoPPractitioner",
-      duration: "3 Days",
-      level: "Practitioner",
-      badge: "MoP",
-      badgeColor: "bg-green-600"
+      "title": "Module 3: Applying the Transformational Flow",
+      "topics": [
+        "Identifying the Programme",
+        "Designing Outcomes",
+        "Planning Delivery",
+        "Delivering Capabilities",
+        "Embedding Outcomes",
+        "Evaluating Progress",
+        "Programme Closure"
+      ]
+    },
+    {
+      "title": "Module 4: Benefits Realization",
+      "topics": [
+        "Benefits Mapping",
+        "Measuring Benefits",
+        "Benefits Tracking",
+        "Continuous Value Delivery"
+      ]
+    },
+    {
+      "title": "Module 5: Managing Stakeholders & Risk",
+      "topics": [
+        "Stakeholder Engagement",
+        "Communication Planning",
+        "Programme Risk Management",
+        "Issue Resolution",
+        "Governance Reporting"
+      ]
+    },
+    {
+      "title": "Module 6: Tailoring MSP®",
+      "topics": [
+        "Tailoring governance",
+        "Organizational culture",
+        "Programme complexity",
+        "Hybrid delivery environments"
+      ]
+    },
+    {
+      "title": "Module 7: Practitioner Exam Preparation",
+      "topics": [
+        "Scenario-Based Questions",
+        "Practice Examinations",
+        "Exam Strategies",
+        "Revision Sessions"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Apply MSP® principles to real-world programme management",
+    "Lead strategic transformation programmes",
+    "Tailor MSP® to different organizational environments",
+    "Establish effective programme governance",
+    "Manage benefits realization throughout the programme lifecycle",
+    "Engage stakeholders and manage programme risks effectively",
+    "Prepare confidently for the MSP® Practitioner examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "MSP® Practitioner (5th Edition)"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Objective Testing (Scenario-Based)"
+    },
+    {
+      "label": "Number of Questions",
+      "value": "70"
+    },
+    {
+      "label": "Passing Score",
+      "value": "60% (42 out of 70)"
+    },
+    {
+      "label": "Exam Duration",
+      "value": "150 Minutes"
+    },
+    {
+      "label": "Open Book",
+      "value": "Yes (Official MSP® Manual)"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored"
+    }
+  ],
+  "courseHighlights": [
+    "Based on MSP® 5th Edition",
+    "Instructor-led Live Training",
+    "Scenario-Based Learning",
+    "Real-world Programme Simulations",
+    "Practice Exams",
+    "Comprehensive Course Material",
+    "Post-training Mentor Support"
+  ],
+  "disclaimer": "MSP®, PRINCE2®, PRINCE2 Agile®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function MSPPractitionerPage() {

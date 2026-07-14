@@ -142,7 +142,7 @@ export default function LiveChat() {
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold leading-tight">
-                    QuickLearn Support
+                    QuickLearn Systems Support
                   </h3>
                   <p className="text-[11px] text-white/70 flex items-center gap-1">
                     <span className="w-1.5 h-1.5 bg-green-400 rounded-full inline-block" />

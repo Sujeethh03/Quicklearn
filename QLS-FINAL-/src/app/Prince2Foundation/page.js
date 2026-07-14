@@ -16,89 +16,188 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "PRINCE2 Foundation",
-  subtitle: "Master the world's most practiced project management methodology",
-  backgroundImage: "/prince2_foundation.jpg",
-  overview: [
-    "PRINCE2 (PRojects IN Controlled Environments) is a structured project management methodology that provides a framework for managing projects of any size or type. The Foundation level introduces the basic principles, terminology and structure of the method.",
-    "This comprehensive course covers the seven principles, seven themes, and seven processes that form the backbone of PRINCE2 methodology, providing you with a solid foundation in structured project management.",
-    "Learn to apply PRINCE2 principles in real-world scenarios, understand project governance structures, and implement effective project control mechanisms."
+  "title": "PRINCE2® Foundation Certification Training (Version 7)",
+  "subtitle": "Learn the World's Leading Project Management Methodology",
+  "backgroundImage": "/prince2_foundation.jpg",
+  "overview": [
+    "PRINCE2® (Projects IN Controlled Environments) is one of the world's most widely adopted project management methodologies. It provides a structured, scalable, and proven approach for managing projects of any size, industry, or complexity.",
+    "The PRINCE2® Foundation (Version 7) course introduces participants to the principles, practices, processes, and people-focused approach that make PRINCE2 one of the most effective project management frameworks used by organizations worldwide.",
+    "The latest PRINCE2® 7 update emphasizes People Management, Sustainability, Digital & Data Management, Commercial Management, and tailoring the methodology to different project environments while maintaining the proven governance structure that PRINCE2 is known for.",
+    "This course prepares participants to successfully pass the PRINCE2® Foundation examination and provides the knowledge required to work effectively within a PRINCE2 project environment."
   ],
-  courseOutline: [
-    "PRINCE2 methodology overview and benefits",
-    "Seven PRINCE2 principles",
-    "Seven PRINCE2 themes (Business Case, Organization, Quality, Plans, Risk, Change, Progress)",
-    "Seven PRINCE2 processes",
-    "Project roles and responsibilities",
-    "Project documentation and management products",
-    "Tailoring PRINCE2 to project environments",
-    "PRINCE2 in practice - case studies and examples"
+  "whyHead": "Why Choose PRINCE2® Foundation?",
+  "why": [
+    "Globally recognized project management certification",
+    "Applicable across all industries and sectors",
+    "Structured and scalable project management methodology",
+    "Supports predictive, agile, and hybrid project environments",
+    "Strong focus on governance, business justification, and value delivery",
+    "Excellent complement to Agile and PMP® certifications"
   ],
-  learningObjectives: [
-    "Understand PRINCE2 methodology and its benefits",
-    "Master the seven PRINCE2 principles",
-    "Apply the seven PRINCE2 themes effectively",
-    "Implement the seven PRINCE2 processes",
-    "Define project roles and responsibilities",
-    "Create and manage PRINCE2 documentation",
-    "Tailor PRINCE2 to different project environments"
+  "prerequisites": [
+    "There are no mandatory prerequisites for attending the PRINCE2® Foundation course.",
+    "The course is suitable for beginners as well as experienced professionals who want to build a strong foundation in structured project management.",
+    "Basic knowledge of projects or project environments is beneficial but not required."
   ],
-  targetGroup: [
-    "Project managers and team leaders",
-    "Business analysts and coordinators",
-    "Programme and portfolio managers",
-    "Team members working on PRINCE2 projects",
-    "Anyone seeking structured project management knowledge"
+  "whoShouldAttend": [
+    "Project Managers",
+    "Associate Project Managers",
+    "Project Coordinators",
+    "PMO Professionals",
+    "Team Leads",
+    "Delivery Managers",
+    "Business Analysts",
+    "Consultants",
+    "Engineers",
+    "IT Professionals",
+    "Aspiring Project Managers",
+    "anyone working in project environments"
   ],
-
-  prerequisite: [
-    "No formal prerequisites are required for PRINCE2 Foundation",
-    "Basic IT awareness or familiarity with project environments is recommended",
-    "No prior project management certification is necessary",
-    "Candidates should have a good command of written English to read the exam questions"
-  ],
-
-  examDetails: [
-    "Duration: 60 minutes",
-    "75 multiple choice questions",
-    "Passing score: 38/75 (50%)",
-    "Closed book examination",
-    "Available online and at Pearson VUE centers"
-  ],
-  category: "Project & Program Management",
-  tagline: "Structure. Control. Deliver.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "PRINCE2 Practitioner",
-      image: "/prince2_foundation.jpg",
-      description: "Advanced PRINCE2 application and tailoring skills",
-      href: "/Prince2Practitioner",
-      duration: "3 Days",
-      level: "Professional",
-      badge: "PRINCE2",
-      badgeColor: "bg-purple-600"
+      "title": "Module 1: Introduction to PRINCE2®",
+      "topics": [
+        "What is PRINCE2?",
+        "Benefits of PRINCE2",
+        "Project characteristics",
+        "Project environment",
+        "Integrated elements of PRINCE2"
+      ]
     },
     {
-      title: "PMP Certification",
-      image: "/prince2_foundation.jpg",
-      description: "Project Management Professional certification",
-      href: "/PMP",
-      duration: "4 Days",
-      level: "Professional",
-      badge: "PMI",
-      badgeColor: "bg-green-600"
+      "title": "Module 2: PRINCE2 Principles",
+      "topics": [
+        "Ensure continued business justification",
+        "Learn from experience",
+        "Define roles, responsibilities, and relationships",
+        "Manage by stages",
+        "Manage by exception",
+        "Focus on products",
+        "Tailor to suit the project"
+      ]
     },
     {
-      title: "MSP Foundation",
-      image: "/prince2_foundation.jpg",
-      description: "Managing Successful Programmes methodology",
-      href: "/MSPFoundation",
-      duration: "3 Days",
-      level: "Professional",
-      badge: "MSP",
-      badgeColor: "bg-orange-600"
+      "title": "Module 3: People",
+      "topics": [
+        "Leading successful teams",
+        "Communication",
+        "Stakeholder engagement",
+        "Organizational change",
+        "Collaboration",
+        "Team performance"
+      ]
+    },
+    {
+      "title": "Module 4: PRINCE2 Practices",
+      "topics": [
+        "Business Case",
+        "Organizing",
+        "Plans",
+        "Quality",
+        "Risk",
+        "Issues",
+        "Progress"
+      ]
+    },
+    {
+      "title": "Module 5: PRINCE2 Processes",
+      "topics": [
+        "Starting Up a Project",
+        "Directing a Project",
+        "Initiating a Project",
+        "Controlling a Stage",
+        "Managing Product Delivery",
+        "Managing a Stage Boundary",
+        "Closing a Project"
+      ]
+    },
+    {
+      "title": "Module 6: Project Context",
+      "topics": [
+        "Commercial Management",
+        "Sustainability",
+        "Data Management",
+        "Digital and Technology Considerations",
+        "Organizational Context"
+      ]
+    },
+    {
+      "title": "Module 7: Tailoring PRINCE2®",
+      "topics": [
+        "Tailoring for project size",
+        "Tailoring for project complexity",
+        "Tailoring for Agile environments",
+        "Tailoring governance",
+        "Best practices"
+      ]
+    },
+    {
+      "title": "Module 8: PRINCE2® Foundation Exam Preparation",
+      "topics": [
+        "Exam structure",
+        "Question analysis",
+        "Sample papers",
+        "Exam strategies",
+        "Revision sessions"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Understand the PRINCE2® methodology and terminology",
+    "Explain the seven PRINCE2 principles",
+    "Apply the seven practices throughout the project lifecycle",
+    "Understand the seven PRINCE2 processes",
+    "Recognize project roles and responsibilities",
+    "Tailor PRINCE2® for different organizational environments",
+    "Support successful project delivery using PRINCE2®",
+    "Prepare confidently for the PRINCE2® Foundation examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "PRINCE2® Foundation (Version 7)"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Multiple Choice"
+    },
+    {
+      "label": "Number of Questions",
+      "value": "60"
+    },
+    {
+      "label": "Passing Score",
+      "value": "60% (36 out of 60)"
+    },
+    {
+      "label": "Exam Duration",
+      "value": "60 Minutes"
+    },
+    {
+      "label": "Open Book",
+      "value": "No"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored"
+    },
+    {
+      "label": "Prerequisite for Exam",
+      "value": "None"
+    }
+  ],
+  "courseHighlights": [
+    "Aligned with PRINCE2® Version 7",
+    "Instructor-led Live Training",
+    "Comprehensive Course Material",
+    "Practical Examples and Case Studies",
+    "Exam Preparation Sessions",
+    "Mock Tests",
+    "Real-world Project Scenarios",
+    "Post-training Support"
+  ],
+  "disclaimer": "PRINCE2®, PRINCE2 Agile®, MSP®, ITIL®, PeopleCert®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function Prince2FoundationPage() {

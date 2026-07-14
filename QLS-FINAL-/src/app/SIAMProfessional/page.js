@@ -19,89 +19,166 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "SIAM Professional",
-  subtitle:
-    "Master advanced Service Integration and Management practices for multi-supplier environments",
-  backgroundImage: "/siam_professional.jpg",
-  overview: [
-    "The SIAM Professional course equips participants with the advanced knowledge and skills required to design, implement, and manage a SIAM ecosystem in complex, multi-vendor environments.",
-    "It expands on the foundational SIAM concepts, focusing on governance structures, cross-supplier collaboration, performance management, and continual improvement.",
-    "Through real-world scenarios and case studies, learners gain practical insights into orchestrating services from multiple providers to deliver seamless value to the business."
+  "title": "EXIN SIAM™ Practitioner Certificate Training",
+  "subtitle": "Lead Enterprise Service Integration and Optimize Multi-Supplier Service Delivery",
+  "backgroundImage": "/siam_professional.jpg",
+  "overview": [
+    "The EXIN SIAM™ Practitioner Certificate is an advanced certification designed for professionals responsible for implementing, operating, and continuously improving Service Integration and Management (SIAM™) within complex enterprise environments.",
+    "Building on SIAM Foundation knowledge, this course focuses on applying SIAM concepts in real-world scenarios, including governance, organizational change, process integration, supplier collaboration, service performance management, and continual improvement.",
+    "Participants learn how to design and operate an effective SIAM ecosystem, align multiple providers with business objectives, and improve customer outcomes through integrated service management."
   ],
-  courseOutline: [
-    "Review of SIAM Foundation concepts",
-    "Advanced SIAM structures and governance models",
-    "Cross-supplier collaboration and conflict resolution",
-    "Service performance and value realization",
-    "SIAM process integration with ITSM frameworks",
-    "Risk, compliance, and security considerations",
-    "Continual improvement in multi-supplier environments",
-    "Implementing and managing SIAM transformation programs"
+  "whyHead": "Why Choose EXIN SIAM™ Practitioner?",
+  "why": [
+    "Apply SIAM concepts in enterprise environments",
+    "Improve governance across multiple service providers",
+    "Design effective SIAM operating models",
+    "Strengthen supplier collaboration and performance",
+    "Lead SIAM implementation and continual improvement initiatives",
+    "Advance your career in service management and governance"
   ],
-  learningObjectives: [
-    "Understand advanced SIAM concepts, roles, and responsibilities",
-    "Design and implement SIAM models tailored to business needs",
-    "Facilitate collaboration across multiple service providers",
-    "Measure and manage end-to-end service performance",
-    "Integrate SIAM with ITSM, Agile, and DevOps practices",
-    "Lead SIAM transformation and governance initiatives"
+  "prerequisites": [
+    "It is strongly recommended that participants hold the EXIN SIAM™ Foundation Certificate or possess equivalent SIAM knowledge before attending this course.",
+    "Experience in IT Service Management, supplier management, or service delivery is beneficial."
   ],
-  targetGroup: [
+  "whoShouldAttend": [
+    "SIAM Professionals",
     "Service Integration Managers",
-    "SIAM Consultants and Practitioners",
-    "IT Governance and Service Delivery Managers",
-    "Vendor and Contract Managers",
-    "ITSM Process Owners and Architects"
+    "IT Service Managers",
+    "Vendor & Supplier Managers",
+    "Service Delivery Managers",
+    "IT Consultants",
+    "Enterprise Architects",
+    "IT Governance Professionals",
+    "Digital Transformation Managers",
+    "Program Managers",
+    "Senior IT Leaders"
   ],
-
-  prerequisite: [
-    "SIAM Foundation certification is required before attending the Professional course",
-    "Practical experience in IT service management or multi-supplier environments is strongly recommended",
-    "Familiarity with ITSM frameworks such as ITIL® is beneficial",
-    "Understanding of vendor management, governance, and service integration concepts"
-  ],
-
-  examDetails: [
-    "Duration: 90 minutes",
-    "40 scenario-based multiple-choice questions",
-    "Passing score: 26/40 (65%)",
-    "Closed book examination",
-    "Available online and in-person"
-  ],
-  category: "Service Integration and Management (SIAM)",
-  tagline: "Integrate. Govern. Excel.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "SIAM Foundation",
-      image: "/siam_professional.jpg",
-      description: "Gain fundamental knowledge of Service Integration and Management concepts.",
-      href: "/SIAMFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "SIAM",
-      badgeColor: "bg-purple-600"
+      "title": "Module 1: SIAM Strategy & Governance",
+      "topics": [
+        "SIAM strategic objectives",
+        "Governance frameworks",
+        "Organizational alignment",
+        "Decision-making structures"
+      ]
     },
     {
-      title: "ITIL® 4 Foundation",
-      image: "/siam_professional.jpg",
-      description: "Learn ITIL® 4 principles and practices to align IT services with business goals.",
-      href: "/ITILFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 2: SIAM Implementation",
+      "topics": [
+        "Assessment and planning",
+        "Transition strategies",
+        "Organizational change",
+        "Risk management"
+      ]
     },
     {
-      title: "Service Level Management",
-      image: "/siam_professional.jpg",
-      description: "Develop the ability to manage service quality through defined SLAs.",
-      href: "/ServiceLevelManagement",
-      duration: "3 Days",
-      level: "Intermediate",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 3: Service Integration Practices",
+      "topics": [
+        "Process integration",
+        "Cross-provider collaboration",
+        "End-to-end service management",
+        "Continual improvement"
+      ]
+    },
+    {
+      "title": "Module 4: Supplier & Relationship Management",
+      "topics": [
+        "Supplier performance management",
+        "Contract alignment",
+        "Relationship management",
+        "Collaboration models"
+      ]
+    },
+    {
+      "title": "Module 5: Organizational Change Management",
+      "topics": [
+        "Stakeholder engagement",
+        "Communication planning",
+        "Change adoption",
+        "Cultural transformation"
+      ]
+    },
+    {
+      "title": "Module 6: Measurement & Performance",
+      "topics": [
+        "KPIs and SLAs",
+        "XLAs (Experience Level Agreements)",
+        "Reporting frameworks",
+        "Value realization"
+      ]
+    },
+    {
+      "title": "Module 7: Risk, Compliance & Continuous Improvement",
+      "topics": [
+        "Operational risk management",
+        "Compliance considerations",
+        "Governance reviews",
+        "Improvement planning"
+      ]
+    },
+    {
+      "title": "Module 8: Practitioner Exam Preparation",
+      "topics": [
+        "Scenario-based question techniques",
+        "Practice examinations",
+        "Revision workshops",
+        "Exam strategies"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Design and implement SIAM operating models",
+    "Govern complex multi-provider environments",
+    "Improve supplier collaboration and accountability",
+    "Apply SIAM practices to enterprise service management",
+    "Drive continual service improvement",
+    "Measure business outcomes using service performance metrics",
+    "Lead SIAM transformation initiatives",
+    "Prepare successfully for the EXIN SIAM Practitioner examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "EXIN SIAM™ Practitioner Certificate"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Scenario-based Multiple Choice"
+    },
+    {
+      "label": "Questions",
+      "value": "40"
+    },
+    {
+      "label": "Duration",
+      "value": "90 Minutes"
+    },
+    {
+      "label": "Passing Score",
+      "value": "65%"
+    },
+    {
+      "label": "Open Book",
+      "value": "No"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored or Authorized Test Center"
+    }
+  ],
+  "courseHighlights": [
+    "Latest EXIN SIAM Practitioner syllabus",
+    "Scenario-based learning",
+    "Enterprise implementation case studies",
+    "Interactive workshops",
+    "Practical exercises",
+    "Practice questions & mock exams",
+    "Comprehensive study material",
+    "Certification preparation"
+  ],
+  "disclaimer": "SIAM™, EXIN®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by EXIN."
 };
 
 

@@ -1,423 +1,176 @@
-"use client";
+import React from "react";
 import Headers from "@/components/Header";
 import Footer from "@/components/Footer";
-import WhyTrainWithUs from "@/components/WhyTrainWithUs";
-import { motion, AnimatePresence } from "framer-motion";
-import ScrollFloat from "@/components/ui/ScroolReveal";
-import Link from "next/link";
 import LiveChat from "@/components/LiveChat";
+import CoursePageTemplate from "@/components/CoursePageTemplate";
 
-export default function CSM() {
+export const metadata = {
+  title: "Certified ScrumMaster® (CSM®) Certification Training in Hyderabad | QuickLearn Systems",
+  description: "Build a Strong Foundation in Scrum and Agile Leadership",
+  openGraph: {
+    title: "Certified ScrumMaster® (CSM®) Certification Training in Hyderabad | QuickLearn Systems",
+    description: "Build a Strong Foundation in Scrum and Agile Leadership",
+    images: ["/certified_scrum_master.jpg"],
+  },
+};
+
+const courseData = {
+  "title": "Certified ScrumMaster® (CSM®) Certification Training",
+  "subtitle": "Build a Strong Foundation in Scrum and Agile Leadership",
+  "backgroundImage": "/certified_scrum_master.jpg",
+  "overview": [
+    "The Certified ScrumMaster® (CSM®) certification is one of the world's most recognized Agile and Scrum credentials. Designed by Scrum Alliance®, this interactive training provides a comprehensive understanding of the Scrum framework, Agile principles, and the Scrum Master's role in helping teams deliver value effectively.",
+    "Participants learn how to facilitate Scrum events, coach self-managing teams, remove impediments, foster collaboration, and create an environment of continuous improvement. The course combines theory, practical exercises, simulations, and real-world case studies to prepare participants for success as Scrum Masters and Agile practitioners.",
+    "Upon successful completion of the course and assessment requirements, participants earn the Certified ScrumMaster® (CSM®) certification from Scrum Alliance®."
+  ],
+  "whyHead": "Why Choose CSM®?",
+  "why": [
+    "Globally recognized Scrum certification",
+    "Learn directly from a Certified Scrum Trainer® (CST®)",
+    "Develop practical Scrum facilitation skills",
+    "Understand Agile values and Scrum principles",
+    "Improve team collaboration and productivity",
+    "Prepare for Scrum Master and Agile leadership roles"
+  ],
+  "prerequisites": [
+    "There are no mandatory prerequisites for attending the CSM® course.",
+    "The course is suitable for both beginners and experienced professionals interested in Agile and Scrum. Reading the Scrum Guide before attending is recommended but not mandatory."
+  ],
+  "whoShouldAttend": [
+    "Aspiring Scrum Masters",
+    "Project Managers",
+    "Team Leads",
+    "Product Owners",
+    "Software Developers",
+    "Business Analysts",
+    "QA Professionals",
+    "Delivery Managers",
+    "Agile Coaches Anyone interested in Agile and Scrum"
+  ],
+  "curriculum": [
+    {
+      "title": "Module 1: Agile Foundations",
+      "topics": [
+        "Agile Manifesto",
+        "Agile Values and Principles",
+        "Empirical Process Control",
+        "Lean Thinking",
+        "Scrum Overview"
+      ]
+    },
+    {
+      "title": "Module 2: Understanding the Scrum Framework",
+      "topics": [
+        "Scrum Theory",
+        "Scrum Values",
+        "Scrum Pillars",
+        "Scrum Team",
+        "Accountabilities"
+      ]
+    },
+    {
+      "title": "Module 3: Scrum Events",
+      "topics": [
+        "Sprint",
+        "Sprint Planning",
+        "Daily Scrum",
+        "Sprint Review",
+        "Sprint Retrospective"
+      ]
+    },
+    {
+      "title": "Module 4: Scrum Artifacts",
+      "topics": [
+        "Product Backlog",
+        "Sprint Backlog",
+        "Increment",
+        "Product Goal",
+        "Sprint Goal",
+        "Definition of Done"
+      ]
+    },
+    {
+      "title": "Module 5: The Scrum Master Role",
+      "topics": [
+        "Servant Leadership",
+        "Coaching Teams",
+        "Facilitating Scrum Events",
+        "Removing Impediments",
+        "Supporting Organizational Agility"
+      ]
+    },
+    {
+      "title": "Module 6: Building High-Performing Teams",
+      "topics": [
+        "Self-Management",
+        "Collaboration",
+        "Team Dynamics",
+        "Continuous Improvement",
+        "Stakeholder Engagement"
+      ]
+    },
+    {
+      "title": "Module 7: Applying Scrum Successfully",
+      "topics": [
+        "Scrum Adoption",
+        "Common Challenges",
+        "Scaling Considerations",
+        "Practical Case Studies"
+      ]
+    }
+  ],
+  "learningOutcomes": [
+    "Understand Scrum theory, principles, and values",
+    "Explain Scrum roles, events, and artifacts",
+    "Facilitate Scrum events effectively",
+    "Coach self-managing Scrum Teams",
+    "Foster collaboration and continuous improvement",
+    "Support Agile adoption within organizations"
+  ],
+  "certificationHeading": "Certification Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "Certified ScrumMaster® (CSM®)"
+    },
+    {
+      "label": "Certification Body",
+      "value": "Scrum Alliance®"
+    },
+    {
+      "label": "Course Duration",
+      "value": "16 Hours (2 Days)"
+    },
+    {
+      "label": "Assessment",
+      "value": "Online assessment after course completion"
+    },
+    {
+      "label": "Membership",
+      "value": "Two-year Scrum Alliance membership included, subject to Scrum Alliance policies"
+    },
+    {
+      "label": "Renewal",
+      "value": "Certification is renewed through Scrum Alliance's continuing education and renewal process."
+    }
+  ],
+  "courseHighlights": [
+    "16-hour Instructor-led Live Training",
+    "Interactive Workshops & Group Activities",
+    "Real-world Scrum Simulations",
+    "Comprehensive Learning Materials",
+    "Exam Preparation Support",
+    "Two-Year Scrum Alliance Membership (subject to Scrum Alliance policies)"
+  ],
+  "disclaimer": "Certified ScrumMaster®, CSM®, Scrum Alliance®, Certified Scrum Trainer®, CST®, and all related trademarks are the property of Scrum Alliance®. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by Scrum Alliance®. All trademarks are the property of their respective owners."
+};
+
+export default function CSMPage() {
   return (
     <>
       <Headers />
-      <section className="relative h-[600px] w-full overflow-hidden bg-gray-900">
-        {/* Background */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            className="absolute inset-0"
-            initial={{ scale: 1.15, opacity: 0, x: 100 }}
-            animate={{ scale: 1, opacity: 1, x: 0 }}
-            exit={{ scale: 0.95, opacity: 0, x: -100 }}
-            transition={{ duration: 1.2, ease: [0.25, 0.46, 0.45, 0.94] }}
-          >
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('/certified_scrum_master.jpg')` }}
-            />
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-slate-800 to-gray-900 opacity-30"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.30 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            />
-            <motion.div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/55" />
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Content */}
-        <div className="relative z-10 flex h-full items-center">
-          <div className="container mx-auto px-6 lg:px-12">
-            <AnimatePresence mode="wait">
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                className="max-w-4xl text-white"
-              >
-                {/* Title */}
-                <motion.h1
-                  initial={{ opacity: 0, x: -150 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1.1 }}
-                  className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.9] sm:leading-[0.85] mb-6 sm:mb-8 tracking-[-0.02em] font-serif"
-                  style={{ fontFamily: "'Playfair Display', 'Georgia', serif" }}
-                >
-                  <span className="bg-gradient-to-r from-white via-white to-white/95 bg-clip-text text-transparent drop-shadow-sm">
-                    Certified Scrum Master
-                  </span>
-                </motion.h1>
-
-                {/* Subtitle */}
-                <motion.p
-                  initial={{ opacity: 0, y: 60 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.25 }}
-                  className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-[1.5] sm:leading-[1.6] mb-6 sm:mb-8 md:mb-10 text-white/85 max-w-4xl font-light tracking-wide"
-                  style={{ fontFamily: "'Inter', 'Helvetica Neue', sans-serif" }}
-                >
-                  Become a Certified Scrum Master and lead high-performing agile teams with confidence.
-                </motion.p>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced ScrollFloat Section */}
-      <section className="bg-gradient-to-br from-slate-50 via-gray-50 to-stone-50 relative overflow-hidden">
-        <div className="container mx-auto max-w-7xl px-4 md:px-8">
-          <ScrollFloat
-            animationDuration={1.5}
-            ease="back.inOut(2)"
-            scrollStart="center bottom+=50%"
-            scrollEnd="bottom bottom-=40%"
-            stagger={0.05}
-            containerClassName="text-center"
-            textClassName="font-bold text-[clamp(2.5rem,6vw,5rem)] leading-[0.9] bg-gradient-to-r from-slate-700 via-gray-800 to-stone-900 bg-clip-text text-transparent drop-shadow-lg"
-          >
-            Certified Scrum Master
-          </ScrollFloat>
-        </div>
-      </section>
-
-      <section className="w-full bg-white px-4 md:px-8">
-        <div className="container mx-auto max-w-7xl">
-          {/* Main Content Grid */}
-          <div className="max-w-4xl">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-            >
-              <motion.h2
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 relative"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-                whileHover={{ scale: 1.02, color: "#374151" }}
-                transition={{ duration: 0.3 }}
-              >
-                <span className="relative z-10">Course Overview</span>
-                <motion.div
-                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "60%" }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                />
-              </motion.h2>
-              <motion.p
-                className="text-gray-700 leading-relaxed mb-6 text-justify"
-                style={{ fontFamily: "'Inter', sans-serif" }}
-                whileHover={{ scale: 1.01, color: "#374151" }}
-                transition={{ duration: 0.2 }}
-              >
-                The Certified ScrumMaster® (CSM®) course is a highly interactive, 2-day workshop where you&apos;ll learn the Scrum framework and gain an understanding of team roles, events, and artifacts. This course is taught by a Certified Scrum Trainer® (CST®) and includes experiential exercises designed to reinforce Scrum concepts.
-              </motion.p>
-              <motion.p
-                className="text-gray-700 leading-relaxed mb-6 text-justify"
-                style={{ fontFamily: "'Inter', sans-serif" }}
-                whileHover={{ scale: 1.01, color: "#374151" }}
-                transition={{ duration: 0.2 }}
-              >
-                As a Certified ScrumMaster, you&apos;ll help the Scrum Team perform at their highest level. CSMs also protect the team from both internal and external distractions. The CSM course focuses on providing students with an understanding of Scrum roles, events, and artifacts.
-              </motion.p>
-              <motion.p
-                className="text-gray-700 leading-relaxed mb-6 text-justify"
-                style={{ fontFamily: "'Inter', sans-serif" }}
-                whileHover={{ scale: 1.01, color: "#374151" }}
-                transition={{ duration: 0.2 }}
-              >
-                This course will provide you with the initial tools and fundamentals to begin your role as a ScrumMaster. The course includes a 2-year membership to the Scrum Alliance, online access to resources and continued education, and a 2-year certification term.
-              </motion.p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full bg-gradient-to-br from-stone-50 via-slate-50 to-gray-50 py-12 px-4 md:px-8">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <motion.div
-              className="lg:col-span-8"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-            >
-              <motion.h2
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 relative"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-                whileHover={{ scale: 1.02, color: "#374151" }}
-                transition={{ duration: 0.3 }}
-              >
-                <span className="relative z-10">Course Outline</span>
-                <motion.div
-                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "35%" }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.7 }}
-                />
-              </motion.h2>
-              <motion.ul className="list-none pl-0 text-gray-700 space-y-3">
-                {[
-                  "Introduction to Scrum and the Agile Manifesto",
-                  "Scrum roles: Scrum Master, Product Owner, and Development Team",
-                  "Scrum events: Sprint, Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective",
-                  "Scrum artifacts: Product Backlog, Sprint Backlog, and Increment",
-                  "Definition of Done and acceptance criteria",
-                  "Servant leadership and the Scrum Master role",
-                  "Facilitating Scrum ceremonies and removing impediments",
-                  "Scaling Scrum and continuous improvement"
-                ].map((item, index) => (
-                  <motion.li
-                    key={index}
-                    className="flex items-start gap-3 group"
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <motion.div
-                      className="w-2 h-2 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full mt-2 flex-shrink-0"
-                      whileHover={{ scale: 1.5 }}
-                      transition={{ duration: 0.2 }}
-                    />
-                    <span className="group-hover:text-stone-700 transition-colors duration-200">
-                      {item}
-                    </span>
-                  </motion.li>
-                ))}
-              </motion.ul>
-
-              <motion.h2
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 relative mt-8"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-                whileHover={{ scale: 1.02, color: "#374151" }}
-                transition={{ duration: 0.3 }}
-              >
-                <span className="relative z-10">Learning Objectives</span>
-                <motion.div
-                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "35%" }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.7 }}
-                />
-              </motion.h2>
-              <motion.ul className="list-none pl-0 text-gray-700 space-y-3">
-                {[
-                  "Understand the Scrum framework, including roles, events, and artifacts",
-                  "Learn the responsibilities and characteristics of an effective Scrum Master",
-                  "Understand how to facilitate Scrum events and remove impediments",
-                  "Learn techniques for coaching and mentoring team members",
-                  "Understand how to work with Product Owners and stakeholders",
-                  "Learn how to scale Scrum in larger organizations",
-                  "Understand the importance of servant leadership in Scrum",
-                  "Learn how to measure and improve team performance"
-                ].map((item, index) => (
-                  <motion.li
-                    key={index}
-                    className="flex items-start gap-3 group"
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <motion.div
-                      className="w-2 h-2 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full mt-2 flex-shrink-0"
-                      whileHover={{ scale: 1.5 }}
-                      transition={{ duration: 0.2 }}
-                    />
-                    <span className="group-hover:text-stone-700 transition-colors duration-200">
-                      {item}
-                    </span>
-                  </motion.li>
-                ))}
-              </motion.ul>
-
-              <motion.h2
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 relative mt-8"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-                whileHover={{ scale: 1.02, color: "#374151" }}
-                transition={{ duration: 0.3 }}
-              >
-                <span className="relative z-10">Target Group</span>
-                <motion.div
-                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "35%" }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.7 }}
-                />
-              </motion.h2>
-              <motion.ul className="list-none pl-0 text-gray-700 space-y-3">
-                {[
-                  "New Scrum Masters",
-                  "Team leads transitioning to Scrum Master role",
-                  "Project managers moving to agile methodologies",
-                  "Product managers and Product Owners",
-                  "Development team members",
-                  "Agile coaches and consultants",
-                  "Anyone interested in learning Scrum framework"
-                ].map((item, index) => (
-                  <motion.li
-                    key={index}
-                    className="flex items-start gap-3 group"
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <motion.div
-                      className="w-2 h-2 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full mt-2 flex-shrink-0"
-                      whileHover={{ scale: 1.5 }}
-                      transition={{ duration: 0.2 }}
-                    />
-                    <span className="group-hover:text-stone-700 transition-colors duration-200">
-                      {item}
-                    </span>
-                  </motion.li>
-                ))}
-              </motion.ul>
-
-              <motion.h2
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 relative mt-8"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-                whileHover={{ scale: 1.02, color: "#374151" }}
-                transition={{ duration: 0.3 }}
-              >
-                <span className="relative z-10">Prerequisite</span>
-                <motion.div
-                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "35%" }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.7 }}
-                />
-              </motion.h2>
-              <motion.ul className="list-none pl-0 text-gray-700 space-y-3">
-                {[
-                  "No formal prerequisites required to attend the CSM course",
-                  "Basic understanding of software development processes is helpful",
-                  "Familiarity with agile principles or project management concepts is beneficial but not required",
-                  "Open to all professionals interested in Scrum and agile methodologies"
-                ].map((item, index) => (
-                  <motion.li
-                    key={index}
-                    className="flex items-start gap-3 group"
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <motion.div
-                      className="w-2 h-2 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full mt-2 flex-shrink-0"
-                      whileHover={{ scale: 1.5 }}
-                      transition={{ duration: 0.2 }}
-                    />
-                    <span className="group-hover:text-stone-700 transition-colors duration-200">
-                      {item}
-                    </span>
-                  </motion.li>
-                ))}
-              </motion.ul>
-
-              <motion.h2
-                className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 relative mt-8"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-                whileHover={{ scale: 1.02, color: "#374151" }}
-                transition={{ duration: 0.3 }}
-              >
-                <span className="relative z-10">Exam Pattern</span>
-                <motion.div
-                  className="absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-stone-600 to-slate-700 rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "35%" }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.7 }}
-                />
-              </motion.h2>
-              <motion.ul className="list-none pl-0 text-gray-700 space-y-3">
-                {[
-                  "Duration: 2 days of training",
-                  "Exam: Online, 50 questions",
-                  "Passing score: 37 out of 50 (74%)",
-                  "Format: Multiple choice",
-                  "Certification: Certified ScrumMaster® (CSM®)",
-                  "Certification period: 2 years",
-                  "Renewal: Required every 2 years with SEUs",
-                  "Scrum Alliance membership: 2 years included"
-                ].map((item, index) => (
-                  <motion.li
-                    key={index}
-                    className="flex items-start gap-3 group"
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <motion.div
-                      className="w-2 h-2 bg-gradient-to-r from-slate-700 to-stone-800 rounded-full mt-2 flex-shrink-0"
-                      whileHover={{ scale: 1.5 }}
-                      transition={{ duration: 0.2 }}
-                    />
-                    <span className="group-hover:text-stone-700 transition-colors duration-200">
-                      {item}
-                    </span>
-                  </motion.li>
-                ))}
-              </motion.ul>
-            </motion.div>
-            
-            <div className="lg:col-span-4">
-              <div className="sticky top-24 flex flex-col gap-4">
-                <motion.img
-                  src="/certified_scrum_master.jpg"
-                  alt="Certified Scrum Master Training"
-                  className="w-full rounded-xl shadow-lg"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                />
-                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-                  <div className="bg-gradient-to-r from-[#2BA6D9] to-[#1E7BA3] px-5 py-3">
-                    <p className="text-white font-semibold text-sm leading-tight">Certified Scrum Master</p>
-                    <p className="text-white/70 text-xs mt-0.5">Agile, Scrum &amp; Kanban</p>
-                  </div>
-                  <div className="px-5 py-4 space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
-                      Online &amp; Classroom batches available
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
-                      Flexible scheduling to suit your needs
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
-                      Expert-led, accredited training
-                    </div>
-                  </div>
-                  <div className="px-5 pb-5">
-                    <Link href="/Events">
-                      <motion.button
-                        whileHover={{ scale: 1.03 }}
-                        whileTap={{ scale: 0.97 }}
-                        className="w-full bg-[#2BA6D9] hover:bg-[#1E7BA3] text-white py-3 rounded-xl font-semibold text-sm transition-colors duration-200"
-                      >
-                        Check Schedule
-                      </motion.button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <WhyTrainWithUs />
+      <CoursePageTemplate courseData={courseData} />
       <Footer />
-        
     </>
   );
 }

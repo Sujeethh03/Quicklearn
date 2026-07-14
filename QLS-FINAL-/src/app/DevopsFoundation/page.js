@@ -16,89 +16,215 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "DevOps Foundation",
-  subtitle: "Master DevOps culture, practices, and tools for continuous delivery excellence",
-  backgroundImage: "/devops_foundation.jpg",
-  overview: [
-    "DevOps Foundation provides a comprehensive introduction to DevOps principles, practices, and tools. This course covers the cultural and technical aspects of DevOps, focusing on collaboration, automation, and continuous improvement.",
-    "Learn how DevOps bridges the gap between development and operations teams, enabling faster delivery, improved quality, and enhanced customer satisfaction through automation and collaborative practices.",
-    "Understand the key DevOps practices including continuous integration, continuous delivery, infrastructure as code, and monitoring, along with the cultural transformation required for successful DevOps adoption."
+  "title": "DevOps Foundation℠ Certification Training",
+  "subtitle": "Build a High-Performance DevOps Culture and Accelerate Software Delivery",
+  "backgroundImage": "/devops_foundation.jpg",
+  "overview": [
+    "The DevOps Foundation℠ certification provides a comprehensive introduction to DevOps principles, practices, culture, and automation. Designed for IT professionals, developers, operations teams, and business leaders, this course helps organizations improve collaboration, accelerate software delivery, enhance service quality, and achieve faster business outcomes.",
+    "Aligned with the latest PeopleCert / DevOps Institute certification syllabus, the course covers the complete DevOps lifecycle, including Continuous Integration (CI), Continuous Delivery (CD), Infrastructure as Code (IaC), automation, cloud-native practices, observability, DevSecOps, value stream management, and the role of Artificial Intelligence (AI) in modern DevOps.",
+    "Participants gain practical knowledge of how DevOps enables organizations to deliver high-quality software faster while fostering a culture of collaboration, continuous learning, and continuous improvement."
   ],
-  courseOutline: [
-    "DevOps fundamentals and principles",
-    "DevOps culture and organizational transformation",
-    "Continuous Integration (CI) practices",
-    "Continuous Delivery (CD) and deployment",
-    "Infrastructure as Code (IaC)",
-    "Configuration management and automation",
-    "Monitoring, logging, and observability",
-    "DevOps tools and technology stack"
+  "whyHead": "Why Choose DevOps Foundation℠?",
+  "why": [
+    "Learn globally recognized DevOps principles and practices",
+    "Improve collaboration between Development, Operations, Security, and Business teams",
+    "Accelerate software delivery through automation",
+    "Understand Continuous Integration and Continuous Delivery (CI/CD)",
+    "Improve reliability, quality, and customer satisfaction",
+    "Build a strong foundation for advanced DevOps certifications"
   ],
-  learningObjectives: [
-    "Understand DevOps principles and cultural aspects",
-    "Learn continuous integration and delivery practices",
-    "Master infrastructure as code concepts",
-    "Implement configuration management and automation",
-    "Design effective monitoring and observability strategies",
-    "Select appropriate DevOps tools and technologies",
-    "Drive organizational DevOps transformation"
+  "prerequisites": [
+    "There are no mandatory prerequisites for attending this course.",
+    "However, basic knowledge of software development, IT operations, Agile, cloud computing, or project management is beneficial."
   ],
-  targetGroup: [
-    "Software developers and engineers",
-    "System administrators and operations staff",
-    "DevOps engineers and practitioners",
-    "IT managers and team leaders",
-    "Anyone involved in software delivery processes"
+  "whoShouldAttend": [
+    "Software Developers",
+    "DevOps Engineers",
+    "Cloud Engineers",
+    "Site Reliability Engineers (SREs)",
+    "IT Operations Professionals",
+    "System Administrators",
+    "Infrastructure Engineers",
+    "Release Managers",
+    "Scrum Masters",
+    "Agile Coaches",
+    "Project Managers",
+    "Product Managers",
+    "Quality Assurance Professionals",
+    "IT Managers",
+    "Anyone interested in DevOps practices"
   ],
-
-  prerequisite: [
-    "No formal prerequisites are required for DevOps Foundation",
-    "Basic IT awareness and familiarity with software development or operations is recommended",
-    "Understanding of general IT infrastructure and application delivery concepts is beneficial",
-    "No prior DevOps certification or experience is needed for this foundation-level course"
-  ],
-
-  examDetails: [
-    "Duration: 60 minutes",
-    "40 multiple choice questions",
-    "Passing score: 26/40 (65%)",
-    "Closed book examination",
-    "Available online and at testing centers"
-  ],
-  category: "DevOps & Business Analysis",
-  tagline: "Collaborate. Automate. Deliver.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "SRE Foundation",
-      image: "/devops_foundation.jpg",
-      description: "Site Reliability Engineering principles and practices",
-      href: "/SREFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "SRE",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 1: Introducing DevOps",
+      "topics": [
+        "What is DevOps?",
+        "Evolution of DevOps",
+        "DevOps Culture",
+        "Business Benefits",
+        "CALMS Framework",
+        "DevOps Principles"
+      ]
     },
     {
-      title: "DevOps Master",
-      image: "/devops_foundation.jpg",
-      description: "Advanced DevOps practices and leadership",
-      href: "/DevopsMaster",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "DevOps",
-      badgeColor: "bg-green-600"
+      "title": "Module 2: DevOps Culture & Collaboration",
+      "topics": [
+        "Collaboration Across Teams",
+        "Shared Responsibility",
+        "Psychological Safety",
+        "Continuous Learning",
+        "Lean Thinking",
+        "Agile and DevOps"
+      ]
     },
     {
-      title: "Agile Business Analysis",
-      image: "/devops_foundation.jpg",
-      description: "Business analysis in Agile environments",
-      href: "/AgileBA",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "BA",
-      badgeColor: "bg-purple-600"
+      "title": "Module 3: Lean, Agile & Value Stream Management",
+      "topics": [
+        "Lean Principles",
+        "Agile Delivery",
+        "Flow Optimization",
+        "Value Stream Mapping",
+        "Waste Reduction",
+        "Continuous Improvement"
+      ]
+    },
+    {
+      "title": "Module 4: DevOps Practices",
+      "topics": [
+        "Continuous Integration (CI)",
+        "Continuous Delivery (CD)",
+        "Continuous Deployment",
+        "Infrastructure as Code (IaC)",
+        "Configuration Management",
+        "Version Control"
+      ]
+    },
+    {
+      "title": "Module 5: Automation & Toolchains",
+      "topics": [
+        "DevOps Pipelines",
+        "Build Automation",
+        "Deployment Automation",
+        "Containerization",
+        "Kubernetes Fundamentals",
+        "GitOps Overview"
+      ]
+    },
+    {
+      "title": "Module 6: Observability & Reliability",
+      "topics": [
+        "Monitoring",
+        "Logging",
+        "Distributed Tracing",
+        "Metrics and Dashboards",
+        "Incident Management",
+        "Feedback Loops"
+      ]
+    },
+    {
+      "title": "Module 7: Security & DevSecOps",
+      "topics": [
+        "Shift Left Security",
+        "Secure Software Development",
+        "Vulnerability Management",
+        "Compliance Automation",
+        "Security in CI/CD Pipelines"
+      ]
+    },
+    {
+      "title": "Module 8: Cloud, AI & Modern DevOps",
+      "topics": [
+        "Cloud-Native Applications",
+        "Platform Engineering",
+        "Artificial Intelligence in DevOps",
+        "AIOps Overview",
+        "Intelligent Automation",
+        "Future Trends"
+      ]
+    },
+    {
+      "title": "Module 9: DevOps Metrics & Continuous Improvement",
+      "topics": [
+        "DORA Metrics",
+        "Lead Time",
+        "Deployment Frequency",
+        "Change Failure Rate",
+        "Mean Time to Recovery (MTTR)",
+        "Continuous Measurement"
+      ]
+    },
+    {
+      "title": "Module 10: DevOps Foundation Exam Preparation",
+      "topics": [
+        "Exam Structure",
+        "Practice Questions",
+        "Mock Examination",
+        "Revision Sessions",
+        "Exam Strategies"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Understand DevOps culture, principles, and practices",
+    "Apply Lean and Agile concepts to DevOps environments",
+    "Implement CI/CD pipelines and automation",
+    "Improve collaboration across Development, Operations, and Security teams",
+    "Understand Infrastructure as Code and cloud-native practices",
+    "Apply observability and reliability engineering concepts",
+    "Understand the role of AI and AIOps in modern DevOps",
+    "Measure DevOps performance using industry-standard metrics",
+    "Prepare confidently for the DevOps Foundation certification examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "DevOps Foundation℠"
+    },
+    {
+      "label": "Certification Provider",
+      "value": "PeopleCert / DevOps Institute"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Multiple Choice"
+    },
+    {
+      "label": "Questions",
+      "value": "40"
+    },
+    {
+      "label": "Duration",
+      "value": "60 Minutes"
+    },
+    {
+      "label": "Passing Score",
+      "value": "65%"
+    },
+    {
+      "label": "Open Book",
+      "value": "Yes"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored"
+    },
+    {
+      "label": "Certification Validity",
+      "value": "3 Years (subject to PeopleCert Continuing Professional Development requirements)"
+    }
+  ],
+  "courseHighlights": [
+    "Latest PeopleCert / DevOps Institute Curriculum",
+    "Instructor-led Live Training",
+    "Real-world DevOps Case Studies",
+    "Hands-on Discussions and Exercises",
+    "Practice Questions & Mock Exam",
+    "Comprehensive Study Material",
+    "Certification Exam Preparation",
+    "Post-training Support"
+  ],
+  "disclaimer": "DevOps Foundation℠, DevOps Institute®, PeopleCert®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or DevOps Institute. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function DevopsFoundationPage() {

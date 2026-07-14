@@ -49,7 +49,7 @@ export default function WhyTrainWithUs() {
             className="text-3xl font-bold text-gray-900 mb-3"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Why Train With <span className="text-[#2BA6D9]">QuickLearn?</span>
+            Why Train With <span className="text-[#2BA6D9]">QuickLearn Systems?</span>
           </h2>
           <p
             className="text-gray-600 max-w-2xl mx-auto"

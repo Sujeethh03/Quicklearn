@@ -31,13 +31,13 @@ export default function SocialProof() {
     {
       icon: Users,
       number: "15,000+",
-      label: "Professionals Trained",
+      label: "Professionals Trained & Certified",
       description: "Individuals and corporate teams skilled across 50+ countries"
     },
     {
       icon: Calendar,
       number: "10+",
-      label: "Years of Excellence",
+      label: "Years of Industry Excellence",
       description: "A decade of accredited, industry-aligned training delivery"
     },
     {
@@ -49,26 +49,32 @@ export default function SocialProof() {
     {
       icon: Award,
       number: "100+",
-      label: "Corporate Clients",
+      label: "Corporate Clients Served",
       description: "Trusted by leading enterprises and Fortune 500 companies"
     },
     {
-      icon: Target,
+      icon: Star,
       number: "95%",
-      label: "Satisfaction Score",
+      label: "Learner Satisfaction",
       description: "Rated by professionals who completed our programs"
     },
     {
-      icon: Globe,
-      number: "24/7",
-      label: "Global Support",
-      description: "Round-the-clock assistance from our expert team"
+      icon: GraduationCap,
+      number: "500+",
+      label: "Training Batches Delivered",
+      description: "Instructor-led online and classroom batches successfully completed"
     },
     {
-      icon: GraduationCap,
+      icon: Globe,
+      number: "40+",
+      label: "Global Certification Programs",
+      description: "Accredited courses across IT service management, agile, project management, and more"
+    },
+    {
+      icon: Target,
       number: "15+",
-      label: "Years Expert Trainers",
-      description: "Accredited trainers with 15+ years of industry experience"
+      label: "Years Average Trainer Experience",
+      description: "Accredited trainers with deep, real-world industry expertise"
     }
   ];
 
@@ -223,8 +229,8 @@ export default function SocialProof() {
             {/* Divider */}
             <div className="border-t border-gray-100" />
 
-            {/* Row 2 — 3 stats, centred */}
-            <div className="grid grid-cols-3 divide-x divide-gray-100">
+            {/* Row 2 — remaining stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 divide-x divide-gray-100">
               {stats.slice(4).map((stat, i) => {
                 const Icon = stat.icon;
                 return (

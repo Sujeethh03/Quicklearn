@@ -3,6 +3,13 @@ export const COURSE_GROUPS = [
     group: "IT Service Management",
     options: [
       "ITIL® 4 Foundation",
+      "ITIL® Foundation (Version 5)",
+      "ITIL® Foundation Bridge (Version 5)",
+      "ITIL® Product (Version 5)",
+      "ITIL® Experience (Version 5)",
+      "ITIL® Service (Version 5)",
+      "ITIL® Transformation (Version 5)",
+      "ITIL® Managing Professional Transition (Version 5)",
       "ITIL® 4 Practice Manager",
       "MSF - Monitor, Support and Fulfil",
       "PIC - Plan, Implement and Control",

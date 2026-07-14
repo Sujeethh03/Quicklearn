@@ -19,96 +19,178 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "Site Reliability Engineering (SRE) Practitioner",
-  subtitle:
-    "Build scalable, resilient, and reliable digital services using SRE practices",
-  backgroundImage: "/sre_practitioner.jpg",
-
-  overview: [
-    "Site Reliability Engineering (SRE) combines software engineering and IT operations to build highly reliable, scalable, and resilient systems.",
-    "This course introduces core SRE principles including Service Level Objectives (SLOs), Service Level Indicators (SLIs), error budgets, automation, and observability.",
-    "Participants will learn how to reduce toil, improve system reliability, and implement modern DevOps-driven reliability engineering practices."
+  "title": "Site Reliability Engineering (SRE) Practitioner℠ Certification Training",
+  "subtitle": "Master Advanced Reliability Engineering for Modern Cloud-Native Enterprises",
+  "backgroundImage": "/sre_practitioner.jpg",
+  "overview": [
+    "The Site Reliability Engineering (SRE) Practitioner℠ certification is an advanced program designed for professionals who want to implement mature Site Reliability Engineering practices across complex enterprise environments.",
+    "Building upon foundational SRE concepts, this course focuses on advanced observability, security, resilience engineering, platform engineering, AIOps, incident response, and chaos engineering. Participants learn how to design scalable reliability practices, improve operational excellence, and optimize customer experience using engineering-driven operational models.",
+    "The course follows the latest PeopleCert / DevOps Institute certification blueprint and prepares participants for the SRE Practitioner certification examination."
   ],
-
-  courseOutline: [
-    "Introduction to Site Reliability Engineering",
-    "Service Level Indicators (SLIs) and Objectives (SLOs)",
-    "Error budgets and reliability metrics",
-    "Reducing toil through automation",
-    "Incident response and postmortems",
-    "Observability and monitoring practices",
-    "Capacity planning and scalability",
-    "DevOps and SRE collaboration models"
+  "whyHead": "Why Choose SRE Practitioner℠?",
+  "why": [
+    "Apply advanced SRE implementation techniques",
+    "Improve enterprise-scale reliability engineering",
+    "Build secure, observable, and resilient systems",
+    "Implement Platform Engineering and AIOps",
+    "Lead incident response and resilience initiatives",
+    "Advance your career as a Site Reliability Engineer"
   ],
-
-  learningObjectives: [
-    "Understand SRE principles and culture",
-    "Define and measure SLIs and SLOs",
-    "Implement and manage error budgets",
-    "Improve system reliability and availability",
-    "Automate repetitive operational tasks",
-    "Conduct effective incident reviews",
-    "Enhance observability and monitoring capabilities"
+  "prerequisites": [
+    "Although there are no mandatory prerequisites for attending the training, it is highly recommended that participants:",
+    "Hold the SRE Foundation℠ certification, or",
+    "Have a solid understanding of SRE concepts, DevOps practices, cloud computing, automation, and modern IT operations."
   ],
-
-  targetGroup: [
-    "DevOps Engineers",
+  "whoShouldAttend": [
     "Site Reliability Engineers",
-    "IT Operations Professionals",
-    "Cloud Engineers",
-    "System Administrators and Architects"
+    "Senior DevOps Engineers",
+    "Platform Engineers",
+    "Cloud Architects",
+    "Infrastructure Engineers",
+    "IT Operations Managers",
+    "DevOps Consultants",
+    "Software Engineers",
+    "Technical Leads",
+    "Engineering Managers",
+    "Reliability Engineering Leaders"
   ],
-
-  prerequisite: [
-    "SRE Foundation certification or equivalent site reliability engineering knowledge is recommended",
-    "Hands-on experience in IT operations, DevOps, or systems engineering",
-    "Familiarity with monitoring, automation, and incident response practices",
-    "Understanding of cloud platforms and distributed systems architectures is beneficial"
-  ],
-
-  examDetails: [
-    "Duration: 90 minutes",
-    "Multiple choice examination",
-    "Passing score: 65%",
-    "Web-based, closed book examination",
-    "Certification: SRE Practitioner"
-  ],
-
-  category: "DevOps & Reliability Engineering",
-  tagline: "Engineer Reliability. Automate Excellence.",
-
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "DevOps Foundation",
-      image: "/sre_practitioner.jpg",
-      description: "Understand DevOps culture and practices",
-      href: "/devops-foundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "DevOps",
-      badgeColor: "bg-green-600"
+      "title": "Module 1: SRE Anti-Patterns",
+      "topics": [
+        "Common Reliability Pitfalls",
+        "Organizational Anti-patterns",
+        "Reliability Culture",
+        "Continuous Improvement"
+      ]
     },
     {
-      title: "ITIL® 4 Specialist: Create, Deliver & Support",
-      image: "/sre_practitioner.jpg",
-      description: "Improve operational service delivery practices",
-      href: "/ITL4SCDS",
-      duration: "3 Days",
-      level: "Advanced",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 2: SLOs as a Measure of Customer Value",
+      "topics": [
+        "Advanced SLIs & SLOs",
+        "Error Budget Policies",
+        "Reliability Metrics",
+        "Customer-focused Reliability"
+      ]
     },
     {
-      title: "Site Reliability Engineering Foundation",
-      image: "/sre_practitioner.jpg",
-      description: "Learn foundational SRE principles",
-      href: "/sre-foundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "SRE",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 3: Building Secure & Reliable Systems",
+      "topics": [
+        "Secure System Design",
+        "Reliability by Design",
+        "Zero Trust Concepts",
+        "Resilience Engineering"
+      ]
+    },
+    {
+      "title": "Module 4: Full-Stack Observability",
+      "topics": [
+        "Distributed Tracing",
+        "Telemetry",
+        "Advanced Monitoring",
+        "Observability-driven Development"
+      ]
+    },
+    {
+      "title": "Module 5: Platform Engineering & AIOps",
+      "topics": [
+        "Platform Engineering Fundamentals",
+        "Internal Developer Platforms",
+        "Artificial Intelligence for IT Operations (AIOps)",
+        "DataOps",
+        "Predictive Operations"
+      ]
+    },
+    {
+      "title": "Module 6: Incident Response Management",
+      "topics": [
+        "Major Incident Management",
+        "Incident Command",
+        "Blameless Postmortems",
+        "Reliability Metrics",
+        "Continuous Learning"
+      ]
+    },
+    {
+      "title": "Module 7: Chaos Engineering",
+      "topics": [
+        "Chaos Engineering Principles",
+        "Failure Testing",
+        "Resilience Validation",
+        "Experiment Design"
+      ]
+    },
+    {
+      "title": "Module 8: Advanced SRE Practices",
+      "topics": [
+        "Scaling SRE Across the Enterprise",
+        "Organizational Transformation",
+        "Reliability Governance",
+        "SRE and DevOps Integration",
+        "Future Trends in Reliability Engineering"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Implement advanced Site Reliability Engineering practices",
+    "Build secure and resilient cloud-native systems",
+    "Design effective observability strategies",
+    "Apply AIOps and Platform Engineering concepts",
+    "Improve incident response and operational resilience",
+    "Implement Chaos Engineering practices",
+    "Scale SRE across enterprise environments",
+    "Prepare confidently for the SRE Practitioner certification examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "Site Reliability Engineering (SRE) Practitioner℠"
+    },
+    {
+      "label": "Certification Provider",
+      "value": "PeopleCert / DevOps Institute"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Multiple Choice"
+    },
+    {
+      "label": "Questions",
+      "value": "40"
+    },
+    {
+      "label": "Duration",
+      "value": "90 Minutes"
+    },
+    {
+      "label": "Passing Score",
+      "value": "65%"
+    },
+    {
+      "label": "Open Book",
+      "value": "Yes"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored"
+    },
+    {
+      "label": "Certification Validity",
+      "value": "3 Years (subject to PeopleCert CPD requirements)"
+    }
+  ],
+  "courseHighlights": [
+    "Latest SRE Practitioner Curriculum",
+    "Instructor-led Live Training",
+    "Advanced Reliability Engineering Scenarios",
+    "Hands-on Workshops",
+    "Practice Questions & Mock Exams",
+    "Comprehensive Course Material",
+    "Certification Preparation",
+    "Post-training Support"
+  ],
+  "disclaimer": "Site Reliability Engineering (SRE) Practitioner℠, Site Reliability Engineering (SRE) Foundation℠, DevOps Institute®, PeopleCert®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or DevOps Institute. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function SREPractitionerPage() {

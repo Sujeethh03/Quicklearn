@@ -16,89 +16,162 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "MSP Foundation",
-  subtitle: "Master programme management principles for successful transformational change",
-  backgroundImage: "/msp_foundation.jpg",
-  overview: [
-    "Managing Successful Programmes (MSP) provides a framework for delivering transformational change through programme management. MSP Foundation introduces the core principles and processes for managing complex programmes.",
-    "Learn to coordinate multiple related projects, manage stakeholder expectations, and deliver transformational benefits that align with organizational strategy and objectives.",
-    "Develop skills in programme governance, benefits management, and stakeholder engagement that enable successful delivery of large-scale change initiatives."
+  "title": "Managing Successful Programmes (MSP®) Foundation Certification Training (5th Edition)",
+  "subtitle": "Build the Knowledge to Lead Successful Programme Management and Business Transformation",
+  "backgroundImage": "/msp_foundation.jpg",
+  "overview": [
+    "Managing Successful Programmes (MSP®) is a globally recognized framework for managing complex programmes that deliver strategic change and organizational transformation. It provides proven principles, governance themes, and transformational flows to help organizations successfully coordinate multiple related projects while realizing business benefits.",
+    "The MSP® Foundation (5th Edition) course introduces participants to the MSP framework, enabling them to understand how programmes differ from projects and how effective programme management supports strategic objectives, governance, stakeholder engagement, and benefits realization.",
+    "This course prepares participants for the MSP® Foundation certification examination and provides the knowledge required to contribute effectively to programme management initiatives."
   ],
-  courseOutline: [
-    "MSP framework and principles",
-    "Programme governance and organization",
-    "Transformational flow and lifecycle",
-    "Benefits management and realization",
-    "Stakeholder engagement and management",
-    "Risk and issue management",
-    "Programme planning and control",
-    "Quality and assurance processes"
+  "whyHead": "Why Choose MSP® Foundation?",
+  "why": [
+    "Learn a globally recognized programme management framework",
+    "Understand how to manage transformational change",
+    "Align programmes with organizational strategy",
+    "Improve governance and benefits realization",
+    "Build a strong foundation for MSP® Practitioner certification",
+    "Enhance career opportunities in programme and portfolio management"
   ],
-  learningObjectives: [
-    "Understand MSP framework and principles",
-    "Master programme governance structures",
-    "Implement transformational flow processes",
-    "Manage benefits realization effectively",
-    "Engage stakeholders throughout programme lifecycle",
-    "Control programme risks and issues",
-    "Plan and monitor programme delivery"
+  "prerequisites": [
+    "There are no mandatory prerequisites for attending the MSP® Foundation course.",
+    "This course is suitable for professionals who are new to programme management as well as those involved in strategic change initiatives."
   ],
-  targetGroup: [
-    "Programme managers and directors",
-    "Senior project managers",
-    "Change managers and leaders",
-    "Business transformation professionals",
-    "Portfolio managers"
+  "whoShouldAttend": [
+    "Programme Managers",
+    "Project Managers",
+    "PMO Professionals",
+    "Portfolio Managers",
+    "Change Managers",
+    "Business Transformation Managers",
+    "Senior Business Analysts",
+    "Delivery Managers",
+    "Executives and Senior Leaders",
+    "Professionals involved in organizational change"
   ],
-
-  prerequisite: [
-    "No formal prerequisites are required for the MSP Foundation course",
-    "Basic awareness of project management concepts is recommended",
-    "Some experience working on or within programmes or large-scale change initiatives is beneficial",
-    "Familiarity with organizational strategy and governance structures is helpful"
-  ],
-
-  examDetails: [
-    "Duration: 75 minutes",
-    "75 multiple choice questions",
-    "Passing score: 38/75 (50%)",
-    "Closed book examination",
-    "Available at Pearson VUE centers"
-  ],
-  category: "Project & Program Management",
-  tagline: "Transform. Coordinate. Deliver.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "MSP Practitioner",
-      image: "/msp_foundation.jpg",
-      description: "Advanced MSP application and programme leadership",
-      href: "/MSPPractitioner",
-      duration: "3 Days",
-      level: "Professional",
-      badge: "MSP",
-      badgeColor: "bg-orange-600"
+      "title": "Module 1: Introduction to MSP®",
+      "topics": [
+        "Programme Management Fundamentals",
+        "Projects vs Programmes",
+        "Organizational Transformation",
+        "Programme Lifecycle"
+      ]
     },
     {
-      title: "PRINCE2 Foundation",
-      image: "/msp_foundation.jpg",
-      description: "Master PRINCE2 project management methodology",
-      href: "/Prince2Foundation",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "PRINCE2",
-      badgeColor: "bg-purple-600"
+      "title": "Module 2: MSP® Principles",
+      "topics": [
+        "Remaining aligned with organizational strategy",
+        "Leading change",
+        "Envisioning and communicating a better future",
+        "Focusing on benefits and threats",
+        "Adding value",
+        "Designing and delivering a coherent capability",
+        "Learning from experience"
+      ]
     },
     {
-      title: "PMP Certification",
-      image: "/msp_foundation.jpg",
-      description: "Project Management Professional certification",
-      href: "/PMP",
-      duration: "4 Days",
-      level: "Professional",
-      badge: "PMI",
-      badgeColor: "bg-green-600"
+      "title": "Module 3: MSP® Governance Themes",
+      "topics": [
+        "Organization",
+        "Design",
+        "Justification",
+        "Structure",
+        "Knowledge",
+        "Assurance",
+        "Decisions"
+      ]
+    },
+    {
+      "title": "Module 4: Transformational Flow",
+      "topics": [
+        "Identifying a Programme",
+        "Designing Outcomes",
+        "Planning Progressive Delivery",
+        "Delivering Capabilities",
+        "Embedding Outcomes",
+        "Evaluating New Information",
+        "Closing the Programme"
+      ]
+    },
+    {
+      "title": "Module 5: Leadership & Stakeholder Engagement",
+      "topics": [
+        "Programme Leadership",
+        "Stakeholder Engagement",
+        "Communication Strategy",
+        "Governance and Decision-Making"
+      ]
+    },
+    {
+      "title": "Module 6: Benefits Management",
+      "topics": [
+        "Benefits Identification",
+        "Benefits Realization",
+        "Risk and Issue Management",
+        "Continuous Improvement"
+      ]
+    },
+    {
+      "title": "Module 7: MSP® Foundation Exam Preparation",
+      "topics": [
+        "Exam Structure",
+        "Sample Questions",
+        "Revision Sessions",
+        "Exam Strategies"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Understand MSP® principles, governance themes, and transformational flow",
+    "Differentiate between project and programme management",
+    "Support successful programme governance",
+    "Understand benefits management and stakeholder engagement",
+    "Contribute effectively to business transformation initiatives",
+    "Prepare confidently for the MSP® Foundation examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "MSP® Foundation (5th Edition)"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Multiple Choice"
+    },
+    {
+      "label": "Number of Questions",
+      "value": "60"
+    },
+    {
+      "label": "Passing Score",
+      "value": "60% (36 out of 60)"
+    },
+    {
+      "label": "Exam Duration",
+      "value": "60 Minutes"
+    },
+    {
+      "label": "Open Book",
+      "value": "No"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored"
+    }
+  ],
+  "courseHighlights": [
+    "Based on MSP® 5th Edition",
+    "Instructor-led Live Training",
+    "Interactive Workshops",
+    "Real-world Programme Case Studies",
+    "Practice Questions & Mock Exams",
+    "Comprehensive Course Material",
+    "Post-training Support"
+  ],
+  "disclaimer": ""
 };
 
 export default function MSPFoundationPage() {

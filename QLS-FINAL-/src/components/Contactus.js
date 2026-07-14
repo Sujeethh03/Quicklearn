@@ -595,7 +595,7 @@ export default function Contactus() {
               >
                 <h3 className="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
                   <Building className="w-6 h-6 text-slate-600" />
-                  Why Choose QuickLearn?
+                  Why Choose QuickLearn Systems?
                 </h3>
 
                 <div className="space-y-4">

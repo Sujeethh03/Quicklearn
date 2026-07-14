@@ -453,7 +453,7 @@ export default function RegisterPageClient() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="bg-gradient-to-br from-[#0d3a5c] to-[#2BA6D9] rounded-2xl p-7 text-white shadow-lg"
               >
-                <h3 className="text-base font-bold mb-5">Why QuickLearn?</h3>
+                <h3 className="text-base font-bold mb-5">Why QuickLearn Systems?</h3>
                 <div className="space-y-3">
                   {TRUST_POINTS.map((b) => (
                     <div key={b.text} className="flex items-center gap-3 text-sm">

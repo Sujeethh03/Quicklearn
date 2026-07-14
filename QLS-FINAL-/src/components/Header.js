@@ -184,6 +184,28 @@ animate-in slide-in-from-top-2 duration-100">
                       <li>
                         <Link href="/ITL4Management" className="block px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white">ITIL® 4 Foundation</Link>
                       </li>
+                      <li>
+                        <Link href="/ITILFoundationV5" className="block px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white">ITIL® Foundation (Version 5)</Link>
+                      </li>
+                      <li>
+                        <Link href="/ITILFoundationBridgeV5" className="block px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white">ITIL® Foundation Bridge (Version 5)</Link>
+                      </li>
+                      {/* ITIL Managing Professional (Version 5) — click to expand */}
+                      <li>
+                        <div onClick={() => toggleItsmSection('mp')} className="flex justify-between items-center px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
+                          <span>ITIL® Managing Professional (Version 5)</span>
+                          <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${openItsmSection === 'mp' ? 'rotate-180' : ''}`} />
+                        </div>
+                        {openItsmSection === 'mp' && (
+                          <ul className="bg-[#f5f7f9] border-l-2 border-[#5B6F81]/30">
+                            <li><Link href="/ITILProductV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Product (Version 5)</Link></li>
+                            <li><Link href="/ITILExperienceV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Experience (Version 5)</Link></li>
+                            <li><Link href="/ITILServiceV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Service (Version 5)</Link></li>
+                            <li><Link href="/ITILTransformationV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Transformation (Version 5)</Link></li>
+                            <li><Link href="/ITILManagingProfessionalTransitionV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Managing Professional Transition (Version 5)</Link></li>
+                          </ul>
+                        )}
+                      </li>
 
                       {/* Practice Manager — click to expand */}
                       <li>
@@ -501,6 +523,32 @@ animate-in slide-in-from-top-2 duration-100">
                           <Link href="/ITL4Management" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>
                             ITIL® 4 Foundation
                           </Link>
+                          <Link href="/ITILFoundationV5" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>
+                            ITIL® Foundation (Version 5)
+                          </Link>
+                          <Link href="/ITILFoundationBridgeV5" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>
+                            ITIL® Foundation Bridge (Version 5)
+                          </Link>
+                          {/* ITIL Managing Professional (Version 5) with sub-menu */}
+                          <div>
+                            <button
+                              onClick={() => toggleMobileSubSubSection('mp')}
+                              className="w-full flex justify-between items-center px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3] rounded-md"
+                            >
+                              <span>ITIL® Managing Professional (Version 5)</span>
+                              <ChevronDown className={`w-2 h-2 transition-transform ${openMobileSubSubSection === 'mp' ? 'rotate-180' : ''}`} />
+                            </button>
+
+                            {openMobileSubSubSection === 'mp' && (
+                              <div className="ml-4 mt-1 space-y-1">
+                                <Link href="/ITILProductV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Product (Version 5)</Link>
+                                <Link href="/ITILExperienceV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Experience (Version 5)</Link>
+                                <Link href="/ITILServiceV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Service (Version 5)</Link>
+                                <Link href="/ITILTransformationV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Transformation (Version 5)</Link>
+                                <Link href="/ITILManagingProfessionalTransitionV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Managing Professional Transition (Version 5)</Link>
+                              </div>
+                            )}
+                          </div>
 
                           {/* ITIL Practice Manager with sub-sub menus */}
                           <div>

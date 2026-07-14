@@ -16,89 +16,156 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "Lean Six Sigma Green Belt",
-  subtitle: "Master process improvement and quality management methodologies",
-  backgroundImage: "/green_belt.png",
-  overview: [
-    "Lean Six Sigma Green Belt certification combines Lean manufacturing principles with Six Sigma quality improvement methodologies to eliminate waste and reduce variation in business processes. This comprehensive program prepares you to lead improvement projects and drive organizational excellence.",
-    "Learn the DMAIC (Define, Measure, Analyze, Improve, Control) methodology, statistical analysis techniques, and project management skills needed to identify problems, analyze root causes, and implement sustainable solutions.",
-    "Develop expertise in process mapping, data analysis, hypothesis testing, and change management to become an effective improvement leader in your organization."
+  "title": "Lean Six Sigma Green Belt Certification Training",
+  "subtitle": "Improve Processes. Eliminate Waste. Deliver Measurable Business Results.",
+  "backgroundImage": "/green_belt.png",
+  "overview": [
+    "Lean Six Sigma Green Belt is a globally recognized certification designed for professionals who want to improve business processes, reduce defects, eliminate waste, and enhance operational performance using the Lean Six Sigma methodology.",
+    "This instructor-led training provides participants with a practical understanding of Lean principles, Six Sigma concepts, statistical problem-solving techniques, and the DMAIC (Define, Measure, Analyze, Improve, Control) methodology. Through real-world case studies and hands-on exercises, participants learn how to identify improvement opportunities, analyze root causes, implement sustainable solutions, and deliver measurable business value.",
+    "The course is suitable for professionals seeking to lead process improvement initiatives and contribute to organizational excellence across manufacturing, IT, healthcare, banking, telecommunications, logistics, and service industries."
   ],
-  courseOutline: [
-    "Lean Six Sigma fundamentals and philosophy",
-    "DMAIC methodology and project lifecycle",
-    "Define phase: Project charter, VOC, SIPOC",
-    "Measure phase: Process mapping, data collection, measurement systems",
-    "Analyze phase: Statistical analysis, root cause analysis, hypothesis testing",
-    "Improve phase: Solution generation, pilot testing, implementation planning",
-    "Control phase: Control plans, statistical process control, sustainability",
-    "Lean tools: Value stream mapping, 5S, Kaizen, waste elimination"
+  "whyHead": "Why Choose Lean Six Sigma Green Belt?",
+  "why": [
+    "Learn the globally recognized DMAIC improvement methodology",
+    "Improve quality, productivity, and customer satisfaction",
+    "Reduce operational costs and process variation",
+    "Develop analytical and data-driven decision-making skills",
+    "Lead continuous improvement projects",
+    "Build a strong foundation for Lean Six Sigma Black Belt certification"
   ],
-  learningObjectives: [
-    "Master Lean Six Sigma principles and methodology",
-    "Apply DMAIC framework to improvement projects",
-    "Conduct statistical analysis and hypothesis testing",
-    "Develop process maps and value stream maps",
-    "Implement measurement systems and data collection",
-    "Lead root cause analysis and problem solving",
-    "Design and implement sustainable control systems"
+  "prerequisites": [
+    "There are no mandatory prerequisites for attending this course.",
+    "Professionals with experience in operations, quality, project management, business analysis, engineering, IT, or service management will benefit the most."
   ],
-  targetGroup: [
-    "Quality managers and improvement professionals",
-    "Process engineers and analysts",
-    "Operations managers and supervisors",
-    "Project managers and team leaders",
-    "Anyone involved in process improvement initiatives"
+  "whoShouldAttend": [
+    "Process Improvement Professionals",
+    "Project Managers",
+    "Operations Managers",
+    "Quality Assurance Professionals",
+    "Business Analysts",
+    "Manufacturing Engineers",
+    "Production Managers",
+    "Supply Chain Professionals. Healthcare Professionals",
+    "IT Professionals",
+    "Team Leads",
+    "Continuous Improvement Practitioners"
   ],
-
-  prerequisite: [
-    "Lean Six Sigma Yellow Belt or White Belt certification is recommended but not mandatory",
-    "Basic understanding of business processes and quality management concepts",
-    "High school level mathematics and basic statistical awareness is required",
-    "Some experience working in operations, quality, or process improvement roles is beneficial"
-  ],
-
-  examDetails: [
-    "Duration: 4 hours",
-    "100 multiple choice questions",
-    "Passing score: 70/100 (70%)",
-    "Open book examination",
-    "Available at certified testing centers"
-  ],
-  category: "Quality Management",
-  tagline: "Improve. Optimize. Excel.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "Lean Six Sigma Black Belt",
-      image: "/green_belt.png",
-      description: "Advanced Six Sigma leadership and project management",
-      href: "/LeanSSBB",
-      duration: "5 Days",
-      level: "Expert",
-      badge: "Six Sigma",
-      badgeColor: "bg-black"
+      "title": "Module 1: Introduction to Lean Six Sigma",
+      "topics": [
+        "Lean Principles",
+        "Six Sigma Fundamentals",
+        "Voice of the Customer (VOC)",
+        "Cost of Poor Quality (COPQ)",
+        "Lean Six Sigma Roles and Responsibilities"
+      ]
     },
     {
-      title: "DevOps Foundation",
-      image: "/green_belt.png",
-      description: "Learn DevOps culture and practices",
-      href: "/DevopsFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "DevOps",
-      badgeColor: "bg-green-600"
+      "title": "Module 2: Define Phase",
+      "topics": [
+        "Project Charter",
+        "Business Case Development",
+        "SIPOC Diagram",
+        "Stakeholder Analysis",
+        "Customer Requirements (CTQs)"
+      ]
     },
     {
-      title: "Business Analysis Foundation",
-      image: "/green_belt.png",
-      description: "Master business analysis techniques",
-      href: "/BusinessAnalysisF",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "BA",
-      badgeColor: "bg-purple-600"
+      "title": "Module 3: Measure Phase",
+      "topics": [
+        "Process Mapping",
+        "Data Collection Planning",
+        "Measurement System Analysis (MSA)",
+        "Basic Statistics",
+        "Process Capability",
+        "Performance Baselines"
+      ]
+    },
+    {
+      "title": "Module 4: Analyze Phase",
+      "topics": [
+        "Root Cause Analysis",
+        "Fishbone Diagram",
+        "5 Whys",
+        "Pareto Analysis",
+        "Failure Mode and Effects Analysis (FMEA)",
+        "Hypothesis Testing Basics"
+      ]
+    },
+    {
+      "title": "Module 5: Improve Phase",
+      "topics": [
+        "Solution Generation",
+        "Lean Waste Elimination",
+        "Kaizen",
+        "Error Proofing (Poka-Yoke)",
+        "Pilot Implementation",
+        "Risk Assessment"
+      ]
+    },
+    {
+      "title": "Module 6: Control Phase",
+      "topics": [
+        "Control Plans",
+        "Standard Operating Procedures (SOPs)",
+        "Statistical Process Control (SPC)",
+        "Control Charts",
+        "Process Monitoring",
+        "Sustaining Improvements"
+      ]
+    },
+    {
+      "title": "Module 7: Lean Tools",
+      "topics": [
+        "5S",
+        "Value Stream Mapping (VSM)",
+        "Visual Management",
+        "Kanban",
+        "Standard Work",
+        "Continuous Flow"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Apply Lean Six Sigma principles to improve business processes",
+    "Lead Green Belt process improvement projects",
+    "Use DMAIC methodology effectively",
+    "Identify and eliminate process waste",
+    "Analyse process performance using statistical tools",
+    "Implement sustainable process improvements",
+    "Improve quality, productivity, and customer satisfaction"
+  ],
+  "certificationHeading": "Certification Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "Lean Six Sigma Green Belt"
+    },
+    {
+      "label": "Course Duration",
+      "value": "Typically, 2 Days (1 Weekend)"
+    },
+    {
+      "label": "Assessment",
+      "value": "Certification exam (format varies by certification body)"
+    },
+    {
+      "label": "",
+      "value": "Certificate awarded upon successfully meeting the certification requirements of the chosen certification provider."
+    }
+  ],
+  "courseHighlights": [
+    "Instructor-led Live Training",
+    "Practical Case Studies",
+    "Real-world Process Improvement Exercises",
+    "Lean & Six Sigma Tools",
+    "Comprehensive Study Material",
+    "Practice Assessments",
+    "Certification Preparation",
+    "Post-training Mentor Support"
+  ],
+  "disclaimer": ""
 };
 
 export default function LeanSSGBPage() {

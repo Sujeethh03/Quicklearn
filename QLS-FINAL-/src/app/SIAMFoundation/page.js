@@ -16,89 +16,174 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "SIAM Foundation",
-  subtitle: "Master Service Integration and Management in multi-vendor environments",
-  backgroundImage: "/siam_foundation.jpg",
-  overview: [
-    "Service Integration and Management (SIAM) is a methodology for managing services where multiple service providers contribute to the delivery of services. SIAM Foundation provides comprehensive training in managing complex multi-vendor environments.",
-    "Learn to implement SIAM governance structures, manage service provider relationships, and ensure seamless service delivery across multiple vendors while maintaining service quality and customer satisfaction.",
-    "Develop skills in service integration, vendor management, and governance frameworks that enable organizations to leverage multiple service providers effectively while reducing complexity and risk."
+  "title": "EXIN SIAM™ Foundation Certificate Training",
+  "subtitle": "Master Service Integration and Management to Deliver Seamless Multi-Supplier IT Services",
+  "backgroundImage": "/siam_foundation.jpg",
+  "overview": [
+    "The EXIN SIAM™ Foundation Certificate provides a comprehensive introduction to Service Integration and Management (SIAM™), a management methodology used to coordinate multiple service providers and internal teams to deliver integrated, business-focused IT services.",
+    "As organizations increasingly adopt hybrid IT environments involving cloud providers, managed service providers, SaaS vendors, and internal IT teams, SIAM provides the governance, processes, and operating model needed to ensure seamless collaboration and end-to-end service delivery.",
+    "Aligned with the latest EXIN SIAM Foundation Body of Knowledge, this course introduces participants to SIAM principles, governance, service integration, process management, organizational structures, tooling, and implementation approaches. Participants gain practical knowledge of how SIAM enables organizations to improve service quality, reduce operational complexity, and increase business value."
   ],
-  courseOutline: [
-    "SIAM fundamentals and methodology overview",
-    "SIAM ecosystem and stakeholder management",
-    "Service integration governance and structures",
-    "Multi-vendor service management",
-    "SIAM roles and responsibilities",
-    "Service provider management and coordination",
-    "Performance management and reporting",
-    "SIAM implementation and transition"
+  "whyHead": "Why Choose EXIN SIAM™ Foundation?",
+  "why": [
+    "Learn globally recognized SIAM principles and best practices",
+    "Understand how to manage multiple service providers effectively",
+    "Improve service quality and governance",
+    "Enable seamless collaboration across supplier ecosystems",
+    "Support digital transformation initiatives",
+    "Build a strong foundation for advanced SIAM roles"
   ],
-  learningObjectives: [
-    "Understand SIAM methodology and principles",
-    "Master multi-vendor service management",
-    "Implement effective governance structures",
-    "Manage service provider relationships",
-    "Coordinate service integration activities",
-    "Develop performance management frameworks",
-    "Lead SIAM implementation initiatives"
+  "prerequisites": [
+    "There are no mandatory prerequisites for attending this course.",
+    "However, a basic understanding of IT Service Management, ITIL®, Agile, project management, or IT operations is beneficial."
   ],
-  targetGroup: [
-    "Service Integration Managers",
-    "Vendor and supplier managers",
-    "IT Service Management professionals",
-    "Contract and procurement managers",
-    "Service delivery managers"
+  "whoShouldAttend": [
+    "IT Service Managers",
+    "Service Delivery Managers",
+    "Vendor Managers",
+    "Supplier Managers",
+    "IT Operations Professionals",
+    "Service Desk Managers",
+    "IT Consultants",
+    "Program & Project Managers",
+    "Enterprise Architects",
+    "IT Governance Professionals",
+    "Digital Transformation Leaders",
+    "Anyone working in multi-supplier environments"
   ],
-
-  prerequisite: [
-    "No formal prerequisites are required for the SIAM Foundation course",
-    "Basic awareness of IT service management concepts is recommended",
-    "Familiarity with multi-supplier or outsourced IT environments is beneficial",
-    "Understanding of general IT operations and service delivery is helpful"
-  ],
-
-  examDetails: [
-    "Duration: 60 minutes",
-    "40 multiple choice questions",
-    "Passing score: 26/40 (65%)",
-    "Closed book examination",
-    "Available online and at testing centers"
-  ],
-  category: "IT Service Management",
-  tagline: "Integrate. Coordinate. Deliver.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "SIAM Professional",
-      image: "/siam_foundation.jpg",
-      description: "Advanced SIAM practices and implementation",
-      href: "/SIAMProfessional",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "SIAM",
-      badgeColor: "bg-purple-600"
+      "title": "Module 1: Introduction to SIAM",
+      "topics": [
+        "What is SIAM?",
+        "Business drivers",
+        "SIAM terminology",
+        "SIAM values and principles",
+        "Benefits of SIAM"
+      ]
     },
     {
-      title: "Supplier Management",
-      image: "/siam_foundation.jpg",
-      description: "Master supplier relationship management",
-      href: "/SupplierManagement",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 2: SIAM Implementation Roadmap",
+      "topics": [
+        "Discovery",
+        "Assessment",
+        "Planning",
+        "Implementation",
+        "Continuous improvement"
+      ]
     },
     {
-      title: "Relationship Management",
-      image: "/siam_foundation.jpg",
-      description: "Master stakeholder relationship management",
-      href: "/RelationshipManagement",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Module 3: SIAM Governance",
+      "topics": [
+        "Governance structures",
+        "Policies",
+        "Decision-making",
+        "Service accountability",
+        "Performance governance"
+      ]
+    },
+    {
+      "title": "Module 4: SIAM Roles & Responsibilities",
+      "topics": [
+        "Service Integrator",
+        "Service Providers",
+        "Customer Organization",
+        "Process Owners",
+        "Functional Responsibilities"
+      ]
+    },
+    {
+      "title": "Module 5: SIAM Practices & Processes",
+      "topics": [
+        "Incident Management",
+        "Change Enablement",
+        "Problem Management",
+        "Service Level Management",
+        "Knowledge Management",
+        "Continual Improvement"
+      ]
+    },
+    {
+      "title": "Module 6: Organizational Structures",
+      "topics": [
+        "Internal Service Integrator",
+        "External Service Integrator",
+        "Hybrid SIAM Models",
+        "Multi-provider Collaboration"
+      ]
+    },
+    {
+      "title": "Module 7: Measurement & Reporting",
+      "topics": [
+        "KPIs",
+        "Service Performance",
+        "Supplier Performance",
+        "Customer Satisfaction",
+        "Value Measurement"
+      ]
+    },
+    {
+      "title": "Module 8: Tools & Technology",
+      "topics": [
+        "Service Management Platforms",
+        "Automation",
+        "Integration Tools",
+        "Reporting Dashboards",
+        "Collaboration Platforms"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Explain SIAM principles and concepts",
+    "Understand SIAM governance models",
+    "Coordinate multiple service providers effectively",
+    "Apply SIAM practices in enterprise environments",
+    "Measure service performance and business value",
+    "Support SIAM implementation initiatives",
+    "Prepare confidently for the EXIN SIAM Foundation examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "EXIN SIAM™ Foundation Certificate"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Multiple Choice"
+    },
+    {
+      "label": "Questions",
+      "value": "40"
+    },
+    {
+      "label": "Duration",
+      "value": "60 Minutes"
+    },
+    {
+      "label": "Passing Score",
+      "value": "65%"
+    },
+    {
+      "label": "Open Book",
+      "value": "No"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored or Authorized Test Center"
+    }
+  ],
+  "courseHighlights": [
+    "Latest EXIN SIAM Foundation syllabus",
+    "Instructor-led live training",
+    "Practical case studies",
+    "Real-world implementation examples",
+    "Interactive workshops",
+    "Practice questions & mock exams",
+    "Comprehensive study materials",
+    "Certification exam preparation"
+  ],
+  "disclaimer": "SIAM™, EXIN®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by EXIN."
 };
 
 export default function SIAMFoundationPage() {

@@ -16,89 +16,169 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "PRINCE2 Practitioner",
-  subtitle: "Apply and tailor PRINCE2 methodology for complex project environments",
-  backgroundImage: "/prince2_practitioner.jpg",
-  overview: [
-    "PRINCE2 Practitioner builds on Foundation knowledge to develop advanced project management skills. This certification demonstrates your ability to apply and tailor PRINCE2 methodology in real-world project scenarios.",
-    "Learn to adapt PRINCE2 principles, themes, and processes to different project contexts, manage complex stakeholder relationships, and lead successful project delivery.",
-    "Develop expertise in project tailoring, risk management, and change control that enables you to manage projects of any size and complexity effectively."
+  "title": "PRINCE2® Practitioner Certification Training (Version 7)",
+  "subtitle": "Apply PRINCE2® to Successfully Manage Projects in Real-World Environments",
+  "backgroundImage": "/prince2_practitioner.jpg",
+  "overview": [
+    "The PRINCE2® Practitioner (Version 7) certification is designed for project managers and professionals who want to apply the PRINCE2® methodology to manage projects successfully in real-world environments.",
+    "Building upon the Foundation level, this course focuses on applying and tailoring the PRINCE2 methodology to different project contexts, organizational structures, and delivery approaches. Participants learn how to adapt PRINCE2 practices, processes, and principles to effectively manage projects while maintaining governance, business justification, and value delivery.",
+    "The latest PRINCE2® Version 7 introduces enhanced guidance on People Management, Sustainability, Digital & Data Management, Commercial Management, and tailoring PRINCE2 for modern project environments.",
+    "This course prepares participants to confidently pass the PRINCE2® Practitioner examination and apply PRINCE2 effectively in their organizations."
   ],
-  courseOutline: [
-    "Advanced PRINCE2 application and tailoring",
-    "Project context analysis and adaptation",
-    "Complex stakeholder management",
-    "Advanced risk and issue management",
-    "Change control and configuration management",
-    "Quality management and assurance",
-    "Project leadership and team management",
-    "Project closure and benefits realization"
+  "whyHead": "Why Choose PRINCE2® Practitioner?",
+  "why": [
+    "Build practical project management expertise",
+    "Learn how to tailor PRINCE2® for different project environments",
+    "Improve project governance and control",
+    "Strengthen stakeholder engagement and leadership skills",
+    "Deliver projects aligned with business objectives",
+    "Enhance your career with a globally recognized project management certification"
   ],
-  learningObjectives: [
-    "Apply PRINCE2 methodology in complex environments",
-    "Tailor PRINCE2 to different project contexts",
-    "Manage complex stakeholder relationships",
-    "Implement advanced risk management techniques",
-    "Lead effective change control processes",
-    "Ensure quality throughout project lifecycle",
-    "Demonstrate project leadership capabilities"
+  "prerequisites": [
+    "To take the PRINCE2® Practitioner examination, candidates must hold one of the following certifications:",
+    "PRINCE2® Foundation (Version 7 or earlier versions)",
+    "Project Management Professional (PMP®)",
+    "Certified Associate in Project Management (CAPM®)",
+    "IPMA® Level A, B, C, or D",
+    "Other recognized prerequisites as specified by PeopleCert."
   ],
-  targetGroup: [
-    "Experienced project managers",
-    "PRINCE2 Foundation certified professionals",
-    "Senior project coordinators",
-    "Programme managers",
-    "Project management consultants"
+  "whoShouldAttend": [
+    "Project Managers",
+    "Senior Project Managers",
+    "Program Managers",
+    "PMO Professionals",
+    "Project Consultants",
+    "Delivery Managers",
+    "Change Managers",
+    "Project Team Leaders",
+    "Portfolio Managers",
+    "Professionals responsible for managing projects using PRINCE2®"
   ],
-
-  prerequisite: [
-    "PRINCE2 Foundation certification is required to sit the Practitioner exam",
-    "Practical experience managing or working within projects is strongly recommended",
-    "Familiarity with project governance, risk management, and change control concepts",
-    "Equivalent qualifications such as PMP, IPMA, or Project Management Professional are also accepted"
-  ],
-
-  examDetails: [
-    "Duration: 2.5 hours",
-    "68 objective testing questions",
-    "Passing score: 38/68 (55%)",
-    "Open book examination",
-    "Available at Pearson VUE centers"
-  ],
-  category: "Project & Program Management",
-  tagline: "Apply. Tailor. Lead.",
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "PRINCE2 Foundation",
-      image: "/prince2_practitioner.jpg",
-      description: "Master PRINCE2 fundamentals and methodology",
-      href: "/Prince2Foundation",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "PRINCE2",
-      badgeColor: "bg-purple-600"
+      "title": "Module 1: Applying PRINCE2 Principles",
+      "topics": [
+        "Applying the seven principles",
+        "Business justification",
+        "Tailoring principles for different project environments"
+      ]
     },
     {
-      title: "PMP Certification",
-      image: "/prince2_practitioner.jpg",
-      description: "Project Management Professional certification",
-      href: "/PMP",
-      duration: "4 Days",
-      level: "Professional",
-      badge: "PMI",
-      badgeColor: "bg-green-600"
+      "title": "Module 2: Applying PRINCE2 Practices",
+      "topics": [
+        "Business Case",
+        "Organizing",
+        "Plans",
+        "Quality",
+        "Risk",
+        "Issues",
+        "Progress"
+      ]
     },
     {
-      title: "MSP Foundation",
-      image: "/prince2_practitioner.jpg",
-      description: "Managing Successful Programmes methodology",
-      href: "/MSPFoundation",
-      duration: "3 Days",
-      level: "Professional",
-      badge: "MSP",
-      badgeColor: "bg-orange-600"
+      "title": "Module 3: Applying PRINCE2 Processes",
+      "topics": [
+        "Starting Up a Project",
+        "Directing a Project",
+        "Initiating a Project",
+        "Controlling a Stage",
+        "Managing Product Delivery",
+        "Managing Stage Boundaries",
+        "Closing a Project"
+      ]
+    },
+    {
+      "title": "Module 4: Tailoring PRINCE2®",
+      "topics": [
+        "Tailoring governance",
+        "Tailoring roles and responsibilities",
+        "Tailoring management products",
+        "Tailoring for project scale and complexity",
+        "Tailoring for Agile and hybrid delivery"
+      ]
+    },
+    {
+      "title": "Module 5: People in Projects",
+      "topics": [
+        "Leadership",
+        "Communication",
+        "Stakeholder engagement",
+        "Team performance",
+        "Conflict resolution"
+      ]
+    },
+    {
+      "title": "Module 6: Modern Project Context",
+      "topics": [
+        "Sustainability considerations",
+        "Commercial management",
+        "Digital and data management",
+        "Organizational change",
+        "Benefits realization"
+      ]
+    },
+    {
+      "title": "Module 7: Practitioner Exam Preparation",
+      "topics": [
+        "Scenario-based application",
+        "Sample practitioner questions",
+        "Exam techniques",
+        "Time management",
+        "Revision sessions"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Apply PRINCE2® principles in real-world projects",
+    "Tailor PRINCE2® to suit different organizational environments",
+    "Manage risks, quality, issues, and project progress",
+    "Lead project teams effectively",
+    "Apply governance throughout the project lifecycle",
+    "Deliver projects aligned with business objectives",
+    "Successfully prepare for the PRINCE2® Practitioner examination"
+  ],
+  "certificationHeading": "Certification Exam Information",
+  "certification": [
+    {
+      "label": "Certification",
+      "value": "PRINCE2® Practitioner (Version 7)"
+    },
+    {
+      "label": "Exam Format",
+      "value": "Objective Testing (Scenario-Based)"
+    },
+    {
+      "label": "Number of Questions",
+      "value": "70"
+    },
+    {
+      "label": "Passing Score",
+      "value": "60% (42 out of 70)"
+    },
+    {
+      "label": "Exam Duration",
+      "value": "150 Minutes"
+    },
+    {
+      "label": "Open Book",
+      "value": "Yes (Official PRINCE2® 7 Manual)"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online Proctored"
+    }
+  ],
+  "courseHighlights": [
+    "Aligned with PRINCE2® Version 7",
+    "Instructor-led Live Training",
+    "Scenario-Based Learning",
+    "Practical Project Case Studies",
+    "Official Practice Exams",
+    "Tailoring Workshops",
+    "Comprehensive Exam Preparation",
+    "Post-training Support"
+  ],
+  "disclaimer": "PRINCE2®, PRINCE2 Agile®, MSP®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function Prince2PractitionerPage() {

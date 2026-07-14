@@ -19,96 +19,143 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "Professional Scrum Product Owner™ II (PSPO II)",
-  subtitle:
-    "Master advanced Product Ownership and value-driven product strategy",
-  backgroundImage: "/professional_scrum_product_owner_2.jpg",
-
-  overview: [
-    "Professional Scrum Product Owner™ II (PSPO II) is an advanced course designed for experienced Product Owners who want to deepen their understanding of product strategy, stakeholder collaboration, and value maximization.",
-    "This course focuses on advanced Product Backlog management, forecasting and release planning, stakeholder communication, and aligning product initiatives with business goals.",
-    "Participants will strengthen their ability to make evidence-based decisions, manage complex product ecosystems, and drive measurable business outcomes."
+  "title": "Professional Scrum Product Owner™ II (PSPO II) Certification Training",
+  "subtitle": "Strengthen Strategic Product Leadership with Advanced Product Ownership Techniques",
+  "backgroundImage": "/professional_scrum_product_owner_2.jpg",
+  "overview": [
+    "Professional Scrum Product Owner™ II (PSPO II) is an advanced course for experienced Product Owners seeking to enhance their ability to manage products, maximize value, and drive product strategy in complex environments.",
+    "The course emphasizes strategic thinking, stakeholder engagement, evidence-based decision-making, and advanced product management techniques."
   ],
-
-  courseOutline: [
-    "Advanced Product Ownership principles",
-    "Product vision and strategy alignment",
-    "Value-driven Product Backlog management",
-    "Stakeholder engagement and communication",
-    "Forecasting and release planning",
-    "Measuring value and outcomes",
-    "Managing complexity in product ecosystems",
-    "Scaling Product Ownership practices"
+  "whyHead": "Why Choose This Course?",
+  "why": [
+    "Advance your Product Owner skills beyond the fundamentals",
+    "Learn how to maximize product value in complex environments",
+    "Strengthen your ability to define and communicate product strategy",
+    "Improve stakeholder engagement, influence, and negotiation skills",
+    "Apply Evidence-Based Management to make better product decisions",
+    "Gain practical techniques for product discovery, validation, and learning",
+    "Prepare for the PSPO II certification with scenario-based learning",
+    "Build confidence in leading product initiatives across multiple teams and stakeholders"
   ],
-
-  learningObjectives: [
-    "Develop advanced product strategy skills",
-    "Align product initiatives with business objectives",
-    "Optimize Product Backlog for maximum value",
-    "Enhance stakeholder collaboration",
-    "Apply evidence-based product management",
-    "Forecast delivery effectively",
-    "Measure and improve product outcomes"
+  "prerequisites": [
+    "Strong understanding of Scrum",
+    "Practical experience working as a Product Owner or in a product leadership role",
+    "PSPO I certification is strongly recommended",
+    "Familiarity with product strategy, stakeholder management, and product metrics"
   ],
-
-  targetGroup: [
+  "whoShouldAttend": [
     "Experienced Product Owners",
     "Product Managers",
-    "Business Analysts in Agile environments",
-    "Agile Coaches",
-    "Professionals who have passed PSPO I"
+    "Product Leaders",
+    "Portfolio Managers",
+    "Business Owners",
+    "Agile Leaders"
   ],
-
-  prerequisite: [
-    "Professional Scrum Product Owner™ I (PSPO I) certification is required",
-    "At least one year of practical experience as a Product Owner or in a similar role",
-    "Strong understanding of Scrum framework and backlog management practices",
-    "Experience with stakeholder management and product strategy is recommended"
-  ],
-
-  examDetails: [
-    "Duration: 90 minutes",
-    "30 multiple choice questions",
-    "Passing score: 85%",
-    "Online, open book examination",
-    "Certification issued by Scrum.org"
-  ],
-
-  category: "Agile & Scrum",
-  tagline: "Strategize. Prioritize. Maximize Value.",
-
-  relatedCourses: [
+  "curriculum": [
     {
-      title: "Professional Scrum Product Owner™ I (PSPO I)",
-      image: "/professional_scrum_product_owner_2.jpg",
-      description: "Foundational Product Owner certification",
-      href: "/professional-scrum-product-owner",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "Scrum",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Advanced Product Ownership",
+      "topics": [
+        "Product Strategy",
+        "Vision and Outcomes",
+        "Value Optimization",
+        "Product Economics"
+      ]
     },
     {
-      title: "Professional Scrum Master™ II (PSM II)",
-      image: "/professional_scrum_product_owner_2.jpg",
-      description: "Advanced Scrum Master leadership skills",
-      href: "/professional-scrum-master-2",
-      duration: "2 Days",
-      level: "Advanced",
-      badge: "Scrum",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Stakeholder Management",
+      "topics": [
+        "Stakeholder Engagement",
+        "Negotiation",
+        "Influence",
+        "Managing Expectations"
+      ]
     },
     {
-      title: "SAFe® Product Owner / Product Manager",
-      image: "/professional_scrum_product_owner_2.jpg",
-      description: "Product Ownership within scaled Agile environments",
-      href: "/safe-product-owner-product-manager",
-      duration: "2 Days",
-      level: "Professional",
-      badge: "SAFe®",
-      badgeColor: "bg-[#2BA6D9]"
+      "title": "Evidence-Based Management",
+      "topics": [
+        "Key Value Areas",
+        "Product Metrics",
+        "Outcome Measurement",
+        "Experimentation"
+      ]
+    },
+    {
+      "title": "Product Discovery & Validation",
+      "topics": [
+        "Customer Research",
+        "Hypothesis Testing",
+        "Innovation",
+        "Product Learning"
+      ]
+    },
+    {
+      "title": "Scaling Product Ownership",
+      "topics": [
+        "Multiple Teams",
+        "Complex Products",
+        "Organizational Alignment",
+        "Strategic Road mapping"
+      ]
     }
-  ]
+  ],
+  "learningOutcomes": [
+    "Drive product strategy effectively",
+    "Maximize value delivery",
+    "Apply Evidence-Based Management",
+    "Influence stakeholders successfully",
+    "Validate product assumptions",
+    "Lead product initiatives in complex environments"
+  ],
+  "certificationHeading": "Certification & Exam Details",
+  "certification": [
+    {
+      "label": "",
+      "value": "Certification Exam"
+    },
+    {
+      "label": "Certification",
+      "value": "Professional Scrum Product Owner™ II (PSPO II)"
+    },
+    {
+      "label": "Questions",
+      "value": "40"
+    },
+    {
+      "label": "Duration",
+      "value": "90 Minutes"
+    },
+    {
+      "label": "Passing Score",
+      "value": "85%"
+    },
+    {
+      "label": "Delivery",
+      "value": "Online"
+    },
+    {
+      "label": "Format",
+      "value": "Scenario-Based Assessment"
+    },
+    {
+      "label": "",
+      "value": "Lifetime certification - no annual renewal fee required"
+    },
+    {
+      "label": "",
+      "value": "Free Credly digital credential included"
+    }
+  ],
+  "courseHighlights": [
+    "Advanced PSPO II certification training",
+    "Focus on product strategy, value optimization, and stakeholder management",
+    "Evidence-Based Management and product metrics coverage",
+    "Product discovery, experimentation, and validation techniques",
+    "Scaling product ownership across multiple teams and complex products",
+    "Scenario-based learning and practical exercises",
+    "Designed for experienced Product Owners and product leaders",
+    "Online delivery with flexible learning options"
+  ],
+  "disclaimer": "Professional Scrum™, PSM™, PSPO™, Scrum.org™, and related marks are trademarks of Scrum.org. All other trademarks, service marks, registered trademarks, product names, and company names mentioned are the property of their respective owners. training@quicklearnsys.com for review and correction."
 };
 
 export default function ProfessionalScrumProductOwner2Page() {

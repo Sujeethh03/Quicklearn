@@ -33,7 +33,7 @@ export async function POST(request) {
     });
 
     const mailOptions = {
-      from: `"QuickLearn Website" <${process.env.SMTP_USER}>`,
+      from: `"QuickLearn Systems Website" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_EMAIL || "training@quicklearnsys.com",
       replyTo: email,
       subject: `New Contact Enquiry from ${fullName}${courseInterested ? ` - ${courseInterested}` : ""}`,

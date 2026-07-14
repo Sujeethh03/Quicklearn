@@ -38,7 +38,7 @@ export async function POST(request) {
         : "";
 
     await transporter.sendMail({
-      from: `"QuickLearn Website" <${process.env.SMTP_USER}>`,
+      from: `"QuickLearn Systems Website" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_EMAIL || "training@quicklearnsys.com",
       replyTo: email,
       subject: `New Registration: ${firstName} ${lastName} — ${course}`,
