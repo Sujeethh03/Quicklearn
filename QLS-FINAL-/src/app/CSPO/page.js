@@ -156,7 +156,7 @@ const courseData = {
     "Comprehensive Learning Materials",
     "Two-Year Scrum Alliance Membership (subject to Scrum Alliance policies)"
   ],
-  "disclaimer": "Certified Scrum Product Owner®, CSPO®, Scrum Alliance®, Certified Scrum Trainer®, CST®, and all related trademarks are the property of Scrum Alliance®. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by Scrum Alliance®. All trademarks are the property of their respective owners."
+  "disclaimer": "Certified Scrum Product Owner®, CSPO®, Scrum Alliance®, Certified Scrum Trainer®, CST®, and all related trademarks are the property of Scrum Alliance®. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by Scrum Alliance®. All trademarks are the property of their respective owners."
 };
 
 export default function CSPOPage() {

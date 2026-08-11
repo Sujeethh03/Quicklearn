@@ -16,6 +16,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "ITIL®, ITIL® 4 Practitioner: Change Enablement, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
   title: "Change Enablement",
   subtitle: "Enable safe and efficient changes while minimizing risk to services",
   backgroundImage: "/change_enablement.jpg",

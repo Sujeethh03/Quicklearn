@@ -79,7 +79,7 @@ export default function AboutPageHybrid() {
       </section>
 
 {/* ABOUT CONTENT */}
-      <section className="bg-white pb-16">
+      <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
 
@@ -124,7 +124,7 @@ export default function AboutPageHybrid() {
                   alt="Corporate Training"
                   width={400}
                   height={300}
-                  className="rounded-xl shadow-lg w-full"
+                  className="rounded-xl shadow-lg w-full h-auto"
                 />
               </motion.div>
             </div>
@@ -197,7 +197,7 @@ export default function AboutPageHybrid() {
                   alt="Our Team"
                   width={400}
                   height={300}
-                  className="rounded-xl shadow-lg w-full"
+                  className="rounded-xl shadow-lg w-full h-auto"
                 />
               </motion.div>
             </div>

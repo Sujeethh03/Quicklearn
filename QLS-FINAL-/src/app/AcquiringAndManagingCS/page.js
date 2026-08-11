@@ -19,6 +19,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "ITIL®, ITIL® 4 Specialist: Acquiring and Managing Cloud Services (AMCS), PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
   title: "ITIL® 4 Specialist: Acquiring and Managing Cloud Services (AMCS)",
   subtitle: "Bridge the gap between IT service management and modern cloud ecosystems",
   backgroundImage: "/acquiring_managing_cloud_services.jpg",

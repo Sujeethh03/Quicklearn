@@ -173,7 +173,7 @@ const courseData = {
     "Comprehensive Course Material",
     "Post-training Mentor Support"
   ],
-  "disclaimer": "MSP®, PRINCE2®, PRINCE2 Agile®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners."
+  "disclaimer": "MSP®, PRINCE2®, PRINCE2 Agile®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function MSPPractitionerPage() {

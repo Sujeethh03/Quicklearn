@@ -97,14 +97,14 @@ export default function CoursesWeOffer() {
     "IT Service Management",
     "Project & Program Management",
     "Agile, Scrum & Kanban",
-    "Quality Management",
-    "DevOps & Business Analysis",
-    "Software Testing & Technical"
+    "DevOps & SRE",
+    "Business Analysis",
+    "Lean & Quality Management",
+    "Software Testing"
   ];
 
   // Complete course data
   const courses = [
-    // IT Service Management
     {
       id: 1,
       title: "ITIL® 4 Foundation",
@@ -113,12 +113,11 @@ export default function CoursesWeOffer() {
       href: "/ITL4Management",
       imageSrc: "/itl4_foundation.png",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
-      duration: "3 Days",
+      duration: "2 Days",
       level: "Foundation",
       students: "2.5K+",
       rating: 4.8,
-      price: 299,
-      popular: true
+      price: 299
     },
     {
       id: 2,
@@ -146,7 +145,8 @@ export default function CoursesWeOffer() {
       level: "Foundation",
       students: "950+",
       rating: 4.7,
-      price: 399
+      price: 399,
+      popular: true
     },
     {
       id: 4,
@@ -402,36 +402,6 @@ export default function CoursesWeOffer() {
     },
     {
       id: 22,
-      title: "Create, Deliver and Support",
-      category: "IT Service Management",
-      subcategory: "ITIL®",
-      href: "/CreateDeliverSupport",
-      imageSrc: "/create_deliver_support.jpg",
-      description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
-      duration: "3 Days",
-      level: "Foundation",
-      students: "2.5K+",
-      rating: 4.8,
-      price: 299
-    },
-    {
-      id: 23,
-      title: "Drive Stakeholder Value",
-      category: "IT Service Management",
-      subcategory: "ITIL®",
-      href: "/DriveStakeholderValue",
-      imageSrc: "/drive_stakeholder_value.jpg",
-      description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
-      duration: "3 Days",
-      level: "Foundation",
-      students: "2.5K+",
-      rating: 4.8,
-      price: 299
-    },
-    
-    
-    {
-      id: 26,
       title: "Acquiring And Managing Cloud Service",
       category: "IT Service Management",
       subcategory: "ITIL®",
@@ -445,7 +415,7 @@ export default function CoursesWeOffer() {
       price: 299
     },
     {
-      id: 27,
+      id: 23,
       title: "Sustainability In Digital and IT",
       category: "IT Service Management",
       subcategory: "ITIL®",
@@ -459,7 +429,7 @@ export default function CoursesWeOffer() {
       price: 299
     },
     {
-      id: 28,
+      id: 24,
       title: "Business Relationship Management",
       category: "IT Service Management",
       subcategory: "ITIL®",
@@ -473,21 +443,7 @@ export default function CoursesWeOffer() {
       price: 299
     },
     {
-      id: 29,
-      title: "IT Asset Management",
-      category: "IT Service Management",
-      subcategory: "ITIL®",
-      href: "/ItAssetManage",
-      imageSrc: "/it_asset_management.jpg",
-      description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
-      duration: "3 Days",
-      level: "Foundation",
-      students: "2.5K+",
-      rating: 4.8,
-      price: 299
-    },
-    {
-      id: 30,
+      id: 25,
       title: "Monitor,Support and Fulfil",
       category: "IT Service Management",
       subcategory: "ITIL®",
@@ -501,7 +457,7 @@ export default function CoursesWeOffer() {
       price: 299
     },
     {
-      id: 31,
+      id: 26,
       title: "Digital IT & Services",
       category: "IT Service Management",
       subcategory: "ITIL®",
@@ -515,37 +471,21 @@ export default function CoursesWeOffer() {
       price: 299
     },
     {
-      id: 32,
-      title: "SIAM Foundation",
-      category: "IT Service Management",
-      subcategory: "ITIL®",
-      href: "/SIAMFoundation",
-      imageSrc: "/siam_foundation.jpg",
-      description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
-      duration: "3 Days",
-      level: "Foundation",
-      students: "2.5K+",
-      rating: 4.8,
-      price: 299
-    },
-    {
-      id: 33,
+      id: 27,
       title: "SIAM Professional",
       category: "IT Service Management",
       subcategory: "ITIL®",
       href: "/SIAMProfessional",
       imageSrc: "/siam_professional.jpg",
       description: "Master the fundamentals of IT Service Management with ITIL® 4 Foundation certification.",
-      duration: "3 Days",
+      duration: "4 Days",
       level: "Foundation",
       students: "2.5K+",
       rating: 4.8,
       price: 299
     },
-
-    // Project & Program Management
     {
-      id: 34,
+      id: 28,
       title: "PMP Certification",
       category: "Project & Program Management",
       subcategory: "PMI",
@@ -560,25 +500,26 @@ export default function CoursesWeOffer() {
       popular: true
     },
     {
-      id: 35,
+      id: 29,
       title: "PRINCE2 Foundation",
       category: "Project & Program Management",
       subcategory: "PRINCE2",
       href: "/Prince2Foundation",
       imageSrc: "/prince2_foundation.jpg",
       description: "Structured project management methodology with PRINCE2 Foundation.",
-      duration: "3 Days",
+      duration: "2 Days",
       level: "Foundation",
       students: "2.1K+",
       rating: 4.8,
-      price: 399
+      price: 399,
+      popular: true
     },
     {
-      id: 36,
-      title: "Agile Certified Practitioner (ACP)",
+      id: 30,
+      title: "PMI-ACP",
       category: "Project & Program Management",
       subcategory: "PMI",
-      href: "/courses/acp",
+      href: "/PMIACP",
       imageSrc: "/acp_certification.jpg",
       description: "Agile project management practices and methodologies certification.",
       duration: "3 Days",
@@ -588,7 +529,7 @@ export default function CoursesWeOffer() {
       price: 499
     },
     {
-      id: 37,
+      id: 31,
       title: "Prince2 Practitioner",
       category: "Project & Program Management",
       subcategory: "PMI",
@@ -599,24 +540,25 @@ export default function CoursesWeOffer() {
       level: "Professional",
       students: "1.7K+",
       rating: 4.8,
-      price: 499
+      price: 499,
+      popular: true
     },
     {
-      id: 38,
+      id: 32,
       title: "Prince2 Agile Foundation",
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/Prince2AgileFoundation",
       imageSrc: "/prince2_agile_foundation.jpg",
       description: "Agile project management practices and methodologies certification.",
-      duration: "3 Days",
+      duration: "2 Days",
       level: "Professional",
       students: "1.7K+",
       rating: 4.8,
       price: 499
     },
     {
-      id: 39,
+      id: 33,
       title: "Prince2 Agile Practitioner",
       category: "Project & Program Management",
       subcategory: "PMI",
@@ -630,21 +572,21 @@ export default function CoursesWeOffer() {
       price: 499
     },
     {
-      id: 40,
+      id: 34,
       title: "MSP Foundation",
       category: "Project & Program Management",
       subcategory: "PMI",
       href: "/MSPFoundation",
       imageSrc: "/msp_foundation.jpg",
       description: "Agile project management practices and methodologies certification.",
-      duration: "3 Days",
+      duration: "2 Days",
       level: "Professional",
       students: "1.7K+",
       rating: 4.8,
       price: 499
     },
     {
-      id: 41,
+      id: 35,
       title: "MSP Practitioner",
       category: "Project & Program Management",
       subcategory: "PMI",
@@ -657,11 +599,9 @@ export default function CoursesWeOffer() {
       rating: 4.8,
       price: 499
     },
-
-    // Agile, Scrum & Kanban
     {
-      id: 42,
-      title: "Leading SAFe Agilist",
+      id: 36,
+      title: "AI-Empowered Leading SAFe Agilist 6",
       category: "Agile, Scrum & Kanban",
       subcategory: "SAFe",
       href: "/LeadingSAFeAgilist",
@@ -675,7 +615,7 @@ export default function CoursesWeOffer() {
       popular: true
     },
     {
-      id: 43,
+      id: 37,
       title: "Professional Scrum Master I (PSM I)",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum.org",
@@ -690,7 +630,7 @@ export default function CoursesWeOffer() {
       popular: true
     },
     {
-      id: 44,
+      id: 38,
       title: "Certified Scrum Master (CSM)",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
@@ -704,8 +644,8 @@ export default function CoursesWeOffer() {
       price: 399
     },
     {
-      id: 45,
-      title: "SAFe PO/PM",
+      id: 39,
+      title: "AI-Empowered SAFe POPM 6",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/SAFePO-PM",
@@ -715,25 +655,12 @@ export default function CoursesWeOffer() {
       level: "Professional",
       students: "3.5K+",
       rating: 4.7,
-      price: 399
+      price: 399,
+      popular: true
     },
     {
-      id: 46,
-      title: "SAFe for Teams",
-      category: "Agile, Scrum & Kanban",
-      subcategory: "Scrum Alliance",
-      href: "/SAFeforTeams",
-      imageSrc: "/safe_for_teams.jpg",
-      description: "Scrum Alliance certified Scrum Master training and certification.",
-      duration: "2 Days",
-      level: "Professional",
-      students: "3.5K+",
-      rating: 4.7,
-      price: 399
-    },
-    {
-      id: 47,
-      title: "SAFe Scrum Master",
+      id: 40,
+      title: "AI-Empowered SAFe Scrum Master 6",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/SAFeScrumMaster",
@@ -743,11 +670,12 @@ export default function CoursesWeOffer() {
       level: "Professional",
       students: "3.5K+",
       rating: 4.7,
-      price: 399
+      price: 399,
+      popular: true
     },
     {
-      id: 48,
-      title: "SAFe Advanced Scrum Master",
+      id: 41,
+      title: "AI-Empowered SAFe Advanced Scrum Master 6",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/SAFeAdvancedScrumMaster",
@@ -760,8 +688,8 @@ export default function CoursesWeOffer() {
       price: 399
     },
     {
-      id: 49,
-      title: "Professional Scrum Master 2",
+      id: 42,
+      title: "Professional Scrum Master II (PSM II)",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/PScrumM2",
@@ -774,8 +702,8 @@ export default function CoursesWeOffer() {
       price: 399
     },
     {
-      id: 50,
-      title: "Professional Scrum Product Owner 1",
+      id: 43,
+      title: "Professional Scrum Product Owner I (PSPO I)",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/PSPO1",
@@ -785,11 +713,12 @@ export default function CoursesWeOffer() {
       level: "Professional",
       students: "3.5K+",
       rating: 4.7,
-      price: 399
+      price: 399,
+      popular: true
     },
     {
-      id: 51,
-      title: "Professional Scrum Product Owner 2",
+      id: 44,
+      title: "Professional Scrum Product Owner II (PSPO II)",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/PSPO2",
@@ -802,8 +731,8 @@ export default function CoursesWeOffer() {
       price: 399
     },
     {
-      id: 52,
-      title: "Professional Scrum with Kanban (PSK 1)",
+      id: 45,
+      title: "Professional Scrum with Kanban (PSK)",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/PSK1",
@@ -816,22 +745,8 @@ export default function CoursesWeOffer() {
       price: 399
     },
     {
-      id: 53,
-      title: "Certified Advanced Scrum Master",
-      category: "Agile, Scrum & Kanban",
-      subcategory: "Scrum Alliance",
-      href: "/CASM",
-      imageSrc: "/certified_advanced_scrummaster.jpg",
-      description: "Scrum Alliance certified Scrum Master training and certification.",
-      duration: "2 Days",
-      level: "Professional",
-      students: "3.5K+",
-      rating: 4.7,
-      price: 399
-    },
-    {
-      id: 54,
-      title: "Certified Scrum Product Owner",
+      id: 46,
+      title: "Certified Scrum Product Owner (CSPO)",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
       href: "/CSPO",
@@ -844,7 +759,7 @@ export default function CoursesWeOffer() {
       price: 399
     },
     {
-      id: 55,
+      id: 47,
       title: "ICP-ACC",
       category: "Agile, Scrum & Kanban",
       subcategory: "Scrum Alliance",
@@ -857,12 +772,10 @@ export default function CoursesWeOffer() {
       rating: 4.7,
       price: 399
     },
-
-    // Quality Management
     {
-      id: 56,
+      id: 48,
       title: "Lean Six Sigma Green Belt",
-      category: "Quality Management",
+      category: "Lean & Quality Management",
       subcategory: "Six Sigma",
       href: "/LeanSSGB",
       imageSrc: "/green_belt.png",
@@ -875,9 +788,9 @@ export default function CoursesWeOffer() {
       popular: true
     },
     {
-      id: 57,
+      id: 49,
       title: "Lean Six Sigma Black Belt",
-      category: "Quality Management",
+      category: "Lean & Quality Management",
       subcategory: "Six Sigma",
       href: "/LeanSSBB",
       imageSrc: "/black_belt.png",
@@ -888,12 +801,10 @@ export default function CoursesWeOffer() {
       rating: 4.9,
       price: 799
     },
-
-    // DevOps & Business Analysis
     {
-      id: 58,
+      id: 50,
       title: "DevOps Foundation",
-      category: "DevOps & Business Analysis",
+      category: "DevOps & SRE",
       subcategory: "DevOps",
       href: "/DevopsFoundation",
       imageSrc: "/devops_foundation.jpg",
@@ -902,12 +813,13 @@ export default function CoursesWeOffer() {
       level: "Foundation",
       students: "2.3K+",
       rating: 4.8,
-      price: 349
+      price: 349,
+      popular: true
     },
     {
-      id: 59,
+      id: 51,
       title: "SRE Foundation",
-      category: "DevOps & Business Analysis",
+      category: "DevOps & SRE",
       subcategory: "SRE",
       href: "/SREFoundation",
       imageSrc: "/sre_foundation.jpg",
@@ -916,28 +828,29 @@ export default function CoursesWeOffer() {
       level: "Foundation",
       students: "1.6K+",
       rating: 4.7,
-      price: 399
+      price: 399,
+      popular: true
     },
     {
-      id: 60,
+      id: 52,
       title: "Business Analysis Foundation",
-      category: "DevOps & Business Analysis",
+      category: "Business Analysis",
       subcategory: "Business Analysis",
       href: "/BusinessAnalysisF",
       imageSrc: "/business_analysis_foundation.jpg",
       description: "Business analysis techniques and stakeholder management.",
-      duration: "3 Days",
+      duration: "2 Days",
       level: "Foundation",
       students: "1.4K+",
       rating: 4.6,
       price: 349
     },
     {
-      id: 61,
+      id: 53,
       title: "Business Analysis Practice",
-      category: "DevOps & Business Analysis",
+      category: "Business Analysis",
       subcategory: "Business Analysis",
-      href: "/BusinessAnalysisPractice",
+      href: "/BusinessAnalysisP",
       imageSrc: "/business_analysis_practice.jpg",
       description: "Business analysis techniques and stakeholder management.",
       duration: "3 Days",
@@ -947,9 +860,9 @@ export default function CoursesWeOffer() {
       price: 349
     },
     {
-      id: 62,
+      id: 54,
       title: "SRE Practitioner",
-      category: "DevOps & Business Analysis",
+      category: "DevOps & SRE",
       subcategory: "Business Analysis",
       href: "/SREPractitioner",
       imageSrc: "/sre_practitioner.jpg",
@@ -961,63 +874,370 @@ export default function CoursesWeOffer() {
       price: 399
     },
     {
-      id: 63,
-      title: "Agile Business Analysis",
-      category: "DevOps & Business Analysis",
-      subcategory: "Business Analysis",
-      href: "/AgileBA",
-      imageSrc: "/agile_business_analysis.jpg",
-      description: "Business analysis techniques and stakeholder management.",
-      duration: "3 Days",
-      level: "Foundation",
-      students: "1.4K+",
-      rating: 4.6,
-      price: 349
-    },
-    {
-      id: 64,
-      title: "DevOps Master",
-      category: "DevOps & Business Analysis",
-      subcategory: "Business Analysis",
-      href: "/DevopsMaster",
-      imageSrc: "/devops_master.jpg",
-      description: "Business analysis techniques and stakeholder management.",
-      duration: "3 Days",
-      level: "Foundation",
-      students: "1.4K+",
-      rating: 4.6,
-      price: 499
-    },
-
-    // Software Testing & Technical
-    {
-      id: 65,
-      title: "ISTQB Foundation Level",
-      category: "Software Testing & Technical",
+      id: 55,
+      title: "Certified Tester Foundation Level (CTFL)",
+      category: "Software Testing",
       subcategory: "ISTQB",
       href: "/ISTQBF",
       imageSrc: "/istqb_foundation.jpg",
       description: "Software testing fundamentals and ISTQB certification.",
-      duration: "3 Days",
+      duration: "2 Days",
       level: "Foundation",
       students: "2.7K+",
       rating: 4.8,
-      price: 299,
+      price: 299
+    },
+    {
+      id: 56,
+      title: "Professional Scrum Master – AI Essentials (PSM-AIE)",
+      category: "Agile, Scrum & Kanban",
+      subcategory: "Scrum.org",
+      href: "/PSMAIEssentials",
+      imageSrc: "/professional_scrum_master_1.jpg",
+      description: "Apply AI to strengthen the Scrum Master role and team facilitation.",
+      duration: "1 Day",
+      level: "Professional",
+      students: "900+",
+      rating: 4.7,
+      price: 199
+    },
+    {
+      id: 57,
+      title: "Professional Scrum Product Owner – AI Essentials (PSPO-AIE)",
+      category: "Agile, Scrum & Kanban",
+      subcategory: "Scrum.org",
+      href: "/PSPOAIEssentials",
+      imageSrc: "/professional_scrum_product_owner_1.jpg",
+      description: "Use AI to improve product ownership, discovery and decision-making.",
+      duration: "1 Day",
+      level: "Professional",
+      students: "800+",
+      rating: 4.7,
+      price: 199
+    },
+    {
+      id: 58,
+      title: "AIOps Foundation",
+      category: "DevOps & SRE",
+      subcategory: "DevOps",
+      href: "/AIOpsFoundation",
+      imageSrc: "/devops_foundation.jpg",
+      description: "Apply AI and machine learning to modern IT operations.",
+      duration: "2 Days",
+      level: "Foundation",
+      students: "1.1K+",
+      rating: 4.7,
+      price: 399,
       popular: true
     },
     {
-      id: 66,
-      title: "ISTQB Advanced",
-      category: "Software Testing & Technical",
-      subcategory: "Automation",
-      href: "/ISTQBA",
-      imageSrc: "/istqb_advanced.jpg",
-      description: "Automated testing tools and frameworks for efficient testing.",
-      duration: "4 Days",
+      id: 59,
+      title: "DevSecOps Foundation",
+      category: "DevOps & SRE",
+      subcategory: "DevOps",
+      href: "/DevSecOpsFoundation",
+      imageSrc: "/devops_foundation.jpg",
+      description: "Integrate security into DevOps pipelines and culture.",
+      duration: "2 Days",
+      level: "Foundation",
+      students: "1.3K+",
+      rating: 4.8,
+      price: 399
+    },
+    {
+      id: 60,
+      title: "DevSecOps Practitioner",
+      category: "DevOps & SRE",
+      subcategory: "DevOps",
+      href: "/DevSecOpsPractitioner",
+      imageSrc: "/devops_foundation.jpg",
+      description: "Advance DevSecOps practices for secure continuous delivery.",
+      duration: "2 Days",
       level: "Professional",
-      students: "1.8K+",
+      students: "900+",
       rating: 4.7,
       price: 499
+    },
+    {
+      id: 61,
+      title: "Certified Tester AI Testing (CT-AI)",
+      category: "Software Testing",
+      subcategory: "ISTQB",
+      href: "/CTAI",
+      imageSrc: "/istqb_foundation.jpg",
+      description: "Test AI-based systems with the ISTQB CT-AI certification.",
+      duration: "2 Days",
+      level: "Advanced",
+      students: "700+",
+      rating: 4.7,
+      price: 449
+    },
+    {
+      id: 62,
+      title: "Certified Tester Advanced Level Agile Tester (CTAL-AT)",
+      category: "Software Testing",
+      subcategory: "ISTQB",
+      href: "/CTALAT",
+      imageSrc: "/istqb_foundation.jpg",
+      description: "Advanced agile testing skills with ISTQB CTAL-AT.",
+      duration: "2 Days",
+      level: "Advanced",
+      students: "650+",
+      rating: 4.7,
+      price: 449
+    },
+    {
+      id: 63,
+      title: "Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE)",
+      category: "Software Testing",
+      subcategory: "ISTQB",
+      href: "/CTALTAE",
+      imageSrc: "/istqb_foundation.jpg",
+      description: "Design and build effective test automation solutions.",
+      duration: "3 Days",
+      level: "Advanced",
+      students: "600+",
+      rating: 4.7,
+      price: 499
+    },
+    {
+      id: 64,
+      title: "Certified Tester Advanced Level Test Management (CTAL-TM)",
+      category: "Software Testing",
+      subcategory: "ISTQB",
+      href: "/CTALTM",
+      imageSrc: "/istqb_foundation.jpg",
+      description: "Lead and manage testing with ISTQB CTAL-TM.",
+      duration: "3 Days",
+      level: "Advanced",
+      students: "600+",
+      rating: 4.7,
+      price: 499
+    },
+    {
+      id: 65,
+      title: "ITIL® 4 Practice Manager",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITIL4PracticeManager",
+      imageSrc: "/itl4_foundation.png",
+      description: "Master 15 ITIL management practices across MSF, PIC and CAI.",
+      duration: "5 Days",
+      level: "Professional",
+      students: "1.0K+",
+      rating: 4.8,
+      price: 899
+    },
+    {
+      id: 66,
+      title: "ITIL® 4 Managing Professional",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITIL4ManagingProfessional",
+      imageSrc: "/itl4_foundation.png",
+      description: "Practical and technical skills to run modern IT-enabled services.",
+      duration: "4 Days",
+      level: "Professional",
+      students: "950+",
+      rating: 4.8,
+      price: 999
+    },
+    {
+      id: 67,
+      title: "ITIL® 4 Strategic Leader",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITIL4StrategicLeader",
+      imageSrc: "/itl4_foundation.png",
+      description: "Align digital and IT strategy with business direction.",
+      duration: "3 Days",
+      level: "Professional",
+      students: "800+",
+      rating: 4.8,
+      price: 999
+    },
+    {
+      id: 68,
+      title: "ITIL® 4 Specialist: Plan, Implement and Control",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/PlanImplementControl",
+      imageSrc: "/itl4_foundation.png",
+      description: "Change, release, deployment, configuration and asset management.",
+      duration: "3 Days",
+      level: "Professional",
+      students: "700+",
+      rating: 4.7,
+      price: 599
+    },
+    {
+      id: 69,
+      title: "ITIL® 4 Specialist: Collaborate, Assure and Improve",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/CollaborateAssureImprove",
+      imageSrc: "/itl4_foundation.png",
+      description: "Relationship, supplier, SLM, security and continual improvement.",
+      duration: "3 Days",
+      level: "Professional",
+      students: "700+",
+      rating: 4.7,
+      price: 599
+    },
+    {
+      id: 70,
+      title: "ITIL® V5 Foundation",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILFoundationV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "The latest AI-native ITIL Foundation for digital services.",
+      duration: "2 Days",
+      level: "Foundation",
+      students: "1.2K+",
+      rating: 4.8,
+      price: 349,
+      popular: true
+    },
+    {
+      id: 71,
+      title: "ITIL® V5 Foundation Bridge",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILFoundationBridgeV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Upgrade your ITIL 4 knowledge to ITIL (Version 5).",
+      duration: "2 Days",
+      level: "Foundation",
+      students: "600+",
+      rating: 4.7,
+      price: 299
+    },
+    {
+      id: 72,
+      title: "ITIL® V5 Managing Professional",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILManagingProfessionalTransitionV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Advance to ITIL V5 Managing Professional.",
+      duration: "4 Days",
+      level: "Professional",
+      students: "500+",
+      rating: 4.7,
+      price: 899
+    },
+    {
+      id: 73,
+      title: "ITIL® Product (V5)",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILProductV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Manage digital products as integrated value streams.",
+      duration: "3 Days",
+      level: "Professional",
+      students: "500+",
+      rating: 4.7,
+      price: 599
+    },
+    {
+      id: 74,
+      title: "ITIL® Service (V5)",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILServiceV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Deliver and support services across the ITIL V5 lifecycle.",
+      duration: "3 Days",
+      level: "Professional",
+      students: "480+",
+      rating: 4.7,
+      price: 599
+    },
+    {
+      id: 75,
+      title: "ITIL® Experience (V5)",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILExperienceV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Design and manage great digital experiences with ITIL V5.",
+      duration: "3 Days",
+      level: "Professional",
+      students: "450+",
+      rating: 4.7,
+      price: 599
+    },
+    {
+      id: 76,
+      title: "ITIL® V5 Strategic Leader",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILStrategicLeaderV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Lead digital and IT strategy with ITIL (Version 5).",
+      duration: "3 Days",
+      level: "Professional",
+      students: "420+",
+      rating: 4.7,
+      price: 899
+    },
+    {
+      id: 77,
+      title: "ITIL® Strategy",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILStrategyV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Align digital and IT strategy in AI-enabled enterprises.",
+      duration: "2 Days",
+      level: "Professional",
+      students: "400+",
+      rating: 4.7,
+      price: 599
+    },
+    {
+      id: 78,
+      title: "ITIL® V5 Transformation",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILTransformationV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Lead service management transformation with ITIL V5.",
+      duration: "3 Days",
+      level: "Professional",
+      students: "380+",
+      rating: 4.7,
+      price: 599
+    },
+    {
+      id: 79,
+      title: "ITIL® V5 AI Governance",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILAIGovernanceV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "Adopt and govern AI responsibly across digital services.",
+      duration: "2 Days",
+      level: "Professional",
+      students: "360+",
+      rating: 4.8,
+      price: 599
+    },
+    {
+      id: 80,
+      title: "ITIL® V5 Master",
+      category: "IT Service Management",
+      subcategory: "ITIL®",
+      href: "/ITILMasterV5",
+      imageSrc: "/itl4_foundation.png",
+      description: "The pinnacle of the ITIL qualification scheme.",
+      duration: "Flexible",
+      level: "Expert",
+      students: "200+",
+      rating: 4.9,
+      price: 1499
     }
   ];
 
@@ -1029,8 +1249,18 @@ export default function CoursesWeOffer() {
     // Show all courses when "All" is selected
     filteredCourses = courses;
   } else if (activeFilter === "Popular Courses") {
-    // Show only popular courses when "Popular Courses" is selected
-    filteredCourses = courses.filter(course => course.popular === true);
+    // Popular courses are grouped by category in the same order as the filter bar
+    // above, then alphabetically by title, so the carousel reads deliberately.
+    const categoryRank = (c) => {
+      const i = categories.indexOf(c);
+      return i === -1 ? categories.length : i;
+    };
+    filteredCourses = courses
+      .filter(course => course.popular === true)
+      .sort((a, b) =>
+        categoryRank(a.category) - categoryRank(b.category) ||
+        a.title.localeCompare(b.title)
+      );
   } else {
     // Show courses from selected category
     filteredCourses = courses.filter(course => course.category === activeFilter);
@@ -1061,10 +1291,10 @@ export default function CoursesWeOffer() {
               className="text-center"
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">
-                Explore our top <span className="bg-gradient-to-r from-gray-600 via-gray-700 to-slate-800 bg-clip-text text-transparent">categories</span>
+                Explore our top <span className="bg-gradient-to-r from-slate-800 via-slate-900 to-black bg-clip-text text-transparent">categories</span>
               </h2>
 
-              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-gray-800 max-w-3xl mx-auto">
                 Advance your career with expert-led certifications
               </p>
             </motion.div>
@@ -1083,13 +1313,13 @@ export default function CoursesWeOffer() {
               className="relative"
             >
               <div className="relative bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-                <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-600 w-5 h-5" />
                 <input
                   type="text"
                   placeholder="Search for courses, certifications, or topics..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-14 pr-5 py-4 text-base focus:outline-none focus:ring-2 focus:ring-[#2BA6D9] focus:ring-inset"
+                  className="w-full pl-14 pr-5 py-4 text-base text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#2BA6D9] focus:ring-inset"
                 />
                 {searchTerm && (
                   <button
@@ -1116,7 +1346,7 @@ export default function CoursesWeOffer() {
               className={`px-4 py-2 rounded-full font-medium text-sm transition-all ${
                 activeFilter === category
                   ? 'bg-[#2BA6D9] text-white shadow-md'
-                  : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-100'
+                  : 'bg-white text-gray-900 border border-gray-300 hover:bg-gray-100'
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -1205,12 +1435,12 @@ export default function CoursesWeOffer() {
                           {course.title}
                         </h3>
 
-                        <p className="text-gray-600 text-sm mb-3 sm:mb-4 line-clamp-3">
+                        <p className="text-gray-800 text-sm mb-3 sm:mb-4 line-clamp-3">
                           {course.description}
                         </p>
 
                         {/* Stats */}
-                        <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <div className="flex items-center justify-between text-sm text-gray-800 font-medium mb-4">
                           <div className="flex items-center gap-1">
                             <Clock className="w-4 h-4" />
                             <span>{course.duration}</span>
@@ -1247,7 +1477,7 @@ export default function CoursesWeOffer() {
           >
             <div className="text-6xl mb-4">🔍</div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">No courses found</h3>
-            <p className="text-gray-600 mb-6">Try adjusting your search or filter criteria</p>
+            <p className="text-gray-800 mb-6">Try adjusting your search or filter criteria</p>
             <button
               onClick={() => {
                 setActiveFilter("All");

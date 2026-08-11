@@ -162,7 +162,7 @@ const courseData = {
     "Exam-focused preparation",
     "Practice questions and mock tests"
   ],
-  "disclaimer": "EXIN®, BCS®, Business Analysis Practice®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with or endorsed by EXIN or BCS."
+  "disclaimer": "EXIN®, BCS®, Business Analysis Practice®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with or endorsed by EXIN or BCS."
 };
 
 export default function BusinessAnalysisPracticePage() {

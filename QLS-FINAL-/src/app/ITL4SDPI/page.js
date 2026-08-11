@@ -5,112 +5,136 @@ import LiveChat from "@/components/LiveChat";
 import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata = {
-  title: "ITIL 4 Strategist Direct, Plan and Improve (DPI) Training in Hyderabad | QuickLearn Systems",
-  description:
-    "Master ITIL® 4 Strategist: Direct, Plan and Improve (DPI) certification training in Hyderabad. QuickLearn Systems offers expert-led DPI training covering governance, continual improvement, and strategic planning. Enroll today!",
-  keywords:
-    "ITIL 4 DPI training Hyderabad, ITIL strategist certification Hyderabad, best ITIL training institute Hyderabad, ITIL DPI course Hyderabad, ITIL strategist training India, ITIL 4 Strategist, Direct Plan and Improve, ITIL DPI, continual improvement, IT strategy, governance, service management, leadership, Agile ITSM, DevOps alignment, QuickLearn Systems, IT training Hyderabad, professional training Hyderabad",
+  title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI) Certification Training in Hyderabad | QuickLearn Systems",
+  description: "Lead organizational improvement, governance, and strategic planning with ITIL® 4 Strategist: Direct, Plan and Improve (DPI). Accredited training covering governance, risk, strategic planning, change management, and continual improvement — a shared module for the ITIL 4 Managing Professional and Strategic Leader designations.",
+  keywords: "ITIL 4 DPI training Hyderabad, Direct Plan and Improve certification, ITIL 4 Strategist, ITIL Managing Professional, ITIL Strategic Leader, governance and continual improvement, QuickLearn Systems",
   openGraph: {
-    title: "ITIL 4 Strategist Direct, Plan and Improve (DPI) Training in Hyderabad | QuickLearn Systems",
-    description:
-      "Expert-led ITIL 4 DPI certification training in Hyderabad by QuickLearn Systems",
+    title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI) Certification Training in Hyderabad | QuickLearn Systems",
+    description: "Lead organizational improvement, governance, and strategic planning to drive business agility and continual value creation.",
     images: ["/direct_plan_improve.jpg"],
   },
 };
 
 const courseData = {
-  title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI)",
-  subtitle: "Align strategy, governance, and continual improvement to drive digital success",
+  "disclaimer": "ITIL®, ITIL® 4 Strategist: Direct, Plan and Improve (DPI)®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
+  title: "ITIL® 4 Strategist: Direct, Plan and Improve (DPI) Certification Training",
+  subtitle: "Lead Organizational Improvement, Governance, and Strategic Planning to Drive Business Agility and Continual Value Creation",
+  breadcrumbTitle: "ITIL® 4 Strategist: Direct, Plan and Improve",
   backgroundImage: "/direct_plan_improve.jpg",
+  category: "IT Service Management",
   overview: [
-    "The ITIL® 4 Strategist: Direct, Plan and Improve (DPI) course equips professionals with the practical skills needed to create a learning and improving IT organization with a strong strategic direction.",
-    "It focuses on how to align planning, governance, and continuous improvement across all levels of the organization, combining agile, lean, and DevOps principles for enhanced adaptability and efficiency.",
-    "Participants learn to apply DPI concepts to lead transformation initiatives, establish effective measurement systems, and embed continual improvement into every organizational process."
+    "The ITIL® 4 Strategist: Direct, Plan and Improve (DPI) certification equips professionals with the strategic knowledge and practical skills required to establish direction, align organizational objectives, improve governance, and embed a culture of continual improvement across the enterprise.",
+    "As a key module in both the ITIL® 4 Managing Professional (MP) and ITIL® 4 Strategic Leader (SL) qualification paths, DPI focuses on creating effective governance models, improving decision-making, managing organizational change, and aligning IT services with business strategy.",
+    "Participants will learn how to develop effective strategies, implement governance frameworks, manage risk, define objectives, measure performance, and drive continual improvement initiatives that support long-term organizational success.",
   ],
-  courseOutline: [
-    "Core concepts of Direct, Plan and Improve (DPI)",
-    "Key principles and methods of direction and planning",
-    "Governance, risk, and compliance (GRC) in ITSM",
-    "Effective measurement and reporting structures",
-    "Establishing a continual improvement culture",
-    "Leveraging Agile, Lean, and DevOps in strategic planning",
-    "Driving organizational change and transformation",
-    "Integrating DPI practices with other ITIL® 4 modules"
+  whyHead: "Why Choose ITIL® 4 Strategist: Direct, Plan and Improve?",
+  why: [
+    "Develop strategic leadership capabilities for modern IT organizations",
+    "Learn how to align IT services with business objectives",
+    "Build effective governance and decision-making frameworks",
+    "Drive continual improvement across teams and departments",
+    "Strengthen organizational agility and resilience",
+    "Improve planning, measurement, and risk management",
+    "Progress toward both ITIL® Managing Professional and Strategic Leader designations",
   ],
-  learningObjectives: [
-    "Understand the key concepts and principles of Direct, Plan and Improve",
-    "Establish effective governance and strategic direction in IT and digital organizations",
-    "Develop and implement continual improvement practices at all organizational levels",
-    "Integrate Agile, Lean, and DevOps practices into strategic and tactical planning",
-    "Measure, assess, and enhance organizational performance",
-    "Drive sustainable digital transformation and cultural change"
+  prerequisites: [
+    "ITIL® 4 Foundation Certificate (or an eligible equivalent recognized within the ITIL qualification scheme).",
+    "Recommended: experience in IT service management, leadership, governance, or organizational improvement.",
+    "Recommended: familiarity with ITIL concepts and business strategy.",
   ],
-  targetGroup: [
-    "IT Managers and Team Leaders",
+  whoShouldAttend: [
+    "IT Managers and IT Directors",
     "Service Management Professionals",
-    "Process Owners and Improvement Managers",
-    "Project and Program Managers",
-    "IT Governance and Strategy Specialists"
+    "CIOs and Senior IT Leaders",
+    "Digital Transformation Managers",
+    "PMO Managers",
+    "Governance and Compliance Managers",
+    "Continual Improvement and Quality Managers",
+    "Business Relationship Managers and Enterprise Architects",
+    "IT Consultants",
+    "Professionals pursuing the ITIL® Managing Professional or Strategic Leader designation",
   ],
-
-  prerequisite: [
-    "ITIL® 4 Foundation certification is required",
-    "Experience in IT service management, governance, or leadership roles",
-    "Familiarity with continual improvement frameworks or organizational change management",
-    "Understanding of Agile, Lean, or DevOps principles is advantageous"
-  ],
-
-  examDetails: [
-    "Duration: 90 minutes",
-    "40 multiple-choice questions",
-    "Passing score: 70% (28/40)",
-    "Closed book examination",
-    "Available online and at accredited testing centers"
-  ],
-  category: "IT Service Management (ITIL® 4)",
-  tagline: "Direct. Plan. Improve. Lead.",
-  relatedCourses: [
+  curriculum: [
     {
-      title: "ITIL® 4 Foundation",
-      image: "/direct_plan_improve.jpg",
-      description: "Learn the fundamentals of ITIL® 4 and modern service management practices.",
-      href: "/ITILFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      title: "Module 1: Introduction to Direct, Plan and Improve",
+      topics: ["Purpose and objectives of the DPI module", "Strategic role of IT service management", "Organizational direction and alignment", "Business value and governance", "Digital transformation challenges"],
     },
     {
-      title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS)",
-      image: "/direct_plan_improve.jpg",
-      description: "Enhance your ability to design, deliver, and support IT-enabled services effectively.",
-      href: "/ITIL4CDS",
-      duration: "3 Days",
-      level: "Intermediate",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      title: "Module 2: Governance, Risk and Compliance",
+      topics: ["Governance principles", "Decision-making structures", "Risk identification and management", "Compliance considerations", "Policy development and oversight", "Organizational accountability"],
     },
     {
-      title: "ITIL® 4 Specialist: High Velocity IT (HVIT)",
-      image: "/direct_plan_improve.jpg",
-      description: "Accelerate digital transformation by adopting Agile, Lean, and DevOps practices.",
-      href: "/ITIL4HVIT",
-      duration: "3 Days",
-      level: "Intermediate",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
-    }
-  ]
+      title: "Module 3: Strategic Planning",
+      topics: ["Developing strategic objectives", "Aligning IT with business priorities", "Portfolio planning", "Resource planning", "Prioritization techniques", "Strategic roadmaps"],
+    },
+    {
+      title: "Module 4: Organizational Change Management",
+      topics: ["Managing organizational change", "Change adoption strategies", "Building a culture of continuous learning", "Leadership communication", "Stakeholder engagement", "Managing resistance to change"],
+    },
+    {
+      title: "Module 5: Continual Improvement",
+      topics: ["Establishing continual improvement practices", "Improvement models and frameworks", "Identifying improvement opportunities", "Measuring outcomes", "Embedding improvement into organizational culture"],
+    },
+    {
+      title: "Module 6: Measurement and Performance Management",
+      topics: ["Defining Key Performance Indicators (KPIs)", "Success metrics", "Balanced scorecards", "Performance reporting", "Data-driven decision making", "Service value measurement"],
+    },
+    {
+      title: "Module 7: Communication and Stakeholder Engagement",
+      topics: ["Leadership communication", "Stakeholder management", "Collaboration across business units", "Influencing organizational decisions", "Building strategic partnerships"],
+    },
+    {
+      title: "Module 8: Workforce and Organizational Capability",
+      topics: ["Developing organizational capabilities", "Skills management", "Talent development", "Leadership competencies", "Building high-performing teams", "Knowledge sharing"],
+    },
+    {
+      title: "Module 9: Integrating Modern Ways of Working",
+      topics: ["Agile planning", "Lean thinking", "DevOps collaboration", "Digital operating models", "Innovation management", "Organizational adaptability"],
+    },
+    {
+      title: "Module 10: Practical Application and Case Studies",
+      topics: ["Governance implementation scenarios", "Continual improvement workshops", "Strategic planning exercises", "Organizational transformation case studies", "Performance improvement planning"],
+    },
+  ],
+  learningOutcomes: [
+    "Apply governance principles to IT service management",
+    "Develop strategic plans aligned with business objectives",
+    "Lead organizational improvement initiatives",
+    "Measure performance using meaningful business metrics",
+    "Improve decision-making through effective planning",
+    "Build a culture of continual improvement",
+    "Support long-term business agility and resilience",
+  ],
+  certificationHeading: "Certification & Exam Details",
+  certification: [
+    { label: "Certification", value: "ITIL® 4 Strategist: Direct, Plan and Improve" },
+    { label: "Certification Body", value: "PeopleCert" },
+    { label: "Exam Format", value: "Multiple Choice" },
+    { label: "Number of Questions", value: "40" },
+    { label: "Duration", value: "90 Minutes" },
+    { label: "Passing Score", value: "70% (28/40)" },
+    { label: "Open Book", value: "No" },
+    { label: "Delivery", value: "Online Proctored" },
+    { label: "Prerequisite", value: "Valid ITIL® 4 Foundation certification (or eligible equivalent)" },
+  ],
+  courseHighlights: [
+    "Latest ITIL® 4 Strategist syllabus",
+    "Governance and strategic planning concepts",
+    "Organizational change management practices",
+    "Continual improvement framework",
+    "Risk, compliance, and performance management",
+    "Leadership and communication techniques",
+    "Practical workshops and implementation scenarios",
+    "Comprehensive certification exam preparation",
+  ],
 };
 
-
-export default function DirectPlan() {
+export default function ITL4SDPIPage() {
   return (
     <>
       <Headers />
       <CoursePageTemplate courseData={courseData} />
       <Footer />
-        
     </>
   );
 }

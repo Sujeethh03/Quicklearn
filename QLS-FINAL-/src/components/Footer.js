@@ -69,18 +69,53 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-white mb-6">Top Courses</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/ITL4Management" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
-                  ITIL 4 Foundation
+                <Link href="/ITILFoundationV5" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  ITIL V5 Foundation
+                </Link>
+              </li>
+              <li>
+                <Link href="/SREFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  SRE Foundation
+                </Link>
+              </li>
+              <li>
+                <Link href="/DevopsFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  DevOps Foundation
+                </Link>
+              </li>
+              <li>
+                <Link href="/AIOpsFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  AIOps Foundation
+                </Link>
+              </li>
+              <li>
+                <Link href="/SIAMFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  SIAM Foundation
                 </Link>
               </li>
               <li>
                 <Link href="/PScrumM1" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
-                  Professional Scrum Master
+                  Professional Scrum Master (PSM)
+                </Link>
+              </li>
+              <li>
+                <Link href="/PSPO1" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  Professional Scrum Product Owner (PSPO)
                 </Link>
               </li>
               <li>
                 <Link href="/LeadingSAFeAgilist" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
-                  SAFe Agile 5
+                  AI-Empowered SAFe Agilist 6
+                </Link>
+              </li>
+              <li>
+                <Link href="/SAFeScrumMaster" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  AI-Empowered SAFe Scrum Master
+                </Link>
+              </li>
+              <li>
+                <Link href="/SAFePO-PM" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                  AI-Empowered SAFe POPM
                 </Link>
               </li>
               <li>
@@ -101,11 +136,6 @@ export default function Footer() {
               <li>
                 <Link href="/LeanSSGB" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Lean Six Sigma Green Belt
-                </Link>
-              </li>
-              <li>
-                <Link href="/DevopsFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
-                  DevOps Foundation
                 </Link>
               </li>
             </ul>

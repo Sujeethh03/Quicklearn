@@ -5,110 +5,126 @@ import LiveChat from "@/components/LiveChat";
 import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata = {
-  title: "Monitor Support Fulfil Certification Training in Hyderabad | QuickLearn Systems",
-  description:
-    "Master Monitor, Support and Fulfil (MSF) certification training in Hyderabad. QuickLearn Systems offers expert-led training covering incident handling, request fulfilment, and service monitoring. Enroll today!",
-  keywords:
-    "Monitor Support Fulfil training Hyderabad, MSF certification Hyderabad, best ITSM training institute Hyderabad, monitor support fulfil course Hyderabad, ITSM operations training India, Monitor Support Fulfil, IT service operations, service desk, incident management, request fulfilment, ITSM training, QuickLearn Systems, IT training Hyderabad, professional training Hyderabad",
+  title: "ITIL® 4 Specialist: Monitor, Support and Fulfil (MSF) Certification Training in Hyderabad | QuickLearn Systems",
+  description: "Optimize IT operations through proactive monitoring, responsive support, and efficient service fulfilment. ITIL® 4 Specialist: Monitor, Support and Fulfil (MSF) covers Monitoring & Event Management, Incident, Problem, Service Desk, and Service Request Management. Accredited training toward the ITIL 4 Practice Manager qualification.",
+  keywords: "ITIL 4 MSF training Hyderabad, Monitor Support and Fulfil certification, ITIL 4 Practice Manager, Incident Management, Problem Management, Service Desk, Service Request Management, QuickLearn Systems",
   openGraph: {
-    title: "Monitor Support Fulfil Certification Training in Hyderabad | QuickLearn Systems",
-    description:
-      "Expert-led Monitor Support Fulfil certification training in Hyderabad by QuickLearn Systems",
+    title: "ITIL® 4 Specialist: Monitor, Support and Fulfil (MSF) Certification Training in Hyderabad | QuickLearn Systems",
+    description: "Optimize IT operations through proactive monitoring, responsive support, and efficient service fulfilment.",
     images: ["/monitor_support_fulfil.jpg"],
   },
 };
 
 const courseData = {
-  title: "Monitor Support Fulfil",
-  subtitle:
-    "Strengthen IT service operations through monitoring, support and fulfilment excellence",
+  "disclaimer": "ITIL®, ITIL® 4 Specialist: Monitor, Support and Fulfil (MSF)®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
+  title: "ITIL® 4 Specialist: Monitor, Support and Fulfil (MSF) Certification Training",
+  subtitle: "Optimize IT Operations Through Proactive Monitoring, Responsive Support, and Efficient Service Fulfilment",
+  breadcrumbTitle: "ITIL® 4 Specialist: Monitor, Support and Fulfil",
   backgroundImage: "/monitor_support_fulfil.jpg",
-
-  overview: [
-    "Monitor Support Fulfil focuses on the operational core of IT Service Management, enabling organizations to deliver stable, reliable and value-driven IT services.",
-    "This course provides practical knowledge on proactive service monitoring, structured incident management, and efficient service request fulfilment to improve user satisfaction and operational performance.",
-    "Participants will learn how to align support teams, optimize workflows, and implement measurable service improvements across the IT service lifecycle."
-  ],
-
-  courseOutline: [
-    "Introduction to IT service operations",
-    "Service monitoring concepts and tools",
-    "Incident management lifecycle and best practices",
-    "Service request fulfilment process",
-    "Service desk structure and roles",
-    "Escalation and prioritization techniques",
-    "SLA and KPI management",
-    "Continuous service improvement practices"
-  ],
-
-  learningObjectives: [
-    "Understand monitoring and operational control principles",
-    "Implement effective incident management processes",
-    "Manage service requests efficiently",
-    "Apply SLA and KPI measurement techniques",
-    "Improve service response and resolution times",
-    "Strengthen operational reporting and governance",
-    "Drive continuous improvement in support environments"
-  ],
-
-  targetGroup: [
-    "Service desk analysts",
-    "IT support engineers",
-    "Operations team members",
-    "Incident and problem managers",
-    "IT Service Management professionals"
-  ],
-
-  prerequisite: [
-    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
-    "Basic understanding of IT service operations and support functions",
-    "Familiarity with incident management, service requests, and monitoring concepts",
-    "Experience in an IT support or operations role is beneficial"
-  ],
-
-  examDetails: [
-    "Duration: 60 minutes",
-    "Multiple choice examination",
-    "Passing score: 65%",
-    "Closed book examination",
-    "Certification provided upon successful completion"
-  ],
-
   category: "IT Service Management",
-  tagline: "Monitor. Support. Deliver.",
-
-  relatedCourses: [
+  overview: [
+    "The ITIL® 4 Specialist: Monitor, Support and Fulfil (MSF) certification equips IT professionals with the practical knowledge and skills required to deliver reliable, responsive, and customer-focused IT services through effective monitoring, support, and fulfilment practices.",
+    "As one of the three specialist modules in the ITIL® 4 Practice Manager (PM) qualification, this course focuses on operational excellence by integrating five essential ITIL management practices: Monitoring and Event Management, Incident Management, Problem Management, Service Desk, and Service Request Management.",
+    "Participants will learn how to establish proactive monitoring capabilities, improve incident resolution, streamline service requests, enhance user experience, and support continual service improvement. The course emphasizes collaboration, automation, operational resilience, and delivering consistent value through efficient service operations.",
+  ],
+  whyHead: "Why Choose ITIL® 4 Specialist: Monitor, Support and Fulfil?",
+  why: [
+    "Develop expertise in core IT service operations",
+    "Improve service quality through proactive monitoring",
+    "Strengthen incident and problem management capabilities",
+    "Deliver exceptional customer support experiences",
+    "Streamline service request fulfilment processes",
+    "Enhance operational efficiency using automation and best practices",
+    "Progress toward the ITIL® 4 Practice Manager qualification",
+  ],
+  prerequisites: [
+    "ITIL® 4 Foundation Certificate (or an eligible equivalent recognized within the ITIL qualification scheme).",
+    "Recommended: experience in IT operations, service desk, infrastructure support, or IT service management.",
+    "Recommended: familiarity with ITIL service management concepts.",
+  ],
+  whoShouldAttend: [
+    "Service Desk Analysts and Managers",
+    "IT Support Engineers",
+    "Incident Managers and Problem Managers",
+    "Monitoring and Operations Engineers",
+    "IT Operations Managers",
+    "Infrastructure and Network Support Engineers",
+    "Cloud Operations Professionals",
+    "Service Delivery Managers and IT Consultants",
+    "Professionals pursuing the ITIL® 4 Practice Manager designation",
+  ],
+  curriculum: [
     {
-      title: "ITIL® 4 Foundation",
-      image: "/monitor_support_fulfil.jpg",
-      description: "Learn the fundamentals of IT Service Management",
-      href: "/ITL4Management",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      title: "Module 1: Introduction to Monitor, Support and Fulfil",
+      topics: ["Purpose and objectives of the MSF module", "Operational excellence in IT service management", "Value creation through support services", "Service lifecycle integration", "Customer-focused operations"],
     },
     {
-      title: "ITIL® 4 Specialist Create, Deliver and Support",
-      image: "/monitor_support_fulfil.jpg",
-      description: "Master service creation, delivery and support practices",
-      href: "/ITL4SCDS",
-      duration: "3 Days",
-      level: "Professional",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      title: "Module 2: Monitoring and Event Management",
+      topics: ["Monitoring strategies", "Event detection and classification", "Observability concepts", "Proactive operational monitoring", "Event filtering and prioritization", "Improving operational visibility"],
     },
     {
-      title: "SIAM Foundation",
-      image: "/monitor_support_fulfil.jpg",
-      description: "Service Integration and Management fundamentals",
-      href: "/SIAMFoundation",
-      duration: "2 Days",
-      level: "Foundation",
-      badge: "SIAM",
-      badgeColor: "bg-[#2BA6D9]"
-    }
-  ]
+      title: "Module 3: Incident Management",
+      topics: ["Incident lifecycle", "Incident logging and categorization", "Prioritization and escalation", "Major incident management", "Restoring normal service operations", "Communication during incidents"],
+    },
+    {
+      title: "Module 4: Problem Management",
+      topics: ["Identifying recurring issues", "Root cause analysis techniques", "Known errors and workarounds", "Trend analysis", "Preventing future incidents", "Knowledge sharing"],
+    },
+    {
+      title: "Module 5: Service Desk",
+      topics: ["Service desk functions and responsibilities", "Single Point of Contact (SPOC)", "Customer communication", "User support best practices", "Service desk performance metrics", "Omnichannel support models"],
+    },
+    {
+      title: "Module 6: Service Request Management",
+      topics: ["Request fulfilment lifecycle", "Standard service requests", "Self-service capabilities", "Request prioritization", "Automation opportunities", "Improving fulfilment efficiency"],
+    },
+    {
+      title: "Module 7: Collaboration and Operational Integration",
+      topics: ["Cross-functional teamwork", "Collaboration with technical teams", "Knowledge management", "Workflow optimization", "Vendor and supplier coordination", "Shared responsibility models"],
+    },
+    {
+      title: "Module 8: Automation and Modern Operations",
+      topics: ["Intelligent monitoring", "Workflow automation", "AI-assisted support concepts", "Self-service portals", "Operational analytics", "Continuous operational improvement"],
+    },
+    {
+      title: "Module 9: Performance Measurement and Continual Improvement",
+      topics: ["Key Performance Indicators (KPIs)", "Service Level Agreement (SLA) monitoring", "Customer satisfaction measurement", "Operational reporting", "Continual improvement planning", "Value realization"],
+    },
+    {
+      title: "Module 10: Practical Application and Case Studies",
+      topics: ["Incident response simulations", "Service request management scenarios", "Problem investigation workshops", "Monitoring strategy exercises", "Real-world operational improvement case studies"],
+    },
+  ],
+  learningOutcomes: [
+    "Understand the purpose and value of monitoring, support, and fulfilment practices",
+    "Apply structured approaches to incident and problem management",
+    "Improve service desk effectiveness and customer satisfaction",
+    "Optimize service request fulfilment processes",
+    "Measure operational performance using meaningful metrics",
+    "Support continual improvement across IT operations",
+    "Contribute to delivering high-quality IT-enabled services",
+  ],
+  certificationHeading: "Certification & Exam Details",
+  certification: [
+    { label: "Certification", value: "ITIL® 4 Specialist: Monitor, Support and Fulfil" },
+    { label: "Certification Body", value: "PeopleCert" },
+    { label: "Exam Format", value: "Multiple Choice" },
+    { label: "Number of Questions", value: "60" },
+    { label: "Duration", value: "90 Minutes" },
+    { label: "Passing Score", value: "65% (39/60)" },
+    { label: "Open Book", value: "No" },
+    { label: "Delivery", value: "Online Proctored" },
+    { label: "Prerequisite", value: "Valid ITIL® 4 Foundation certification (or eligible equivalent)" },
+  ],
+  courseHighlights: [
+    "Latest ITIL® 4 Practice Manager syllabus",
+    "Covers five operational ITIL management practices",
+    "Practical service desk and support scenarios",
+    "Monitoring and event management concepts",
+    "Incident, problem, and request fulfilment best practices",
+    "Interactive workshops and real-world exercises",
+    "Comprehensive certification exam preparation",
+  ],
 };
 
 export default function MonitorSupportFulfilPage() {

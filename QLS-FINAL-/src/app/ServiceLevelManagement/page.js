@@ -16,6 +16,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "ITIL®, ITIL® 4 Practitioner: Service Level Management, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
   title: "Service Level Management",
   subtitle: "Define, monitor and manage service levels to ensure customer satisfaction",
   backgroundImage: "/service_level_management.jpg",

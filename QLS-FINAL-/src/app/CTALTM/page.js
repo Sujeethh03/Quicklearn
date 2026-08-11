@@ -204,7 +204,7 @@ const courseData = {
     "Risk-based testing and prioritization techniques",
     "Exam-oriented preparation and mock tests"
   ],
-  "disclaimer": "ISTQB®, Certified Tester Advanced Level Test Management (CTAL-TM)®, and all related terms are trademarks of the International Software Testing Qualifications Board (ISTQB®). QuickLearn Systems is an independent training provider and is not affiliated with or endorsed by ISTQB®. All trademarks are acknowledged as the property of their respective owners."
+  "disclaimer": "ISTQB®, Certified Tester Advanced Level Test Management (CTAL-TM)®, and all related terms are trademarks of the International Software Testing Qualifications Board (ISTQB®). QuickLearn Systems is not affiliated with or endorsed by ISTQB®. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function CTALTMPage() {

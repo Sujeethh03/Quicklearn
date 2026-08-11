@@ -171,7 +171,7 @@ const courseData = {
     "Comprehensive Course Material",
     "Post-training Support"
   ],
-  "disclaimer": ""
+  "disclaimer": "MSP®, Managing Successful Programmes®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function MSPFoundationPage() {

@@ -1480,7 +1480,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                           <span className="font-medium text-sm">Expert</span>
                         </div>
                       </div>
-                      <Link href="/CreateDeliverSupport" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
+                      <Link href="/ITL4SCDS" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
                         Details
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -1523,7 +1523,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                           <span className="font-medium text-sm">Expert</span>
                         </div>
                       </div>
-                      <Link href="/DriveStakeholderValue" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
+                      <Link href="/ITL4SDSV" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
                         Details
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -1567,7 +1567,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                           <span className="font-medium text-sm">Expert</span>
                         </div>
                       </div>
-                      <Link href="/HighvelIt" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
+                      <Link href="/ITL4SHVI" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
                         Details
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -1611,7 +1611,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                           <span className="font-medium text-sm">Expert</span>
                         </div>
                       </div>
-                      <Link href="/DirectPlan" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
+                      <Link href="/ITL4SDPI" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
                         Details
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -1654,7 +1654,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                           <span className="font-medium text-sm">Expert</span>
                         </div>
                       </div>
-                      <Link href="/AcquringAndManagingCS" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
+                      <Link href="/AcquiringAndManagingCS" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
                         Details
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -1784,7 +1784,7 @@ Problem Management is a process within IT Service Management that focuses on ide
                           <span className="font-medium text-sm">Expert</span>
                         </div>
                       </div>
-                      <Link href="/ItAssetManage" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
+                      <Link href="/ItAssetManagement" className="text-[#2BA6D9] hover:text-[#155A76] font-medium text-sm flex items-center">
                         Details
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

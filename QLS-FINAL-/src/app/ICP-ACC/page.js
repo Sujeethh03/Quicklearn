@@ -201,7 +201,7 @@ const courseData = {
     "Practical Exercises and Workshops",
     "Lifetime ICAgile Certification (No Renewal Fees)"
   ],
-  "disclaimer": "ICAgile®, ICP-ACC®, ICP®, and all related trademarks are the property of the International Consortium for Agile (ICAgile®). QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by ICAgile®. All trademarks are acknowledged as the property of their respective owners."
+  "disclaimer": "ICAgile®, ICP-ACC®, ICP®, and all related trademarks are the property of the International Consortium for Agile (ICAgile®). QuickLearn Systems is not affiliated with, endorsed by, or sponsored by ICAgile®. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function ICPACCPage() {

@@ -165,7 +165,7 @@ const courseData = {
     "Certification Preparation",
     "Post-training Mentor Support"
   ],
-  "disclaimer": ""
+  "disclaimer": "Lean Six Sigma®, Six Sigma®, Green Belt®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by any Lean Six Sigma certification or accreditation body. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function LeanSSGBPage() {

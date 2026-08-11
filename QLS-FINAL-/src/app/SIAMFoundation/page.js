@@ -16,6 +16,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "EXIN®, SIAM™, Service Integration and Management™, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by EXIN. All trademarks are acknowledged as the property of their respective owners.",
   "title": "EXIN SIAM™ Foundation Certificate Training",
   "subtitle": "Master Service Integration and Management to Deliver Seamless Multi-Supplier IT Services",
   "backgroundImage": "/siam_foundation.jpg",
@@ -183,7 +184,6 @@ const courseData = {
     "Comprehensive study materials",
     "Certification exam preparation"
   ],
-  "disclaimer": "SIAM™, EXIN®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by EXIN."
 };
 
 export default function SIAMFoundationPage() {

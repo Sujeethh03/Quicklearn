@@ -6,10 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
-    "generate-pdf": "node generate-pdf.js",
-    "generate-comprehensive-pdf": "node generate-comprehensive-pdf.js",
-    "generate-professional-pdf": "node generate-professional-pdf.js"
+    "lint": "eslint"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

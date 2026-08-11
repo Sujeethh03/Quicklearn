@@ -174,16 +174,16 @@ export default function SocialProof() {
           className="text-center mb-16 lg:mb-20"
         >
           <div className="max-w-4xl mx-auto">
-            <p className="text-sm font-semibold uppercase tracking-widest text-[#2BA6D9] mb-3">
+            <p className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-[0.2em] text-[#1E7BA3] mb-4">
               Why QuickLearn Systems?
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 font-serif">
               Trusted by Professionals
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-600 via-gray-700 to-slate-800">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-slate-800 via-slate-900 to-black">
                 Worldwide
               </span>
             </h2>
-            <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed">
               Join thousands of IT professionals and leading organizations who rely on QuickLearn Systems for expert-led training, globally recognized certifications, and impactful learning experiences that drive career and business success.
             </p>
           </div>

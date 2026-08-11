@@ -16,6 +16,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "ITIL®, ITIL® Transformation (Version 5), PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
   title: "ITIL® Transformation (Version 5) Certification Training",
   subtitle: "Lead, Embed, and Sustain Change Across Digital Products and Services",
   backgroundImage: "/itl4_foundation.png",
@@ -116,8 +117,6 @@ const courseData = {
     "Comprehensive course material and exam preparation",
     "Post-training support",
   ],
-  disclaimer:
-    "ITIL®, PeopleCert®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
 };
 
 export default function ITILTransformationV5Page() {

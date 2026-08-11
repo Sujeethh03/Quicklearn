@@ -5,100 +5,127 @@ import LiveChat from "@/components/LiveChat";
 import CoursePageTemplate from "@/components/CoursePageTemplate";
 
 export const metadata = {
-  title: "ITIL 4 Create, Deliver and Support (CDS) Training in Hyderabad | QuickLearn Systems",
-  description: "Master ITIL® 4 Specialist Create, Deliver and Support (CDS) certification training in Hyderabad. QuickLearn Systems offers expert-led training covering service design, transition, and operational support. Enroll today!",
-  keywords: "ITIL 4 CDS training Hyderabad, ITIL Create Deliver Support certification Hyderabad, best ITIL training institute Hyderabad, ITIL CDS course Hyderabad, ITIL 4 specialist training India, ITIL 4 Specialist, Create Deliver Support, service design, service transition, service operation, ITSM, QuickLearn Systems, IT training Hyderabad, professional training Hyderabad",
+  title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS) Certification Training in Hyderabad | QuickLearn Systems",
+  description: "Master the core capabilities of IT service delivery, support, and value creation with ITIL® 4 Specialist: Create, Deliver and Support (CDS). Accredited training covering value streams, service design and transition, Agile/Lean/DevOps integration, and continual improvement toward the ITIL 4 Managing Professional qualification.",
+  keywords: "ITIL 4 CDS training Hyderabad, Create Deliver and Support certification, ITIL 4 Managing Professional, value streams, service design and transition, Agile Lean DevOps, QuickLearn Systems",
   openGraph: {
-    title: "ITIL 4 Create, Deliver and Support (CDS) Training in Hyderabad | QuickLearn Systems",
-    description: "Expert-led ITIL 4 CDS certification training in Hyderabad by QuickLearn Systems",
+    title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS) Certification Training in Hyderabad | QuickLearn Systems",
+    description: "Master the core capabilities of IT service delivery, support, and value creation across the service lifecycle.",
     images: ["/create_deliver_support.jpg"],
   },
 };
 
 const courseData = {
-  title: "ITIL® 4 Specialist Create, Deliver and Support",
-  subtitle: "Master service creation, delivery and support practices for operational excellence",
+  "disclaimer": "ITIL®, ITIL® 4 Specialist: Create, Deliver and Support (CDS)®, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
+  title: "ITIL® 4 Specialist: Create, Deliver and Support (CDS) Certification Training",
+  subtitle: "Master the Core Capabilities of IT Service Delivery, Support, and Value Creation Across the Service Lifecycle",
+  breadcrumbTitle: "ITIL® 4 Specialist: Create, Deliver and Support",
   backgroundImage: "/create_deliver_support.jpg",
-  overview: [
-    "ITIL® 4 Specialist: Create, Deliver and Support focuses on integrating different value streams and activities to create, deliver and support IT-enabled products and services.",
-    "This module covers service design principles, transition practices, and operational support techniques that ensure effective service delivery throughout the service lifecycle.",
-    "Learn to apply ITIL® 4 practices in real-world scenarios, focusing on service creation, delivery optimization, and ongoing support excellence."
-  ],
-  courseOutline: [
-    "Service value chain and value streams",
-    "Planning and improving service delivery",
-    "Service design and architecture",
-    "Service transition and deployment",
-    "Service operation and support",
-    "Performance monitoring and optimization",
-    "Incident and problem management integration",
-    "Continuous improvement in operations"
-  ],
-  learningObjectives: [
-    "Understand service value streams and integration",
-    "Master service design and architecture principles",
-    "Implement effective service transition practices",
-    "Optimize service operation and support activities",
-    "Monitor and improve service performance",
-    "Integrate incident and problem management",
-    "Drive operational excellence and improvement"
-  ],
-  targetGroup: [
-    "Service designers and architects",
-    "Service transition managers",
-    "Operations managers and staff",
-    "IT Service Management professionals",
-    "Process improvement specialists"
-  ],
-
-  prerequisite: [
-    "ITIL® 4 Foundation certification is required",
-    "Experience in IT service design, delivery, or support functions is recommended",
-    "Familiarity with service value chain concepts and operational processes",
-    "Understanding of incident management, change management, or configuration practices is beneficial"
-  ],
-
-  examDetails: [
-    "Duration: 90 minutes",
-    "40 multiple choice questions",
-    "Passing score: 28/40 (70%)",
-    "Closed book examination",
-    "Available at Pearson VUE centers"
-  ],
   category: "IT Service Management",
-  tagline: "Create. Deliver. Support.",
-  relatedCourses: [
+  overview: [
+    "The ITIL® 4 Specialist: Create, Deliver and Support (CDS) certification equips IT professionals with the practical knowledge and skills required to design, build, deliver, and support high-quality IT-enabled products and services.",
+    "As one of the core modules within the ITIL 4 Managing Professional qualification, CDS focuses on integrating people, processes, technology, and partners to deliver value throughout the service lifecycle. The course explores how organizations can improve service quality, optimize workflows, adopt Agile and DevOps practices, and enable continual improvement while meeting customer expectations.",
+    "Participants will gain a practical understanding of service design, service transition, deployment, support operations, value streams, and performance measurement in modern digital environments.",
+  ],
+  whyHead: "Why Choose ITIL® 4 Specialist: Create, Deliver and Support?",
+  why: [
+    "Develop practical expertise in managing end-to-end service delivery",
+    "Learn how to design and transition services efficiently",
+    "Improve operational performance using ITIL best practices",
+    "Understand value streams and workflow optimization",
+    "Integrate Agile, Lean, and DevOps into service management",
+    "Enhance collaboration across teams and stakeholders",
+    "Prepare for the ITIL 4 Managing Professional qualification",
+  ],
+  prerequisites: [
+    "ITIL 4 Foundation Certificate (or an eligible ITIL Foundation certification recognized within the current qualification scheme).",
+    "Recommended: experience in IT Service Management.",
+    "Recommended: familiarity with IT operations or service delivery; knowledge of Agile, Lean, or DevOps concepts is beneficial.",
+  ],
+  whoShouldAttend: [
+    "IT Service Managers",
+    "Service Delivery Managers",
+    "IT Operations Managers",
+    "Service Desk Managers",
+    "Incident and Problem Managers",
+    "Change Enablement and Release Managers",
+    "DevOps Professionals",
+    "Infrastructure Managers and Cloud Operations Engineers",
+    "IT Architects and Digital Transformation Professionals",
+    "Professionals pursuing the ITIL Managing Professional designation",
+  ],
+  curriculum: [
     {
-      title: "ITIL® 4 Foundation",
-      image: "/create_deliver_support.jpg",
-      description: "Master ITIL® 4 fundamentals and framework",
-      href: "/ITL4Management",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      title: "Module 1: Introduction to Create, Deliver and Support",
+      topics: ["Purpose and objectives of the CDS practice", "The role of service management in modern organizations", "Value creation through products and services", "Service relationships and stakeholder expectations"],
     },
     {
-      title: "ITIL® 4 Specialist Drive Stakeholder Value",
-      image: "/create_deliver_support.jpg",
-      description: "Learn to drive stakeholder value creation",
-      href: "/ITL4SDSV",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
+      title: "Module 2: Planning and Building Value Streams",
+      topics: ["Understanding value streams", "Mapping service workflows", "Identifying activities and dependencies", "Eliminating bottlenecks", "Improving service efficiency"],
     },
     {
-      title: "Service Design",
-      image: "/create_deliver_support.jpg",
-      description: "Master service design principles and practices",
-      href: "/ServiceDesk",
-      duration: "3 Days",
-      level: "Foundation",
-      badge: "ITIL®",
-      badgeColor: "bg-[#2BA6D9]"
-    }
-  ]
+      title: "Module 3: Organizing People and Teams",
+      topics: ["Building effective service teams", "Roles and responsibilities", "Skills management and workforce planning", "Communication and collaboration", "Leadership in service management"],
+    },
+    {
+      title: "Module 4: Information, Technology and Tools",
+      topics: ["Supporting service delivery with technology", "Automation opportunities", "Knowledge management", "Collaboration platforms", "Service management tools", "Data-driven decision making"],
+    },
+    {
+      title: "Module 5: Designing and Transitioning Services",
+      topics: ["Service design principles", "Service transition planning", "Release planning", "Deployment approaches", "Change enablement", "Validation and testing considerations"],
+    },
+    {
+      title: "Module 6: Delivering and Supporting Services",
+      topics: ["Incident management", "Service request management", "Problem management", "Monitoring and event management", "Service continuity considerations", "Service desk capabilities", "Operational excellence"],
+    },
+    {
+      title: "Module 7: Service Performance and Continual Improvement",
+      topics: ["Measuring service performance", "Key performance indicators (KPIs)", "Service metrics and reporting", "Customer satisfaction measurement", "Continual improvement practices", "Value realization"],
+    },
+    {
+      title: "Module 8: Integrating Agile, Lean and DevOps",
+      topics: ["Agile principles in service management", "Lean thinking for waste reduction", "DevOps culture and collaboration", "Continuous integration and delivery concepts", "Improving service flow and feedback loops"],
+    },
+    {
+      title: "Module 9: Managing Risks and Governance",
+      topics: ["Risk identification and assessment", "Governance considerations", "Compliance requirements", "Supplier collaboration", "Managing service resilience"],
+    },
+    {
+      title: "Module 10: Practical Application and Case Studies",
+      topics: ["End-to-end service lifecycle scenarios", "Designing efficient value streams", "Service improvement workshops", "Operational decision-making exercises", "Real-world implementation examples"],
+    },
+  ],
+  learningOutcomes: [
+    "Explain the principles of creating, delivering, and supporting services",
+    "Apply value stream concepts to improve service delivery",
+    "Organize people, technology, and processes for effective service management",
+    "Improve customer experience through efficient service operations",
+    "Integrate modern ways of working into IT service management",
+    "Evaluate service performance using meaningful metrics",
+    "Support organizational goals through continual improvement",
+  ],
+  certificationHeading: "Certification & Exam Details",
+  certification: [
+    { label: "Certification", value: "ITIL® 4 Specialist: Create, Deliver and Support" },
+    { label: "Certification Body", value: "PeopleCert" },
+    { label: "Exam Format", value: "Multiple Choice" },
+    { label: "Number of Questions", value: "40" },
+    { label: "Duration", value: "90 Minutes" },
+    { label: "Passing Score", value: "70% (28/40)" },
+    { label: "Open Book", value: "No" },
+    { label: "Delivery", value: "Online Proctored" },
+    { label: "Prerequisite", value: "Valid ITIL 4 Foundation certification (or eligible equivalent)" },
+  ],
+  courseHighlights: [
+    "Latest ITIL 4 Managing Professional syllabus",
+    "Practical approach to service creation and delivery",
+    "Real-world case studies and implementation scenarios",
+    "Value stream design and optimization",
+    "Agile, Lean, and DevOps integration",
+    "Interactive exercises and discussions",
+    "Comprehensive exam preparation",
+  ],
 };
 
 export default function ITL4SCDSPage() {
@@ -107,7 +134,6 @@ export default function ITL4SCDSPage() {
       <Headers />
       <CoursePageTemplate courseData={courseData} />
       <Footer />
-        
     </>
   );
 }

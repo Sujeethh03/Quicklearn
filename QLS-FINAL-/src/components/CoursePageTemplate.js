@@ -1,10 +1,27 @@
 "use client";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ScrollFloat from "@/components/ui/ScroolReveal";
 import Link from "next/link";
 
-export default function CoursePageTemplate({ courseData }) {
+export default function CoursePageTemplate({ courseData: rawCourseData }) {
+  // Normalize legacy (old-layout) field names into the standardized
+  // curriculum-driven layout so every course page renders one consistent format.
+  const courseData = (() => {
+    const cd = { ...rawCourseData };
+    const hasCurriculum = Array.isArray(cd.curriculum) && cd.curriculum.length > 0;
+    if (!hasCurriculum && Array.isArray(cd.courseOutline) && cd.courseOutline.length > 0) {
+      cd.curriculum = [{ title: "Course Outline", topics: cd.courseOutline }];
+      if (!cd.learningOutcomes) cd.learningOutcomes = cd.learningObjectives;
+      if (!cd.whoShouldAttend) cd.whoShouldAttend = cd.targetGroup;
+      if (!cd.prerequisites) cd.prerequisites = cd.prerequisite;
+      if (!cd.certification && Array.isArray(cd.examDetails)) {
+        cd.certification = cd.examDetails.map((v) => ({ value: v }));
+        cd.certificationHeading = cd.certificationHeading || "Exam Details";
+      }
+    }
+    return cd;
+  })();
+
   const slideTransition = { type: "spring", stiffness: 120, damping: 25, mass: 1 };
 
   const containerVariants = {
@@ -51,6 +68,46 @@ export default function CoursePageTemplate({ courseData }) {
   // A course uses the new (document-driven) layout when it defines a curriculum.
   const isNew = Array.isArray(courseData.curriculum) && courseData.curriculum.length > 0;
 
+  // Bullet lists support inline structure: an item prefixed with "## " renders as a
+  // sub-heading and "### " as a nested sub-heading; plain items become bullets
+  // indented under whichever heading precedes them.
+  const renderBullets = (items) => {
+    const indent = ["", "ml-5", "ml-10"];
+    let depth = 0;
+    return items.map((item, i) => {
+      const text = String(item);
+      const isSub = text.startsWith("### ");
+      const isHead = !isSub && text.startsWith("## ");
+
+      if (isHead || isSub) {
+        const level = isSub ? 1 : 0;
+        depth = level + 1;
+        return (
+          <motion.li
+            key={i}
+            variants={wordSlideVariants}
+            className={`font-bold text-gray-900 mt-5 first:mt-0 ${isSub ? "text-base" : "text-lg"} ${indent[level]}`}
+            style={{ fontFamily: "'Inter', sans-serif" }}
+          >
+            {text.slice(isSub ? 4 : 3)}
+          </motion.li>
+        );
+      }
+
+      return (
+        <motion.li
+          key={i}
+          variants={wordSlideVariants}
+          className={`flex gap-3 text-gray-900 ${indent[depth]}`}
+          style={{ fontFamily: "'Inter', sans-serif" }}
+        >
+          <span className="w-2 h-2 bg-[#2BA6D9] rounded-full mt-2 flex-shrink-0" />
+          {text}
+        </motion.li>
+      );
+    });
+  };
+
   const Sidebar = (
     <div className="lg:col-span-4">
       <div className="sticky top-24 flex flex-col gap-4">
@@ -68,15 +125,15 @@ export default function CoursePageTemplate({ courseData }) {
             )}
           </div>
           <div className="px-5 py-4 space-y-3">
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="flex items-center gap-2 text-sm text-gray-800">
               <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
               Online &amp; Classroom batches available
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="flex items-center gap-2 text-sm text-gray-800">
               <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
               Flexible scheduling to suit your needs
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+            <div className="flex items-center gap-2 text-sm text-gray-800">
               <span className="w-2 h-2 rounded-full bg-[#2BA6D9] flex-shrink-0" />
               Expert-led, accredited training
             </div>
@@ -143,7 +200,7 @@ export default function CoursePageTemplate({ courseData }) {
               Course Overview
             </motion.h2>
             {courseData.overview.map((p, i) => (
-              <motion.p key={i} variants={paragraphVariants} className="mb-5 text-gray-700 max-w-4xl"
+              <motion.p key={i} variants={paragraphVariants} className="mb-5 text-gray-900 max-w-4xl"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
                 {p}
@@ -204,14 +261,7 @@ export default function CoursePageTemplate({ courseData }) {
                       {courseData.whyHead || "Why Choose This Course?"}
                     </motion.h2>
                     <ul className="space-y-3 mb-10">
-                      {courseData.why.map((item, i) => (
-                        <motion.li key={i} variants={wordSlideVariants} className="flex gap-3 text-gray-700"
-                          style={{ fontFamily: "'Inter', sans-serif" }}
-                        >
-                          <span className="w-2 h-2 bg-[#2BA6D9] rounded-full mt-2 flex-shrink-0" />
-                          {item}
-                        </motion.li>
-                      ))}
+                      {renderBullets(courseData.why)}
                     </ul>
                   </motion.div>
                 )}
@@ -224,14 +274,7 @@ export default function CoursePageTemplate({ courseData }) {
                       Prerequisites
                     </motion.h2>
                     <ul className="space-y-3 mb-10">
-                      {courseData.prerequisites.map((item, i) => (
-                        <motion.li key={i} variants={wordSlideVariants} className="flex gap-3 text-gray-700"
-                          style={{ fontFamily: "'Inter', sans-serif" }}
-                        >
-                          <span className="w-2 h-2 bg-[#2BA6D9] rounded-full mt-2 flex-shrink-0" />
-                          {item}
-                        </motion.li>
-                      ))}
+                      {renderBullets(courseData.prerequisites)}
                     </ul>
                   </motion.div>
                 )}
@@ -244,14 +287,7 @@ export default function CoursePageTemplate({ courseData }) {
                       Who Should Attend?
                     </motion.h2>
                     <ul className="space-y-3">
-                      {courseData.whoShouldAttend.map((item, i) => (
-                        <motion.li key={i} variants={wordSlideVariants} className="flex gap-3 text-gray-700"
-                          style={{ fontFamily: "'Inter', sans-serif" }}
-                        >
-                          <span className="w-2 h-2 bg-[#2BA6D9] rounded-full mt-2 flex-shrink-0" />
-                          {item}
-                        </motion.li>
-                      ))}
+                      {renderBullets(courseData.whoShouldAttend)}
                     </ul>
                   </motion.div>
                 )}
@@ -271,7 +307,7 @@ export default function CoursePageTemplate({ courseData }) {
                 Course Curriculum
               </motion.h2>
               <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                className={`grid grid-cols-1 gap-6 ${courseData.curriculum.length > 1 ? "md:grid-cols-2" : ""}`}
                 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerTextVariants}
               >
                 {courseData.curriculum.map((module, index) => (
@@ -290,7 +326,7 @@ export default function CoursePageTemplate({ courseData }) {
                       {module.topics.map((topic, i) => (
                         <li key={i} className="flex items-start gap-3">
                           <span className="w-1.5 h-1.5 bg-[#2BA6D9] rounded-full mt-2 flex-shrink-0" />
-                          <span className="text-gray-700 text-sm md:text-base">{topic}</span>
+                          <span className="text-gray-900 text-sm md:text-base">{topic}</span>
                         </li>
                       ))}
                     </ul>
@@ -325,7 +361,7 @@ export default function CoursePageTemplate({ courseData }) {
                       <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#2BA6D9] text-white text-sm font-bold flex-shrink-0">
                         {index + 1}
                       </span>
-                      <span className="text-gray-700">{outcome}</span>
+                      <span className="text-gray-900">{outcome}</span>
                     </motion.div>
                   ))}
                 </motion.div>
@@ -353,10 +389,10 @@ export default function CoursePageTemplate({ courseData }) {
                         {row.label ? (
                           <>
                             <span className="font-semibold text-[#1E7BA3] sm:w-44 flex-shrink-0">{row.label}</span>
-                            <span className="text-gray-700">{row.value}</span>
+                            <span className="text-gray-900">{row.value}</span>
                           </>
                         ) : (
-                          <span className="text-gray-700">{row.value}</span>
+                          <span className="text-gray-900">{row.value}</span>
                         )}
                       </motion.div>
                     ))}
@@ -377,7 +413,7 @@ export default function CoursePageTemplate({ courseData }) {
                         <svg className="w-6 h-6 text-[#2BA6D9] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span className="text-gray-700">{item}</span>
+                        <span className="text-gray-900">{item}</span>
                       </motion.li>
                     ))}
                   </ul>
@@ -390,8 +426,8 @@ export default function CoursePageTemplate({ courseData }) {
           {courseData.disclaimer && (
             <section className="bg-slate-50 py-10 border-t border-gray-200">
               <div className="container mx-auto max-w-7xl px-6">
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Disclaimer</h3>
-                <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+                <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Disclaimer</h3>
+                <p className="text-xs md:text-sm text-gray-700 leading-relaxed">
                   {courseData.disclaimer}
                 </p>
               </div>
@@ -413,7 +449,7 @@ export default function CoursePageTemplate({ courseData }) {
             <h2 className="text-3xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>
               Why Train With <span className="text-[#2BA6D9]">QuickLearn Systems?</span>
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="text-gray-800 max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif" }}>
               Your success is our guarantee — backed by expert trainers, accredited content, and a commitment to your exam results.
             </p>
           </motion.div>
@@ -463,7 +499,7 @@ export default function CoursePageTemplate({ courseData }) {
                 <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#2BA6D9] transition-colors" style={{ fontFamily: "'Playfair Display', serif" }}>
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                <p className="text-gray-800 text-sm leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
                   {item.desc}
                 </p>
               </motion.div>

@@ -229,7 +229,7 @@ const courseData = {
     "Certification Exam Preparation",
     "Post-training Support"
   ],
-  "disclaimer": "AIOps Foundation℠, DevOps Institute®, PeopleCert®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or DevOps Institute. All trademarks are acknowledged as the property of their respective owners."
+  "disclaimer": "AIOps Foundation℠, DevOps Institute®, PeopleCert®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or DevOps Institute. All trademarks are acknowledged as the property of their respective owners."
 };
 
 export default function AIOpsFoundationPage() {

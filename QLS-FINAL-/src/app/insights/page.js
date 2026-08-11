@@ -98,7 +98,7 @@ export default function Insights() {
       <Container maxWidth="lg" className="py-12">
         <Grid container spacing={4}>
           {/* Category Filter */}
-          <Grid item xs={12}>
+          <Grid size={12}>
             <div className="flex flex-wrap gap-2 mb-8 justify-center">
               {categories.map((category) => (
                 <button
@@ -113,7 +113,7 @@ export default function Insights() {
 
           {/* Blog Posts Grid */}
           {blogPosts.map((post) => (
-            <Grid item xs={12} md={6} lg={4} key={post.id}>
+            <Grid size={{ xs: 12, md: 6, lg: 4 }} key={post.id}>
               <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gray-200 relative overflow-hidden">
                   <Image

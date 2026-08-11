@@ -19,6 +19,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "Agile®, Scrum®, Kanban®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by any of these organizations. All trademarks are acknowledged as the property of their respective owners.",
   title: "Agile Business Analysis",
   subtitle:
     "Deliver value through adaptive analysis in Agile and Scrum environments",

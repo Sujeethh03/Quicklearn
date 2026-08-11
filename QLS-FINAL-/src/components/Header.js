@@ -8,6 +8,169 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 
+// Nested IT Service Management menu structure (ITIL 4 / ITIL V5 / SIAM).
+// Parent items that have a `children` array are both a link and expandable.
+const ITSM_MENU = [
+  {
+    group: "ITIL® 4",
+    items: [
+      { name: "ITIL® 4 Foundation", href: "/ITL4Management" },
+      {
+        name: "ITIL® 4 Practice Manager",
+        href: "/ITIL4PracticeManager",
+        id: "itsm-pm",
+        children: [
+          { name: "ITIL® 4 Specialist: Monitor, Support and Fulfil", href: "/MonitorSupportFulfil" },
+          { name: "ITIL® 4 Specialist: Plan, Implement and Control", href: "/PlanImplementControl" },
+          { name: "ITIL® 4 Specialist: Collaborate, Assure and Improve", href: "/CollaborateAssureImprove" },
+        ],
+      },
+      {
+        name: "ITIL® 4 Managing Professional",
+        href: "/ITIL4ManagingProfessional",
+        id: "itsm-mp4",
+        children: [
+          { name: "ITIL® 4 Specialist: Create, Deliver and Support", href: "/ITL4SCDS" },
+          { name: "ITIL® 4 Specialist: Drive Stakeholder Value", href: "/ITL4SDSV" },
+          { name: "ITIL® 4 Specialist: High Velocity IT", href: "/ITL4SHVI" },
+          { name: "ITIL® 4 Strategist: Direct, Plan and Improve", href: "/ITL4SDPI" },
+        ],
+      },
+      {
+        name: "ITIL® 4 Strategic Leader",
+        href: "/ITIL4StrategicLeader",
+        id: "itsm-sl4",
+        children: [
+          { name: "ITIL® 4 Leader: Digital & IT Strategy", href: "/DigitalItService" },
+        ],
+      },
+    ],
+  },
+  {
+    group: "ITIL® V5",
+    items: [
+      { name: "ITIL® V5 Foundation", href: "/ITILFoundationV5" },
+      { name: "ITIL® V5 Foundation Bridge", href: "/ITILFoundationBridgeV5" },
+      {
+        name: "ITIL® V5 Managing Professional",
+        href: "/ITILManagingProfessionalTransitionV5",
+        id: "itsm-mp5",
+        children: [
+          { name: "ITIL Product", href: "/ITILProductV5" },
+          { name: "ITIL Service", href: "/ITILServiceV5" },
+          { name: "ITIL Experience", href: "/ITILExperienceV5" },
+        ],
+      },
+      {
+        name: "ITIL® V5 Strategic Leader",
+        href: "/ITILStrategicLeaderV5",
+        id: "itsm-sl5",
+        children: [
+          { name: "ITIL Strategy", href: "/ITILStrategyV5" },
+        ],
+      },
+      { name: "ITIL® V5 Transformation", href: "/ITILTransformationV5" },
+      { name: "ITIL® V5 AI Governance", href: "/ITILAIGovernanceV5" },
+      { name: "ITIL® V5 Master", href: "/ITILMasterV5" },
+    ],
+  },
+  {
+    group: "SIAM",
+    items: [
+      { name: "SIAM Foundation", href: "/SIAMFoundation" },
+      { name: "SIAM Practitioner", href: "/SIAMProfessional" },
+    ],
+  },
+];
+
+// Renders the nested ITSM menu for either the desktop dropdown or the mobile drawer.
+function ItsmTree({ variant = "desktop", onNavigate }) {
+  const [openGroup, setOpenGroup] = useState(null);
+  const [openId, setOpenId] = useState(null);
+  const isMobile = variant === "mobile";
+
+  const groupBtnCls = isMobile
+    ? "w-full flex items-center justify-between px-3 py-2 text-[11px] font-semibold uppercase tracking-wider text-gray-500 hover:text-[#1E7BA3]"
+    : "w-full flex items-center justify-between px-6 py-2 font-semibold hover:bg-[#5B6F81] hover:text-white text-left";
+  const parentBtnCls = isMobile
+    ? "w-full flex items-center justify-between px-4 py-1 text-xs text-gray-600 hover:text-[#1E7BA3] text-left"
+    : "w-full flex items-center justify-between px-6 py-2 hover:bg-[#5B6F81] hover:text-white text-left";
+  const leafCls = isMobile
+    ? "block px-4 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]"
+    : "block px-6 py-2 hover:bg-[#5B6F81] hover:text-white";
+  const childWrapCls = isMobile
+    ? "ml-3 mt-1 space-y-1"
+    : "";
+  const childCls = isMobile
+    ? "block px-3 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]"
+    : "block px-10 py-2 hover:bg-[#5B6F81] hover:text-white";
+
+  const chevron = (open) => (
+    <ChevronDown className={`w-3 h-3 flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+  );
+
+  // Leaf -> link; parent -> whole-row toggle that reveals its child pages.
+  const renderItem = (item) => {
+    if (!item.children) {
+      const leaf = (
+        <Link href={item.href} className={leafCls} onClick={onNavigate}>{item.name}</Link>
+      );
+      return isMobile ? <div key={item.href}>{leaf}</div> : <li key={item.href}>{leaf}</li>;
+    }
+    const open = openId === item.id;
+    const body = (
+      <>
+        <button
+          type="button"
+          aria-expanded={open}
+          onClick={() => setOpenId(open ? null : item.id)}
+          className={parentBtnCls}
+        >
+          <span>{item.name}</span>
+          {chevron(open)}
+        </button>
+        {open && (
+          <div className={childWrapCls}>
+            {item.children.map((c) => (
+              <Link key={c.href} href={c.href} className={childCls} onClick={onNavigate}>{c.name}</Link>
+            ))}
+          </div>
+        )}
+      </>
+    );
+    return isMobile ? <div key={item.id}>{body}</div> : <li key={item.id}>{body}</li>;
+  };
+
+  // Each group (ITIL 4 / ITIL V5 / SIAM) is itself a collapsible dropdown.
+  return (
+    <>
+      {ITSM_MENU.map((grp) => {
+        const gopen = openGroup === grp.group;
+        const groupBody = (
+          <>
+            <button
+              type="button"
+              aria-expanded={gopen}
+              onClick={() => setOpenGroup(gopen ? null : grp.group)}
+              className={groupBtnCls}
+            >
+              <span>{grp.group}</span>
+              {chevron(gopen)}
+            </button>
+            {gopen &&
+              (isMobile ? (
+                <div className="space-y-1">{grp.items.map(renderItem)}</div>
+              ) : (
+                <ul>{grp.items.map(renderItem)}</ul>
+              ))}
+          </>
+        );
+        return isMobile ? <div key={grp.group}>{groupBody}</div> : <li key={grp.group}>{groupBody}</li>;
+      })}
+    </>
+  );
+}
+
 export default function Headers() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileSection, setOpenMobileSection] = useState(null);
@@ -180,154 +343,7 @@ animate-in slide-in-from-top-2 duration-100">
                     </div>
                     {/* Submenu — opens right, sub-items expand on click */}
                     <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
-                      <li className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-gray-500 border-b border-gray-100">ITIL®</li>
-                      <li>
-                        <Link href="/ITL4Management" className="block px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white">ITIL® 4 Foundation</Link>
-                      </li>
-                      <li>
-                        <Link href="/ITILFoundationV5" className="block px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white">ITIL® Foundation (Version 5)</Link>
-                      </li>
-                      <li>
-                        <Link href="/ITILFoundationBridgeV5" className="block px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white">ITIL® Foundation Bridge (Version 5)</Link>
-                      </li>
-                      {/* ITIL Managing Professional (Version 5) — click to expand */}
-                      <li>
-                        <div onClick={() => toggleItsmSection('mp')} className="flex justify-between items-center px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
-                          <span>ITIL® Managing Professional (Version 5)</span>
-                          <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${openItsmSection === 'mp' ? 'rotate-180' : ''}`} />
-                        </div>
-                        {openItsmSection === 'mp' && (
-                          <ul className="bg-[#f5f7f9] border-l-2 border-[#5B6F81]/30">
-                            <li><Link href="/ITILProductV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Product (Version 5)</Link></li>
-                            <li><Link href="/ITILExperienceV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Experience (Version 5)</Link></li>
-                            <li><Link href="/ITILServiceV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Service (Version 5)</Link></li>
-                            <li><Link href="/ITILTransformationV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Transformation (Version 5)</Link></li>
-                            <li><Link href="/ITILManagingProfessionalTransitionV5" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® Managing Professional Transition (Version 5)</Link></li>
-                          </ul>
-                        )}
-                      </li>
-
-                      {/* Practice Manager — click to expand */}
-                      <li>
-                        <div onClick={() => toggleItsmSection('pm')} className="flex justify-between items-center px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
-                          <span>ITIL® 4 Practice Manager</span>
-                          <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${openItsmSection === 'pm' ? 'rotate-180' : ''}`} />
-                        </div>
-                        {openItsmSection === 'pm' && (
-                          <div>
-                            {/* MSF */}
-                            <div className="bg-[#f5f7f9] border-l-2 border-[#5B6F81]/30">
-                              <div className="flex items-center">
-                                <Link href="/MonitorSupportFulfil" className="flex-1 pl-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white">MSF - Monitor, Support &amp; Fulfil</Link>
-                                <button onClick={() => togglePMSection('msf')} className="px-3 py-2 text-gray-500 hover:bg-[#5B6F81] hover:text-white">
-                                  <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${openPMSection === 'msf' ? 'rotate-180' : ''}`} />
-                                </button>
-                              </div>
-                              {openPMSection === 'msf' && (
-                                <ul className="bg-[#ebeef1]">
-                                  <li><Link href="/ServiceDesk" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Service Desk</Link></li>
-                                  <li><Link href="/IncidentManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Incident Management</Link></li>
-                                  <li><Link href="/ProblemManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Problem Management</Link></li>
-                                  <li><Link href="/ServiceRequestManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Service Request Management</Link></li>
-                                  <li><Link href="/MonitoringEventManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Monitoring &amp; Event Management</Link></li>
-                                </ul>
-                              )}
-                            </div>
-                            {/* PIC */}
-                            <div className="bg-[#f5f7f9] border-l-2 border-[#5B6F81]/30">
-                              <div onClick={() => togglePMSection('pic')} className="flex items-center pl-6 pr-3 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
-                                <span className="flex-1">PIC - Plan, Implement &amp; Control</span>
-                                <ChevronDown className={`w-3 h-3 transition-transform duration-300 flex-shrink-0 ${openPMSection === 'pic' ? 'rotate-180' : ''}`} />
-                              </div>
-                              {openPMSection === 'pic' && (
-                                <ul className="bg-[#ebeef1]">
-                                  <li><Link href="/ChangeEnablement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Change Enablement</Link></li>
-                                  <li><Link href="/ReleaseManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Release Management</Link></li>
-                                  <li><Link href="/ServiceConfiguration" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Service Configuration Management</Link></li>
-                                  <li><Link href="/DeploymentManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Deployment Management</Link></li>
-                                  <li><Link href="/ItAssetManage" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">IT Asset Management</Link></li>
-                                </ul>
-                              )}
-                            </div>
-                            {/* CAI */}
-                            <div className="bg-[#f5f7f9] border-l-2 border-[#5B6F81]/30">
-                              <div onClick={() => togglePMSection('cai')} className="flex items-center pl-6 pr-3 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
-                                <span className="flex-1">CAI - Collaborate, Assure &amp; Improve</span>
-                                <ChevronDown className={`w-3 h-3 transition-transform duration-300 flex-shrink-0 ${openPMSection === 'cai' ? 'rotate-180' : ''}`} />
-                              </div>
-                              {openPMSection === 'cai' && (
-                                <ul className="bg-[#ebeef1]">
-                                  <li><Link href="/ContinuationImprovement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Continual Improvement</Link></li>
-                                  <li><Link href="/RelationshipManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Relationship Management</Link></li>
-                                  <li><Link href="/ServiceLevelManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Service Level Management</Link></li>
-                                  <li><Link href="/InformationSecurityMan" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Information Security Management</Link></li>
-                                  <li><Link href="/SupplierManagement" className="block pl-10 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Supplier Management</Link></li>
-                                </ul>
-                              )}
-                            </div>
-                          </div>
-                        )}
-                      </li>
-
-                      {/* Managing Professional — click to expand */}
-                      <li>
-                        <div onClick={() => toggleItsmSection('managing')} className="flex justify-between items-center px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
-                          <span>ITIL® 4 Managing Professional</span>
-                          <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${openItsmSection === 'managing' ? 'rotate-180' : ''}`} />
-                        </div>
-                        {openItsmSection === 'managing' && (
-                          <ul className="bg-[#f5f7f9]">
-                            <li><Link href="/ITL4SCDS" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® 4 Specialist Create, Deliver and Support</Link></li>
-                            <li><Link href="/ITL4SDSV" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® 4 Specialist Drive Stakeholder Value</Link></li>
-                            <li><Link href="/ITL4SHVI" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® 4 Specialist High Velocity IT</Link></li>
-                            <li><Link href="/ITL4SDPI" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">ITIL® 4 Strategist Direct Plan &amp; Improve</Link></li>
-                          </ul>
-                        )}
-                      </li>
-
-                      {/* Specialist — click to expand */}
-                      <li>
-                        <div onClick={() => toggleItsmSection('specialist')} className="flex justify-between items-center px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
-                          <span>ITIL® 4 Specialist</span>
-                          <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${openItsmSection === 'specialist' ? 'rotate-180' : ''}`} />
-                        </div>
-                        {openItsmSection === 'specialist' && (
-                          <ul className="bg-[#f5f7f9]">
-                            <li><Link href="/AcquiringAndManagingCS" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Acquiring And Managing Cloud Service</Link></li>
-                            <li><Link href="/SustainabilityInDigitalAI" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Sustainability In Digital and IT</Link></li>
-                            <li><Link href="/BusinessRelationshipManage" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Business Relationship Management</Link></li>
-                            <li><Link href="/ItAssetManage" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">IT Asset Management</Link></li>
-                            <li><Link href="/MonitorSupportFulfil" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Monitor, Support and Fulfil</Link></li>
-                          </ul>
-                        )}
-                      </li>
-
-                      {/* Strategist — click to expand */}
-                      <li>
-                        <div onClick={() => toggleItsmSection('strategist')} className="flex justify-between items-center px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
-                          <span>ITIL® 4 Strategist</span>
-                          <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${openItsmSection === 'strategist' ? 'rotate-180' : ''}`} />
-                        </div>
-                        {openItsmSection === 'strategist' && (
-                          <ul className="bg-[#f5f7f9]">
-                            <li><Link href="/DigitalItService" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">Digital IT &amp; Services</Link></li>
-                          </ul>
-                        )}
-                      </li>
-
-                      {/* SIAM — click to expand */}
-                      <li>
-                        <div onClick={() => toggleItsmSection('siam')} className="flex justify-between items-center px-6 py-2 text-sm hover:bg-[#5B6F81] hover:text-white cursor-pointer select-none">
-                          <span>SIAM</span>
-                          <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${openItsmSection === 'siam' ? 'rotate-180' : ''}`} />
-                        </div>
-                        {openItsmSection === 'siam' && (
-                          <ul className="bg-[#f5f7f9]">
-                            <li><Link href="/SIAMFoundation" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">SIAM Foundation</Link></li>
-                            <li><Link href="/SIAMProfessional" className="block pl-8 pr-4 py-1.5 text-xs hover:bg-[#5B6F81] hover:text-white">SIAM Professional</Link></li>
-                          </ul>
-                        )}
-                      </li>
+                      <ItsmTree variant="desktop" />
                     </ul>
                   </li>
 
@@ -341,9 +357,9 @@ animate-in slide-in-from-top-2 duration-100">
                       <ChevronRight className="w-4 h-4" />
                     </div>
                     {/* Submenu */}
-                    <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300">
+                    <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
                       <li><Link href="/PMP" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">PMP</Link></li>
-                      <li><Link href="/ACP" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">ACP</Link></li>
+                      <li><Link href="/PMIACP" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">PMI-ACP</Link></li>
                       <li><Link href="/Prince2Foundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Foundation</Link></li>
                       <li><Link href="/Prince2Practitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Practitioner</Link></li>
                       <li><Link href="/Prince2AgileFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Agile Foundation</Link></li>
@@ -362,78 +378,94 @@ animate-in slide-in-from-top-2 duration-100">
                       <span>Agile, Scrum & Kanban</span>
                       <ChevronRight className="w-4 h-4" />
                     </div>
-                    <ul className="absolute left-full top-0 w-80 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300">
-                      <li><Link href="/LeadingSAFeAgilist" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Leading SAFe Agilist</Link></li>
-                      <li><Link href="/SAFePO-PM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SAFe PO/PM</Link></li>
-                      <li><Link href="/SAFeforTeams" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SAFe for Teams</Link></li>
-                      <li><Link href="/SAFeScrumMaster" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SAFe Scrum Master</Link></li>
-                      <li><Link href="/SAFeAdvancedScrumMaster" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SAFe Advanced Scrum Master</Link></li>
+                    <ul className="absolute left-full top-0 w-80 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-80 overflow-y-auto">
+                      <li><Link href="/LeadingSAFeAgilist" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered Leading SAFe Agilist 6</Link></li>
+                      <li><Link href="/SAFePO-PM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe POPM 6</Link></li>
+                      <li><Link href="/SAFeScrumMaster" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe Scrum Master 6</Link></li>
+                      <li><Link href="/SAFeAdvancedScrumMaster" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe Advanced Scrum Master 6</Link></li>
                       <li><Link href="/PScrumM1" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master I (PSM I)</Link></li>
                       <li><Link href="/PScrumM2" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master II (PSM II)</Link></li>
+                      <li><Link href="/PSMAIEssentials" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master – AI Essentials (PSM-AIE)</Link></li>
                       <li><Link href="/PSPO1" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner I (PSPO I)</Link></li>
                       <li><Link href="/PSPO2" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner II (PSPO II)</Link></li>
-                      <li><Link href="/PSK1" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum with Kanban (PSK I)</Link></li>
-                      <li><Link href="/CSM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Scrum Master</Link></li>
-                      <li><Link href="/CASM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Advanced Scrum Master</Link></li>
-                      <li><Link href="/CSPO" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Scrum Product Owner</Link></li>
+                      <li><Link href="/PSPOAIEssentials" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner – AI Essentials (PSPO-AIE)</Link></li>
+                      <li><Link href="/PSK1" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum with Kanban (PSK)</Link></li>
+                      <li><Link href="/CSM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Scrum Master (CSM) Certification</Link></li>
+                      <li><Link href="/CSPO" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Scrum Product Owner (CSPO) Certification</Link></li>
                       <li><Link href="/ICP-ACC" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">ICP-ACC</Link></li>
                     </ul>
                   </li>
 
-                  {/* Quality Management */}
+                  {/* DevOps & SRE */}
                   <li className="relative group/item">
-                    <div
-
-                      className="flex justify-between items-center px-4 py-2 hover:bg-[#5B6F81] hover:text-white"
-                    >
-                      <span>Quality Management</span>
+                    <div className="flex justify-between items-center px-4 py-2 hover:bg-[#5B6F81] hover:text-white">
+                      <span>DevOps & SRE</span>
                       <ChevronRight className="w-4 h-4" />
                     </div>
-                    <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300">
+                    <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
+                      <li><Link href="/DevopsFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevOps Foundation</Link></li>
+                      <li><Link href="/AIOpsFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AIOps Foundation</Link></li>
+                      <li><Link href="/DevSecOpsFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevSecOps Foundation</Link></li>
+                      <li><Link href="/DevSecOpsPractitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevSecOps Practitioner</Link></li>
+                      <li><Link href="/SREFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SRE Foundation</Link></li>
+                      <li><Link href="/SREPractitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SRE Practitioner</Link></li>
+                    </ul>
+                  </li>
+
+                  {/* Business Analysis */}
+                  <li className="relative group/item">
+                    <div className="flex justify-between items-center px-4 py-2 hover:bg-[#5B6F81] hover:text-white">
+                      <span>Business Analysis</span>
+                      <ChevronRight className="w-4 h-4" />
+                    </div>
+                    <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
+                      <li><Link href="/BusinessAnalysisF" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Business Analysis Foundation</Link></li>
+                      <li><Link href="/BusinessAnalysisP" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Business Analysis Practice</Link></li>
+                    </ul>
+                  </li>
+
+                  {/* Lean & Quality Management */}
+                  <li className="relative group/item">
+                    <div className="flex justify-between items-center px-4 py-2 hover:bg-[#5B6F81] hover:text-white">
+                      <span>Lean &amp; Quality Management</span>
+                      <ChevronRight className="w-4 h-4" />
+                    </div>
+                    <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
                       <li><Link href="/LeanSSGB" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Lean Six Sigma Green Belt</Link></li>
                       <li><Link href="/LeanSSBB" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Lean Six Sigma Black Belt</Link></li>
                     </ul>
                   </li>
 
-                  {/* DevOps & Business Analysis */}
+                  {/* Software Testing */}
                   <li className="relative group/item">
-                    <div
-
-                      className="flex justify-between items-center px-4 py-2 hover:bg-[#5B6F81] hover:text-white"
-                    >
-                      <span>DevOps & Business Analysis</span>
+                    <div className="flex justify-between items-center px-4 py-2 hover:bg-[#5B6F81] hover:text-white">
+                      <span>Software Testing</span>
                       <ChevronRight className="w-4 h-4" />
                     </div>
-                    <ul className="absolute left-full top-0 w-80 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300">
-                      <li><Link href="/SREFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SRE Foundation</Link></li>
-                      <li><Link href="/SREPractitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SRE Practitioner</Link></li>
-                      <li><Link href="/DevopsFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevOps Foundation</Link></li>
-                      <li><Link href="/DevopsMaster" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevOps Master</Link></li>
-                      <li><Link href="/BusinessAnalysisF" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Business Analysis Foundation</Link></li>
-                      <li><Link href="/BusinessAnalysisP" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Business Analysis Practice</Link></li>
-                      <li><Link href="/AgileBA" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Agile Business Analysis</Link></li>
+                    <ul className="absolute left-full top-0 w-80 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
+                      <li><Link href="/ISTQBF" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Foundation Level (CTFL)</Link></li>
+                      <li><Link href="/CTAI" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester AI Testing (CT-AI)</Link></li>
+                      <li><Link href="/CTALAT" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Agile Tester (CTAL-AT)</Link></li>
+                      <li><Link href="/CTALTAE" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE)</Link></li>
+                      <li><Link href="/CTALTM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Test Management (CTAL-TM)</Link></li>
                     </ul>
                   </li>
 
-                  {/* Software Testing, Technical & Other Courses */}
+                  {/* Cloud, AI & Other Technical Courses */}
                   <li className="relative group/item">
-                    <div
-
-                      className="flex justify-between items-center px-4 py-2 hover:bg-[#5B6F81] hover:text-white"
-                    >
-                      <span>Software Testing, Technical & Other Courses</span>
+                    <div className="flex justify-between items-center px-4 py-2 hover:bg-[#5B6F81] hover:text-white">
+                      <span>Cloud, AI &amp; Other Technical Courses</span>
                       <ChevronRight className="w-4 h-4" />
                     </div>
-                    <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300">
-                      <li><Link href="/ISTQBF" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">ISTQB Foundation</Link></li>
-                      <li><Link href="/ISTQBA" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">ISTQB Advanced</Link></li>
+                    <ul className="absolute left-full top-0 w-80 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
+                      <li><span className="block px-6 py-2 text-gray-400">Azure, AWS, Google Cloud, AI &amp; GenAI certifications (future additions)</span></li>
                     </ul>
                   </li>
                 </ul>
               </div>
             </div>
             <Link href="/Events" className="hover:text-[#2BA6D9] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
-              <span className="relative z-10">Events</span>
+              <span className="relative z-10">Training Calendar</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2BA6D9] transition-all duration-300 group-hover:w-full"></div>
             </Link>
             <Link href="/CorporateTraining" className="hover:text-[#2BA6D9] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
@@ -520,193 +552,7 @@ animate-in slide-in-from-top-2 duration-100">
 
                       {openMobileSubSection === 'itil' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/ITL4Management" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>
-                            ITIL® 4 Foundation
-                          </Link>
-                          <Link href="/ITILFoundationV5" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>
-                            ITIL® Foundation (Version 5)
-                          </Link>
-                          <Link href="/ITILFoundationBridgeV5" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>
-                            ITIL® Foundation Bridge (Version 5)
-                          </Link>
-                          {/* ITIL Managing Professional (Version 5) with sub-menu */}
-                          <div>
-                            <button
-                              onClick={() => toggleMobileSubSubSection('mp')}
-                              className="w-full flex justify-between items-center px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3] rounded-md"
-                            >
-                              <span>ITIL® Managing Professional (Version 5)</span>
-                              <ChevronDown className={`w-2 h-2 transition-transform ${openMobileSubSubSection === 'mp' ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            {openMobileSubSubSection === 'mp' && (
-                              <div className="ml-4 mt-1 space-y-1">
-                                <Link href="/ITILProductV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Product (Version 5)</Link>
-                                <Link href="/ITILExperienceV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Experience (Version 5)</Link>
-                                <Link href="/ITILServiceV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Service (Version 5)</Link>
-                                <Link href="/ITILTransformationV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Transformation (Version 5)</Link>
-                                <Link href="/ITILManagingProfessionalTransitionV5" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® Managing Professional Transition (Version 5)</Link>
-                              </div>
-                            )}
-                          </div>
-
-                          {/* ITIL Practice Manager with sub-sub menus */}
-                          <div>
-                            <button
-                              onClick={() => toggleMobileSubSubSection('practice-manager')}
-                              className="w-full flex justify-between items-center px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3] rounded-md"
-                            >
-                              <span>ITIL® 4 Practice Manager</span>
-                              <ChevronDown className={`w-2 h-2 transition-transform ${openMobileSubSubSection === 'practice-manager' ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            {openMobileSubSubSection === 'practice-manager' && (
-                              <div className="ml-4 mt-1 space-y-1">
-                                {/* MSF */}
-                                <div>
-                                  <button
-                                    onClick={() => toggleMobilePracticeManager('msf')}
-                                    className="w-full flex justify-between items-center px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3] rounded-md"
-                                  >
-                                    <span>MSF - Monitor, Support & Fulfil</span>
-                                    <ChevronDown className={`w-2 h-2 transition-transform ${openMobilePracticeManager === 'msf' ? 'rotate-180' : ''}`} />
-                                  </button>
-
-                                  {openMobilePracticeManager === 'msf' && (
-                                    <div className="ml-3 mt-1 space-y-1">
-                                      <Link href="/ServiceDesk" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Service Desk</Link>
-                                      <Link href="/IncidentManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Incident Management</Link>
-                                      <Link href="/ProblemManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Problem Management</Link>
-                                      <Link href="/ServiceRequestManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Service Request Management</Link>
-                                      <Link href="/MonitoringEventManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Monitoring & Event Management</Link>
-                                    </div>
-                                  )}
-                                </div>
-
-                                {/* PIC */}
-                                <div>
-                                  <button
-                                    onClick={() => toggleMobilePracticeManager('pic')}
-                                    className="w-full flex justify-between items-center px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3] rounded-md"
-                                  >
-                                    <span>PIC - Plan, Implement & Control</span>
-                                    <ChevronDown className={`w-2 h-2 transition-transform ${openMobilePracticeManager === 'pic' ? 'rotate-180' : ''}`} />
-                                  </button>
-
-                                  {openMobilePracticeManager === 'pic' && (
-                                    <div className="ml-3 mt-1 space-y-1">
-                                      <Link href="/ChangeEnablement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Change Enablement</Link>
-                                      <Link href="/ReleaseManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Release Management</Link>
-                                      <Link href="/ServiceConfiguration" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Service Configuration Management</Link>
-                                      <Link href="/DeploymentManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Deployment Management</Link>
-                                      <Link href="/ItAssetManage" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>IT Asset Management</Link>
-                                    </div>
-                                  )}
-                                </div>
-
-                                {/* CAI */}
-                                <div>
-                                  <button
-                                    onClick={() => toggleMobilePracticeManager('cai')}
-                                    className="w-full flex justify-between items-center px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3] rounded-md"
-                                  >
-                                    <span>CAI - Collaborate, Assure & Improve</span>
-                                    <ChevronDown className={`w-2 h-2 transition-transform ${openMobilePracticeManager === 'cai' ? 'rotate-180' : ''}`} />
-                                  </button>
-
-                                  {openMobilePracticeManager === 'cai' && (
-                                    <div className="ml-3 mt-1 space-y-1">
-                                      <Link href="/ContinuationImprovement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Continual Improvement</Link>
-                                      <Link href="/RelationshipManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Relationship Management</Link>
-                                      <Link href="/ServiceLevelManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Service Level Management</Link>
-                                      <Link href="/InformationSecurityMan" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Information Security Management</Link>
-                                      <Link href="/SupplierManagement" className="block px-2 py-1 text-xs text-gray-400 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Supplier Management</Link>
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                            )}
-                          </div>
-
-                          {/* ITIL Managing Professional with sub-sub menus */}
-                          <div>
-                            <button
-                              onClick={() => toggleMobileSubSubSection('managing-professional')}
-                              className="w-full flex justify-between items-center px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3] rounded-md"
-                            >
-                              <span>ITIL® 4 Managing Professional</span>
-                              <ChevronDown className={`w-2 h-2 transition-transform ${openMobileSubSubSection === 'managing-professional' ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            {openMobileSubSubSection === 'managing-professional' && (
-                              <div className="ml-4 mt-1 space-y-1">
-                                <Link href="/ITL4SCDS" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® 4 Specialist Create, Deliver and Support</Link>
-                                <Link href="/ITL4SDSV" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® 4 Specialist Drive Stakeholder Value</Link>
-                                <Link href="/ITL4SHVI" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® 4 Specialist High Velocity IT</Link>
-                                <Link href="/ITL4SDPI" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ITIL® 4 Strategist Direct Plan & Improve</Link>
-                              </div>
-                            )}
-                          </div>
-
-                          {/* ITIL Specialist with sub-sub menus */}
-                          <div>
-                            <button
-                              onClick={() => toggleMobileSubSubSection('specialist')}
-                              className="w-full flex justify-between items-center px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3] rounded-md"
-                            >
-                              <span>ITIL® 4 Specialist</span>
-                              <ChevronDown className={`w-2 h-2 transition-transform ${openMobileSubSubSection === 'specialist' ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            {openMobileSubSubSection === 'specialist' && (
-                              <div className="ml-4 mt-1 space-y-1">
-                                <Link href="/ITL4SCDS" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Create, Deliver and Support</Link>
-                                <Link href="/ITL4SDSV" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Drive Stakeholder Value</Link>
-                                <Link href="/ITL4SHVI" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>High Velocity IT</Link>
-                                <Link href="/ITL4SDPI" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Direct Plan & Improve</Link>
-                                <Link href="/AcquiringAndManagingCS" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Acquiring And Managing Cloud Service</Link>
-                                <Link href="/SustainabilityInDigitalAI" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Sustainability In Digital and IT</Link>
-                                <Link href="/BusinessRelationshipManage" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Relationship Management</Link>
-                                <Link href="/ItAssetManage" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>IT Asset Management</Link>
-                                <Link href="/MonitorSupportFulfil" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Monitor, Support and Fulfil</Link>
-                              </div>
-                            )}
-                          </div>
-
-                          {/* ITIL Strategist with sub-sub menus */}
-                          <div>
-                            <button
-                              onClick={() => toggleMobileSubSubSection('strategist')}
-                              className="w-full flex justify-between items-center px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3] rounded-md"
-                            >
-                              <span>ITIL® 4 Strategist</span>
-                              <ChevronDown className={`w-2 h-2 transition-transform ${openMobileSubSubSection === 'strategist' ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            {openMobileSubSubSection === 'strategist' && (
-                              <div className="ml-4 mt-1 space-y-1">
-                                <Link href="/DigitalItService" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Digital IT & Services</Link>
-                              </div>
-                            )}
-                          </div>
-
-                          {/* SIAM with sub-sub menus */}
-                          <div>
-                            <button
-                              onClick={() => toggleMobileSubSubSection('siam')}
-                              className="w-full flex justify-between items-center px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3] rounded-md"
-                            >
-                              <span>SIAM</span>
-                              <ChevronDown className={`w-2 h-2 transition-transform ${openMobileSubSubSection === 'siam' ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            {openMobileSubSubSection === 'siam' && (
-                              <div className="ml-4 mt-1 space-y-1">
-                                <Link href="/SIAMFoundation" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SIAM Foundation</Link>
-                                <Link href="/SIAMProfessional" className="block px-2 py-1 text-xs text-gray-500 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SIAM Professional</Link>
-                              </div>
-                            )}
-                          </div>
+                          <ItsmTree variant="mobile" onNavigate={() => setIsMobileMenuOpen(false)} />
                         </div>
                       )}
                     </div>
@@ -724,7 +570,7 @@ animate-in slide-in-from-top-2 duration-100">
                       {openMobileSubSection === 'project' && (
                         <div className="ml-4 mt-1 space-y-1">
                           <Link href="/PMP" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>PMP</Link>
-                          <Link href="/ACP" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ACP</Link>
+                          <Link href="/PMIACP" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>PMI-ACP</Link>
                           <Link href="/Prince2Foundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Foundation</Link>
                           <Link href="/Prince2Practitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Practitioner</Link>
                           <Link href="/Prince2AgileFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Agile Foundation</Link>
@@ -747,31 +593,71 @@ animate-in slide-in-from-top-2 duration-100">
 
                       {openMobileSubSection === 'agile' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/LeadingSAFeAgilist" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Leading SAFe Agilist</Link>
-                          <Link href="/SAFePO-PM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SAFe PO/PM</Link>
-                          <Link href="/SAFeforTeams" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SAFe for Teams</Link>
-                          <Link href="/SAFeScrumMaster" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SAFe Scrum Master</Link>
-                          <Link href="/SAFeAdvancedScrumMaster" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SAFe Advanced Scrum Master</Link>
+                          <Link href="/LeadingSAFeAgilist" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered Leading SAFe Agilist 6</Link>
+                          <Link href="/SAFePO-PM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe POPM 6</Link>
+                          <Link href="/SAFeScrumMaster" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe Scrum Master 6</Link>
+                          <Link href="/SAFeAdvancedScrumMaster" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe Advanced Scrum Master 6</Link>
                           <Link href="/PScrumM1" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master I (PSM I)</Link>
                           <Link href="/PScrumM2" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master II (PSM II)</Link>
+                          <Link href="/PSMAIEssentials" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master – AI Essentials (PSM-AIE)</Link>
                           <Link href="/PSPO1" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner I (PSPO I)</Link>
                           <Link href="/PSPO2" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner II (PSPO II)</Link>
-                          <Link href="/PSK1" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum with Kanban (PSK I)</Link>
-                          <Link href="/CSM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Scrum Master</Link>
-                          <Link href="/CASM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Advanced Scrum Master</Link>
-                          <Link href="/CSPO" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Scrum Product Owner</Link>
+                          <Link href="/PSPOAIEssentials" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner – AI Essentials (PSPO-AIE)</Link>
+                          <Link href="/PSK1" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum with Kanban (PSK)</Link>
+                          <Link href="/CSM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Scrum Master (CSM) Certification</Link>
+                          <Link href="/CSPO" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Scrum Product Owner (CSPO) Certification</Link>
                           <Link href="/ICP-ACC" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ICP-ACC</Link>
                         </div>
                       )}
                     </div>
 
-                    {/* Quality Management */}
+                    {/* DevOps & SRE */}
+                    <div>
+                      <button
+                        onClick={() => toggleMobileSubSection('devops')}
+                        className="w-full flex justify-between items-center px-3 py-2 text-sm text-gray-700 hover:bg-[#f0f3f5] hover:text-[#1E7BA3] rounded-md"
+                      >
+                        <span>DevOps &amp; SRE</span>
+                        <ChevronDown className={`w-3 h-3 transition-transform ${openMobileSubSection === 'devops' ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      {openMobileSubSection === 'devops' && (
+                        <div className="ml-4 mt-1 space-y-1">
+                          <Link href="/DevopsFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevOps Foundation</Link>
+                          <Link href="/AIOpsFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AIOps Foundation</Link>
+                          <Link href="/DevSecOpsFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevSecOps Foundation</Link>
+                          <Link href="/DevSecOpsPractitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevSecOps Practitioner</Link>
+                          <Link href="/SREFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SRE Foundation</Link>
+                          <Link href="/SREPractitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SRE Practitioner</Link>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Business Analysis */}
+                    <div>
+                      <button
+                        onClick={() => toggleMobileSubSection('business-analysis')}
+                        className="w-full flex justify-between items-center px-3 py-2 text-sm text-gray-700 hover:bg-[#f0f3f5] hover:text-[#1E7BA3] rounded-md"
+                      >
+                        <span>Business Analysis</span>
+                        <ChevronDown className={`w-3 h-3 transition-transform ${openMobileSubSection === 'business-analysis' ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      {openMobileSubSection === 'business-analysis' && (
+                        <div className="ml-4 mt-1 space-y-1">
+                          <Link href="/BusinessAnalysisF" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Analysis Foundation</Link>
+                          <Link href="/BusinessAnalysisP" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Analysis Practice</Link>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Lean & Quality Management */}
                     <div>
                       <button
                         onClick={() => toggleMobileSubSection('quality')}
                         className="w-full flex justify-between items-center px-3 py-2 text-sm text-gray-700 hover:bg-[#f0f3f5] hover:text-[#1E7BA3] rounded-md"
                       >
-                        <span>Quality Management</span>
+                        <span>Lean &amp; Quality Management</span>
                         <ChevronDown className={`w-3 h-3 transition-transform ${openMobileSubSection === 'quality' ? 'rotate-180' : ''}`} />
                       </button>
 
@@ -783,43 +669,40 @@ animate-in slide-in-from-top-2 duration-100">
                       )}
                     </div>
 
-                    {/* DevOps & Business Analysis */}
-                    <div>
-                      <button
-                        onClick={() => toggleMobileSubSection('devops')}
-                        className="w-full flex justify-between items-center px-3 py-2 text-sm text-gray-700 hover:bg-[#f0f3f5] hover:text-[#1E7BA3] rounded-md"
-                      >
-                        <span>DevOps & Business Analysis</span>
-                        <ChevronDown className={`w-3 h-3 transition-transform ${openMobileSubSection === 'devops' ? 'rotate-180' : ''}`} />
-                      </button>
-
-                      {openMobileSubSection === 'devops' && (
-                        <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/SREFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SRE Foundation</Link>
-                          <Link href="/SREPractitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SRE Practitioner</Link>
-                          <Link href="/DevOpsFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevOps Foundation</Link>
-                          <Link href="/DevOpsMaster" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevOps Master</Link>
-                          <Link href="/BusinessAnalysisFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Analysis Foundation</Link>
-                          <Link href="/BusinessAnalysisPractice" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Analysis Practice</Link>
-                          <Link href="/AgileBusinessAnalysis" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Agile Business Analysis</Link>
-                        </div>
-                      )}
-                    </div>
-
                     {/* Software Testing */}
                     <div>
                       <button
                         onClick={() => toggleMobileSubSection('testing')}
                         className="w-full flex justify-between items-center px-3 py-2 text-sm text-gray-700 hover:bg-[#f0f3f5] hover:text-[#1E7BA3] rounded-md"
                       >
-                        <span>Software Testing & Others</span>
+                        <span>Software Testing</span>
                         <ChevronDown className={`w-3 h-3 transition-transform ${openMobileSubSection === 'testing' ? 'rotate-180' : ''}`} />
                       </button>
 
                       {openMobileSubSection === 'testing' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/ISTQBFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ISTQB Foundation</Link>
-                          <Link href="/ISTQBAdvanced" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ISTQB Advanced</Link>
+                          <Link href="/ISTQBF" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Foundation Level (CTFL)</Link>
+                          <Link href="/CTAI" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester AI Testing (CT-AI)</Link>
+                          <Link href="/CTALAT" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Agile Tester (CTAL-AT)</Link>
+                          <Link href="/CTALTAE" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE)</Link>
+                          <Link href="/CTALTM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Test Management (CTAL-TM)</Link>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Cloud, AI & Other Technical Courses */}
+                    <div>
+                      <button
+                        onClick={() => toggleMobileSubSection('cloud-ai')}
+                        className="w-full flex justify-between items-center px-3 py-2 text-sm text-gray-700 hover:bg-[#f0f3f5] hover:text-[#1E7BA3] rounded-md"
+                      >
+                        <span>Cloud, AI &amp; Other Technical Courses</span>
+                        <ChevronDown className={`w-3 h-3 transition-transform ${openMobileSubSection === 'cloud-ai' ? 'rotate-180' : ''}`} />
+                      </button>
+
+                      {openMobileSubSection === 'cloud-ai' && (
+                        <div className="ml-4 mt-1 space-y-1">
+                          <span className="block px-3 py-1 text-xs text-gray-400">Azure, AWS, Google Cloud, AI &amp; GenAI certifications (future additions)</span>
                         </div>
                       )}
                     </div>
@@ -832,7 +715,7 @@ animate-in slide-in-from-top-2 duration-100">
                 className="block px-3 py-2.5 text-slate-1000 hover:bg-[#f0f3f5] hover:text-[#2BA6D9] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Events
+                Training Calendar
               </Link>
               
               <Link

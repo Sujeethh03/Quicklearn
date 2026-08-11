@@ -19,6 +19,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "ITIL®, ITIL® 4 Practitioner: Relationship Management, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
   title: "Business Relationship Management",
   subtitle:
     "Align IT and business strategy through strong stakeholder engagement and value creation",

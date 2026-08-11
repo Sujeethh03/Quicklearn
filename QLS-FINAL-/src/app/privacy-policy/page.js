@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       <Headers/>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
-          <Grid item xs={12}>
+          <Grid size={12}>
             <div className="bg-white rounded-lg shadow-sm p-8">
               <h1 className="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
               <p className="text-gray-600 mb-8">Last updated: February 2, 2026</p>

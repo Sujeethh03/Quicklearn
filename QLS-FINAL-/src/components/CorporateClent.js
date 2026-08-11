@@ -5,7 +5,7 @@ import LiveChat from "@/components/LiveChat";
 import CorporateTemplate from "@/components/CorporateTemplate"
 
 export const metadata = {
-  title: "Corporate Training ",
+  title: "Corporate Training in Hyderabad | QuickLearn Systems",
   description:
     "QuickLearn Systems is a trusted corporate training institute in Hyderabad offering customized IT, Agile, DevOps, ITIL, PMP, and professional certification training programs for enterprises. Upskill your workforce with role-based, hands-on, outcome-driven training.",
   keywords:
@@ -19,7 +19,7 @@ export const metadata = {
 };
 
 const courseData = {
-  title: "Corporate Training ",
+  title: "Corporate Training",
   subtitle: "Customized, Role-Based & Outcome-Driven Training Programs for Your Workforce",
   backgroundImage: "/hero_it_service_management.jpg",
   overview: [
@@ -48,13 +48,13 @@ const courseData = {
     "Short intensive boot camps or extended modular programs based on your needs.",
   ],
   Catalog: [
-    "IT Service Management: ITIL® 4 Foundation, SIAM, Service Desk, Incident & Problem Management.",
-    "Project & Program Management: PMP, PRINCE2, MSP, ACP.",
-    "Agile & Scrum: SAFe, Scrum Master, Product Owner, Kanban.",
-    "DevOps & SRE: DevOps Foundation, DevOps Master, SRE Foundation & Practitioner.",
-    "Quality Management: Lean Six Sigma Green Belt & Black Belt.",
-    "Software Testing: ISTQB Foundation & Advanced.",
-    "Business Analysis: Business Analysis Foundation, Practitioner & Agile BA.",
+    "IT Service Management: ITIL® 4 Foundation, ITIL® (Version 5), SIAM, and the full ITIL practice suite.",
+    "Project & Program Management: PMP, PMI-ACP, PRINCE2, and MSP.",
+    "Agile, Scrum & Kanban: AI-Empowered SAFe, Professional Scrum (PSM & PSPO), CSM/CSPO, and Kanban.",
+    "DevOps & SRE: DevOps Foundation, AIOps Foundation, DevSecOps Foundation & Practitioner, SRE Foundation & Practitioner.",
+    "Business Analysis: Business Analysis Foundation & Practice.",
+    "Lean & Quality Management: Lean Six Sigma Green Belt & Black Belt.",
+    "Software Testing: ISTQB Certified Tester — CTFL, CT-AI, and Advanced Level (CTAL-AT, CTAL-TAE, CTAL-TM).",
   ],
   TrainingPrograms: [
     "Group enrollment for teams of any size — from small squads to large departments.",

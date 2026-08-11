@@ -16,6 +16,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "ITIL®, ITIL® Managing Professional Transition (Version 5), PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
   title: "ITIL® Managing Professional Transition (Version 5) Certification Training",
   subtitle: "Upgrade Your ITIL Expertise to Version 5 Through a Single Learning Path",
   backgroundImage: "/itl4_foundation.png",
@@ -85,8 +86,6 @@ const courseData = {
     "Comprehensive course material and exam preparation",
     "Post-training support",
   ],
-  disclaimer:
-    "ITIL®, PeopleCert®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
 };
 
 export default function ITILManagingProfessionalTransitionV5Page() {

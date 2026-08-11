@@ -19,7 +19,7 @@ export default function Clients({ clients = [] }) {
         <Grid container spacing={4} justifyContent="center">
 
           {/* Header Section */}
-          <Grid item xs={12}>
+          <Grid size={12}>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export default function Clients({ clients = [] }) {
           </Grid>
 
           {/* LogoLoop Section */}
-          <Grid item xs={12}>
+          <Grid size={12}>
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 40 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}

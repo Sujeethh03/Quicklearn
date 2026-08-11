@@ -35,16 +35,16 @@ const courseData = {
     "Enhance career growth and global employment opportunities"
   ],
   "prerequisites": [
-    "Training Prerequisites",
+    "## Training Prerequisites",
     "There are no mandatory prerequisites to attend the PMP® Certification Training. Anyone interested in developing project management knowledge and preparing for the PMP® certification exam is welcome to enroll.",
     "However, a basic understanding of project management concepts and experience working on projects will help participants gain maximum value from the training.",
-    "PMP® Certification Exam Eligibility",
+    "## PMP® Certification Exam Eligibility",
     "To apply for the PMP® certification exam, candidates must meet one of the following eligibility requirements established by the Project Management Institute (PMI®):",
-    "Option 1 – Four-Year Degree",
+    "### Option 1 – Four-Year Degree",
     "Bachelor's degree or global equivalent",
     "Minimum 36 months of experience leading or directing projects within the past eight years",
     "35 hours of formal project management education/training or a valid Certified Associate in Project Management (CAPM®) certification",
-    "Option 2 – Secondary Degree",
+    "### Option 2 – Secondary Degree",
     "High school diploma, associate degree, or global equivalent",
     "Minimum 60 months of experience leading or directing projects within the past eight years",
     "35 hours of formal project management education/training or a valid CAPM® certification"
@@ -213,7 +213,7 @@ const courseData = {
     "Comprehensive Study Material",
     "Post-training Support"
   ],
-  "disclaimer": "PMP®, PMI®, PMBOK®, Project Management Professional®, and all related trademarks are the property of the Project Management Institute, Inc. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by PMI®. All trademarks are the property of their respective owners."
+  "disclaimer": "PMP®, PMI®, PMBOK®, Project Management Professional®, and all related trademarks are the property of the Project Management Institute, Inc. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PMI®. All trademarks are the property of their respective owners."
 };
 
 export default function PMPPage() {

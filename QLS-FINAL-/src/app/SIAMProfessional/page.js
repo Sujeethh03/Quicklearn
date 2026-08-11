@@ -19,6 +19,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "EXIN®, SIAM™, Service Integration and Management™, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by EXIN. All trademarks are acknowledged as the property of their respective owners.",
   "title": "EXIN SIAM™ Practitioner Certificate Training",
   "subtitle": "Lead Enterprise Service Integration and Optimize Multi-Supplier Service Delivery",
   "backgroundImage": "/siam_professional.jpg",
@@ -178,7 +179,6 @@ const courseData = {
     "Comprehensive study material",
     "Certification preparation"
   ],
-  "disclaimer": "SIAM™, EXIN®, and all related trademarks are the property of their respective owners. QuickLearn Systems is an independent training provider and is not affiliated with, endorsed by, or sponsored by EXIN."
 };
 
 

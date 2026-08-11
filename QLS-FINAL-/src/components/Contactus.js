@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import { COURSE_GROUPS } from "@/data/courseRegistry";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Send, Upload, User, MessageSquare, Building, Calendar, Loader2 } from "lucide-react";
-import ScrollFloat from "@/components/ui/ScroolReveal";
 import { useState } from "react";
 export default function Contactus() {
   const [formData, setFormData] = useState({
@@ -184,29 +183,8 @@ export default function Contactus() {
           </div>
         </div>
       </section>
-      {/* Contact Information Section */}
-      <section className="py-16 bg-gradient-to-br from-slate-50 via-gray-50 to-stone-50">
-        <div className="container mx-auto max-w-7xl px-4 md:px-8">
-          <ScrollFloat
-            animationDuration={1.5}
-            ease="back.inOut(2)"
-            scrollStart="center bottom+=50%"
-            scrollEnd="bottom bottom-=40%"
-            stagger={0.05}
-            containerClassName="text-center mb-12"
-            textClassName="font-bold text-[clamp(2.5rem,6vw,5rem)] leading-[0.9] bg-gradient-to-r from-slate-700 via-gray-800 to-stone-900 bg-clip-text text-transparent drop-shadow-lg"
-          >
-            Get In Touch
-          </ScrollFloat>
-
-          {/* Contact Info Cards */}
-          
-          
-        </div>
-      </section>
-
       {/* Contact Form Section */}
-      <section className=" bg-white">
+      <section className="bg-white pt-16 md:pt-20 pb-16">
         <div className="container mx-auto max-w-7xl px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 

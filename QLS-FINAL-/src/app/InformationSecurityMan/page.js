@@ -16,6 +16,7 @@ export const metadata = {
 };
 
 const courseData = {
+  "disclaimer": "ITIL®, ITIL® 4 Practitioner: Information Security Management, PeopleCert®, AXELOS®, and all related trademarks are the property of their respective owners. QuickLearn Systems is not affiliated with, endorsed by, or sponsored by PeopleCert or AXELOS. All trademarks are acknowledged as the property of their respective owners.",
   title: "Information Security Management",
   subtitle: "Protect organizational information assets through comprehensive security management",
   backgroundImage: "/information_security_management.jpg",
