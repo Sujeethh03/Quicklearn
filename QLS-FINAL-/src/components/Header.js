@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaPhone } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaPhone } from "react-icons/fa";
+import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { SOCIAL_LINKS } from "@/data/socialLinks";
 import { ChevronRight, ChevronDown, Menu, X, ChevronLeft } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
@@ -14,34 +16,34 @@ const ITSM_MENU = [
   {
     group: "ITIL® 4",
     items: [
-      { name: "ITIL® 4 Foundation", href: "/ITL4Management" },
+      { name: "ITIL® 4 Foundation", href: "/itil-4-foundation-certification-training" },
       {
         name: "ITIL® 4 Practice Manager",
-        href: "/ITIL4PracticeManager",
+        href: "/itil-4-practice-manager-pm-certification-training",
         id: "itsm-pm",
         children: [
-          { name: "ITIL® 4 Specialist: Monitor, Support and Fulfil", href: "/MonitorSupportFulfil" },
-          { name: "ITIL® 4 Specialist: Plan, Implement and Control", href: "/PlanImplementControl" },
-          { name: "ITIL® 4 Specialist: Collaborate, Assure and Improve", href: "/CollaborateAssureImprove" },
+          { name: "ITIL® 4 Specialist: Monitor, Support and Fulfil", href: "/itil-4-specialist-monitor-support-fulfil-msf-training" },
+          { name: "ITIL® 4 Specialist: Plan, Implement and Control", href: "/itil-4-specialist-plan-implement-control-pic-training" },
+          { name: "ITIL® 4 Specialist: Collaborate, Assure and Improve", href: "/itil-4-specialist-collaborate-assure-improve-cai-training" },
         ],
       },
       {
         name: "ITIL® 4 Managing Professional",
-        href: "/ITIL4ManagingProfessional",
+        href: "/itil-4-managing-professional-mp-certification-training",
         id: "itsm-mp4",
         children: [
-          { name: "ITIL® 4 Specialist: Create, Deliver and Support", href: "/ITL4SCDS" },
-          { name: "ITIL® 4 Specialist: Drive Stakeholder Value", href: "/ITL4SDSV" },
-          { name: "ITIL® 4 Specialist: High Velocity IT", href: "/ITL4SHVI" },
-          { name: "ITIL® 4 Strategist: Direct, Plan and Improve", href: "/ITL4SDPI" },
+          { name: "ITIL® 4 Specialist: Create, Deliver and Support", href: "/itil-4-specialist-create-deliver-support-cds-training" },
+          { name: "ITIL® 4 Specialist: Drive Stakeholder Value", href: "/itil-4-specialist-drive-stakeholder-value-dsv-training" },
+          { name: "ITIL® 4 Specialist: High Velocity IT", href: "/itil-4-specialist-high-velocity-it-hvit-training" },
+          { name: "ITIL® 4 Strategist: Direct, Plan and Improve", href: "/itil-4-strategist-direct-plan-improve-dpi-training" },
         ],
       },
       {
         name: "ITIL® 4 Strategic Leader",
-        href: "/ITIL4StrategicLeader",
+        href: "/itil-4-strategic-leader-sl-certification-training",
         id: "itsm-sl4",
         children: [
-          { name: "ITIL® 4 Leader: Digital & IT Strategy", href: "/DigitalItService" },
+          { name: "ITIL® 4 Leader: Digital & IT Strategy", href: "/itil-4-leader-digital-it-strategy-dits-training" },
         ],
       },
     ],
@@ -49,36 +51,36 @@ const ITSM_MENU = [
   {
     group: "ITIL® V5",
     items: [
-      { name: "ITIL® V5 Foundation", href: "/ITILFoundationV5" },
-      { name: "ITIL® V5 Foundation Bridge", href: "/ITILFoundationBridgeV5" },
+      { name: "ITIL® V5 Foundation", href: "/itil-v5-foundation-certification-training" },
+      { name: "ITIL® V5 Foundation Bridge", href: "/itil-v5-foundation-bridge-certification-training" },
       {
         name: "ITIL® V5 Managing Professional",
-        href: "/ITILManagingProfessionalTransitionV5",
+        href: "/itil-v5-managing-professional-transition-training",
         id: "itsm-mp5",
         children: [
-          { name: "ITIL Product", href: "/ITILProductV5" },
-          { name: "ITIL Service", href: "/ITILServiceV5" },
-          { name: "ITIL Experience", href: "/ITILExperienceV5" },
+          { name: "ITIL Product", href: "/itil-v5-product-certification-training" },
+          { name: "ITIL Service", href: "/itil-v5-service-certification-training" },
+          { name: "ITIL Experience", href: "/itil-v5-experience-certification-training" },
         ],
       },
       {
         name: "ITIL® V5 Strategic Leader",
-        href: "/ITILStrategicLeaderV5",
+        href: "/itil-v5-strategic-leader-certification-training",
         id: "itsm-sl5",
         children: [
-          { name: "ITIL Strategy", href: "/ITILStrategyV5" },
+          { name: "ITIL Strategy", href: "/itil-v5-strategy-certification-training" },
         ],
       },
-      { name: "ITIL® V5 Transformation", href: "/ITILTransformationV5" },
-      { name: "ITIL® V5 AI Governance", href: "/ITILAIGovernanceV5" },
-      { name: "ITIL® V5 Master", href: "/ITILMasterV5" },
+      { name: "ITIL® V5 Transformation", href: "/itil-v5-transformation-certification-training" },
+      { name: "ITIL® V5 AI Governance", href: "/itil-v5-ai-governance-certification-training" },
+      { name: "ITIL® V5 Master", href: "/itil-v5-master-certification-training" },
     ],
   },
   {
     group: "SIAM",
     items: [
-      { name: "SIAM Foundation", href: "/SIAMFoundation" },
-      { name: "SIAM Practitioner", href: "/SIAMProfessional" },
+      { name: "SIAM Foundation", href: "/siam-foundation-certification-training" },
+      { name: "SIAM Practitioner", href: "/siam-professional-certification-training" },
     ],
   },
 ];
@@ -246,25 +248,36 @@ animate-in slide-in-from-top-2 duration-100">
 
               <span className="text-xs text-white font-medium">Follow:</span>
               <a
-                href="https://www.facebook.com/quicklearnsystems#"
+                href={SOCIAL_LINKS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="QuickLearn Systems on Facebook"
               >
-                <FaFacebookF href="https://x.com/quicklearnsys" className="w-3.5 h-3.5 text-white hover:text-[#b3bfc8] transition-all duration-300 cursor-pointer hover:scale-125 hover:-translate-y-1" />
+                <FaFacebookF className="w-3.5 h-3.5 text-white hover:text-[#b3bfc8] transition-all duration-300 cursor-pointer hover:scale-125 hover:-translate-y-1" />
               </a>
               <a
-                href="https://x.com/quicklearnsys"
+                href={SOCIAL_LINKS.x}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="QuickLearn Systems on X"
               >
-                <FaTwitter className="w-3.5 h-3.5 text-white hover:text-[#b3bfc8] transition-all duration-300 cursor-pointer hover:scale-125 hover:-translate-y-1" />
+                <FaXTwitter className="w-3.5 h-3.5 text-white hover:text-[#b3bfc8] transition-all duration-300 cursor-pointer hover:scale-125 hover:-translate-y-1" />
               </a>
               <a
-                href="https://www.linkedin.com/in/quicklearn-systems-1494ba12a/?originalSubdomain=in"
+                href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="QuickLearn Systems on LinkedIn"
               >
                 <FaLinkedinIn className="w-3.5 h-3.5 text-white hover:text-[#b3bfc8] transition-all duration-300 cursor-pointer hover:scale-125 hover:-translate-y-1" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="QuickLearn Systems on Instagram"
+              >
+                <FaInstagram className="w-3.5 h-3.5 text-white hover:text-[#b3bfc8] transition-all duration-300 cursor-pointer hover:scale-125 hover:-translate-y-1" />
               </a>
             </div>
 
@@ -358,14 +371,14 @@ animate-in slide-in-from-top-2 duration-100">
                     </div>
                     {/* Submenu */}
                     <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
-                      <li><Link href="/PMP" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">PMP</Link></li>
-                      <li><Link href="/PMIACP" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">PMI-ACP</Link></li>
-                      <li><Link href="/Prince2Foundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Foundation</Link></li>
-                      <li><Link href="/Prince2Practitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Practitioner</Link></li>
-                      <li><Link href="/Prince2AgileFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Agile Foundation</Link></li>
-                      <li><Link href="/Prince2AgilePractitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Agile Practitioner</Link></li>
-                      <li><Link href="/MSPFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">MSP Foundation</Link></li>
-                      <li><Link href="/MSPPractitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">MSP Practitioner</Link></li>
+                      <li><Link href="/pmp-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">PMP</Link></li>
+                      <li><Link href="/pmi-acp-agile-certified-practitioner-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">PMI-ACP</Link></li>
+                      <li><Link href="/prince2-foundation-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Foundation</Link></li>
+                      <li><Link href="/prince2-practitioner-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Practitioner</Link></li>
+                      <li><Link href="/prince2-agile-foundation-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Agile Foundation</Link></li>
+                      <li><Link href="/prince2-agile-practitioner-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Prince2 Agile Practitioner</Link></li>
+                      <li><Link href="/msp-foundation-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">MSP Foundation</Link></li>
+                      <li><Link href="/msp-practitioner-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">MSP Practitioner</Link></li>
                     </ul>
                   </li>
 
@@ -379,20 +392,20 @@ animate-in slide-in-from-top-2 duration-100">
                       <ChevronRight className="w-4 h-4" />
                     </div>
                     <ul className="absolute left-full top-0 w-80 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-80 overflow-y-auto">
-                      <li><Link href="/LeadingSAFeAgilist" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered Leading SAFe Agilist 6</Link></li>
-                      <li><Link href="/SAFePO-PM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe POPM 6</Link></li>
-                      <li><Link href="/SAFeScrumMaster" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe Scrum Master 6</Link></li>
-                      <li><Link href="/SAFeAdvancedScrumMaster" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe Advanced Scrum Master 6</Link></li>
-                      <li><Link href="/PScrumM1" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master I (PSM I)</Link></li>
-                      <li><Link href="/PScrumM2" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master II (PSM II)</Link></li>
-                      <li><Link href="/PSMAIEssentials" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master – AI Essentials (PSM-AIE)</Link></li>
-                      <li><Link href="/PSPO1" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner I (PSPO I)</Link></li>
-                      <li><Link href="/PSPO2" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner II (PSPO II)</Link></li>
-                      <li><Link href="/PSPOAIEssentials" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner – AI Essentials (PSPO-AIE)</Link></li>
-                      <li><Link href="/PSK1" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum with Kanban (PSK)</Link></li>
-                      <li><Link href="/CSM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Scrum Master (CSM) Certification</Link></li>
-                      <li><Link href="/CSPO" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Scrum Product Owner (CSPO) Certification</Link></li>
-                      <li><Link href="/ICP-ACC" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">ICP-ACC</Link></li>
+                      <li><Link href="/leading-safe-agilist-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered Leading SAFe Agilist 6</Link></li>
+                      <li><Link href="/safe-product-owner-product-manager-popm-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe POPM 6</Link></li>
+                      <li><Link href="/safe-scrum-master-ssm-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe Scrum Master 6</Link></li>
+                      <li><Link href="/safe-advanced-scrum-master-sasm-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AI-Empowered SAFe Advanced Scrum Master 6</Link></li>
+                      <li><Link href="/professional-scrum-master-i-psm-i-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master I (PSM I)</Link></li>
+                      <li><Link href="/professional-scrum-master-ii-psm-ii-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master II (PSM II)</Link></li>
+                      <li><Link href="/professional-scrum-master-ai-essentials-psm-aie-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Master – AI Essentials (PSM-AIE)</Link></li>
+                      <li><Link href="/professional-scrum-product-owner-i-pspo-i-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner I (PSPO I)</Link></li>
+                      <li><Link href="/professional-scrum-product-owner-ii-pspo-ii-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner II (PSPO II)</Link></li>
+                      <li><Link href="/professional-scrum-product-owner-ai-essentials-pspo-aie-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum Product Owner – AI Essentials (PSPO-AIE)</Link></li>
+                      <li><Link href="/professional-scrum-with-kanban-psk-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Professional Scrum with Kanban (PSK)</Link></li>
+                      <li><Link href="/certified-scrummaster-csm-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Scrum Master (CSM) Certification</Link></li>
+                      <li><Link href="/certified-scrum-product-owner-cspo-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Scrum Product Owner (CSPO) Certification</Link></li>
+                      <li><Link href="/icagile-agile-coaching-icp-acc-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">ICP-ACC</Link></li>
                     </ul>
                   </li>
 
@@ -403,12 +416,12 @@ animate-in slide-in-from-top-2 duration-100">
                       <ChevronRight className="w-4 h-4" />
                     </div>
                     <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
-                      <li><Link href="/DevopsFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevOps Foundation</Link></li>
-                      <li><Link href="/AIOpsFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AIOps Foundation</Link></li>
-                      <li><Link href="/DevSecOpsFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevSecOps Foundation</Link></li>
-                      <li><Link href="/DevSecOpsPractitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevSecOps Practitioner</Link></li>
-                      <li><Link href="/SREFoundation" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SRE Foundation</Link></li>
-                      <li><Link href="/SREPractitioner" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SRE Practitioner</Link></li>
+                      <li><Link href="/devops-foundation-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevOps Foundation</Link></li>
+                      <li><Link href="/aiops-foundation-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">AIOps Foundation</Link></li>
+                      <li><Link href="/devsecops-foundation-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevSecOps Foundation</Link></li>
+                      <li><Link href="/devsecops-practitioner-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">DevSecOps Practitioner</Link></li>
+                      <li><Link href="/sre-foundation-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SRE Foundation</Link></li>
+                      <li><Link href="/sre-practitioner-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">SRE Practitioner</Link></li>
                     </ul>
                   </li>
 
@@ -419,8 +432,8 @@ animate-in slide-in-from-top-2 duration-100">
                       <ChevronRight className="w-4 h-4" />
                     </div>
                     <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
-                      <li><Link href="/BusinessAnalysisF" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Business Analysis Foundation</Link></li>
-                      <li><Link href="/BusinessAnalysisP" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Business Analysis Practice</Link></li>
+                      <li><Link href="/business-analysis-foundation-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Business Analysis Foundation</Link></li>
+                      <li><Link href="/business-analysis-practitioner-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Business Analysis Practice</Link></li>
                     </ul>
                   </li>
 
@@ -431,8 +444,8 @@ animate-in slide-in-from-top-2 duration-100">
                       <ChevronRight className="w-4 h-4" />
                     </div>
                     <ul className="absolute left-full top-0 w-72 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
-                      <li><Link href="/LeanSSGB" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Lean Six Sigma Green Belt</Link></li>
-                      <li><Link href="/LeanSSBB" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Lean Six Sigma Black Belt</Link></li>
+                      <li><Link href="/lean-six-sigma-green-belt-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Lean Six Sigma Green Belt</Link></li>
+                      <li><Link href="/lean-six-sigma-black-belt-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Lean Six Sigma Black Belt</Link></li>
                     </ul>
                   </li>
 
@@ -443,11 +456,11 @@ animate-in slide-in-from-top-2 duration-100">
                       <ChevronRight className="w-4 h-4" />
                     </div>
                     <ul className="absolute left-full top-0 w-80 bg-white shadow-lg rounded-md opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-all duration-300 max-h-[75vh] overflow-y-auto">
-                      <li><Link href="/ISTQBF" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Foundation Level (CTFL)</Link></li>
-                      <li><Link href="/CTAI" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester AI Testing (CT-AI)</Link></li>
-                      <li><Link href="/CTALAT" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Agile Tester (CTAL-AT)</Link></li>
-                      <li><Link href="/CTALTAE" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE)</Link></li>
-                      <li><Link href="/CTALTM" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Test Management (CTAL-TM)</Link></li>
+                      <li><Link href="/istqb-foundation-level-ctfl-certification-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Foundation Level (CTFL)</Link></li>
+                      <li><Link href="/istqb-certified-tester-ai-testing-ct-ai-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester AI Testing (CT-AI)</Link></li>
+                      <li><Link href="/istqb-advanced-level-agile-tester-ctal-at-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Agile Tester (CTAL-AT)</Link></li>
+                      <li><Link href="/istqb-advanced-test-automation-engineering-ctal-tae-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE)</Link></li>
+                      <li><Link href="/istqb-advanced-level-test-management-ctal-tm-training" className="block px-6 py-2 hover:bg-[#5B6F81] hover:text-white">Certified Tester Advanced Level Test Management (CTAL-TM)</Link></li>
                     </ul>
                   </li>
 
@@ -464,15 +477,15 @@ animate-in slide-in-from-top-2 duration-100">
                 </ul>
               </div>
             </div>
-            <Link href="/Events" className="hover:text-[#2BA6D9] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
+            <Link href="/events" className="hover:text-[#2BA6D9] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
               <span className="relative z-10">Training Calendar</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2BA6D9] transition-all duration-300 group-hover:w-full"></div>
             </Link>
-            <Link href="/CorporateTraining" className="hover:text-[#2BA6D9] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
+            <Link href="/corporate-training" className="hover:text-[#2BA6D9] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
               <span className="relative z-10">Corporate Training</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2BA6D9] transition-all duration-300 group-hover:w-full"></div>
             </Link>
-            <Link href="/Contact" className="hover:text-[#2BA6D9] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
+            <Link href="/contact" className="hover:text-[#2BA6D9] transition-all duration-300 py-2 px-1 relative group hover:scale-105">
               <span className="relative z-10">Contact</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2BA6D9] transition-all duration-300 group-hover:w-full"></div>
             </Link>
@@ -481,7 +494,7 @@ animate-in slide-in-from-top-2 duration-100">
 
           {/* Mobile Actions & Menu Button */}
           <div className="flex items-center space-x-2 md:hidden">
-            <Link href="/Contact">
+            <Link href="/contact">
               <Button className="bg-[#2BA6D9] hover:bg-[#1E7BA3] text-white px-3 py-2 rounded-md text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg transform">
                 Contact
               </Button>
@@ -502,7 +515,7 @@ animate-in slide-in-from-top-2 duration-100">
           {/* Actions - Desktop */}
           <div className="hidden md:flex items-center space-x-6">
 
-            <Link href="/RegisterNow" className="bg-[#2BA6D9] hover:bg-[#1E7BA3] text-white px-6 py-2.5 rounded-md font-medium transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-105 hover:-translate-y-0.5 relative overflow-hidden group inline-block">
+            <Link href="/register" className="bg-[#2BA6D9] hover:bg-[#1E7BA3] text-white px-6 py-2.5 rounded-md font-medium transition-all duration-300 shadow-sm hover:shadow-lg hover:scale-105 hover:-translate-y-0.5 relative overflow-hidden group inline-block">
               <span className="relative z-10">Register Now</span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#1E7BA3] to-[#2BA6D9] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             </Link>
@@ -569,14 +582,14 @@ animate-in slide-in-from-top-2 duration-100">
 
                       {openMobileSubSection === 'project' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/PMP" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>PMP</Link>
-                          <Link href="/PMIACP" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>PMI-ACP</Link>
-                          <Link href="/Prince2Foundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Foundation</Link>
-                          <Link href="/Prince2Practitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Practitioner</Link>
-                          <Link href="/Prince2AgileFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Agile Foundation</Link>
-                          <Link href="/Prince2AgilePractitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Agile Practitioner</Link>
-                          <Link href="/MSPFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>MSP Foundation</Link>
-                          <Link href="/MSPPractitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>MSP Practitioner</Link>
+                          <Link href="/pmp-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>PMP</Link>
+                          <Link href="/pmi-acp-agile-certified-practitioner-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>PMI-ACP</Link>
+                          <Link href="/prince2-foundation-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Foundation</Link>
+                          <Link href="/prince2-practitioner-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Practitioner</Link>
+                          <Link href="/prince2-agile-foundation-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Agile Foundation</Link>
+                          <Link href="/prince2-agile-practitioner-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Prince2 Agile Practitioner</Link>
+                          <Link href="/msp-foundation-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>MSP Foundation</Link>
+                          <Link href="/msp-practitioner-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>MSP Practitioner</Link>
                         </div>
                       )}
                     </div>
@@ -593,20 +606,20 @@ animate-in slide-in-from-top-2 duration-100">
 
                       {openMobileSubSection === 'agile' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/LeadingSAFeAgilist" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered Leading SAFe Agilist 6</Link>
-                          <Link href="/SAFePO-PM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe POPM 6</Link>
-                          <Link href="/SAFeScrumMaster" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe Scrum Master 6</Link>
-                          <Link href="/SAFeAdvancedScrumMaster" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe Advanced Scrum Master 6</Link>
-                          <Link href="/PScrumM1" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master I (PSM I)</Link>
-                          <Link href="/PScrumM2" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master II (PSM II)</Link>
-                          <Link href="/PSMAIEssentials" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master – AI Essentials (PSM-AIE)</Link>
-                          <Link href="/PSPO1" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner I (PSPO I)</Link>
-                          <Link href="/PSPO2" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner II (PSPO II)</Link>
-                          <Link href="/PSPOAIEssentials" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner – AI Essentials (PSPO-AIE)</Link>
-                          <Link href="/PSK1" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum with Kanban (PSK)</Link>
-                          <Link href="/CSM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Scrum Master (CSM) Certification</Link>
-                          <Link href="/CSPO" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Scrum Product Owner (CSPO) Certification</Link>
-                          <Link href="/ICP-ACC" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ICP-ACC</Link>
+                          <Link href="/leading-safe-agilist-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered Leading SAFe Agilist 6</Link>
+                          <Link href="/safe-product-owner-product-manager-popm-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe POPM 6</Link>
+                          <Link href="/safe-scrum-master-ssm-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe Scrum Master 6</Link>
+                          <Link href="/safe-advanced-scrum-master-sasm-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AI-Empowered SAFe Advanced Scrum Master 6</Link>
+                          <Link href="/professional-scrum-master-i-psm-i-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master I (PSM I)</Link>
+                          <Link href="/professional-scrum-master-ii-psm-ii-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master II (PSM II)</Link>
+                          <Link href="/professional-scrum-master-ai-essentials-psm-aie-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Master – AI Essentials (PSM-AIE)</Link>
+                          <Link href="/professional-scrum-product-owner-i-pspo-i-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner I (PSPO I)</Link>
+                          <Link href="/professional-scrum-product-owner-ii-pspo-ii-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner II (PSPO II)</Link>
+                          <Link href="/professional-scrum-product-owner-ai-essentials-pspo-aie-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum Product Owner – AI Essentials (PSPO-AIE)</Link>
+                          <Link href="/professional-scrum-with-kanban-psk-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Professional Scrum with Kanban (PSK)</Link>
+                          <Link href="/certified-scrummaster-csm-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Scrum Master (CSM) Certification</Link>
+                          <Link href="/certified-scrum-product-owner-cspo-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Scrum Product Owner (CSPO) Certification</Link>
+                          <Link href="/icagile-agile-coaching-icp-acc-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>ICP-ACC</Link>
                         </div>
                       )}
                     </div>
@@ -623,12 +636,12 @@ animate-in slide-in-from-top-2 duration-100">
 
                       {openMobileSubSection === 'devops' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/DevopsFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevOps Foundation</Link>
-                          <Link href="/AIOpsFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AIOps Foundation</Link>
-                          <Link href="/DevSecOpsFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevSecOps Foundation</Link>
-                          <Link href="/DevSecOpsPractitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevSecOps Practitioner</Link>
-                          <Link href="/SREFoundation" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SRE Foundation</Link>
-                          <Link href="/SREPractitioner" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SRE Practitioner</Link>
+                          <Link href="/devops-foundation-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevOps Foundation</Link>
+                          <Link href="/aiops-foundation-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>AIOps Foundation</Link>
+                          <Link href="/devsecops-foundation-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevSecOps Foundation</Link>
+                          <Link href="/devsecops-practitioner-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>DevSecOps Practitioner</Link>
+                          <Link href="/sre-foundation-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SRE Foundation</Link>
+                          <Link href="/sre-practitioner-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>SRE Practitioner</Link>
                         </div>
                       )}
                     </div>
@@ -645,8 +658,8 @@ animate-in slide-in-from-top-2 duration-100">
 
                       {openMobileSubSection === 'business-analysis' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/BusinessAnalysisF" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Analysis Foundation</Link>
-                          <Link href="/BusinessAnalysisP" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Analysis Practice</Link>
+                          <Link href="/business-analysis-foundation-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Analysis Foundation</Link>
+                          <Link href="/business-analysis-practitioner-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Business Analysis Practice</Link>
                         </div>
                       )}
                     </div>
@@ -663,8 +676,8 @@ animate-in slide-in-from-top-2 duration-100">
 
                       {openMobileSubSection === 'quality' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/LeanSSGB" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Lean Six Sigma Green Belt</Link>
-                          <Link href="/LeanSSBB" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Lean Six Sigma Black Belt</Link>
+                          <Link href="/lean-six-sigma-green-belt-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Lean Six Sigma Green Belt</Link>
+                          <Link href="/lean-six-sigma-black-belt-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Lean Six Sigma Black Belt</Link>
                         </div>
                       )}
                     </div>
@@ -681,11 +694,11 @@ animate-in slide-in-from-top-2 duration-100">
 
                       {openMobileSubSection === 'testing' && (
                         <div className="ml-4 mt-1 space-y-1">
-                          <Link href="/ISTQBF" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Foundation Level (CTFL)</Link>
-                          <Link href="/CTAI" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester AI Testing (CT-AI)</Link>
-                          <Link href="/CTALAT" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Agile Tester (CTAL-AT)</Link>
-                          <Link href="/CTALTAE" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE)</Link>
-                          <Link href="/CTALTM" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Test Management (CTAL-TM)</Link>
+                          <Link href="/istqb-foundation-level-ctfl-certification-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Foundation Level (CTFL)</Link>
+                          <Link href="/istqb-certified-tester-ai-testing-ct-ai-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester AI Testing (CT-AI)</Link>
+                          <Link href="/istqb-advanced-level-agile-tester-ctal-at-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Agile Tester (CTAL-AT)</Link>
+                          <Link href="/istqb-advanced-test-automation-engineering-ctal-tae-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Test Automation Engineering (CTAL-TAE)</Link>
+                          <Link href="/istqb-advanced-level-test-management-ctal-tm-training" className="block px-3 py-1 text-xs text-gray-600 hover:text-[#1E7BA3]" onClick={() => setIsMobileMenuOpen(false)}>Certified Tester Advanced Level Test Management (CTAL-TM)</Link>
                         </div>
                       )}
                     </div>
@@ -711,7 +724,7 @@ animate-in slide-in-from-top-2 duration-100">
               </div>
 
               <Link
-                href="/Events"
+                href="/events"
                 className="block px-3 py-2.5 text-slate-1000 hover:bg-[#f0f3f5] hover:text-[#2BA6D9] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -719,14 +732,14 @@ animate-in slide-in-from-top-2 duration-100">
               </Link>
               
               <Link
-                href="/CorporateTraining"
+                href="/corporate-training"
                 className="block px-3 py-2.5 text-slate-1000 hover:bg-[#f0f3f5] hover:text-[#2BA6D9] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-[375ms]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Corporate Training
               </Link>
               <Link
-                href="/Contact"
+                href="/contact"
                 className="block px-3 py-2.5 text-slate-1000 hover:bg-[#f0f3f5] hover:text-[#2BA6D9] rounded-md font-medium transition-all duration-300 hover:scale-105 hover:translate-x-2 animate-in slide-in-from-left-4 duration-300 delay-[450ms]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

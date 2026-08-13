@@ -1,0 +1,124 @@
+import React from "react";
+import Headers from "@/components/Header";
+import Footer from "@/components/Footer";
+import LiveChat from "@/components/LiveChat";
+import CoursePageTemplate from "@/components/CoursePageTemplate";
+
+export const metadata = {
+  alternates: { canonical: "/itil-service-desk-certification-training" },
+  title: "Service Desk Certification Training in Hyderabad | QuickLearn Systems",
+  description:
+    "Master Service Desk operations with expert-led certification training in Hyderabad. QuickLearn Systems offers Service Desk training covering incident handling, request management, and service excellence. Enroll today!",
+  keywords:
+    "Service Desk training Hyderabad, IT support training Hyderabad, best ITSM training institute Hyderabad, service desk course Hyderabad, IT service desk training India, Service Desk training, IT support training, service desk operations, incident management, request fulfilment, ITSM, QuickLearn Systems, IT training Hyderabad, professional training Hyderabad",
+  openGraph: {
+    title: "Service Desk Certification Training in Hyderabad | QuickLearn Systems",
+    description:
+      "Expert-led Service Desk certification training in Hyderabad by QuickLearn Systems",
+    images: ["/service_desk.png"],
+  },
+};
+
+const courseData = {
+  "disclaimer": "ITIL® is a registered trademark of PeopleCert. All rights reserved. All other trademarks, service marks, and registered trademarks are the property of their respective owners. Any potential trademark, copyright, or content-related concerns may be reported to training@quicklearnsys.com for review and correction.",
+  title: "Service Desk",
+  subtitle:
+    "Build strong IT support capabilities and deliver exceptional user experience",
+  backgroundImage: "/service_desk.png",
+
+  overview: [
+    "The Service Desk course focuses on developing professional IT support capabilities that ensure consistent, reliable and user-focused service delivery.",
+    "Participants will learn how to manage incidents, fulfil service requests, communicate effectively with users, and maintain service quality standards in operational environments.",
+    "This course combines process knowledge, practical tools, and communication skills to help service desk professionals improve response times, enhance user satisfaction, and support business continuity."
+  ],
+
+  courseOutline: [
+    "Introduction to Service Desk functions and responsibilities",
+    "Incident management process and workflows",
+    "Service request management",
+    "User communication and customer service skills",
+    "Ticketing systems and documentation best practices",
+    "Escalation procedures and prioritization",
+    "Service level agreements (SLAs)",
+    "Performance measurement and reporting"
+  ],
+
+  learningObjectives: [
+    "Understand the role and structure of a Service Desk",
+    "Handle incidents effectively using structured processes",
+    "Manage service requests efficiently",
+    "Improve communication and customer handling skills",
+    "Apply SLA and KPI tracking methods",
+    "Use ticketing tools effectively",
+    "Contribute to continuous service improvement"
+  ],
+
+  targetGroup: [
+    "Service desk analysts",
+    "IT support technicians",
+    "Helpdesk professionals",
+    "IT operations staff",
+    "Entry-level IT service management professionals"
+  ],
+
+  prerequisite: [
+    "No formal prerequisites are required for this course",
+    "Basic IT awareness and understanding of general computer usage is recommended",
+    "Familiarity with customer service or support environments is beneficial",
+    "No prior certification is needed; this course is suitable for entry-level professionals"
+  ],
+
+  examDetails: [
+    "Duration: 60 minutes",
+    "Multiple choice examination",
+    "Passing score: 65%",
+    "Closed book examination",
+    "Certificate of completion provided"
+  ],
+
+  category: "IT Service Management",
+  tagline: "Support. Resolve. Satisfy.",
+
+  relatedCourses: [
+    {
+      title: "ITIL® 4 Foundation",
+      image: "/itl4_foundation.png",
+      description: "Learn the fundamentals of IT Service Management",
+      href: "/itil-4-foundation-certification-training",
+      duration: "3 Days",
+      level: "Foundation",
+      badge: "ITIL®",
+      badgeColor: "bg-[#2BA6D9]"
+    },
+    {
+      title: "Monitor Support Fulfil",
+      image: "/itl4_foundation.png",
+      description: "Strengthen operational excellence in IT services",
+      href: "/itil-4-specialist-monitor-support-fulfil-msf-training",
+      duration: "3 Days",
+      level: "Professional",
+      badge: "ITSM",
+      badgeColor: "bg-[#2BA6D9]"
+    },
+    {
+      title: "SIAM Foundation",
+      image: "/itl4_foundation.png",
+      description: "Service Integration and Management fundamentals",
+      href: "/siam-foundation-certification-training",
+      duration: "2 Days",
+      level: "Foundation",
+      badge: "SIAM",
+      badgeColor: "bg-[#2BA6D9]"
+    }
+  ]
+};
+
+export default function ServiceDeskPage() {
+  return (
+    <>
+      <Headers />
+      <CoursePageTemplate courseData={courseData} />
+      <Footer />
+    </>
+  );
+}

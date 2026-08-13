@@ -31,12 +31,12 @@ const STATS = [
 const DELIVERY_ICONS = [Building2, Monitor, Layers, Clock, GraduationCap];
 
 const POPULAR = [
-  { title: "ITIL® 4 Foundation", img: "/itl4_foundation.png", badge: "Foundation", desc: "Master the fundamentals of modern IT Service Management.", duration: "3 Days", students: "2.5K+", href: "/ITL4Management" },
-  { title: "PMP® Certification", img: "/pmp_certification.jpg", badge: "Professional", desc: "The global standard for experienced project managers.", duration: "4 Days", students: "3.2K+", href: "/PMP" },
-  { title: "AI-Empowered SAFe Agilist 6", img: "/leading_safe_agilist.jpg", badge: "Professional", desc: "Lead enterprise Agile transformation with SAFe®.", duration: "2 Days", students: "2.8K+", href: "/LeadingSAFeAgilist" },
-  { title: "Professional Scrum Master (PSM)", img: "/professional_scrum_master_1.jpg", badge: "Professional", desc: "Master the Scrum framework and servant leadership.", duration: "2 Days", students: "4.1K+", href: "/PScrumM1" },
-  { title: "Lean Six Sigma Green Belt", img: "/green_belt.png", badge: "Professional", desc: "Process improvement and quality management with Six Sigma.", duration: "4 Days", students: "1.9K+", href: "/LeanSSGB" },
-  { title: "Certified Tester Foundation Level (CTFL)", img: "/istqb_foundation.jpg", badge: "Foundation", desc: "Software testing fundamentals and ISTQB® certification.", duration: "3 Days", students: "2.7K+", href: "/ISTQBF" },
+  { title: "ITIL® 4 Foundation", img: "/itl4_foundation.png", badge: "Foundation", desc: "Master the fundamentals of modern IT Service Management.", duration: "3 Days", students: "2.5K+", href: "/itil-4-foundation-certification-training" },
+  { title: "PMP® Certification", img: "/pmp_certification.jpg", badge: "Professional", desc: "The global standard for experienced project managers.", duration: "4 Days", students: "3.2K+", href: "/pmp-certification-training" },
+  { title: "AI-Empowered SAFe Agilist 6", img: "/leading_safe_agilist.jpg", badge: "Professional", desc: "Lead enterprise Agile transformation with SAFe®.", duration: "2 Days", students: "2.8K+", href: "/leading-safe-agilist-certification-training" },
+  { title: "Professional Scrum Master (PSM)", img: "/professional_scrum_master_1.jpg", badge: "Professional", desc: "Master the Scrum framework and servant leadership.", duration: "2 Days", students: "4.1K+", href: "/professional-scrum-master-i-psm-i-certification-training" },
+  { title: "Lean Six Sigma Green Belt", img: "/green_belt.png", badge: "Professional", desc: "Process improvement and quality management with Six Sigma.", duration: "4 Days", students: "1.9K+", href: "/lean-six-sigma-green-belt-certification-training" },
+  { title: "Certified Tester Foundation Level (CTFL)", img: "/istqb_foundation.jpg", badge: "Foundation", desc: "Software testing fundamentals and ISTQB® certification.", duration: "3 Days", students: "2.7K+", href: "/istqb-foundation-level-ctfl-certification-training" },
 ];
 
 function Eyebrow({ children }) {
@@ -68,10 +68,10 @@ export default function CorporateTemplate({ courseData }) {
               {courseData.subtitle}
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
-              <Link href="/Contact" className="inline-flex items-center gap-2 bg-[#2BA6D9] hover:bg-[#1E7BA3] text-white px-7 py-3.5 rounded-xl font-semibold text-sm transition-colors" style={SANS}>
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-[#2BA6D9] hover:bg-[#1E7BA3] text-white px-7 py-3.5 rounded-xl font-semibold text-sm transition-colors" style={SANS}>
                 Request a Proposal <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link href="/Events" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur text-white px-7 py-3.5 rounded-xl font-semibold text-sm border border-white/25 transition-colors" style={SANS}>
+              <Link href="/events" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur text-white px-7 py-3.5 rounded-xl font-semibold text-sm border border-white/25 transition-colors" style={SANS}>
                 View Training Calendar
               </Link>
             </motion.div>
@@ -262,10 +262,10 @@ export default function CorporateTemplate({ courseData }) {
             Tell us your goals and team size — we&apos;ll design a customized corporate training proposal for your organization.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/Contact" className="inline-flex items-center gap-2 bg-white text-[#1E7BA3] px-8 py-3.5 rounded-xl font-semibold text-sm hover:bg-gray-50 transition-colors" style={SANS}>
+            <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-[#1E7BA3] px-8 py-3.5 rounded-xl font-semibold text-sm hover:bg-gray-50 transition-colors" style={SANS}>
               Get a Custom Proposal <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/Events" className="inline-flex items-center gap-2 border border-white/60 text-white px-8 py-3.5 rounded-xl font-semibold text-sm hover:bg-white/10 transition-colors" style={SANS}>
+            <Link href="/events" className="inline-flex items-center gap-2 border border-white/60 text-white px-8 py-3.5 rounded-xl font-semibold text-sm hover:bg-white/10 transition-colors" style={SANS}>
               View Training Calendar
             </Link>
           </div>

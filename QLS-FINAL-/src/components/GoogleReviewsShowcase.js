@@ -100,13 +100,13 @@ export default function GoogleReviewsShowcase() {
           className="text-center"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Trusted by Professionals
+            Trusted by Professionals.
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#2BA6D9] to-indigo-600">
-              Worldwide
+              Rated for Excellence.
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Hear what our learners say about their training experience with QuickLearn Systems.
+            See what our learners have shared about their training experience with QuickLearn Systems.
           </p>
         </motion.div>
       </div>

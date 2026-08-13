@@ -42,7 +42,7 @@ For course enquiries, pricing, enrollment, and general support, please contact Q
 
 Phone / WhatsApp: +91 91001 95152
 Email: info@quicklearnsys.com
-Website Contact Form: https://quicklearnsys.com/Contact
+Website Contact Form: https://quicklearnsys.com/contact
 
 Social Media:
 - LinkedIn: https://www.linkedin.com/in/quicklearn-systems-1494ba12a
@@ -67,7 +67,7 @@ FOR ALL PRICING ENQUIRIES, please contact us directly:
 
 📞 Call or WhatsApp: +91 91001 95152
 📧 Email: info@quicklearnsys.com
-🌐 Contact form: https://quicklearnsys.com/Contact
+🌐 Contact form: https://quicklearnsys.com/contact
 
 Our team will respond promptly with the latest pricing and any available offers.
 
@@ -518,7 +518,7 @@ Q: Do you provide course materials?
 A: Yes. All participants receive high-quality, officially accredited course materials. These are continuously updated to reflect the latest frameworks and exam blueprints.
 
 Q: Can I get a refund if I cancel my enrollment?
-A: Please refer to QuickLearn's Terms & Refund Policy at https://quicklearnsys.com/terms-refund or contact us directly.
+A: Please refer to QuickLearn's Refund & Cancellation Policy at https://quicklearnsys.com/refund-policy or contact us directly. Cancellations 10 or more days before the training are eligible for a full refund (less payment gateway or administrative charges), cancellations 5-9 days before are eligible for a 50% refund, and cancellations less than 5 days before are not refundable (a one-time batch transfer may be requested, subject to availability and approval).
 
 ---
 
@@ -546,7 +546,7 @@ For ANY question about courses, pricing, scheduling, enrollment, corporate train
 📞 Phone / WhatsApp: +91 91001 95152
 📧 Email: info@quicklearnsys.com
 🌐 Website: https://quicklearnsys.com
-📋 Contact Form: https://quicklearnsys.com/Contact
+📋 Contact Form: https://quicklearnsys.com/contact
 
 We typically respond within a few hours during business hours (Monday–Friday, 9 AM – 6 PM IST).
 

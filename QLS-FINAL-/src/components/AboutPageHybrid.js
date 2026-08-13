@@ -78,6 +78,24 @@ export default function AboutPageHybrid() {
         </div>
       </section>
 
+      {/* AT A GLANCE */}
+      <section className="bg-slate-900 py-8">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+            {[
+              { value: "10+", label: "Years of industry experience" },
+              { value: "15,000+", label: "IT professionals trained" },
+              { value: "100+", label: "Partner organizations" },
+            ].map((stat) => (
+              <div key={stat.label}>
+                <p className="text-3xl md:text-4xl font-bold text-white">{stat.value}</p>
+                <p className="mt-1 text-sm text-blue-100">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 {/* ABOUT CONTENT */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -90,23 +108,38 @@ export default function AboutPageHybrid() {
               </h2>
 
               <p>
-                QuickLearn Systems is a trusted professional training and certification provider with over
-                10 years of industry experience in empowering IT professionals and corporate teams. We deliver
-                world-class, outcome-driven training across key domains including Project &amp; Program Management,
-                Service Management, IT Governance, Agile, and Quality Management.
+                At QuickLearn Systems, we are passionate about transforming careers and empowering
+                organizations through world-class professional training and globally recognized certification
+                programs. With over 10 years of industry experience, we have successfully trained 15,000+ IT
+                professionals and partnered with 100+ organizations to build future-ready skills.
               </p>
 
               <p>
-                Our offerings span Live Online (Instructor-Led), Classroom, E-Learning, Customized, and
-                Corporate Training programs, designed to align with real-world challenges and career goals.
-                With a strong focus on customer satisfaction, practical learning, and value for time and
-                investment, we help professionals achieve globally recognized certifications and accelerate
-                career growth.
+                We specialize in delivering industry-aligned training across Project Management, Agile &amp;
+                Scrum, IT Service Management, DevOps, Cloud, Cybersecurity, Quality Management, Business
+                Analysis, AI, and other emerging technologies. Every program is designed to bridge the gap
+                between theoretical knowledge and real-world application, enabling learners to excel in
+                today&apos;s rapidly evolving technology landscape.
               </p>
 
               <p>
-                At QuickLearn Systems, we combine expert instructors, ethical practices, and learner-centric
-                delivery to create impactful learning experiences that drive measurable success.
+                Our learning solutions include Instructor-Led Live Online Training, Classroom Training,
+                E-Learning, Customized Learning Programs, and Corporate Training, providing the flexibility
+                professionals and organizations need to learn anytime, anywhere.
+              </p>
+
+              <p>
+                What sets us apart is our learner-first approach. Our experienced instructors bring extensive
+                industry expertise, practical insights, and proven methodologies to every session, ensuring
+                participants gain not only certification success but also the confidence and skills to excel
+                in their careers.
+              </p>
+
+              <p>
+                At QuickLearn Systems, we believe that learning is the foundation of innovation and
+                professional growth. Our mission is to deliver exceptional learning experiences that help
+                individuals advance their careers and enable organizations to build high-performing,
+                future-ready teams.
               </p>
             </div>
 
@@ -148,11 +181,11 @@ export default function AboutPageHybrid() {
                   &ldquo;We are limited not by our abilities, but by the vision we pursue.&rdquo;
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  At QuickLearn Systems, our vision is to become a benchmark for excellence in professional
-                  training and certification. We strive to set the standard that other training organizations
-                  aspire to achieve — recognized and respected for delivering outstanding training quality,
-                  innovative learning experiences, and highly effective programs that empower professionals
-                  to achieve their career aspirations.
+                  At QuickLearn Systems, our vision is to be a globally trusted leader in professional
+                  training and certification, setting new benchmarks for excellence in learning. We aspire to
+                  empower individuals and organizations through innovative, high-quality training solutions
+                  that inspire continuous learning, accelerate career growth, and build future-ready
+                  professionals.
                 </p>
               </div>
 
@@ -161,24 +194,35 @@ export default function AboutPageHybrid() {
                   Our Mission
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                  At QuickLearn Systems, our mission is to empower individuals and organizations with the
-                  knowledge and skills needed to grow and succeed in their professional journeys. We are
-                  committed to delivering flexible, high-quality, and customized training programs that
-                  help professionals enhance their capabilities, achieve globally recognized certifications,
-                  and stay competitive in a rapidly evolving industry.
+                  At QuickLearn Systems, our mission is to empower individuals and organizations through
+                  world-class training, globally recognized certifications, and practical learning
+                  experiences. We are committed to delivering flexible, high-quality, and customized learning
+                  solutions that help professionals build future-ready skills, accelerate career growth, and
+                  enable organizations to develop high-performing teams.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 font-serif mb-3">
-                  Our Values
+                  Our Core Values
                 </h2>
-                <ul className="space-y-2 text-gray-700">
-                  <li>• Quality teaching and learning</li>
-                  <li>• Respect and Care for all</li>
-                  <li>• Customer Satisfaction is our priority</li>
-                  <li>• Focus on continuous improvement</li>
-                  <li>• Long Term Relationship with our customers</li>
+                <ul className="space-y-3 text-gray-700">
+                  {[
+                    { name: "Excellence", detail: "Delivering high-quality, industry-focused learning experiences." },
+                    { name: "Customer Success", detail: "Your growth and success are our highest priorities." },
+                    { name: "Integrity", detail: "Building trust through honesty, transparency, and professionalism." },
+                    { name: "Innovation", detail: "Embracing modern learning technologies and best practices." },
+                    { name: "Continuous Learning", detail: "Evolving with industry trends to keep learners future-ready." },
+                    { name: "Respect & Collaboration", detail: "Creating an inclusive and supportive learning environment." },
+                    { name: "Long-Term Relationships", detail: "Building lasting partnerships through value and trust." },
+                  ].map((value) => (
+                    <li key={value.name} className="flex gap-3 leading-relaxed">
+                      <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#2BA6D9]" aria-hidden="true" />
+                      <span>
+                        <strong className="font-semibold text-gray-900">{value.name}</strong> &ndash; {value.detail}
+                      </span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

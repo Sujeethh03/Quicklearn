@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import LiveChat from "@/components/LiveChat";
+import { OrganizationSchema } from "@/components/StructuredData";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export const metadata = {
   keywords:
     "QuickLearn Systems, IT training institute Hyderabad, best IT training Hyderabad, professional certification training Hyderabad, ITIL training Hyderabad, PMP training Hyderabad, Agile training Hyderabad, Scrum training Hyderabad, DevOps training Hyderabad, SAFe training Hyderabad, PRINCE2 training Hyderabad, SIAM training Hyderabad, IT certification courses Hyderabad, training institute in Hyderabad, certification courses Hyderabad India, IT training India, professional development courses Hyderabad",
   metadataBase: new URL('https://quicklearnsys.com'),
+  alternates: { canonical: "/" },
   openGraph: {
     title: "QuickLearn Systems | Best IT Training Institute in Hyderabad",
     description: "Leading IT training and certification institute in Hyderabad offering ITIL, PMP, Agile, DevOps, SAFe, PRINCE2, SIAM and 50+ professional certification courses.",
@@ -28,6 +30,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@quicklearnsys",
+    creator: "@quicklearnsys",
     title: "QuickLearn Systems | Best IT Training Institute in Hyderabad",
     description: "Leading IT training and certification institute in Hyderabad offering ITIL, PMP, Agile, DevOps, SAFe, PRINCE2, SIAM and 50+ professional certification courses.",
   },
@@ -47,6 +51,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <OrganizationSchema />
         {children}
 
         {/* Tawk.to Script 

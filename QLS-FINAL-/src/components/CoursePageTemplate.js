@@ -2,8 +2,11 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { CourseSchema } from "@/components/StructuredData";
 
 export default function CoursePageTemplate({ courseData: rawCourseData }) {
+  const pathname = usePathname();
   // Normalize legacy (old-layout) field names into the standardized
   // curriculum-driven layout so every course page renders one consistent format.
   const courseData = (() => {
@@ -139,7 +142,7 @@ export default function CoursePageTemplate({ courseData: rawCourseData }) {
             </div>
           </div>
           <div className="px-5 pb-5">
-            <Link href="/Events">
+            <Link href="/events">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
@@ -156,6 +159,8 @@ export default function CoursePageTemplate({ courseData: rawCourseData }) {
 
   return (
     <>
+      <CourseSchema courseData={courseData} path={pathname} />
+
       {/* HERO */}
       <section className="relative h-[600px] overflow-hidden bg-gray-900">
         <AnimatePresence mode="wait">

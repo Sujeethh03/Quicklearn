@@ -231,7 +231,7 @@ export default function EventPageClient({ onlineEvents }) {
                           </div>
                         </td>
                         <td className="px-6 py-4 text-center">
-                          <Link href="/Contact">
+                          <Link href="/contact">
                             <motion.button
                               whileHover={{ scale: 1.05 }}
                               whileTap={{ scale: 0.95 }}
@@ -261,7 +261,7 @@ export default function EventPageClient({ onlineEvents }) {
                   <span className="font-semibold text-[#2BA6D9]">Online Training:</span> If the following schedule does not match with your availability, please contact us..
                 </p>
                 <div className="flex gap-2">
-                  <Link href="/Contact">
+                  <Link href="/contact">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       className="bg-gradient-to-r from-[#2BA6D9] to-[#5B6F81] text-white px-4 py-2 rounded-lg font-medium hover:from-[#1E7BA3] hover:to-[#155A76] transition-all duration-300"

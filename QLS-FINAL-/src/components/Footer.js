@@ -1,11 +1,14 @@
 "use client";
 import React, { useState } from "react";
 
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGooglePlusG } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaPaypal, FaUniversity } from "react-icons/fa";
 import { SiVisa, SiMastercard } from "react-icons/si";
 import Link from "next/link";
 import CourseListings from "./CourseListings";
+import { POLICY_LINKS } from "@/data/policies";
+import { SOCIAL_LINKS, GOOGLE_MAPS_URL, OFFICE_ADDRESS_LINES } from "@/data/socialLinks";
 
 export default function Footer() {
   const [formData, setFormData] = useState({
@@ -69,72 +72,72 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-white mb-6">Top Courses</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/ITILFoundationV5" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/itil-v5-foundation-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   ITIL V5 Foundation
                 </Link>
               </li>
               <li>
-                <Link href="/SREFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/sre-foundation-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   SRE Foundation
                 </Link>
               </li>
               <li>
-                <Link href="/DevopsFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/devops-foundation-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   DevOps Foundation
                 </Link>
               </li>
               <li>
-                <Link href="/AIOpsFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/aiops-foundation-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   AIOps Foundation
                 </Link>
               </li>
               <li>
-                <Link href="/SIAMFoundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/siam-foundation-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   SIAM Foundation
                 </Link>
               </li>
               <li>
-                <Link href="/PScrumM1" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/professional-scrum-master-i-psm-i-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Professional Scrum Master (PSM)
                 </Link>
               </li>
               <li>
-                <Link href="/PSPO1" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/professional-scrum-product-owner-i-pspo-i-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Professional Scrum Product Owner (PSPO)
                 </Link>
               </li>
               <li>
-                <Link href="/LeadingSAFeAgilist" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/leading-safe-agilist-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   AI-Empowered SAFe Agilist 6
                 </Link>
               </li>
               <li>
-                <Link href="/SAFeScrumMaster" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/safe-scrum-master-ssm-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   AI-Empowered SAFe Scrum Master
                 </Link>
               </li>
               <li>
-                <Link href="/SAFePO-PM" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/safe-product-owner-product-manager-popm-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   AI-Empowered SAFe POPM
                 </Link>
               </li>
               <li>
-                <Link href="/PMP" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/pmp-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   PMP Certification
                 </Link>
               </li>
               <li>
-                <Link href="/Prince2Foundation" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/prince2-foundation-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Prince2 Foundation
                 </Link>
               </li>
               <li>
-                <Link href="/Prince2Practitioner" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/prince2-practitioner-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Prince2 Practitioner
                 </Link>
               </li>
               <li>
-                <Link href="/LeanSSGB" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/lean-six-sigma-green-belt-certification-training" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Lean Six Sigma Green Belt
                 </Link>
               </li>
@@ -156,30 +159,27 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/Events" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/events" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Upcoming Events
                 </Link>
               </li>
               <li>
-                <Link href="/quicklearn-professional-brochure.html" target="_blank" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/brochure" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Corporate Brochure
                 </Link>
               </li>
               <li>
-                <Link href="/Contact" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <Link href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms-refund" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
-                  Terms & Refund
-                </Link>
-              </li>
+              {POLICY_LINKS.map((policy) => (
+                <li key={policy.href}>
+                  <Link href={policy.href} className="text-gray-300 hover:text-white transition-colors duration-200 text-sm block">
+                    {policy.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
 <div/>
             {/* Payment Options */}
@@ -208,36 +208,38 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-white mb-6">Connect With Us</h3>
             <div className="flex gap-3 mb-8">
               <a
-                href="https://www.facebook.com/quicklearnsystems"
+                href={SOCIAL_LINKS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-[#2BA6D9] rounded-lg flex items-center justify-center transition-all duration-300"
-                aria-label="Facebook"
+                aria-label="QuickLearn Systems on Facebook"
               >
                 <FaFacebookF className="w-4 h-4 text-white" />
               </a>
               <a
-                href="https://x.com/quicklearnsys"
+                href={SOCIAL_LINKS.x}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-lg flex items-center justify-center transition-all duration-300"
-                aria-label="Twitter"
+                className="w-10 h-10 bg-gray-800 hover:bg-black rounded-lg flex items-center justify-center transition-all duration-300"
+                aria-label="QuickLearn Systems on X"
               >
-                <FaTwitter className="w-4 h-4 text-white" />
+                <FaXTwitter className="w-4 h-4 text-white" />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-[#2BA6D9] rounded-lg flex items-center justify-center transition-all duration-300"
-                aria-label="Google Plus"
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] rounded-lg flex items-center justify-center transition-all duration-300"
+                aria-label="QuickLearn Systems on Instagram"
               >
-                <FaGooglePlusG className="w-4 h-4 text-white" />
+                <FaInstagram className="w-4 h-4 text-white" />
               </a>
               <a
-                href="https://www.linkedin.com/in/quicklearn-systems-1494ba12a"
+                href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-[#2BA6D9] rounded-lg flex items-center justify-center transition-all duration-300"
-                aria-label="LinkedIn"
+                aria-label="QuickLearn Systems on LinkedIn"
               >
                 <FaLinkedinIn className="w-4 h-4 text-white" />
               </a>
@@ -261,12 +263,20 @@ export default function Footer() {
                 </li>
                 <li>
                   <span className="block font-semibold text-white mb-1">Address:</span>
-                  <span className="block">QuickLearn Systems, Lorven Smart Space,</span>
-                  <span className="block">2nd Floor, Vaishnavi Cynosure,</span>
-                  <span className="block">Near Gachibowli Flyover, Telecom Nagar,</span>
-                  <span className="block">Above Reliance Digital,</span>
-                  <span className="block">Beside - Omega Hospital,</span>
-                  <span className="block">Hyderabad, Telangana 500032</span>
+                  <a
+                    href={GOOGLE_MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-white transition-colors"
+                    aria-label="View QuickLearn Systems office on Google Maps"
+                  >
+                    {OFFICE_ADDRESS_LINES.map((line) => (
+                      <span key={line} className="block">{line}</span>
+                    ))}
+                    <span className="inline-block mt-2 text-[#2BA6D9] font-semibold">
+                      View on Google Maps →
+                    </span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -297,7 +307,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-300 mt-12 pt-8">
           <p className="text-gray-400 text-sm text-center">
-            © 2018-2025 {process.env.NEXT_PUBLIC_COMPANY_NAME}. All Rights Reserved. The certification names are the trademarks of their respective owners.
+            © 2026 {process.env.NEXT_PUBLIC_COMPANY_NAME}. All Rights Reserved. All trademarks, certification names, and logos are the property of their respective owners and are used solely for identification and informational purposes.
           </p>
         </div>
       </div>

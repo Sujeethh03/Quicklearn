@@ -1,0 +1,124 @@
+import React from "react";
+import Headers from "@/components/Header";
+import Footer from "@/components/Footer";
+import LiveChat from "@/components/LiveChat";
+import CoursePageTemplate from "@/components/CoursePageTemplate";
+
+export const metadata = {
+  alternates: { canonical: "/itil-it-asset-management-itam-certification-training" },
+  title: "IT Asset Management (ITAM) Certification Training in Hyderabad | QuickLearn Systems",
+  description:
+    "Master IT Asset Management (ITAM) certification training in Hyderabad. QuickLearn Systems offers expert-led ITAM training covering hardware, software, and digital asset lifecycle management. Enroll today!",
+  keywords:
+    "IT Asset Management training Hyderabad, ITAM certification Hyderabad, best ITAM training institute Hyderabad, IT asset management course Hyderabad, ITAM training India, IT Asset Management training, ITAM certification, asset lifecycle management, software asset management, hardware asset control, QuickLearn Systems, IT training Hyderabad, professional training Hyderabad",
+  openGraph: {
+    title: "IT Asset Management (ITAM) Certification Training in Hyderabad | QuickLearn Systems",
+    description:
+      "Expert-led IT Asset Management certification training in Hyderabad by QuickLearn Systems",
+    images: ["/it_asset_management.jpg"],
+  },
+};
+
+const courseData = {
+  "disclaimer": "ITIL® is a registered trademark of PeopleCert. All rights reserved. All other trademarks, service marks, and registered trademarks are the property of their respective owners. Any potential trademark, copyright, or content-related concerns may be reported to training@quicklearnsys.com for review and correction.",
+  title: "IT Asset Management",
+  subtitle:
+    "Control, optimize and govern IT assets throughout their lifecycle",
+  backgroundImage: "/it_asset_management.jpg",
+
+  overview: [
+    "IT Asset Management (ITAM) focuses on tracking and managing IT assets throughout their lifecycle to maximize value, reduce costs, and minimize risk.",
+    "This course covers hardware and software asset management, license compliance, lifecycle planning, financial control, and governance practices.",
+    "Participants will gain practical knowledge on implementing structured ITAM processes that improve visibility, enhance compliance, and support strategic decision-making."
+  ],
+
+  courseOutline: [
+    "Introduction to IT Asset Management (ITAM)",
+    "Asset lifecycle management",
+    "Hardware asset management practices",
+    "Software asset management and license compliance",
+    "IT asset inventory and tracking systems",
+    "Risk and compliance management",
+    "Financial management of IT assets",
+    "Integration with IT Service Management processes"
+  ],
+
+  learningObjectives: [
+    "Understand IT asset lifecycle stages",
+    "Implement structured IT asset tracking systems",
+    "Manage software licenses and compliance risks",
+    "Optimize asset utilization and cost control",
+    "Reduce risks associated with unmanaged assets",
+    "Integrate ITAM with ITSM practices",
+    "Improve governance and reporting capabilities"
+  ],
+
+  targetGroup: [
+    "IT asset managers",
+    "IT operations professionals",
+    "Procurement and finance teams",
+    "Compliance officers",
+    "IT Service Management practitioners"
+  ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management awareness",
+    "Basic understanding of IT infrastructure, hardware, and software environments",
+    "Familiarity with asset lifecycle concepts or procurement processes is beneficial",
+    "Experience in an IT operations, procurement, or compliance role is helpful"
+  ],
+
+  examDetails: [
+    "Duration: 60 minutes",
+    "Multiple choice examination",
+    "Passing score: 65%",
+    "Closed book examination",
+    "Certificate of completion provided"
+  ],
+
+  category: "IT Service Management",
+  tagline: "Track. Control. Optimize.",
+
+  relatedCourses: [
+    {
+      title: "ITIL® 4 Foundation",
+      image: "/it_asset_management.jpg",
+      description: "Master IT Service Management fundamentals",
+      href: "/itil-4-foundation-certification-training",
+      duration: "3 Days",
+      level: "Foundation",
+      badge: "ITIL®",
+      badgeColor: "bg-[#2BA6D9]"
+    },
+    {
+      title: "Incident Management",
+      image: "/incident_management.png",
+      description: "Restore services quickly and reduce downtime",
+      href: "/itil-incident-management-certification-training",
+      duration: "3 Days",
+      level: "Professional",
+      badge: "ITSM",
+      badgeColor: "bg-[#2BA6D9]"
+    },
+    {
+      title: "Service Desk",
+      image: "/service_desk.png",
+      description: "Develop professional IT support capabilities",
+      href: "/itil-service-desk-certification-training",
+      duration: "3 Days",
+      level: "Foundation",
+      badge: "ITSM",
+      badgeColor: "bg-[#2BA6D9]"
+    }
+  ]
+};
+
+export default function ITAssetManagementPage() {
+  return (
+    <>
+      <Headers />
+      <CoursePageTemplate courseData={courseData} />
+      <Footer />
+    </>
+  );
+}

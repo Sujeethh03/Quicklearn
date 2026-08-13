@@ -1,0 +1,124 @@
+import React from "react";
+import Headers from "@/components/Header";
+import Footer from "@/components/Footer";
+import LiveChat from "@/components/LiveChat";
+import CoursePageTemplate from "@/components/CoursePageTemplate";
+
+export const metadata = {
+  alternates: { canonical: "/itil-incident-management-certification-training" },
+  title: "Incident Management Certification Training in Hyderabad | QuickLearn Systems",
+  description:
+    "Master Incident Management certification training in Hyderabad. QuickLearn Systems offers expert-led training covering service restoration, business impact reduction, and IT operational efficiency. Enroll today!",
+  keywords:
+    "Incident Management training Hyderabad, ITSM incident management certification Hyderabad, best ITSM training institute Hyderabad, incident management course Hyderabad, IT incident management training India, Incident Management training, ITSM incident management, IT service restoration, service desk, IT operations, QuickLearn Systems, IT training Hyderabad, professional training Hyderabad",
+  openGraph: {
+    title: "Incident Management Certification Training in Hyderabad | QuickLearn Systems",
+    description:
+      "Expert-led Incident Management certification training in Hyderabad by QuickLearn Systems",
+    images: ["/incident_management.png"],
+  },
+};
+
+const courseData = {
+  "disclaimer": "ITIL® is a registered trademark of PeopleCert. All rights reserved. All other trademarks, service marks, and registered trademarks are the property of their respective owners. Any potential trademark, copyright, or content-related concerns may be reported to training@quicklearnsys.com for review and correction.",
+  title: "Incident Management",
+  subtitle:
+    "Restore services quickly and minimize business impact through structured incident handling",
+  backgroundImage: "/incident_management.png",
+
+  overview: [
+    "Incident Management focuses on restoring normal service operation as quickly as possible while minimizing impact on business operations.",
+    "This course provides practical knowledge of incident lifecycle management, prioritization models, escalation procedures, and communication strategies.",
+    "Participants will learn how to improve response times, reduce downtime, and enhance overall service reliability through structured incident management practices."
+  ],
+
+  courseOutline: [
+    "Introduction to Incident Management principles",
+    "Incident lifecycle and workflows",
+    "Incident categorization and prioritization",
+    "Major incident management process",
+    "Escalation models and communication",
+    "Incident logging and documentation standards",
+    "Integration with problem management",
+    "Incident reporting and performance metrics"
+  ],
+
+  learningObjectives: [
+    "Understand the objectives of Incident Management",
+    "Implement structured incident lifecycle processes",
+    "Apply prioritization and escalation models",
+    "Manage major incidents effectively",
+    "Improve service restoration times",
+    "Integrate incident and problem management practices",
+    "Measure and improve incident performance"
+  ],
+
+  targetGroup: [
+    "Service desk analysts",
+    "IT support engineers",
+    "Operations managers",
+    "Incident managers",
+    "IT Service Management professionals"
+  ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of IT service operations and support processes",
+    "Familiarity with service desk or helpdesk functions is beneficial",
+    "Some experience working in an IT support or operations environment is recommended"
+  ],
+
+  examDetails: [
+    "Duration: 60 minutes",
+    "Multiple choice examination",
+    "Passing score: 65%",
+    "Closed book examination",
+    "Certificate of completion provided"
+  ],
+
+  category: "IT Service Management",
+  tagline: "Respond. Restore. Resolve.",
+
+  relatedCourses: [
+    {
+      title: "Service Desk",
+      image: "/service_desk.png",
+      description: "Build strong IT support and customer handling skills",
+      href: "/itil-service-desk-certification-training",
+      duration: "3 Days",
+      level: "Foundation",
+      badge: "ITSM",
+      badgeColor: "bg-[#2BA6D9]"
+    },
+    {
+      title: "Monitor Support Fulfil",
+      image: "/itl4_foundation.png",
+      description: "Strengthen monitoring and support operations",
+      href: "/itil-4-specialist-monitor-support-fulfil-msf-training",
+      duration: "3 Days",
+      level: "Professional",
+      badge: "ITSM",
+      badgeColor: "bg-[#2BA6D9]"
+    },
+    {
+      title: "ITIL® 4 Foundation",
+      image: "/itl4_foundation.png",
+      description: "Master IT Service Management fundamentals",
+      href: "/itil-4-foundation-certification-training",
+      duration: "3 Days",
+      level: "Foundation",
+      badge: "ITIL®",
+      badgeColor: "bg-[#2BA6D9]"
+    }
+  ]
+};
+
+export default function IncidentManagementPage() {
+  return (
+    <>
+      <Headers />
+      <CoursePageTemplate courseData={courseData} />
+      <Footer />
+    </>
+  );
+}

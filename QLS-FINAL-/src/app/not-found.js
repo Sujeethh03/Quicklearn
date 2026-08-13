@@ -19,7 +19,7 @@ export default function NotFound() {
             Go to Homepage
           </Link>
           <Link
-            href="/Events"
+            href="/events"
             className="bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 px-8 py-3 rounded-lg font-medium transition-colors text-center"
           >
             Browse Events

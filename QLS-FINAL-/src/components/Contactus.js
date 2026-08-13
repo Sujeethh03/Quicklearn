@@ -5,6 +5,12 @@ import { COURSE_GROUPS } from "@/data/courseRegistry";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Clock, Send, Upload, User, MessageSquare, Building, Calendar, Loader2 } from "lucide-react";
 import { useState } from "react";
+import {
+  OFFICE_ADDRESS_LINES,
+  GOOGLE_MAPS_URL,
+  GOOGLE_MAPS_EMBED_URL,
+  GOOGLE_MAPS_DIRECTIONS_URL,
+} from "@/data/socialLinks";
 export default function Contactus() {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -597,6 +603,51 @@ export default function Contactus() {
                     </motion.div>
                   ))}
                 </div>
+              </motion.div>
+
+              {/* Visit Us - address + map */}
+              <motion.div
+                variants={formFieldVariants}
+                className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden"
+              >
+                <div className="p-8 pb-6">
+                  <h3 className="text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <MapPin className="w-6 h-6 text-slate-600" />
+                    Visit Our Office
+                  </h3>
+                  <address className="not-italic text-slate-600 leading-relaxed">
+                    {OFFICE_ADDRESS_LINES.map((line) => (
+                      <span key={line} className="block">{line}</span>
+                    ))}
+                  </address>
+                  <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4">
+                    <a
+                      href={GOOGLE_MAPS_DIRECTIONS_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 font-semibold text-slate-700 hover:text-slate-900 transition-colors"
+                    >
+                      Get Directions
+                      <span aria-hidden="true">→</span>
+                    </a>
+                    <a
+                      href={GOOGLE_MAPS_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-slate-700 transition-colors"
+                    >
+                      View on Google Maps
+                    </a>
+                  </div>
+                </div>
+                <iframe
+                  src={GOOGLE_MAPS_EMBED_URL}
+                  title="QuickLearn Systems office location on Google Maps"
+                  className="w-full h-72 border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </motion.div>
 
               {/* Quick Contact Card */}

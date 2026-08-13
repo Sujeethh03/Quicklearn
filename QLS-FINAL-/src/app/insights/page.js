@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "/insights" },
   title: "IT Training Insights & Blog | QuickLearn Systems Hyderabad",
   description: "Stay updated with the latest trends in IT Service Management, Project Management, Agile, DevOps, and professional development. Expert insights from QuickLearn Systems, Hyderabad's leading IT training institute.",
   keywords: "IT training blog Hyderabad, ITIL insights Hyderabad, IT certification tips India, QuickLearn Systems blog, Agile insights Hyderabad, DevOps articles, PMP certification tips, IT training resources Hyderabad, professional development blog",
@@ -167,7 +168,7 @@ export default function Insights() {
             Subscribe to our newsletter to get notified when new content is published.
           </p>
           <Link
-            href="/Contact"
+            href="/contact"
             className="inline-block bg-[#2BA6D9] text-white px-6 py-3 rounded-lg hover:bg-[#1E7BA3] transition-colors duration-300"
           >
             Subscribe to Newsletter

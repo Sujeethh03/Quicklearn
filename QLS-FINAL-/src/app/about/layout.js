@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/about" },
   title: "About QuickLearn Systems | Leading IT Training Institute in Hyderabad",
   description: "QuickLearn Systems is a leading IT training and certification institute in Hyderabad, India. Learn about our expert trainers, certification success rates, and our commitment to professional development.",
   keywords: "QuickLearn Systems Hyderabad, about QuickLearn Systems, IT training institute Hyderabad, best IT training company Hyderabad, professional certification training Hyderabad, IT education Hyderabad, training institute India, QuickLearn training, certification courses Hyderabad",

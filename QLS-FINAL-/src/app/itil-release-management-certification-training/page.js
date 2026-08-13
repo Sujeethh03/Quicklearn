@@ -1,0 +1,115 @@
+import React from "react";
+import Headers from "@/components/Header";
+import Footer from "@/components/Footer";
+import LiveChat from "@/components/LiveChat";
+import CoursePageTemplate from "@/components/CoursePageTemplate";
+
+export const metadata = {
+  alternates: { canonical: "/itil-release-management-certification-training" },
+  title: "ITIL Release Management Certification Training in Hyderabad | QuickLearn Systems",
+  description: "Master ITIL Release Management certification training in Hyderabad. QuickLearn Systems offers expert-led training covering release planning, scheduling, and deployment coordination. Enroll today!",
+  keywords: "ITIL Release Management training Hyderabad, release management certification Hyderabad, best ITIL training institute Hyderabad, release management course Hyderabad, ITSM release training India, ITIL Release Management, software releases, release planning, deployment, ITSM, release coordination, QuickLearn Systems, IT training Hyderabad, professional training Hyderabad",
+  openGraph: {
+    title: "ITIL Release Management Certification Training in Hyderabad | QuickLearn Systems",
+    description: "Expert-led ITIL Release Management certification training in Hyderabad by QuickLearn Systems",
+    images: ["/release_management.jpg"],
+  },
+};
+
+const courseData = {
+  "disclaimer": "ITIL® is a registered trademark of PeopleCert. All rights reserved. All other trademarks, service marks, and registered trademarks are the property of their respective owners. Any potential trademark, copyright, or content-related concerns may be reported to training@quicklearnsys.com for review and correction.",
+  title: "Release Management",
+  subtitle: "Plan, schedule and control the movement of releases to live environments",
+  backgroundImage: "/release_management.jpg",
+  overview: [
+    "Release Management is the practice responsible for planning, scheduling and controlling the movement of releases to test and live environments. The primary goal is to ensure that the integrity of the live environment is protected and that the correct components are released.",
+    "This course provides comprehensive training on release planning, coordination, and deployment activities that ensure successful software releases with minimal risk to production environments.",
+    "Learn to implement effective release management processes that coordinate multiple changes, manage dependencies, and ensure successful service transitions."
+  ],
+  courseOutline: [
+    "Release Management fundamentals and objectives",
+    "Release planning and scheduling",
+    "Release design and build processes",
+    "Release testing and validation",
+    "Deployment planning and coordination",
+    "Release deployment and implementation",
+    "Post-deployment activities and review",
+    "Release management tools and automation"
+  ],
+  learningObjectives: [
+    "Understand Release Management principles and processes",
+    "Master release planning and scheduling techniques",
+    "Develop effective release design and build processes",
+    "Implement comprehensive testing and validation procedures",
+    "Coordinate deployment activities across environments",
+    "Manage release dependencies and risks",
+    "Ensure successful service transitions"
+  ],
+  targetGroup: [
+    "Release Managers and coordinators",
+    "Deployment managers and engineers",
+    "DevOps professionals and engineers",
+    "IT Service Management professionals",
+    "Software development team leads"
+  ],
+
+  prerequisite: [
+    "ITIL® 4 Foundation certification or equivalent IT service management knowledge",
+    "Basic understanding of software development lifecycle and deployment concepts",
+    "Familiarity with change management and configuration management practices",
+    "Experience in a release, deployment, or DevOps role is beneficial"
+  ],
+
+  examDetails: [
+    "Duration: 60 minutes",
+    "40 multiple choice questions",
+    "Passing score: 26/40 (65%)",
+    "Closed book examination",
+    "Available online and at test centers"
+  ],
+  category: "IT Service Management",
+  tagline: "Plan. Coordinate. Deploy.",
+  relatedCourses: [
+    {
+      title: "Change Enablement",
+      image: "/release_management.jpg",
+      description: "Learn to manage changes effectively and safely",
+      href: "/itil-change-enablement-certification-training",
+      duration: "3 Days",
+      level: "Foundation",
+      badge: "ITIL®",
+      badgeColor: "bg-[#2BA6D9]"
+    },
+    {
+      title: "Deployment Management",
+      image: "/itl4_foundation.png",
+      description: "Master deployment processes and procedures",
+      href: "/itil-deployment-management-certification-training",
+      duration: "3 Days",
+      level: "Foundation",
+      badge: "ITIL®",
+      badgeColor: "bg-[#2BA6D9]"
+    },
+    {
+      title: "DevOps Foundation",
+      image: "/itl4_foundation.png",
+      description: "Learn DevOps culture and practices",
+      href: "/devops-foundation-certification-training",
+      duration: "2 Days",
+      level: "Foundation",
+      badge: "DevOps",
+      badgeColor: "bg-green-600"
+    }
+  ]
+};
+
+export default function ReleaseManagementPage() {
+  return (
+    <>
+      <Headers />
+      <CoursePageTemplate courseData={courseData} />
+      <Footer />
+        
+    </>
+  );
+}

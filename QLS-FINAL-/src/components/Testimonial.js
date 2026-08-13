@@ -115,9 +115,12 @@ export default function Testimonial({ testimonials }) {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-2">
-            What Enterprises Are Saying
+            What Our Learners Are Saying
           </h2>
           <div className="w-16 h-1 bg-[#2BA6D9] mx-auto" />
+          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+            Real experiences from IT professionals who trusted QuickLearn Systems to achieve their certification and career goals.
+          </p>
         </motion.div>
 
         {/* Auto-scrolling Testimonials Container with Navigation */}
