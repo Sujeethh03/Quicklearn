@@ -214,7 +214,7 @@ const courseData = {
     "Comprehensive Study Material",
     "Post-training Support"
   ],
-  "disclaimer": "PMI®, PMI-ACP®, Agile Certified Practitioner®, PMP®, PMBOK®, and all related trademarks, service marks, and registered trademarks are the property of the Project Management Institute, Inc. All other trademarks, service marks, and registered trademarks are the property of their respective owners. Any potential trademark, copyright, or content-related concerns may be reported to training@quicklearnsys.com for review and correction."
+  "disclaimer": "PMI®, PMI-ACP®, Agile Certified Practitioner®, PMP®, PMBOK®, and all related trademarks are the property of the Project Management Institute, Inc. Any potential trademark, copyright, or content-related concerns may be reported to training@quicklearnsys.com for review and correction."
 };
 
 export default function PMPPage() {
